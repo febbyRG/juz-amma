@@ -25,7 +25,7 @@ struct LaunchScreenView: View {
                 Spacer()
                 
                 // App Icon
-                Image("AppIcon")
+                Image("AppIconImage")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 120, height: 120)

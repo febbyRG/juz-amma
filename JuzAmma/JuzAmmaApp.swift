@@ -14,14 +14,30 @@ struct JuzAmmaApp: App {
         let schema = Schema([
             Surah.self,
             Ayah.self,
-            AppSettings.self
+            AppSettings.self,
+            Translation.self
         ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
+        let modelConfiguration = ModelConfiguration(
+            schema: schema, 
+            isStoredInMemoryOnly: false,
+            allowsSave: true
+        )
 
         do {
             return try ModelContainer(for: schema, configurations: [modelConfiguration])
         } catch {
-            fatalError("Could not create ModelContainer: \(error)")
+            // If migration fails, try to recreate container
+            print("Migration error: \(error)")
+            
+            // Delete old store and create fresh one
+            let url = modelConfiguration.url
+            try? FileManager.default.removeItem(at: url)
+            
+            do {
+                return try ModelContainer(for: schema, configurations: [modelConfiguration])
+            } catch {
+                fatalError("Could not create ModelContainer: \(error)")
+            }
         }
     }()
 

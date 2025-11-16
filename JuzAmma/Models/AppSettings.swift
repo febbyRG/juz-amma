@@ -23,11 +23,20 @@ final class AppSettings {
     /// Whether to show transliteration
     var showTransliteration: Bool
     
-    /// Whether to show English translation
-    var showEnglishTranslation: Bool
+    /// Primary translation ID (e.g., 20 for Saheeh International)
+    var primaryTranslationId: Int
     
-    /// Whether to show Indonesian translation
-    var showIndonesianTranslation: Bool
+    /// Primary translation language code (e.g., "en", "id")
+    var primaryTranslationLanguage: String
+    
+    /// Secondary translation ID (optional)
+    var secondaryTranslationId: Int?
+    
+    /// Secondary translation language code (optional)
+    var secondaryTranslationLanguage: String?
+    
+    /// Whether to show both primary and secondary translations
+    var showBothTranslations: Bool
     
     /// Whether notifications are enabled
     var notificationsEnabled: Bool
@@ -52,8 +61,11 @@ final class AppSettings {
         themeMode: ThemeMode = .auto,
         fontSizeMultiplier: Double = 1.0,
         showTransliteration: Bool = true,
-        showEnglishTranslation: Bool = true,
-        showIndonesianTranslation: Bool = true,
+        primaryTranslationId: Int = 20,
+        primaryTranslationLanguage: String = "en",
+        secondaryTranslationId: Int? = 33,
+        secondaryTranslationLanguage: String? = "id",
+        showBothTranslations: Bool = true,
         notificationsEnabled: Bool = false,
         reminderTime: Date? = nil,
         selectedQari: String = "Mishary Alafasy",
@@ -65,8 +77,11 @@ final class AppSettings {
         self.themeMode = themeMode
         self.fontSizeMultiplier = fontSizeMultiplier
         self.showTransliteration = showTransliteration
-        self.showEnglishTranslation = showEnglishTranslation
-        self.showIndonesianTranslation = showIndonesianTranslation
+        self.primaryTranslationId = primaryTranslationId
+        self.primaryTranslationLanguage = primaryTranslationLanguage
+        self.secondaryTranslationId = secondaryTranslationId
+        self.secondaryTranslationLanguage = secondaryTranslationLanguage
+        self.showBothTranslations = showBothTranslations
         self.notificationsEnabled = notificationsEnabled
         self.reminderTime = reminderTime
         self.selectedQari = selectedQari

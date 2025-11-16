@@ -86,11 +86,8 @@ final class Ayah {
     /// Transliteration of the ayah
     var textTransliteration: String
     
-    /// English translation
-    var translationEnglish: String
-    
-    /// Indonesian translation
-    var translationIndonesian: String
+    /// Array of translations in multiple languages
+    @Relationship(deleteRule: .cascade) var translations: [Translation]?
     
     /// Whether this specific ayah is bookmarked
     var isBookmarked: Bool
@@ -102,16 +99,22 @@ final class Ayah {
         number: Int,
         textArabic: String,
         textTransliteration: String = "",
-        translationEnglish: String = "",
-        translationIndonesian: String = "",
         isBookmarked: Bool = false
     ) {
         self.number = number
         self.textArabic = textArabic
         self.textTransliteration = textTransliteration
-        self.translationEnglish = translationEnglish
-        self.translationIndonesian = translationIndonesian
         self.isBookmarked = isBookmarked
+    }
+    
+    /// Get translation by language code
+    func getTranslation(languageCode: String) -> String? {
+        translations?.first(where: { $0.languageCode == languageCode })?.text
+    }
+    
+    /// Get all available language codes for this ayah
+    var availableLanguages: [String] {
+        translations?.map { $0.languageCode } ?? []
     }
 }
 
@@ -120,9 +123,6 @@ extension Ayah {
     struct AyahData: Codable {
         let number: Int
         let textArabic: String
-        let textTransliteration: String
-        let translationEnglish: String
-        let translationIndonesian: String
     }
 }
 

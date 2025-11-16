@@ -10,12 +10,17 @@ import SwiftData
 
 struct SurahDetailView: View {
     @Environment(\.modelContext) private var modelContext
+    @Query private var appSettings: [AppSettings]
     @State var surah: Surah
     
-    @State private var showTransliteration = true
-    @State private var showEnglish = true
-    @State private var showIndonesian = true
     @State private var fontSize: CGFloat = 20
+    @State private var showTranslationPicker = false
+    @State private var showTranslationManager = false
+    @State private var availableTranslations: [(id: Int, name: String, code: String)] = []
+    
+    private var settings: AppSettings? {
+        appSettings.first
+    }
     
     private var service: QuranDataService {
         QuranDataService(modelContext: modelContext)
@@ -40,10 +45,8 @@ struct SurahDetailView: View {
                         ForEach(ayahs.sorted(by: { $0.number < $1.number })) { ayah in
                             AyahView(
                                 ayah: ayah,
-                                showTransliteration: showTransliteration,
-                                showEnglish: showEnglish,
-                                showIndonesian: showIndonesian,
-                                fontSize: fontSize
+                                fontSize: fontSize,
+                                settings: settings
                             )
                         }
                     }
@@ -95,18 +98,33 @@ struct SurahDetailView: View {
                     
                     // Set as Next to Memorize
                     Button {
-                        setAsNextToMemorize()
+                        toggleNextToMemorize()
                     } label: {
-                        Label("Set as Next to Memorize", systemImage: "star.circle")
+                        Label(
+                            surah.isNextToMemorize ? "Remove from Next to Memorize" : "Set as Next to Memorize",
+                            systemImage: surah.isNextToMemorize ? "star.circle.fill" : "star.circle"
+                        )
                     }
                     
                     Divider()
                     
                     // Display Options
                     Menu {
-                        Toggle("Transliteration", isOn: $showTransliteration)
-                        Toggle("English", isOn: $showEnglish)
-                        Toggle("Indonesian", isOn: $showIndonesian)
+                        Button {
+                            showTranslationPicker = true
+                        } label: {
+                            Label("Select Translation", systemImage: "globe")
+                        }
+                        
+                        Toggle("Show Both Translations", isOn: Binding(
+                            get: { settings?.showBothTranslations ?? false },
+                            set: { newValue in
+                                if let settings = settings {
+                                    settings.showBothTranslations = newValue
+                                    try? modelContext.save()
+                                }
+                            }
+                        ))
                     } label: {
                         Label("Display Options", systemImage: "eye")
                     }
@@ -125,8 +143,30 @@ struct SurahDetailView: View {
                 }
             }
         }
+        .sheet(isPresented: $showTranslationPicker) {
+            TranslationPickerView(
+                availableTranslations: availableTranslations,
+                onManageTranslations: {
+                    showTranslationPicker = false
+                    showTranslationManager = true
+                }
+            )
+            .presentationDetents([.medium, .large])
+        }
+        .sheet(isPresented: $showTranslationManager) {
+            NavigationStack {
+                TranslationManagerView()
+            }
+        }
+        .onChange(of: showTranslationManager) { _, isShowing in
+            // Reload translations when coming back from TranslationManagerView
+            if !isShowing {
+                loadAvailableTranslations()
+            }
+        }
         .onAppear {
             updateLastAccessed()
+            loadAvailableTranslations()
         }
     }
     
@@ -146,11 +186,18 @@ struct SurahDetailView: View {
         }
     }
     
-    private func setAsNextToMemorize() {
+    private func toggleNextToMemorize() {
         do {
-            try service.setNextToMemorize(surah)
+            if surah.isNextToMemorize {
+                // Remove from next to memorize
+                surah.isNextToMemorize = false
+                try modelContext.save()
+            } else {
+                // Set as next to memorize
+                try service.setNextToMemorize(surah)
+            }
         } catch {
-            print("Failed to set next to memorize: \(error.localizedDescription)")
+            print("Failed to toggle next to memorize: \(error.localizedDescription)")
         }
     }
     
@@ -160,6 +207,24 @@ struct SurahDetailView: View {
             try modelContext.save()
         } catch {
             print("Failed to update last accessed date: \(error.localizedDescription)")
+        }
+    }
+    
+    private func loadAvailableTranslations() {
+        do {
+            // Get ALL downloaded translations from the database
+            let descriptor = FetchDescriptor<Translation>()
+            let allTranslations = try modelContext.fetch(descriptor)
+            
+            // Group by translation ID and get unique translations
+            let grouped = Dictionary(grouping: allTranslations, by: { $0.id })
+            availableTranslations = grouped.compactMap { id, translations in
+                guard let first = translations.first else { return nil }
+                return (id: id, name: first.name, code: first.languageCode)
+            }.sorted { $0.name < $1.name }
+            
+        } catch {
+            print("Failed to load translations: \(error.localizedDescription)")
         }
     }
 }
@@ -237,10 +302,8 @@ struct BismillahView: View {
 // MARK: - Ayah View
 struct AyahView: View {
     let ayah: Ayah
-    let showTransliteration: Bool
-    let showEnglish: Bool
-    let showIndonesian: Bool
     let fontSize: CGFloat
+    let settings: AppSettings?
     
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
@@ -266,45 +329,44 @@ struct AyahView: View {
                 .lineSpacing(14)
                 .padding(.vertical, 8)
             
-            // Transliteration
-            if showTransliteration && !ayah.textTransliteration.isEmpty {
-                Text(ayah.textTransliteration)
-                    .font(.system(size: fontSize - 2, design: .rounded))
-                    .foregroundStyle(.secondary)
-                    .italic()
-            }
-            
-            // English Translation
-            if showEnglish && !ayah.translationEnglish.isEmpty {
-                HStack(alignment: .top, spacing: 8) {
-                    Image(systemName: "quote.opening")
-                        .font(.caption)
-                        .foregroundStyle(.tertiary)
-                    
-                    Text(ayah.translationEnglish)
-                        .font(.system(size: fontSize - 2))
-                        .foregroundStyle(.primary)
-                    
-                    Image(systemName: "quote.closing")
-                        .font(.caption)
-                        .foregroundStyle(.tertiary)
+            // Dynamic Translations
+            if let settings = settings {
+                // Primary Translation
+                let primaryTranslation = ayah.getTranslation(languageCode: settings.primaryTranslationLanguage)
+                if let primaryTranslation = primaryTranslation {
+                    HStack(alignment: .top, spacing: 8) {
+                        Image(systemName: "quote.opening")
+                            .font(.caption)
+                            .foregroundStyle(.tertiary)
+                        
+                        Text(primaryTranslation)
+                            .font(.system(size: fontSize - 2))
+                            .foregroundStyle(.primary)
+                        
+                        Image(systemName: "quote.closing")
+                            .font(.caption)
+                            .foregroundStyle(.tertiary)
+                    }
                 }
-            }
-            
-            // Indonesian Translation
-            if showIndonesian && !ayah.translationIndonesian.isEmpty {
-                HStack(alignment: .top, spacing: 8) {
-                    Image(systemName: "quote.opening")
-                        .font(.caption)
-                        .foregroundStyle(.tertiary)
-                    
-                    Text(ayah.translationIndonesian)
-                        .font(.system(size: fontSize - 2))
-                        .foregroundStyle(.secondary)
-                    
-                    Image(systemName: "quote.closing")
-                        .font(.caption)
-                        .foregroundStyle(.tertiary)
+                
+                // Secondary Translation (if enabled)
+                if settings.showBothTranslations {
+                    if let secondaryLang = settings.secondaryTranslationLanguage,
+                       let secondaryTranslation = ayah.getTranslation(languageCode: secondaryLang) {
+                        HStack(alignment: .top, spacing: 8) {
+                            Image(systemName: "quote.opening")
+                                .font(.caption)
+                                .foregroundStyle(.tertiary)
+                            
+                            Text(secondaryTranslation)
+                                .font(.system(size: fontSize - 2))
+                                .foregroundStyle(.secondary)
+                            
+                            Image(systemName: "quote.closing")
+                                .font(.caption)
+                                .foregroundStyle(.tertiary)
+                        }
+                    }
                 }
             }
         }

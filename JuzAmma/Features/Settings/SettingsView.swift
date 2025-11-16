@@ -18,9 +18,8 @@ struct SettingsView: View {
     
     @State private var selectedTheme: ThemeMode = .auto
     @State private var showTransliteration = true
-    @State private var showEnglish = true
-    @State private var showIndonesian = true
     @State private var notificationsEnabled = false
+    @State private var showTranslationManager = false
     
     var body: some View {
         Form {
@@ -40,30 +39,22 @@ struct SettingsView: View {
             
             // Display Preferences
             Section {
-                Toggle(isOn: $showTransliteration) {
-                    Label("Show Transliteration", systemImage: "character.textbox")
+                Button {
+                    showTranslationManager = true
+                } label: {
+                    HStack {
+                        Label("Manage Translations", systemImage: "globe")
+                        Spacer()
+                        Image(systemName: "chevron.right")
+                            .font(.caption)
+                            .foregroundStyle(.secondary)
+                    }
                 }
-                .onChange(of: showTransliteration) { _, newValue in
-                    updateDisplayPreference(\.showTransliteration, value: newValue)
-                }
-                
-                Toggle(isOn: $showEnglish) {
-                    Label("Show English Translation", systemImage: "flag.fill")
-                }
-                .onChange(of: showEnglish) { _, newValue in
-                    updateDisplayPreference(\.showEnglishTranslation, value: newValue)
-                }
-                
-                Toggle(isOn: $showIndonesian) {
-                    Label("Show Indonesian Translation", systemImage: "flag.fill")
-                }
-                .onChange(of: showIndonesian) { _, newValue in
-                    updateDisplayPreference(\.showIndonesianTranslation, value: newValue)
-                }
+                .foregroundStyle(.primary)
             } header: {
                 Label("Display Preferences", systemImage: "eye")
             } footer: {
-                Text("Choose which translations to display by default")
+                Text("Download and manage translations in multiple languages")
             }
             
             // Notifications
@@ -164,6 +155,11 @@ struct SettingsView: View {
         }
         .navigationTitle("Settings")
         .navigationBarTitleDisplayMode(.inline)
+        .sheet(isPresented: $showTranslationManager) {
+            NavigationStack {
+                TranslationManagerView()
+            }
+        }
         .onAppear {
             loadSettings()
         }
@@ -196,8 +192,6 @@ struct SettingsView: View {
         
         selectedTheme = settings.themeMode
         showTransliteration = settings.showTransliteration
-        showEnglish = settings.showEnglishTranslation
-        showIndonesian = settings.showIndonesianTranslation
         notificationsEnabled = settings.notificationsEnabled
     }
     

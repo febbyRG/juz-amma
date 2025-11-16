@@ -52,10 +52,7 @@ class QuranDataService {
             for ayahData in surahData.ayahs {
                 let ayah = Ayah(
                     number: ayahData.number,
-                    textArabic: ayahData.textArabic,
-                    textTransliteration: ayahData.textTransliteration,
-                    translationEnglish: ayahData.translationEnglish,
-                    translationIndonesian: ayahData.translationIndonesian
+                    textArabic: ayahData.textArabic
                 )
                 ayah.surah = surah
                 ayahModels.append(ayah)
@@ -169,9 +166,6 @@ private struct SurahJSON: Codable {
 private struct AyahJSON: Codable {
     let number: Int
     let textArabic: String
-    let textTransliteration: String
-    let translationEnglish: String
-    let translationIndonesian: String
 }
 
 // MARK: - Errors

@@ -53,7 +53,7 @@ struct ContentView: View {
                         Spacer()
                         
                         // App Icon
-                        Image("AppIcon")
+                        Image("AppIconImage")
                             .resizable()
                             .scaledToFit()
                             .frame(width: 120, height: 120)
@@ -133,6 +133,10 @@ struct ContentView: View {
         do {
             let service = QuranDataService(modelContext: modelContext)
             try await service.loadJuzAmmaData()
+            
+            // Clean existing translations that have HTML tags
+            let translationService = TranslationService(modelContext: modelContext)
+            try translationService.cleanExistingTranslations()
             
             // Small delay for smooth transition
             try? await Task.sleep(for: .seconds(0.5))
