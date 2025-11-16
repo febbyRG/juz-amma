@@ -104,8 +104,8 @@ JuzAmma/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/febbyRG/juz-amma-ios.git
-   cd juz-amma-ios
+   git clone https://github.com/febbyRG/juz-amma.git
+   cd juz-amma
    ```
 
 2. **Open in Xcode**
@@ -266,7 +266,7 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file for
 
 - **GitHub**: [@febbyRG](https://github.com/febbyRG)
 - **Email**: febby@magloft.com
-- **Issues**: [GitHub Issues](https://github.com/febbyRG/juz-amma-ios/issues)
+- **Issues**: [GitHub Issues](https://github.com/febbyRG/juz-amma/issues)
 
 ---
 
