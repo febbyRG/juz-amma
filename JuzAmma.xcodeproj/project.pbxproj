@@ -24,14 +24,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		23BBE0C42EC7BC7D0038E888 /* JuzAmma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JuzAmma.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		23BBE0C42EC7BC7D0038E888 /* Juz Amma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Juz Amma.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23BBE0D32EC7BC810038E888 /* JuzAmmaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JuzAmmaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		23BBE0DD2EC7BC810038E888 /* JuzAmmaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JuzAmmaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		23BBE1432ECA29AD0038E888 /* Exceptions for "JuzAmma" folder in "JuzAmma" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 23BBE0C32EC7BC7D0038E888 /* JuzAmma */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		23BBE0C62EC7BC7D0038E888 /* JuzAmma */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				23BBE1432ECA29AD0038E888 /* Exceptions for "JuzAmma" folder in "JuzAmma" target */,
+			);
 			path = JuzAmma;
 			sourceTree = "<group>";
 		};
@@ -85,7 +98,7 @@
 		23BBE0C52EC7BC7D0038E888 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				23BBE0C42EC7BC7D0038E888 /* JuzAmma.app */,
+				23BBE0C42EC7BC7D0038E888 /* Juz Amma.app */,
 				23BBE0D32EC7BC810038E888 /* JuzAmmaTests.xctest */,
 				23BBE0DD2EC7BC810038E888 /* JuzAmmaUITests.xctest */,
 			);
@@ -114,7 +127,7 @@
 			packageProductDependencies = (
 			);
 			productName = JuzAmma;
-			productReference = 23BBE0C42EC7BC7D0038E888 /* JuzAmma.app */;
+			productReference = 23BBE0C42EC7BC7D0038E888 /* Juz Amma.app */;
 			productType = "com.apple.product-type.application";
 		};
 		23BBE0D22EC7BC810038E888 /* JuzAmmaTests */ = {
@@ -397,6 +410,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JuzAmma/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -408,7 +422,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = computer.brothers.JuzAmma;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Juz Amma";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
@@ -428,6 +442,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JuzAmma/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -439,7 +454,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = computer.brothers.JuzAmma;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Juz Amma: Memorize Quran";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;

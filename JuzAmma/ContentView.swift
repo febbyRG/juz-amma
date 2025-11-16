@@ -10,52 +10,143 @@ import SwiftData
 
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
-
+    @Environment(\.colorScheme) private var systemColorScheme
+    @Query private var settingsQuery: [AppSettings]
+    
+    @State private var isLoading = true
+    @State private var loadError: Error?
+    
+    private var settings: AppSettings? {
+        settingsQuery.first
+    }
+    
+    private var preferredColorScheme: ColorScheme? {
+        guard let themeMode = settings?.themeMode else { return nil }
+        
+        switch themeMode {
+        case .light:
+            return .light
+        case .dark:
+            return .dark
+        case .auto:
+            return nil // Use system setting
+        }
+    }
+    
     var body: some View {
-        NavigationSplitView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                    } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
+        Group {
+            if isLoading {
+                // Loading Screen
+                ZStack {
+                    // Background gradient matching launch screen
+                    LinearGradient(
+                        colors: [
+                            Color(red: 0.165, green: 0.620, blue: 0.427),
+                            Color(red: 0.263, green: 0.722, blue: 0.549)
+                        ],
+                        startPoint: .topLeading,
+                        endPoint: .bottomTrailing
+                    )
+                    .ignoresSafeArea()
+                    
+                    VStack(spacing: 24) {
+                        Spacer()
+                        
+                        // App Icon
+                        Image("AppIcon")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 120, height: 120)
+                            .cornerRadius(26.4)
+                            .shadow(color: .black.opacity(0.2), radius: 10, x: 0, y: 4)
+                        
+                        // Bismillah
+                        Text("بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ")
+                            .font(.custom("Amiri Quran", size: 24))
+                            .foregroundColor(.white)
+                            .multilineTextAlignment(.center)
+                            .padding(.horizontal)
+                        
+                        // App Name
+                        Text("Juz Amma")
+                            .font(.system(size: 36, weight: .bold, design: .rounded))
+                            .foregroundColor(.white)
+                        
+                        // Loading indicator
+                        ProgressView()
+                            .progressViewStyle(CircularProgressViewStyle(tint: .white))
+                            .scaleEffect(1.5)
+                            .padding(.top, 8)
+                        
+                        Text("Loading Quran data...")
+                            .font(.system(size: 14, weight: .medium))
+                            .foregroundColor(.white.opacity(0.9))
+                            .padding(.top, 8)
+                        
+                        Spacer()
+                        
+                        // Version
+                        Text("Version 1.0")
+                            .font(.system(size: 12, weight: .regular))
+                            .foregroundColor(.white.opacity(0.7))
+                            .padding(.bottom, 20)
                     }
                 }
-                .onDelete(perform: deleteItems)
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
+            } else if let error = loadError {
+                // Error Screen
+                VStack(spacing: 20) {
+                    Image(systemName: "exclamationmark.triangle")
+                        .font(.system(size: 60))
+                        .foregroundStyle(.red)
+                    
+                    Text("Failed to Load Data")
+                        .font(.headline)
+                    
+                    Text(error.localizedDescription)
+                        .font(.subheadline)
+                        .foregroundStyle(.secondary)
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal)
+                    
+                    Button("Retry") {
+                        Task {
+                            await loadData()
+                        }
                     }
+                    .buttonStyle(.bordered)
                 }
+            } else {
+                // Main App
+                SurahListView()
             }
-        } detail: {
-            Text("Select an item")
+        }
+        .preferredColorScheme(preferredColorScheme)
+        .task {
+            await loadData()
         }
     }
-
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(timestamp: Date())
-            modelContext.insert(newItem)
-        }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            for index in offsets {
-                modelContext.delete(items[index])
-            }
+    
+    private func loadData() async {
+        isLoading = true
+        loadError = nil
+        
+        do {
+            let service = QuranDataService(modelContext: modelContext)
+            try await service.loadJuzAmmaData()
+            
+            // Small delay for smooth transition
+            try? await Task.sleep(for: .seconds(0.5))
+            
+            isLoading = false
+        } catch {
+            print("Failed to load Quran data: \(error.localizedDescription)")
+            loadError = error
+            isLoading = false
         }
     }
 }
 
 #Preview {
     ContentView()
-        .modelContainer(for: Item.self, inMemory: true)
+        .modelContainer(for: [Surah.self, Ayah.self, AppSettings.self], inMemory: true)
 }

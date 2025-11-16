@@ -1,0 +1,4322 @@
+{
+  "juzAmma": [
+    {
+      "number": 78,
+      "nameArabic": "النبإ",
+      "nameTransliteration": "An-Naba'",
+      "nameTranslation": "The Tidings",
+      "ayahCount": 40,
+      "revelation": "Makkah",
+      "ayahs": [
+        {
+          "number": 1,
+          "textArabic": " عَمَّ يَتَسَآءَلُونَ",
+          "textTransliteration": "",
+          "translationEnglish": "About what are they asking one another?",
+          "translationIndonesian": "Tentang apakah mereka saling bertanya-tanya?"
+        },
+        {
+          "number": 2,
+          "textArabic": "عَنِ ٱلنَّبَإِ ٱلْعَظِيمِ",
+          "textTransliteration": "",
+          "translationEnglish": "About the great news -",
+          "translationIndonesian": "Tentang berita yang besar (hari berbangkit),"
+        },
+        {
+          "number": 3,
+          "textArabic": "ٱلَّذِى هُمْ فِيهِ مُخْتَلِفُونَ",
+          "textTransliteration": "",
+          "translationEnglish": "That over which they are in disagreement.",
+          "translationIndonesian": "yang dalam hal itu mereka berselisih."
+        },
+        {
+          "number": 4,
+          "textArabic": "كَلَّا سَيَعْلَمُونَ",
+          "textTransliteration": "",
+          "translationEnglish": "No! They are going to know.",
+          "translationIndonesian": "Tidak! Kelak mereka akan mengetahui,"
+        },
+        {
+          "number": 5,
+          "textArabic": "ثُمَّ كَلَّا سَيَعْلَمُونَ",
+          "textTransliteration": "",
+          "translationEnglish": "Then, no! They are going to know.",
+          "translationIndonesian": "sekali lagi tidak! Kelak mereka akan mengetahui."
+        },
+        {
+          "number": 6,
+          "textArabic": "أَلَمْ نَجْعَلِ ٱلْأَرْضَ مِهَـٰدًا",
+          "textTransliteration": "",
+          "translationEnglish": "Have We not made the earth a resting place?",
+          "translationIndonesian": "Bukankah Kami telah menjadikan bumi sebagai hamparan,"
+        },
+        {
+          "number": 7,
+          "textArabic": "وَٱلْجِبَالَ أَوْتَادًا",
+          "textTransliteration": "",
+          "translationEnglish": "And the mountains as stakes?",
+          "translationIndonesian": "dan gunung-gunung sebagai pasak?"
+        },
+        {
+          "number": 8,
+          "textArabic": "وَخَلَقْنَـٰكُمْ أَزْوَٰجًا",
+          "textTransliteration": "",
+          "translationEnglish": "And We created you in pairs.",
+          "translationIndonesian": "Dan Kami menciptakan kamu berpasang-pasangan,"
+        },
+        {
+          "number": 9,
+          "textArabic": "وَجَعَلْنَا نَوْمَكُمْ سُبَاتًا",
+          "textTransliteration": "",
+          "translationEnglish": "And made your sleep [a means for] rest",
+          "translationIndonesian": "dan Kami menjadikan tidurmu untuk istirahat,"
+        },
+        {
+          "number": 10,
+          "textArabic": "وَجَعَلْنَا ٱلَّيْلَ لِبَاسًا",
+          "textTransliteration": "",
+          "translationEnglish": "And made the night as clothing.",
+          "translationIndonesian": "dan Kami menjadikan malam sebagai pakaian,"
+        },
+        {
+          "number": 11,
+          "textArabic": "وَجَعَلْنَا ٱلنَّهَارَ مَعَاشًا",
+          "textTransliteration": "",
+          "translationEnglish": "And made the day for livelihood.",
+          "translationIndonesian": "dan Kami menjadikan siang untuk mencari penghidupan,"
+        },
+        {
+          "number": 12,
+          "textArabic": "وَبَنَيْنَا فَوْقَكُمْ سَبْعًا شِدَادًا",
+          "textTransliteration": "",
+          "translationEnglish": "And constructed above you seven strong [heavens].",
+          "translationIndonesian": "dan Kami membangun di atas kamu tujuh (lapis langit) yang kokoh,"
+        },
+        {
+          "number": 13,
+          "textArabic": "وَجَعَلْنَا سِرَاجًا وَهَّاجًا",
+          "textTransliteration": "",
+          "translationEnglish": "And made [therein] a burning lamp",
+          "translationIndonesian": "dan Kami menjadikan pelita yang terang-benderang (matahari),"
+        },
+        {
+          "number": 14,
+          "textArabic": "وَأَنزَلْنَا مِنَ ٱلْمُعْصِرَٰتِ مَآءً ثَجَّاجًا",
+          "textTransliteration": "",
+          "translationEnglish": "And sent down, from the rain clouds, pouring water.",
+          "translationIndonesian": "dan Kami turunkan dari awan, air hujan yang tercurah dengan lebatnya,"
+        },
+        {
+          "number": 15,
+          "textArabic": "لِّنُخْرِجَ بِهِۦ حَبًّا وَنَبَاتًا",
+          "textTransliteration": "",
+          "translationEnglish": "That We may bring forth thereby grain and vegetation.",
+          "translationIndonesian": "untuk Kami tumbuhkan dengan air itu biji-bijian dan tanam-tanaman,"
+        },
+        {
+          "number": 16,
+          "textArabic": "وَجَنَّـٰتٍ أَلْفَافًا",
+          "textTransliteration": "",
+          "translationEnglish": "And gardens of entwined growth.",
+          "translationIndonesian": "dan kebun-kebun yang rindang."
+        },
+        {
+          "number": 17,
+          "textArabic": "إِنَّ يَوْمَ ٱلْفَصْلِ كَانَ مِيقَـٰتًا",
+          "textTransliteration": "",
+          "translationEnglish": "Indeed, the Day of Judgement is an appointed time -",
+          "translationIndonesian": "Sungguh, hari keputusan adalah suatu waktu yang telah ditetapkan,"
+        },
+        {
+          "number": 18,
+          "textArabic": "يَوْمَ يُنفَخُ فِى ٱلصُّورِ فَتَأْتُونَ أَفْوَاجًا",
+          "textTransliteration": "",
+          "translationEnglish": "The Day the Horn is blown and you will come forth in multitudes",
+          "translationIndonesian": "(yaitu) pada hari (ketika) sangkakala ditiup, lalu kamu datang berbondong-bondong,"
+        },
+        {
+          "number": 19,
+          "textArabic": "وَفُتِحَتِ ٱلسَّمَآءُ فَكَانَتْ أَبْوَٰبًا",
+          "textTransliteration": "",
+          "translationEnglish": "And the heaven is opened and will become gateways.",
+          "translationIndonesian": "dan langit pun dibukalah, maka terdapatlah beberapa pintu,"
+        },
+        {
+          "number": 20,
+          "textArabic": "وَسُيِّرَتِ ٱلْجِبَالُ فَكَانَتْ سَرَابًا",
+          "textTransliteration": "",
+          "translationEnglish": "And the mountains are removed and will be [but] a mirage.",
+          "translationIndonesian": "dan gunung-gunungpun dijalankan sehingga menjadi fatamorgana."
+        },
+        {
+          "number": 21,
+          "textArabic": "إِنَّ جَهَنَّمَ كَانَتْ مِرْصَادًا",
+          "textTransliteration": "",
+          "translationEnglish": "Indeed, Hell has been lying in wait",
+          "translationIndonesian": "Sungguh, (neraka) Jahanam itu (sebagai) tempat mengintai (bagi penjaga yang mengawasi isi neraka),"
+        },
+        {
+          "number": 22,
+          "textArabic": "لِّلطَّـٰغِينَ مَـَٔابًا",
+          "textTransliteration": "",
+          "translationEnglish": "For the transgressors, a place of return,",
+          "translationIndonesian": "menjadi tempat kembali bagi orang-orang yang melampaui batas."
+        },
+        {
+          "number": 23,
+          "textArabic": "لَّـٰبِثِينَ فِيهَآ أَحْقَابًا",
+          "textTransliteration": "",
+          "translationEnglish": "In which they will remain for ages [unending].",
+          "translationIndonesian": "Mereka tinggal di sana dalam masa yang lama,"
+        },
+        {
+          "number": 24,
+          "textArabic": "لَّا يَذُوقُونَ فِيهَا بَرْدًا وَلَا شَرَابًا",
+          "textTransliteration": "",
+          "translationEnglish": "They will not taste therein [any] coolness or drink.",
+          "translationIndonesian": "mereka tidak merasakan kesejukan di dalamnya dan tidak (pula mendapat) minuman,"
+        },
+        {
+          "number": 25,
+          "textArabic": "إِلَّا حَمِيمًا وَغَسَّاقًا",
+          "textTransliteration": "",
+          "translationEnglish": "Except scalding water and [foul] purulence -",
+          "translationIndonesian": "selain air yang mendidih dan nanah,"
+        },
+        {
+          "number": 26,
+          "textArabic": "جَزَآءً وِفَاقًا",
+          "textTransliteration": "",
+          "translationEnglish": "An appropriate recompense.",
+          "translationIndonesian": "sebagai pembalasan yang setimpal."
+        },
+        {
+          "number": 27,
+          "textArabic": "إِنَّهُمْ كَانُوا۟ لَا يَرْجُونَ حِسَابًا",
+          "textTransliteration": "",
+          "translationEnglish": "Indeed, they were not expecting an account",
+          "translationIndonesian": "Sesungguhnya dahulu mereka tidak pernah mengharapkan perhitungan,"
+        },
+        {
+          "number": 28,
+          "textArabic": "وَكَذَّبُوا۟ بِـَٔايَـٰتِنَا كِذَّابًا",
+          "textTransliteration": "",
+          "translationEnglish": "And denied Our verses with [emphatic] denial.",
+          "translationIndonesian": "dan mereka benar-benar mendustakan ayat-ayat Kami."
+        },
+        {
+          "number": 29,
+          "textArabic": "وَكُلَّ شَىْءٍ أَحْصَيْنَـٰهُ كِتَـٰبًا",
+          "textTransliteration": "",
+          "translationEnglish": "But all things We have enumerated in writing.",
+          "translationIndonesian": "Dan segala sesuatu telah Kami catat dalam suatu Kitab (buku catatan amalan manusia)."
+        },
+        {
+          "number": 30,
+          "textArabic": "فَذُوقُوا۟ فَلَن نَّزِيدَكُمْ إِلَّا عَذَابًا",
+          "textTransliteration": "",
+          "translationEnglish": "\"So taste [the penalty], and never will We increase you except in torment.\"",
+          "translationIndonesian": "Maka karena itu rasakanlah! Maka tidak ada yang akan Kami tambahkan kepadamu selain azab."
+        },
+        {
+          "number": 31,
+          "textArabic": "إِنَّ لِلْمُتَّقِينَ مَفَازًا",
+          "textTransliteration": "",
+          "translationEnglish": "Indeed, for the righteous is attainment -",
+          "translationIndonesian": "Sungguh, orang-orang yang bertakwa mendapat kemenangan,"
+        },
+        {
+          "number": 32,
+          "textArabic": "حَدَآئِقَ وَأَعْنَـٰبًا",
+          "textTransliteration": "",
+          "translationEnglish": "Gardens and grapevines.",
+          "translationIndonesian": "(yaitu) kebun-kebun dan buah anggur,"
+        },
+        {
+          "number": 33,
+          "textArabic": "وَكَوَاعِبَ أَتْرَابًا",
+          "textTransliteration": "",
+          "translationEnglish": "And full-breasted [companions] of equal age.",
+          "translationIndonesian": "dan gadis-gadis belia yang sebaya,"
+        },
+        {
+          "number": 34,
+          "textArabic": "وَكَأْسًا دِهَاقًا",
+          "textTransliteration": "",
+          "translationEnglish": "And a full cup.",
+          "translationIndonesian": "dan gelas-gelas yang penuh (berisi minuman)."
+        },
+        {
+          "number": 35,
+          "textArabic": "لَّا يَسْمَعُونَ فِيهَا لَغْوًا وَلَا كِذَّٰبًا",
+          "textTransliteration": "",
+          "translationEnglish": "No ill speech will they hear therein or any falsehood -",
+          "translationIndonesian": "Di sana mereka tidak mendengar percakapan yang sia-sia maupun (perkataan dusta)."
+        },
+        {
+          "number": 36,
+          "textArabic": "جَزَآءً مِّن رَّبِّكَ عَطَآءً حِسَابًا",
+          "textTransliteration": "",
+          "translationEnglish": "[As] reward from your Lord, [a generous] gift [made due by] account,",
+          "translationIndonesian": "Sebagai balasan dan pemberian yang cukup banyak dari Tuhanmu,"
+        },
+        {
+          "number": 37,
+          "textArabic": "رَّبِّ ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ وَمَا بَيْنَهُمَا ٱلرَّحْمَـٰنِ ۖ لَا يَمْلِكُونَ مِنْهُ خِطَابًا",
+          "textTransliteration": "",
+          "translationEnglish": "[From] the Lord of the heavens and the earth and whatever is between them, the Most Merciful. They possess not from Him [authority for] speech.",
+          "translationIndonesian": "Tuhan (yang memelihara) langit dan bumi serta apa yang ada di antara keduanya; Yang Maha Pengasih, mereka tidak mampu berbicara dengan Dia."
+        },
+        {
+          "number": 38,
+          "textArabic": "يَوْمَ يَقُومُ ٱلرُّوحُ وَٱلْمَلَـٰٓئِكَةُ صَفًّا ۖ لَّا يَتَكَلَّمُونَ إِلَّا مَنْ أَذِنَ لَهُ ٱلرَّحْمَـٰنُ وَقَالَ صَوَابًا",
+          "textTransliteration": "",
+          "translationEnglish": "The Day that the Spirit [i.e., Gabriel] and the angels will stand in rows, they will not speak except for one whom the Most Merciful permits, and he will say what is correct.",
+          "translationIndonesian": "Pada hari, ketika rūḥ dan para malaikat berdiri bersaf-saf, mereka tidak berkata-kata, kecuali siapa yang telah diberi izin kepadanya oleh Tuhan Yang Maha Pengasih dan dia hanya mengatakan yang benar."
+        },
+        {
+          "number": 39,
+          "textArabic": "ذَٰلِكَ ٱلْيَوْمُ ٱلْحَقُّ ۖ فَمَن شَآءَ ٱتَّخَذَ إِلَىٰ رَبِّهِۦ مَـَٔابًا",
+          "textTransliteration": "",
+          "translationEnglish": "That is the True [i.e., certain] Day; so he who wills may take to his Lord a [way of] return.",
+          "translationIndonesian": "Itulah hari yang pasti terjadi. Maka barangsiapa menghendaki, niscaya dia menempuh jalan kembali kepada Tuhannya."
+        },
+        {
+          "number": 40,
+          "textArabic": "إِنَّآ أَنذَرْنَـٰكُمْ عَذَابًا قَرِيبًا يَوْمَ يَنظُرُ ٱلْمَرْءُ مَا قَدَّمَتْ يَدَاهُ وَيَقُولُ ٱلْكَافِرُ يَـٰلَيْتَنِى كُنتُ تُرَٰبًۢا",
+          "textTransliteration": "",
+          "translationEnglish": "Indeed, We have warned you of an impending punishment on the Day when a man will observe what his hands have put forth and the disbeliever will say, \"Oh, I wish that I were dust!\"",
+          "translationIndonesian": "Sesungguhnya Kami telah memperingatkan kepadamu (orang kafir) azab yang dekat, pada hari manusia melihat apa yang telah diperbuat oleh kedua tangannya; dan orang kafir berkata, \"Alangkah baiknya seandainya dahulu aku jadi tanah.\""
+        }
+      ]
+    },
+    {
+      "number": 79,
+      "nameArabic": "النازعات",
+      "nameTransliteration": "An-Nazi'at",
+      "nameTranslation": "Those Who Pull Out",
+      "ayahCount": 46,
+      "revelation": "Makkah",
+      "ayahs": [
+        {
+          "number": 1,
+          "textArabic": " وَٱلنَّـٰزِعَـٰتِ غَرْقًا",
+          "textTransliteration": "",
+          "translationEnglish": "By those [angels] who extract with violence",
+          "translationIndonesian": "Demi (malaikat) yang mencabut (nyawa) dengan keras."
+        },
+        {
+          "number": 2,
+          "textArabic": "وَٱلنَّـٰشِطَـٰتِ نَشْطًا",
+          "textTransliteration": "",
+          "translationEnglish": "And [by] those who remove with ease",
+          "translationIndonesian": "Demi (malaikat) yang mencabut (nyawa) dengan lemah lembut."
+        },
+        {
+          "number": 3,
+          "textArabic": "وَٱلسَّـٰبِحَـٰتِ سَبْحًا",
+          "textTransliteration": "",
+          "translationEnglish": "And [by] those who glide [as if] swimming",
+          "translationIndonesian": "Demi (malaikat) yang turun dari langit dengan cepat,"
+        },
+        {
+          "number": 4,
+          "textArabic": "فَٱلسَّـٰبِقَـٰتِ سَبْقًا",
+          "textTransliteration": "",
+          "translationEnglish": "And those who race each other in a race",
+          "translationIndonesian": "dan (malaikat) yang mendahului dengan kencang,"
+        },
+        {
+          "number": 5,
+          "textArabic": "فَٱلْمُدَبِّرَٰتِ أَمْرًا",
+          "textTransliteration": "",
+          "translationEnglish": "And those who arrange [each] matter,",
+          "translationIndonesian": "dan (malaikat) yang mengatur urusan (dunia)."
+        },
+        {
+          "number": 6,
+          "textArabic": "يَوْمَ تَرْجُفُ ٱلرَّاجِفَةُ",
+          "textTransliteration": "",
+          "translationEnglish": "On the Day the blast [of the Horn] will convulse [creation],",
+          "translationIndonesian": "(Sungguh, kamu akan dibangkitkan) pada hari ketika tiupan pertama mengguncangkan alam,"
+        },
+        {
+          "number": 7,
+          "textArabic": "تَتْبَعُهَا ٱلرَّادِفَةُ",
+          "textTransliteration": "",
+          "translationEnglish": "There will follow it the subsequent [one].",
+          "translationIndonesian": "(tiupan pertama) itu diiringi oleh tiupan kedua."
+        },
+        {
+          "number": 8,
+          "textArabic": "قُلُوبٌ يَوْمَئِذٍ وَاجِفَةٌ",
+          "textTransliteration": "",
+          "translationEnglish": "Hearts, that Day, will tremble,",
+          "translationIndonesian": "Hati manusia pada waktu itu merasa sangat takut,"
+        },
+        {
+          "number": 9,
+          "textArabic": "أَبْصَـٰرُهَا خَـٰشِعَةٌ",
+          "textTransliteration": "",
+          "translationEnglish": "Their eyes humbled.",
+          "translationIndonesian": "pandangannya tunduk."
+        },
+        {
+          "number": 10,
+          "textArabic": "يَقُولُونَ أَءِنَّا لَمَرْدُودُونَ فِى ٱلْحَافِرَةِ",
+          "textTransliteration": "",
+          "translationEnglish": "They are [presently] saying, \"Will we indeed be returned to [our] former state [of life]?",
+          "translationIndonesian": "(orang-orang kafir) berkata, \"Apakah kita benar-benar akan dikembalikan kepada kehidupan yang semula?"
+        },
+        {
+          "number": 11,
+          "textArabic": "أَءِذَا كُنَّا عِظَـٰمًا نَّخِرَةً",
+          "textTransliteration": "",
+          "translationEnglish": "Even if we should be decayed bones?\"",
+          "translationIndonesian": "Apakah (akan dibangkitkan juga) apabila kita telah menjadi tulang belulang yang hancur?\""
+        },
+        {
+          "number": 12,
+          "textArabic": "قَالُوا۟ تِلْكَ إِذًا كَرَّةٌ خَاسِرَةٌ",
+          "textTransliteration": "",
+          "translationEnglish": "They say, \"That, then, would be a losing return.\"",
+          "translationIndonesian": "Mereka berkata, \"Kalau demikian, itu adalah suatu pengembalian yang merugikan.\""
+        },
+        {
+          "number": 13,
+          "textArabic": "فَإِنَّمَا هِىَ زَجْرَةٌ وَٰحِدَةٌ",
+          "textTransliteration": "",
+          "translationEnglish": "Indeed, it will be but one shout,",
+          "translationIndonesian": "Maka pengembalian itu hanyalah dengan sekali tiupan saja."
+        },
+        {
+          "number": 14,
+          "textArabic": "فَإِذَا هُم بِٱلسَّاهِرَةِ",
+          "textTransliteration": "",
+          "translationEnglish": "And suddenly they will be [alert] upon the earth's surface.",
+          "translationIndonesian": "Maka seketika itu mereka hidup kembali di bumi (yang baru)."
+        },
+        {
+          "number": 15,
+          "textArabic": "هَلْ أَتَىٰكَ حَدِيثُ مُوسَىٰٓ",
+          "textTransliteration": "",
+          "translationEnglish": "Has there reached you the story of Moses? -",
+          "translationIndonesian": "Sudahkah sampai kepadamu (Muhammad) kisah Musa?"
+        },
+        {
+          "number": 16,
+          "textArabic": "إِذْ نَادَىٰهُ رَبُّهُۥ بِٱلْوَادِ ٱلْمُقَدَّسِ طُوًى",
+          "textTransliteration": "",
+          "translationEnglish": "When his Lord called to him in the sacred valley of Ṭuwā,",
+          "translationIndonesian": "Ketika Tuhan memanggilnya (Musa) di lembah suci yaitu Lembah Tuwa;"
+        },
+        {
+          "number": 17,
+          "textArabic": "ٱذْهَبْ إِلَىٰ فِرْعَوْنَ إِنَّهُۥ طَغَىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "\"Go to Pharaoh. Indeed, he has transgressed.",
+          "translationIndonesian": "pergilah engkau kepada Fir'aun! Sesungguhnya dia telah melampaui batas,"
+        },
+        {
+          "number": 18,
+          "textArabic": "فَقُلْ هَل لَّكَ إِلَىٰٓ أَن تَزَكَّىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "And say to him, 'Would you [be willing to] purify yourself",
+          "translationIndonesian": "Maka katakanlah (kepada Fir'aun), \"Adakah keinginanmu untuk membersihkan diri (dari kesesatan),"
+        },
+        {
+          "number": 19,
+          "textArabic": "وَأَهْدِيَكَ إِلَىٰ رَبِّكَ فَتَخْشَىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "And let me guide you to your Lord so you would fear [Him]?'\"",
+          "translationIndonesian": "dan engkau akan kubimbing ke jalan Tuhanmu agar engkau takut kepada-Nya?\""
+        },
+        {
+          "number": 20,
+          "textArabic": "فَأَرَىٰهُ ٱلْـَٔايَةَ ٱلْكُبْرَىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "And he showed him the greatest sign,",
+          "translationIndonesian": "Lalu (Musa) memperlihatkan kepadanya mukjizat yang besar."
+        },
+        {
+          "number": 21,
+          "textArabic": "فَكَذَّبَ وَعَصَىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "But he [i.e., Pharaoh] denied and disobeyed.",
+          "translationIndonesian": "Tetapi dia (Fir'aun) mendustakan dan mendurhakai."
+        },
+        {
+          "number": 22,
+          "textArabic": "ثُمَّ أَدْبَرَ يَسْعَىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "Then he turned his back, striving [i.e., plotting].",
+          "translationIndonesian": "Kemudian dia berpaling seraya berusaha menantang (Musa)."
+        },
+        {
+          "number": 23,
+          "textArabic": "فَحَشَرَ فَنَادَىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "And he gathered [his people] and called out.",
+          "translationIndonesian": "Kemudian dia mengumpulkan (pembesar-pembesarnya) lalu berseru (memanggil kaumnya)."
+        },
+        {
+          "number": 24,
+          "textArabic": "فَقَالَ أَنَا۠ رَبُّكُمُ ٱلْأَعْلَىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "And said, \"I am your most exalted lord.\"",
+          "translationIndonesian": "(Seraya) berkata, \"Akulah tuhanmu yang paling tinggi.\""
+        },
+        {
+          "number": 25,
+          "textArabic": "فَأَخَذَهُ ٱللَّهُ نَكَالَ ٱلْـَٔاخِرَةِ وَٱلْأُولَىٰٓ",
+          "textTransliteration": "",
+          "translationEnglish": "So Allāh seized him in exemplary punishment for the last and the first [transgression]..",
+          "translationIndonesian": "Maka Allah menghukumnya dengan azab di akhirat dan siksaan di dunia."
+        },
+        {
+          "number": 26,
+          "textArabic": "إِنَّ فِى ذَٰلِكَ لَعِبْرَةً لِّمَن يَخْشَىٰٓ",
+          "textTransliteration": "",
+          "translationEnglish": "Indeed in that is a lesson [i.e., warning] for whoever would fear [Allāh].",
+          "translationIndonesian": "Sungguh, pada yang demikian itu terdapat pelajaran bagi orang yang takut (kepada Allah)."
+        },
+        {
+          "number": 27,
+          "textArabic": "ءَأَنتُمْ أَشَدُّ خَلْقًا أَمِ ٱلسَّمَآءُ ۚ بَنَىٰهَا",
+          "textTransliteration": "",
+          "translationEnglish": "Are you a more difficult creation or is the heaven? He [i.e., Allāh] constructed it.",
+          "translationIndonesian": "Apakah penciptaan kamu yang lebih hebat ataukah langit yang telah dibangun-Nya?"
+        },
+        {
+          "number": 28,
+          "textArabic": "رَفَعَ سَمْكَهَا فَسَوَّىٰهَا",
+          "textTransliteration": "",
+          "translationEnglish": "He raised its ceiling and proportioned it.",
+          "translationIndonesian": "Dia telah meninggikan bangunannya lalu menyempurnakannya,"
+        },
+        {
+          "number": 29,
+          "textArabic": "وَأَغْطَشَ لَيْلَهَا وَأَخْرَجَ ضُحَىٰهَا",
+          "textTransliteration": "",
+          "translationEnglish": "And He darkened its night and extracted its brightness.",
+          "translationIndonesian": "dan Dia menjadikan malamnya (gelap gulita), dan menjadikan siangnya (terang benderang)."
+        },
+        {
+          "number": 30,
+          "textArabic": "وَٱلْأَرْضَ بَعْدَ ذَٰلِكَ دَحَىٰهَآ",
+          "textTransliteration": "",
+          "translationEnglish": "And after that He spread the earth.",
+          "translationIndonesian": "Dan setelah itu bumi Dia hamparkan."
+        },
+        {
+          "number": 31,
+          "textArabic": "أَخْرَجَ مِنْهَا مَآءَهَا وَمَرْعَىٰهَا",
+          "textTransliteration": "",
+          "translationEnglish": "He extracted from it its water and its pasture,",
+          "translationIndonesian": "Darinya Dia pancarkan mata air, dan (ditumbuhkan) tumbuh-tumbuhannya."
+        },
+        {
+          "number": 32,
+          "textArabic": "وَٱلْجِبَالَ أَرْسَىٰهَا",
+          "textTransliteration": "",
+          "translationEnglish": "And the mountains He set firmly",
+          "translationIndonesian": "Dan gunung-gunung Dia pancangkan dengan kokoh."
+        },
+        {
+          "number": 33,
+          "textArabic": "مَتَـٰعًا لَّكُمْ وَلِأَنْعَـٰمِكُمْ",
+          "textTransliteration": "",
+          "translationEnglish": "As enjoyment [i.e., provision] for you and your grazing livestock.",
+          "translationIndonesian": "(Semua itu) untuk kesenanganmu dan untuk hewan-hewan ternakmu."
+        },
+        {
+          "number": 34,
+          "textArabic": "فَإِذَا جَآءَتِ ٱلطَّآمَّةُ ٱلْكُبْرَىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "But when there comes the greatest Overwhelming Calamity -",
+          "translationIndonesian": "Maka apabila malapetaka besar (hari Kiamat) telah datang,"
+        },
+        {
+          "number": 35,
+          "textArabic": "يَوْمَ يَتَذَكَّرُ ٱلْإِنسَـٰنُ مَا سَعَىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "The Day when man will remember that for which he strove,",
+          "translationIndonesian": "yaitu pada hari (ketika) manusia teringat akan apa yang telah dikerjakannya,"
+        },
+        {
+          "number": 36,
+          "textArabic": "وَبُرِّزَتِ ٱلْجَحِيمُ لِمَن يَرَىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "And Hellfire will be exposed for [all] those who see -",
+          "translationIndonesian": "dan neraka diperlihatkan dengan jelas kepada setiap orang yang melihat."
+        },
+        {
+          "number": 37,
+          "textArabic": "فَأَمَّا مَن طَغَىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "So as for he who transgressed",
+          "translationIndonesian": "Maka adapun orang yang melampaui batas,"
+        },
+        {
+          "number": 38,
+          "textArabic": "وَءَاثَرَ ٱلْحَيَوٰةَ ٱلدُّنْيَا",
+          "textTransliteration": "",
+          "translationEnglish": "And preferred the life of the world,",
+          "translationIndonesian": "dan lebih mengutamakan kehidupan dunia,"
+        },
+        {
+          "number": 39,
+          "textArabic": "فَإِنَّ ٱلْجَحِيمَ هِىَ ٱلْمَأْوَىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "Then indeed, Hellfire will be [his] refuge.",
+          "translationIndonesian": "maka sungguh, nerakalah tempat tinggalnya."
+        },
+        {
+          "number": 40,
+          "textArabic": "وَأَمَّا مَنْ خَافَ مَقَامَ رَبِّهِۦ وَنَهَى ٱلنَّفْسَ عَنِ ٱلْهَوَىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "But as for he who feared the position of his Lord and prevented the soul from [unlawful] inclination,",
+          "translationIndonesian": "Dan adapun orang-orang yang takut kepada kebesaran Tuhannya dan menahan diri dari (keinginan) hawa nafsunya,"
+        },
+        {
+          "number": 41,
+          "textArabic": "فَإِنَّ ٱلْجَنَّةَ هِىَ ٱلْمَأْوَىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "Then indeed, Paradise will be [his] refuge.",
+          "translationIndonesian": "maka sungguh, surgalah tempat tinggal-(nya)."
+        },
+        {
+          "number": 42,
+          "textArabic": "يَسْـَٔلُونَكَ عَنِ ٱلسَّاعَةِ أَيَّانَ مُرْسَىٰهَا",
+          "textTransliteration": "",
+          "translationEnglish": "They ask you, [O Muḥammad], about the Hour: when is its arrival?",
+          "translationIndonesian": "Mereka (orang-orang kafir) bertanya kepadamu (Muhammad) tentang hari Kiamat, \"Kapankah terjadinya?\""
+        },
+        {
+          "number": 43,
+          "textArabic": "فِيمَ أَنتَ مِن ذِكْرَىٰهَآ",
+          "textTransliteration": "",
+          "translationEnglish": "In what [position] are you that you should mention it?",
+          "translationIndonesian": "Untuk apa engkau perlu menyebutkannya (waktunya)?"
+        },
+        {
+          "number": 44,
+          "textArabic": "إِلَىٰ رَبِّكَ مُنتَهَىٰهَآ",
+          "textTransliteration": "",
+          "translationEnglish": "To your Lord is its finality.",
+          "translationIndonesian": "Kepada Tuhanmulah (dikembalikan) kesudahannya (ketentuan waktunya)."
+        },
+        {
+          "number": 45,
+          "textArabic": "إِنَّمَآ أَنتَ مُنذِرُ مَن يَخْشَىٰهَا",
+          "textTransliteration": "",
+          "translationEnglish": "You are only a warner for those who fear it.",
+          "translationIndonesian": "Engkau (Muhammad) hanyalah pemberi peringatan bagi siapa yang takut kepadanya (hari Kiamat)."
+        },
+        {
+          "number": 46,
+          "textArabic": "كَأَنَّهُمْ يَوْمَ يَرَوْنَهَا لَمْ يَلْبَثُوٓا۟ إِلَّا عَشِيَّةً أَوْ ضُحَىٰهَا",
+          "textTransliteration": "",
+          "translationEnglish": "It will be, on the Day they see it, as though they had not remained [in the world] except for an afternoon or a morning thereof.",
+          "translationIndonesian": "Pada hari ketika mereka melihat hari Kiamat itu (karena suasananya hebat), mereka merasa seakan-akan hanya (sebentar saja) tinggal (di dunia) pada waktu sore atau pagi hari."
+        }
+      ]
+    },
+    {
+      "number": 80,
+      "nameArabic": "عبس",
+      "nameTransliteration": "'Abasa",
+      "nameTranslation": "He Frowned",
+      "ayahCount": 42,
+      "revelation": "Makkah",
+      "ayahs": [
+        {
+          "number": 1,
+          "textArabic": " عَبَسَ وَتَوَلَّىٰٓ",
+          "textTransliteration": "",
+          "translationEnglish": "He [i.e., the Prophet (ﷺ) ] frowned and turned away",
+          "translationIndonesian": "Dia (Muhammad) berwajah masam dan berpaling,"
+        },
+        {
+          "number": 2,
+          "textArabic": "أَن جَآءَهُ ٱلْأَعْمَىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "Because there came to him the blind man, [interrupting].",
+          "translationIndonesian": "karena seorang buta telah datang kepadanya (Abdullah bin Ummi Maktum)."
+        },
+        {
+          "number": 3,
+          "textArabic": "وَمَا يُدْرِيكَ لَعَلَّهُۥ يَزَّكَّىٰٓ",
+          "textTransliteration": "",
+          "translationEnglish": "But what would make you perceive, [O Muḥammad], that perhaps he might be purified",
+          "translationIndonesian": "Dan tahukah engkau (Muhammad) barangkali dia ingin menyucikan dirinya (dari dosa),"
+        },
+        {
+          "number": 4,
+          "textArabic": "أَوْ يَذَّكَّرُ فَتَنفَعَهُ ٱلذِّكْرَىٰٓ",
+          "textTransliteration": "",
+          "translationEnglish": "Or be reminded and the remembrance would benefit him?",
+          "translationIndonesian": "atau dia (ingin) mendapatkan pengajaran, yang memberi manfaat kepadanya?"
+        },
+        {
+          "number": 5,
+          "textArabic": "أَمَّا مَنِ ٱسْتَغْنَىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "As for he who thinks himself without need,",
+          "translationIndonesian": "Adapun orang yang merasa dirinya serba cukup (pembesar-pembesar Quraisy),"
+        },
+        {
+          "number": 6,
+          "textArabic": "فَأَنتَ لَهُۥ تَصَدَّىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "To him you give attention.",
+          "translationIndonesian": "maka engkau (Muhammad) memberi perhatian kepadanya,"
+        },
+        {
+          "number": 7,
+          "textArabic": "وَمَا عَلَيْكَ أَلَّا يَزَّكَّىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "And not upon you [is any blame] if he will not be purified.",
+          "translationIndonesian": "padahal tidak ada (cela) atasmu kalau dia tidak menyucikan diri (beriman)."
+        },
+        {
+          "number": 8,
+          "textArabic": "وَأَمَّا مَن جَآءَكَ يَسْعَىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "But as for he who came to you striving [for knowledge]",
+          "translationIndonesian": "Dan adapun orang yang datang kepadamu dengan bersegera (untuk mendapatkan pengajaran),"
+        },
+        {
+          "number": 9,
+          "textArabic": "وَهُوَ يَخْشَىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "While he fears [Allāh],",
+          "translationIndonesian": "sedang dia takut (kepada Allah),"
+        },
+        {
+          "number": 10,
+          "textArabic": "فَأَنتَ عَنْهُ تَلَهَّىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "From him you are distracted.",
+          "translationIndonesian": "engkau (Muhammad) malah mengabaikannya."
+        },
+        {
+          "number": 11,
+          "textArabic": "كَلَّآ إِنَّهَا تَذْكِرَةٌ",
+          "textTransliteration": "",
+          "translationEnglish": "No! Indeed, they [i.e., these verses] are a reminder;",
+          "translationIndonesian": "Sekali-kali jangan (begitu)! Sungguh, (ajaran-ajaran Allah) itu suatu peringatan,"
+        },
+        {
+          "number": 12,
+          "textArabic": "فَمَن شَآءَ ذَكَرَهُۥ",
+          "textTransliteration": "",
+          "translationEnglish": "So whoever wills may remember it.",
+          "translationIndonesian": "maka barangsiapa menghendaki, tentulah dia akan memperhatikannya,"
+        },
+        {
+          "number": 13,
+          "textArabic": "فِى صُحُفٍ مُّكَرَّمَةٍ",
+          "textTransliteration": "",
+          "translationEnglish": "[It is recorded] in honored sheets,",
+          "translationIndonesian": "di dalam kitab-kitab yang dimuliakan (di sisi Allah),"
+        },
+        {
+          "number": 14,
+          "textArabic": "مَّرْفُوعَةٍ مُّطَهَّرَةٍۭ",
+          "textTransliteration": "",
+          "translationEnglish": "Exalted and purified,",
+          "translationIndonesian": "yang ditinggikan (dan) disucikan,"
+        },
+        {
+          "number": 15,
+          "textArabic": "بِأَيْدِى سَفَرَةٍ",
+          "textTransliteration": "",
+          "translationEnglish": "[Carried] by the hands of messenger-angels,",
+          "translationIndonesian": "di tangan para utusan (malaikat),"
+        },
+        {
+          "number": 16,
+          "textArabic": "كِرَامٍۭ بَرَرَةٍ",
+          "textTransliteration": "",
+          "translationEnglish": "Noble and dutiful.",
+          "translationIndonesian": "yang mulia lagi berbakti."
+        },
+        {
+          "number": 17,
+          "textArabic": "قُتِلَ ٱلْإِنسَـٰنُ مَآ أَكْفَرَهُۥ",
+          "textTransliteration": "",
+          "translationEnglish": "Destroyed [i.e., cursed] is man; how disbelieving is he.",
+          "translationIndonesian": "Celakalah manusia! Alangkah kufurnya dia!"
+        },
+        {
+          "number": 18,
+          "textArabic": "مِنْ أَىِّ شَىْءٍ خَلَقَهُۥ",
+          "textTransliteration": "",
+          "translationEnglish": "From what thing [i.e., substance] did He create him?",
+          "translationIndonesian": "Dari apakah Dia (Allah) menciptakannya?"
+        },
+        {
+          "number": 19,
+          "textArabic": "مِن نُّطْفَةٍ خَلَقَهُۥ فَقَدَّرَهُۥ",
+          "textTransliteration": "",
+          "translationEnglish": "From a sperm-drop He created him and destined for him;",
+          "translationIndonesian": "Dari setetes mani, Dia menciptakannya lalu menentukannya."
+        },
+        {
+          "number": 20,
+          "textArabic": "ثُمَّ ٱلسَّبِيلَ يَسَّرَهُۥ",
+          "textTransliteration": "",
+          "translationEnglish": "Then He eased the way for him;",
+          "translationIndonesian": "Kemudian jalannya Dia mudahkan,"
+        },
+        {
+          "number": 21,
+          "textArabic": "ثُمَّ أَمَاتَهُۥ فَأَقْبَرَهُۥ",
+          "textTransliteration": "",
+          "translationEnglish": "Then He causes his death and provides a grave for him.",
+          "translationIndonesian": "kemudian Dia mematikannya lalu menguburkannya,"
+        },
+        {
+          "number": 22,
+          "textArabic": "ثُمَّ إِذَا شَآءَ أَنشَرَهُۥ",
+          "textTransliteration": "",
+          "translationEnglish": "Then when He wills, He will resurrect him.",
+          "translationIndonesian": "kemudian jika Dia menghendaki, Dia membangkitkannya kembali."
+        },
+        {
+          "number": 23,
+          "textArabic": "كَلَّا لَمَّا يَقْضِ مَآ أَمَرَهُۥ",
+          "textTransliteration": "",
+          "translationEnglish": "No! He [i.e., man] has not yet accomplished what He commanded him.",
+          "translationIndonesian": "Sekali-kali jangan (begitu)! Dia (manusia) itu belum melaksanakan apa yang Dia (Allah) perintahkan kepadanya."
+        },
+        {
+          "number": 24,
+          "textArabic": "فَلْيَنظُرِ ٱلْإِنسَـٰنُ إِلَىٰ طَعَامِهِۦٓ",
+          "textTransliteration": "",
+          "translationEnglish": "Then let mankind look at his food -",
+          "translationIndonesian": "Maka hendaklah manusia itu memperhatikan makanannya,"
+        },
+        {
+          "number": 25,
+          "textArabic": "أَنَّا صَبَبْنَا ٱلْمَآءَ صَبًّا",
+          "textTransliteration": "",
+          "translationEnglish": "How We poured down water in torrents,",
+          "translationIndonesian": "Kamilah yang telah mencurahkan air melimpah (dari langit),"
+        },
+        {
+          "number": 26,
+          "textArabic": "ثُمَّ شَقَقْنَا ٱلْأَرْضَ شَقًّا",
+          "textTransliteration": "",
+          "translationEnglish": "Then We broke open the earth, splitting [it with sprouts],",
+          "translationIndonesian": "kemudian Kami belah bumi dengan sebaik-baiknya,"
+        },
+        {
+          "number": 27,
+          "textArabic": "فَأَنۢبَتْنَا فِيهَا حَبًّا",
+          "textTransliteration": "",
+          "translationEnglish": "And caused to grow within it grain",
+          "translationIndonesian": "lalu di sana Kami tumbuhkan biji-bijian,"
+        },
+        {
+          "number": 28,
+          "textArabic": "وَعِنَبًا وَقَضْبًا",
+          "textTransliteration": "",
+          "translationEnglish": "And grapes and herbage",
+          "translationIndonesian": "dan anggur dan sayur-sayuran,"
+        },
+        {
+          "number": 29,
+          "textArabic": "وَزَيْتُونًا وَنَخْلًا",
+          "textTransliteration": "",
+          "translationEnglish": "And olive and palm trees",
+          "translationIndonesian": "dan zaitun dan pohon kurma,"
+        },
+        {
+          "number": 30,
+          "textArabic": "وَحَدَآئِقَ غُلْبًا",
+          "textTransliteration": "",
+          "translationEnglish": "And gardens of dense shrubbery",
+          "translationIndonesian": "dan kebun-kebun (yang) rindang,"
+        },
+        {
+          "number": 31,
+          "textArabic": "وَفَـٰكِهَةً وَأَبًّا",
+          "textTransliteration": "",
+          "translationEnglish": "And fruit and grass -",
+          "translationIndonesian": "dan buah-buahan serta rerumputan."
+        },
+        {
+          "number": 32,
+          "textArabic": "مَّتَـٰعًا لَّكُمْ وَلِأَنْعَـٰمِكُمْ",
+          "textTransliteration": "",
+          "translationEnglish": "[As] enjoyment [i.e., provision] for you and your grazing livestock.",
+          "translationIndonesian": "(Semua itu) untuk kesenanganmu dan untuk hewan-hewan ternakmu."
+        },
+        {
+          "number": 33,
+          "textArabic": "فَإِذَا جَآءَتِ ٱلصَّآخَّةُ",
+          "textTransliteration": "",
+          "translationEnglish": "But when there comes the Deafening Blast",
+          "translationIndonesian": "Maka apabila datang suara yang memekakkan (tiupan sangkakala yang kedua),"
+        },
+        {
+          "number": 34,
+          "textArabic": "يَوْمَ يَفِرُّ ٱلْمَرْءُ مِنْ أَخِيهِ",
+          "textTransliteration": "",
+          "translationEnglish": "On the Day a man will flee from his brother",
+          "translationIndonesian": "pada hari itu manusia lari dari saudaranya,"
+        },
+        {
+          "number": 35,
+          "textArabic": "وَأُمِّهِۦ وَأَبِيهِ",
+          "textTransliteration": "",
+          "translationEnglish": "And his mother and his father",
+          "translationIndonesian": "dan dari ibu dan bapaknya,"
+        },
+        {
+          "number": 36,
+          "textArabic": "وَصَـٰحِبَتِهِۦ وَبَنِيهِ",
+          "textTransliteration": "",
+          "translationEnglish": "And his wife and his children,",
+          "translationIndonesian": "dan dari istri dan anak-anaknya."
+        },
+        {
+          "number": 37,
+          "textArabic": "لِكُلِّ ٱمْرِئٍ مِّنْهُمْ يَوْمَئِذٍ شَأْنٌ يُغْنِيهِ",
+          "textTransliteration": "",
+          "translationEnglish": "For every man, that Day, will be a matter adequate for him.",
+          "translationIndonesian": "Setiap orang dari mereka pada hari itu mempunyai urusan yang menyibukkannya."
+        },
+        {
+          "number": 38,
+          "textArabic": "وُجُوهٌ يَوْمَئِذٍ مُّسْفِرَةٌ",
+          "textTransliteration": "",
+          "translationEnglish": "[Some] faces, that Day, will be bright -",
+          "translationIndonesian": "Pada hari itu ada wajah-wajah yang berseri-seri,"
+        },
+        {
+          "number": 39,
+          "textArabic": "ضَاحِكَةٌ مُّسْتَبْشِرَةٌ",
+          "textTransliteration": "",
+          "translationEnglish": "Laughing, rejoicing at good news.",
+          "translationIndonesian": "tertawa dan gembira ria,"
+        },
+        {
+          "number": 40,
+          "textArabic": "وَوُجُوهٌ يَوْمَئِذٍ عَلَيْهَا غَبَرَةٌ",
+          "textTransliteration": "",
+          "translationEnglish": "And [other] faces, that Day, will have upon them dust.",
+          "translationIndonesian": "dan pada hari itu ada (pula) wajah-wajah yang tertutup debu (suram),"
+        },
+        {
+          "number": 41,
+          "textArabic": "تَرْهَقُهَا قَتَرَةٌ",
+          "textTransliteration": "",
+          "translationEnglish": "Blackness will cover them.",
+          "translationIndonesian": "tertutup oleh kegelapan (ditimpa kehinaan dan kesusahan)."
+        },
+        {
+          "number": 42,
+          "textArabic": "أُو۟لَـٰٓئِكَ هُمُ ٱلْكَفَرَةُ ٱلْفَجَرَةُ",
+          "textTransliteration": "",
+          "translationEnglish": "Those are the disbelievers, the wicked ones.",
+          "translationIndonesian": "Mereka itulah orang-orang kafir yang durhaka."
+        }
+      ]
+    },
+    {
+      "number": 81,
+      "nameArabic": "التكوير",
+      "nameTransliteration": "At-Takwir",
+      "nameTranslation": "The Overthrowing",
+      "ayahCount": 29,
+      "revelation": "Makkah",
+      "ayahs": [
+        {
+          "number": 1,
+          "textArabic": " إِذَا ٱلشَّمْسُ كُوِّرَتْ",
+          "textTransliteration": "",
+          "translationEnglish": "When the sun is wrapped up [in darkness]",
+          "translationIndonesian": "Apabila matahari digulung,"
+        },
+        {
+          "number": 2,
+          "textArabic": "وَإِذَا ٱلنُّجُومُ ٱنكَدَرَتْ",
+          "textTransliteration": "",
+          "translationEnglish": "And when the stars fall, dispersing,",
+          "translationIndonesian": "dan apabila bintang-bintang berjatuhan,"
+        },
+        {
+          "number": 3,
+          "textArabic": "وَإِذَا ٱلْجِبَالُ سُيِّرَتْ",
+          "textTransliteration": "",
+          "translationEnglish": "And when the mountains are removed",
+          "translationIndonesian": "dan apabila gunung-gunung dihancurkan,"
+        },
+        {
+          "number": 4,
+          "textArabic": "وَإِذَا ٱلْعِشَارُ عُطِّلَتْ",
+          "textTransliteration": "",
+          "translationEnglish": "And when full-term she-camels are neglected",
+          "translationIndonesian": "dan apabila unta-unta yang bunting ditinggalkan (tidak terurus),"
+        },
+        {
+          "number": 5,
+          "textArabic": "وَإِذَا ٱلْوُحُوشُ حُشِرَتْ",
+          "textTransliteration": "",
+          "translationEnglish": "And when the wild beasts are gathered",
+          "translationIndonesian": "dan apabila binatang-binatang liar dikumpulkan,"
+        },
+        {
+          "number": 6,
+          "textArabic": "وَإِذَا ٱلْبِحَارُ سُجِّرَتْ",
+          "textTransliteration": "",
+          "translationEnglish": "And when the seas are filled with flame",
+          "translationIndonesian": "dan apabila lautan dipanaskan,"
+        },
+        {
+          "number": 7,
+          "textArabic": "وَإِذَا ٱلنُّفُوسُ زُوِّجَتْ",
+          "textTransliteration": "",
+          "translationEnglish": "And when the souls are paired",
+          "translationIndonesian": "dan apabila roh-roh dipertemukan (dengan tubuh),"
+        },
+        {
+          "number": 8,
+          "textArabic": "وَإِذَا ٱلْمَوْءُۥدَةُ سُئِلَتْ",
+          "textTransliteration": "",
+          "translationEnglish": "And when the girl [who was] buried alive is asked",
+          "translationIndonesian": "dan apabila bayi-bayi perempuan yang dikubur hidup-hidup ditanya,"
+        },
+        {
+          "number": 9,
+          "textArabic": "بِأَىِّ ذَنۢبٍ قُتِلَتْ",
+          "textTransliteration": "",
+          "translationEnglish": "For what sin she was killed",
+          "translationIndonesian": "karena dosa apa dia dibunuh?"
+        },
+        {
+          "number": 10,
+          "textArabic": "وَإِذَا ٱلصُّحُفُ نُشِرَتْ",
+          "textTransliteration": "",
+          "translationEnglish": "And when the pages are spread [i.e., made public]",
+          "translationIndonesian": "Dan apabila lembaran-lembaran (catatan amal) telah dibuka lebar-lebar,"
+        },
+        {
+          "number": 11,
+          "textArabic": "وَإِذَا ٱلسَّمَآءُ كُشِطَتْ",
+          "textTransliteration": "",
+          "translationEnglish": "And when the sky is stripped away",
+          "translationIndonesian": "dan apabila langit dilenyapkan,"
+        },
+        {
+          "number": 12,
+          "textArabic": "وَإِذَا ٱلْجَحِيمُ سُعِّرَتْ",
+          "textTransliteration": "",
+          "translationEnglish": "And when Hellfire is set ablaze",
+          "translationIndonesian": "dan apabila neraka Jahim dinyalakan,"
+        },
+        {
+          "number": 13,
+          "textArabic": "وَإِذَا ٱلْجَنَّةُ أُزْلِفَتْ",
+          "textTransliteration": "",
+          "translationEnglish": "And when Paradise is brought near,",
+          "translationIndonesian": "dan apabila surga didekatkan,"
+        },
+        {
+          "number": 14,
+          "textArabic": "عَلِمَتْ نَفْسٌ مَّآ أَحْضَرَتْ",
+          "textTransliteration": "",
+          "translationEnglish": "A soul will [then] know what it has brought [with it].",
+          "translationIndonesian": "setiap jiwa akan mengetahui apa yang telah dikerjakannya."
+        },
+        {
+          "number": 15,
+          "textArabic": "فَلَآ أُقْسِمُ بِٱلْخُنَّسِ",
+          "textTransliteration": "",
+          "translationEnglish": "So I swear by the retreating stars -",
+          "translationIndonesian": "Aku bersumpah demi bintang-bintang,"
+        },
+        {
+          "number": 16,
+          "textArabic": "ٱلْجَوَارِ ٱلْكُنَّسِ",
+          "textTransliteration": "",
+          "translationEnglish": "Those that run [their courses] and disappear [i.e., set]",
+          "translationIndonesian": "yang beredar dan terbenam,"
+        },
+        {
+          "number": 17,
+          "textArabic": "وَٱلَّيْلِ إِذَا عَسْعَسَ",
+          "textTransliteration": "",
+          "translationEnglish": "And by the night as it closes in",
+          "translationIndonesian": "demi malam apabila telah larut,"
+        },
+        {
+          "number": 18,
+          "textArabic": "وَٱلصُّبْحِ إِذَا تَنَفَّسَ",
+          "textTransliteration": "",
+          "translationEnglish": "And by the dawn when it breathes [i.e., stirs]",
+          "translationIndonesian": "dan demi subuh apabila telah menyinsing,"
+        },
+        {
+          "number": 19,
+          "textArabic": "إِنَّهُۥ لَقَوْلُ رَسُولٍ كَرِيمٍ",
+          "textTransliteration": "",
+          "translationEnglish": "[That] indeed, it [i.e., the Qur’ān] is a word [conveyed by] a noble messenger [i.e., Gabriel]",
+          "translationIndonesian": "sesungguhnya (Alquran) itu benar-benar firman (Allah yang dibawa oleh) utusan yang mulia (Jibril),"
+        },
+        {
+          "number": 20,
+          "textArabic": "ذِى قُوَّةٍ عِندَ ذِى ٱلْعَرْشِ مَكِينٍ",
+          "textTransliteration": "",
+          "translationEnglish": "[Who is] possessed of power and with the Owner of the Throne, secure [in position],",
+          "translationIndonesian": "yang memiliki kekuatan, memiliki kedudukan tinggi di sisi (Allah) yang memiliki Arasy,"
+        },
+        {
+          "number": 21,
+          "textArabic": "مُّطَاعٍ ثَمَّ أَمِينٍ",
+          "textTransliteration": "",
+          "translationEnglish": "Obeyed there [in the heavens] and trustworthy.",
+          "translationIndonesian": "yang di sana (di alam malaikat) ditaati dan dipercaya."
+        },
+        {
+          "number": 22,
+          "textArabic": "وَمَا صَاحِبُكُم بِمَجْنُونٍ",
+          "textTransliteration": "",
+          "translationEnglish": "And your companion [i.e., Prophet Muḥammad (ﷺ) ] is not [at all] mad.",
+          "translationIndonesian": "Dan temanmu (Muhammad) itu bukanlah orang gila."
+        },
+        {
+          "number": 23,
+          "textArabic": "وَلَقَدْ رَءَاهُ بِٱلْأُفُقِ ٱلْمُبِينِ",
+          "textTransliteration": "",
+          "translationEnglish": "And he has already seen him [i.e., Gabriel] in the clear horizon.",
+          "translationIndonesian": "Dan sungguh, dia (Muhammad) telah melihatnya (Jibril) di ufuk yang terang."
+        },
+        {
+          "number": 24,
+          "textArabic": "وَمَا هُوَ عَلَى ٱلْغَيْبِ بِضَنِينٍ",
+          "textTransliteration": "",
+          "translationEnglish": "And he [i.e., Muḥammad (ﷺ)] is not a withholder of [knowledge of] the unseen.",
+          "translationIndonesian": "Dan Dia (Muhammad) bukanlah seorang yang kikir (enggan) untuk menerangkan yang gaib."
+        },
+        {
+          "number": 25,
+          "textArabic": "وَمَا هُوَ بِقَوْلِ شَيْطَـٰنٍ رَّجِيمٍ",
+          "textTransliteration": "",
+          "translationEnglish": "And it [i.e., the Qur’ān] is not the word of a devil, expelled [from the heavens].",
+          "translationIndonesian": "Dan (Alquran) itu bukanlah perkataan setan yang terkutuk,"
+        },
+        {
+          "number": 26,
+          "textArabic": "فَأَيْنَ تَذْهَبُونَ",
+          "textTransliteration": "",
+          "translationEnglish": "So where are you going?",
+          "translationIndonesian": "maka ke manakah kamu akan pergi?"
+        },
+        {
+          "number": 27,
+          "textArabic": "إِنْ هُوَ إِلَّا ذِكْرٌ لِّلْعَـٰلَمِينَ",
+          "textTransliteration": "",
+          "translationEnglish": "It is not except a reminder to the worlds",
+          "translationIndonesian": "(Alquran) itu tidak lain adalah peringatan bagi seluruh alam,"
+        },
+        {
+          "number": 28,
+          "textArabic": "لِمَن شَآءَ مِنكُمْ أَن يَسْتَقِيمَ",
+          "textTransliteration": "",
+          "translationEnglish": "For whoever wills among you to take a right course.",
+          "translationIndonesian": "(yaitu) bagi siapa di antara kamu yang menghendaki menempuh jalan yang lurus."
+        },
+        {
+          "number": 29,
+          "textArabic": "وَمَا تَشَآءُونَ إِلَّآ أَن يَشَآءَ ٱللَّهُ رَبُّ ٱلْعَـٰلَمِينَ",
+          "textTransliteration": "",
+          "translationEnglish": "And you do not will except that Allāh wills - Lord of the worlds.",
+          "translationIndonesian": "Dan kamu tidak dapat menghendaki (menempuh jalan itu) kecuali apabila dikehendaki Allah, Tuhan seluruh alam."
+        }
+      ]
+    },
+    {
+      "number": 82,
+      "nameArabic": "الانفطار",
+      "nameTransliteration": "Al-Infitar",
+      "nameTranslation": "The Cleaving",
+      "ayahCount": 19,
+      "revelation": "Makkah",
+      "ayahs": [
+        {
+          "number": 1,
+          "textArabic": " إِذَا ٱلسَّمَآءُ ٱنفَطَرَتْ",
+          "textTransliteration": "",
+          "translationEnglish": "When the sky breaks apart",
+          "translationIndonesian": "Apabila langit terbelah,"
+        },
+        {
+          "number": 2,
+          "textArabic": "وَإِذَا ٱلْكَوَاكِبُ ٱنتَثَرَتْ",
+          "textTransliteration": "",
+          "translationEnglish": "And when the stars fall, scattering,",
+          "translationIndonesian": "dan apabila bintang-bintang jatuh berserakan,"
+        },
+        {
+          "number": 3,
+          "textArabic": "وَإِذَا ٱلْبِحَارُ فُجِّرَتْ",
+          "textTransliteration": "",
+          "translationEnglish": "And when the seas are erupted",
+          "translationIndonesian": "dan apabila lautan dijadikan meluap,"
+        },
+        {
+          "number": 4,
+          "textArabic": "وَإِذَا ٱلْقُبُورُ بُعْثِرَتْ",
+          "textTransliteration": "",
+          "translationEnglish": "And when the [contents of] graves are scattered [i.e., exposed],",
+          "translationIndonesian": "dan apabila kuburan-kuburan dibongkar,"
+        },
+        {
+          "number": 5,
+          "textArabic": "عَلِمَتْ نَفْسٌ مَّا قَدَّمَتْ وَأَخَّرَتْ",
+          "textTransliteration": "",
+          "translationEnglish": "A soul will [then] know what it has put forth and kept back.",
+          "translationIndonesian": "(maka) setiap jiwa akan mengetahui apa yang telah dikerjakan dan yang dilalaikan(nya)."
+        },
+        {
+          "number": 6,
+          "textArabic": "يَـٰٓأَيُّهَا ٱلْإِنسَـٰنُ مَا غَرَّكَ بِرَبِّكَ ٱلْكَرِيمِ",
+          "textTransliteration": "",
+          "translationEnglish": "O mankind, what has deceived you concerning your Lord, the Generous,",
+          "translationIndonesian": "Wahai manusia! Apakah yang telah memperdayakan kamu (berbuat durhaka) terhadap Tuhanmu Yang Maha Pengasih."
+        },
+        {
+          "number": 7,
+          "textArabic": "ٱلَّذِى خَلَقَكَ فَسَوَّىٰكَ فَعَدَلَكَ",
+          "textTransliteration": "",
+          "translationEnglish": "Who created you, proportioned you, and balanced you?",
+          "translationIndonesian": "Yang telah menciptakanmu lalu menyempurnakan kejadianmu dan menjadikan (susunan tubuh)mu seimbang,"
+        },
+        {
+          "number": 8,
+          "textArabic": "فِىٓ أَىِّ صُورَةٍ مَّا شَآءَ رَكَّبَكَ",
+          "textTransliteration": "",
+          "translationEnglish": "In whatever form He willed has He assembled you.",
+          "translationIndonesian": "dalam bentuk apa saja yang dikehendaki, Dia menyusun tubuhmu."
+        },
+        {
+          "number": 9,
+          "textArabic": "كَلَّا بَلْ تُكَذِّبُونَ بِٱلدِّينِ",
+          "textTransliteration": "",
+          "translationEnglish": "No! But you deny the Recompense.",
+          "translationIndonesian": "Sekali-kali jangan begitu! Bahkan kamu mendustakan hari pembalasan."
+        },
+        {
+          "number": 10,
+          "textArabic": "وَإِنَّ عَلَيْكُمْ لَحَـٰفِظِينَ",
+          "textTransliteration": "",
+          "translationEnglish": "And indeed, [appointed] over you are keepers,",
+          "translationIndonesian": "Dan sesungguhnya bagi kamu ada (malaikat-malaikat) yang mengawasi (pekerjaanmu),"
+        },
+        {
+          "number": 11,
+          "textArabic": "كِرَامًا كَـٰتِبِينَ",
+          "textTransliteration": "",
+          "translationEnglish": "Noble and recording;",
+          "translationIndonesian": "yang mulia (di sisi Allah) dan yang mencatat (perbuatanmu),"
+        },
+        {
+          "number": 12,
+          "textArabic": "يَعْلَمُونَ مَا تَفْعَلُونَ",
+          "textTransliteration": "",
+          "translationEnglish": "They know whatever you do.",
+          "translationIndonesian": "mereka mengetahui apa yang kamu kerjakan."
+        },
+        {
+          "number": 13,
+          "textArabic": "إِنَّ ٱلْأَبْرَارَ لَفِى نَعِيمٍ",
+          "textTransliteration": "",
+          "translationEnglish": "Indeed, the righteous will be in pleasure,",
+          "translationIndonesian": "Sesungguhnya orang-orang yang berbakti benar-benar berada dalam (surga yang penuh) kenikmatan,"
+        },
+        {
+          "number": 14,
+          "textArabic": "وَإِنَّ ٱلْفُجَّارَ لَفِى جَحِيمٍ",
+          "textTransliteration": "",
+          "translationEnglish": "And indeed, the wicked will be in Hellfire.",
+          "translationIndonesian": "dan sesungguhnya orang-orang yang durhaka benar-benar berada dalam neraka."
+        },
+        {
+          "number": 15,
+          "textArabic": "يَصْلَوْنَهَا يَوْمَ ٱلدِّينِ",
+          "textTransliteration": "",
+          "translationEnglish": "They will [enter to] burn therein on the Day of Recompense,",
+          "translationIndonesian": "Mereka masuk ke dalamnya pada hari pembalasan."
+        },
+        {
+          "number": 16,
+          "textArabic": "وَمَا هُمْ عَنْهَا بِغَآئِبِينَ",
+          "textTransliteration": "",
+          "translationEnglish": "And never therefrom will they be absent.",
+          "translationIndonesian": "Dan mereka tidak mungkin keluar dari neraka itu."
+        },
+        {
+          "number": 17,
+          "textArabic": "وَمَآ أَدْرَىٰكَ مَا يَوْمُ ٱلدِّينِ",
+          "textTransliteration": "",
+          "translationEnglish": "And what can make you know what is the Day of Recompense?",
+          "translationIndonesian": "Dan tahukah kamu apakah hari pembalasan itu?"
+        },
+        {
+          "number": 18,
+          "textArabic": "ثُمَّ مَآ أَدْرَىٰكَ مَا يَوْمُ ٱلدِّينِ",
+          "textTransliteration": "",
+          "translationEnglish": "Then, what can make you know what is the Day of Recompense?",
+          "translationIndonesian": "Sekali lagi, tahukah kamu apakah hari pembalasan itu?"
+        },
+        {
+          "number": 19,
+          "textArabic": "يَوْمَ لَا تَمْلِكُ نَفْسٌ لِّنَفْسٍ شَيْـًٔا ۖ وَٱلْأَمْرُ يَوْمَئِذٍ لِّلَّهِ",
+          "textTransliteration": "",
+          "translationEnglish": "It is the Day when a soul will not possess for another soul [power to do] a thing; and the command, that Day, is [entirely] with Allāh.",
+          "translationIndonesian": "(Yaitu) pada hari (ketika) seseorang sama sekali tidak berdaya (menolong) orang lain. Dan segala urusan pada hari itu dalam kekuasaan Allah."
+        }
+      ]
+    },
+    {
+      "number": 83,
+      "nameArabic": "المطففين",
+      "nameTransliteration": "Al-Mutaffifin",
+      "nameTranslation": "The Defrauding",
+      "ayahCount": 36,
+      "revelation": "Makkah",
+      "ayahs": [
+        {
+          "number": 1,
+          "textArabic": " وَيْلٌ لِّلْمُطَفِّفِينَ",
+          "textTransliteration": "",
+          "translationEnglish": "Woe to those who give less [than due],",
+          "translationIndonesian": "Celakalah bagi orang-orang yang curang (dalam menakar dan menimbang)!"
+        },
+        {
+          "number": 2,
+          "textArabic": "ٱلَّذِينَ إِذَا ٱكْتَالُوا۟ عَلَى ٱلنَّاسِ يَسْتَوْفُونَ",
+          "textTransliteration": "",
+          "translationEnglish": "Who, when they take a measure from people, take in full.",
+          "translationIndonesian": "(yaitu) orang-orang yang apabila menerima takaran dari orang lain mereka minta dicukupkan,"
+        },
+        {
+          "number": 3,
+          "textArabic": "وَإِذَا كَالُوهُمْ أَو وَّزَنُوهُمْ يُخْسِرُونَ",
+          "textTransliteration": "",
+          "translationEnglish": "But if they give by measure or by weight to them, they cause loss.",
+          "translationIndonesian": "dan apabila mereka menakar atau menimbang (untuk orang lain), mereka mengurangi."
+        },
+        {
+          "number": 4,
+          "textArabic": "أَلَا يَظُنُّ أُو۟لَـٰٓئِكَ أَنَّهُم مَّبْعُوثُونَ",
+          "textTransliteration": "",
+          "translationEnglish": "Do they not think that they will be resurrected",
+          "translationIndonesian": "Tidakkah mereka itu mengira, bahwa sesungguhnya mereka akan dibangkitkan,"
+        },
+        {
+          "number": 5,
+          "textArabic": "لِيَوْمٍ عَظِيمٍ",
+          "textTransliteration": "",
+          "translationEnglish": "For a tremendous Day -",
+          "translationIndonesian": "pada suatu hari yang besar,"
+        },
+        {
+          "number": 6,
+          "textArabic": "يَوْمَ يَقُومُ ٱلنَّاسُ لِرَبِّ ٱلْعَـٰلَمِينَ",
+          "textTransliteration": "",
+          "translationEnglish": "The Day when mankind will stand before the Lord of the worlds?",
+          "translationIndonesian": "(yaitu) pada hari (ketika) semua orang bangkit menghadap Tuhan seluruh alam."
+        },
+        {
+          "number": 7,
+          "textArabic": "كَلَّآ إِنَّ كِتَـٰبَ ٱلْفُجَّارِ لَفِى سِجِّينٍ",
+          "textTransliteration": "",
+          "translationEnglish": "No! Indeed, the record of the wicked is in sijjeen.",
+          "translationIndonesian": "Sekali-kali jangan begitu! Sesungguhnya catatan orang yang durhaka benar-benar tersimpan dalam Sijjīn."
+        },
+        {
+          "number": 8,
+          "textArabic": "وَمَآ أَدْرَىٰكَ مَا سِجِّينٌ",
+          "textTransliteration": "",
+          "translationEnglish": "And what can make you know what is sijjeen?",
+          "translationIndonesian": "Dan tahukah engkau apakah Sijjīn itu?"
+        },
+        {
+          "number": 9,
+          "textArabic": "كِتَـٰبٌ مَّرْقُومٌ",
+          "textTransliteration": "",
+          "translationEnglish": "It is [their destination recorded in] a register inscribed.",
+          "translationIndonesian": "(Yaitu) Kitab yang berisi catatan (amal)."
+        },
+        {
+          "number": 10,
+          "textArabic": "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
+          "textTransliteration": "",
+          "translationEnglish": "Woe, that Day, to the deniers,",
+          "translationIndonesian": "Celakalah pada hari itu, bagi orang-orang yang mendustakan!"
+        },
+        {
+          "number": 11,
+          "textArabic": "ٱلَّذِينَ يُكَذِّبُونَ بِيَوْمِ ٱلدِّينِ",
+          "textTransliteration": "",
+          "translationEnglish": "Who deny the Day of Recompense.",
+          "translationIndonesian": "(yaitu) orang-orang yang mendustakannya (hari pembalasan)."
+        },
+        {
+          "number": 12,
+          "textArabic": "وَمَا يُكَذِّبُ بِهِۦٓ إِلَّا كُلُّ مُعْتَدٍ أَثِيمٍ",
+          "textTransliteration": "",
+          "translationEnglish": "And none deny it except every sinful transgressor.",
+          "translationIndonesian": "Dan tidak ada yang mendustakannya (hari pembalasan) kecuali setiap orang yang melampaui batas dan berdosa,"
+        },
+        {
+          "number": 13,
+          "textArabic": "إِذَا تُتْلَىٰ عَلَيْهِ ءَايَـٰتُنَا قَالَ أَسَـٰطِيرُ ٱلْأَوَّلِينَ",
+          "textTransliteration": "",
+          "translationEnglish": "When Our verses are recited to him, he says, \"Legends of the former peoples.\"",
+          "translationIndonesian": "yang apabila dibacakan kepadanya ayat-ayat Kami, dia berkata, \"Itu adalah dongeng orang-orang dahulu.\""
+        },
+        {
+          "number": 14,
+          "textArabic": "كَلَّا ۖ بَلْ ۜ رَانَ عَلَىٰ قُلُوبِهِم مَّا كَانُوا۟ يَكْسِبُونَ",
+          "textTransliteration": "",
+          "translationEnglish": "No! Rather, the stain has covered their hearts of that which they were earning.",
+          "translationIndonesian": "Sekali-kali tidak! Bahkan apa yang mereka kerjakan itu telah menutupi hati mereka."
+        },
+        {
+          "number": 15,
+          "textArabic": "كَلَّآ إِنَّهُمْ عَن رَّبِّهِمْ يَوْمَئِذٍ لَّمَحْجُوبُونَ",
+          "textTransliteration": "",
+          "translationEnglish": "No! Indeed, from their Lord, that Day, they will be partitioned.",
+          "translationIndonesian": "Sekali-kali tidak! Sesungguhnya mereka pada hari itu benar-benar terhalang dari (melihat) Tuhannya."
+        },
+        {
+          "number": 16,
+          "textArabic": "ثُمَّ إِنَّهُمْ لَصَالُوا۟ ٱلْجَحِيمِ",
+          "textTransliteration": "",
+          "translationEnglish": "Then indeed, they will [enter and] burn in Hellfire.",
+          "translationIndonesian": "Kemudian, sesungguhnya mereka benar-benar masuk neraka."
+        },
+        {
+          "number": 17,
+          "textArabic": "ثُمَّ يُقَالُ هَـٰذَا ٱلَّذِى كُنتُم بِهِۦ تُكَذِّبُونَ",
+          "textTransliteration": "",
+          "translationEnglish": "Then it will be said [to them], \"This is what you used to deny.\"",
+          "translationIndonesian": "Kemudian, dikatakan (kepada mereka), \"Inilah (azab) yang dahulu kamu dustakan.\""
+        },
+        {
+          "number": 18,
+          "textArabic": "كَلَّآ إِنَّ كِتَـٰبَ ٱلْأَبْرَارِ لَفِى عِلِّيِّينَ",
+          "textTransliteration": "",
+          "translationEnglish": "No! Indeed, the record of the righteous is in ʿilliyyūn.",
+          "translationIndonesian": "Sekali-kali tidak! Sesungguhnya catatan orang-orang yang berbakti benar-benar tersimpan dalam 'Illiyyīn."
+        },
+        {
+          "number": 19,
+          "textArabic": "وَمَآ أَدْرَىٰكَ مَا عِلِّيُّونَ",
+          "textTransliteration": "",
+          "translationEnglish": "And what can make you know what is ʿilliyyūn?",
+          "translationIndonesian": "Dan tahukah engkau apakah 'Illiyyīn itu?"
+        },
+        {
+          "number": 20,
+          "textArabic": "كِتَـٰبٌ مَّرْقُومٌ",
+          "textTransliteration": "",
+          "translationEnglish": "It is [their destination recorded in] a register inscribed",
+          "translationIndonesian": "(Yaitu) Kitab yang berisi catatan (amal),"
+        },
+        {
+          "number": 21,
+          "textArabic": "يَشْهَدُهُ ٱلْمُقَرَّبُونَ",
+          "textTransliteration": "",
+          "translationEnglish": "Which is witnessed by those brought near [to Allāh].",
+          "translationIndonesian": "yang disaksikan oleh (malaikat-malaikat) yang didekatkan (kepada Allah)."
+        },
+        {
+          "number": 22,
+          "textArabic": "إِنَّ ٱلْأَبْرَارَ لَفِى نَعِيمٍ",
+          "textTransliteration": "",
+          "translationEnglish": "Indeed, the righteous will be in pleasure",
+          "translationIndonesian": "Sesungguhnya orang-orang yang berbakti benar-benar berada dalam (surga yang penuh) kenikmatan,"
+        },
+        {
+          "number": 23,
+          "textArabic": "عَلَى ٱلْأَرَآئِكِ يَنظُرُونَ",
+          "textTransliteration": "",
+          "translationEnglish": "On adorned couches, observing.",
+          "translationIndonesian": "mereka (duduk) di atas dipan-dipan melepas pandangan."
+        },
+        {
+          "number": 24,
+          "textArabic": "تَعْرِفُ فِى وُجُوهِهِمْ نَضْرَةَ ٱلنَّعِيمِ",
+          "textTransliteration": "",
+          "translationEnglish": "You will recognize in their faces the radiance of pleasure.",
+          "translationIndonesian": "Kamu dapat mengetahui dari wajah mereka kesenangan hidup yang penuh kenikmatan."
+        },
+        {
+          "number": 25,
+          "textArabic": "يُسْقَوْنَ مِن رَّحِيقٍ مَّخْتُومٍ",
+          "textTransliteration": "",
+          "translationEnglish": "They will be given to drink [pure] wine [which was] sealed.",
+          "translationIndonesian": "Mereka diberi minum dari khamar murni (tidak memabukkan) yang (tempatnya) masih dilak (disegel),"
+        },
+        {
+          "number": 26,
+          "textArabic": "خِتَـٰمُهُۥ مِسْكٌ ۚ وَفِى ذَٰلِكَ فَلْيَتَنَافَسِ ٱلْمُتَنَـٰفِسُونَ",
+          "textTransliteration": "",
+          "translationEnglish": "The last of it is musk. So for this let the competitors compete.",
+          "translationIndonesian": "laknya dari kasturi. Dan untuk yang demikian itu hendaknya orang berlomba-lomba."
+        },
+        {
+          "number": 27,
+          "textArabic": "وَمِزَاجُهُۥ مِن تَسْنِيمٍ",
+          "textTransliteration": "",
+          "translationEnglish": "And its mixture is of Tasneem,",
+          "translationIndonesian": "Dan campurannya dari tasnīm,"
+        },
+        {
+          "number": 28,
+          "textArabic": "عَيْنًا يَشْرَبُ بِهَا ٱلْمُقَرَّبُونَ",
+          "textTransliteration": "",
+          "translationEnglish": "A spring from which those near [to Allāh] drink.",
+          "translationIndonesian": "(yaitu) mata air yang diminum oleh mereka yang dekat (kepada Allah)."
+        },
+        {
+          "number": 29,
+          "textArabic": "إِنَّ ٱلَّذِينَ أَجْرَمُوا۟ كَانُوا۟ مِنَ ٱلَّذِينَ ءَامَنُوا۟ يَضْحَكُونَ",
+          "textTransliteration": "",
+          "translationEnglish": "Indeed, those who committed crimes used to laugh at those who believed.",
+          "translationIndonesian": "Sesungguhnya orang-orang yang berdosa, adalah mereka yang dahulu menertawakan orang-orang yang beriman."
+        },
+        {
+          "number": 30,
+          "textArabic": "وَإِذَا مَرُّوا۟ بِهِمْ يَتَغَامَزُونَ",
+          "textTransliteration": "",
+          "translationEnglish": "And when they passed by them, they would exchange derisive glances.",
+          "translationIndonesian": "Dan apabila mereka (orang-orang yang beriman) melintas di hadapan mereka, mereka saling mengedip-ngedipkan matanya,"
+        },
+        {
+          "number": 31,
+          "textArabic": "وَإِذَا ٱنقَلَبُوٓا۟ إِلَىٰٓ أَهْلِهِمُ ٱنقَلَبُوا۟ فَكِهِينَ",
+          "textTransliteration": "",
+          "translationEnglish": "And when they returned to their people, they would return jesting.",
+          "translationIndonesian": "dan apabila kembali kepada kaumnya, mereka kembali dengan gembira ria."
+        },
+        {
+          "number": 32,
+          "textArabic": "وَإِذَا رَأَوْهُمْ قَالُوٓا۟ إِنَّ هَـٰٓؤُلَآءِ لَضَآلُّونَ",
+          "textTransliteration": "",
+          "translationEnglish": "And when they saw them, they would say, \"Indeed, those are truly lost.\"",
+          "translationIndonesian": "Dan apabila mereka melihat (orang-orang mukmin), mereka mengatakan, \"Sesungguhnya mereka benar-benar orang-orang sesat,\""
+        },
+        {
+          "number": 33,
+          "textArabic": "وَمَآ أُرْسِلُوا۟ عَلَيْهِمْ حَـٰفِظِينَ",
+          "textTransliteration": "",
+          "translationEnglish": "But they had not been sent as guardians over them.",
+          "translationIndonesian": "padahal (orang-orang yang berdosa itu), mereka tidak diutus sebagai penjaga (orang-orang mukmin)."
+        },
+        {
+          "number": 34,
+          "textArabic": "فَٱلْيَوْمَ ٱلَّذِينَ ءَامَنُوا۟ مِنَ ٱلْكُفَّارِ يَضْحَكُونَ",
+          "textTransliteration": "",
+          "translationEnglish": "So Today those who believed are laughing at the disbelievers,",
+          "translationIndonesian": "Maka pada hari ini, orang-orang yang beriman yang menertawakan orang-orang kafir,"
+        },
+        {
+          "number": 35,
+          "textArabic": "عَلَى ٱلْأَرَآئِكِ يَنظُرُونَ",
+          "textTransliteration": "",
+          "translationEnglish": "On adorned couches, observing.",
+          "translationIndonesian": "mereka (duduk) di atas dipan-dipan melepas pandangan."
+        },
+        {
+          "number": 36,
+          "textArabic": "هَلْ ثُوِّبَ ٱلْكُفَّارُ مَا كَانُوا۟ يَفْعَلُونَ",
+          "textTransliteration": "",
+          "translationEnglish": "Have the disbelievers [not] been rewarded [this Day] for what they used to do?",
+          "translationIndonesian": "Apakah orang-orang kafir itu diberi balasan (hukuman) terhadap apa yang telah mereka perbuat?"
+        }
+      ]
+    },
+    {
+      "number": 84,
+      "nameArabic": "الانشقاق",
+      "nameTransliteration": "Al-Inshiqaq",
+      "nameTranslation": "The Splitting Asunder",
+      "ayahCount": 25,
+      "revelation": "Makkah",
+      "ayahs": [
+        {
+          "number": 1,
+          "textArabic": " إِذَا ٱلسَّمَآءُ ٱنشَقَّتْ",
+          "textTransliteration": "",
+          "translationEnglish": "When the sky has split [open]",
+          "translationIndonesian": "Apabila langit terbelah,"
+        },
+        {
+          "number": 2,
+          "textArabic": "وَأَذِنَتْ لِرَبِّهَا وَحُقَّتْ",
+          "textTransliteration": "",
+          "translationEnglish": "And has listened [i.e., responded] to its Lord and was obligated [to do so]",
+          "translationIndonesian": "dan patuh kepada Tuhannya, dan sudah semestinya patuh,"
+        },
+        {
+          "number": 3,
+          "textArabic": "وَإِذَا ٱلْأَرْضُ مُدَّتْ",
+          "textTransliteration": "",
+          "translationEnglish": "And when the earth has been extended",
+          "translationIndonesian": "dan apabila bumi diratakan,"
+        },
+        {
+          "number": 4,
+          "textArabic": "وَأَلْقَتْ مَا فِيهَا وَتَخَلَّتْ",
+          "textTransliteration": "",
+          "translationEnglish": "And has cast out that within it and relinquished [it].",
+          "translationIndonesian": "dan memuntahkan apa yang ada di dalamnya dan menjadi kosong,"
+        },
+        {
+          "number": 5,
+          "textArabic": "وَأَذِنَتْ لِرَبِّهَا وَحُقَّتْ",
+          "textTransliteration": "",
+          "translationEnglish": "And has listened [i.e., responded] to its Lord and was obligated [to do so] -",
+          "translationIndonesian": "dan patuh kepada Tuhannya, dan sudah semestinya patuh."
+        },
+        {
+          "number": 6,
+          "textArabic": "يَـٰٓأَيُّهَا ٱلْإِنسَـٰنُ إِنَّكَ كَادِحٌ إِلَىٰ رَبِّكَ كَدْحًا فَمُلَـٰقِيهِ",
+          "textTransliteration": "",
+          "translationEnglish": "O mankind, indeed you are laboring toward your Lord with [great] exertion and will meet it.",
+          "translationIndonesian": "Wahai manusia! Sesungguhnya kamu telah bekerja keras menuju Tuhanmu, maka kamu akan menemui-Nya."
+        },
+        {
+          "number": 7,
+          "textArabic": "فَأَمَّا مَنْ أُوتِىَ كِتَـٰبَهُۥ بِيَمِينِهِۦ",
+          "textTransliteration": "",
+          "translationEnglish": "Then as for he who is given his record in his right hand,",
+          "translationIndonesian": "Maka adapun orang yang catatanya diberikan dari sebelah kanannya,"
+        },
+        {
+          "number": 8,
+          "textArabic": "فَسَوْفَ يُحَاسَبُ حِسَابًا يَسِيرًا",
+          "textTransliteration": "",
+          "translationEnglish": "He will be judged with an easy account",
+          "translationIndonesian": "maka dia akan diperiksa dengan pemeriksaan yang mudah,"
+        },
+        {
+          "number": 9,
+          "textArabic": "وَيَنقَلِبُ إِلَىٰٓ أَهْلِهِۦ مَسْرُورًا",
+          "textTransliteration": "",
+          "translationEnglish": "And return to his people in happiness.",
+          "translationIndonesian": "dan dia akan kembali kepada keluarganya (yang sama-sama beriman) dengan gembira."
+        },
+        {
+          "number": 10,
+          "textArabic": "وَأَمَّا مَنْ أُوتِىَ كِتَـٰبَهُۥ وَرَآءَ ظَهْرِهِۦ",
+          "textTransliteration": "",
+          "translationEnglish": "But as for he who is given his record behind his back,",
+          "translationIndonesian": "Dan adapun orang yang catatannya diberikan dari arah belakang,"
+        },
+        {
+          "number": 11,
+          "textArabic": "فَسَوْفَ يَدْعُوا۟ ثُبُورًا",
+          "textTransliteration": "",
+          "translationEnglish": "He will cry out for destruction",
+          "translationIndonesian": "maka dia akan berteriak, \"Celakalah aku!\""
+        },
+        {
+          "number": 12,
+          "textArabic": "وَيَصْلَىٰ سَعِيرًا",
+          "textTransliteration": "",
+          "translationEnglish": "And [enter to] burn in a Blaze.",
+          "translationIndonesian": "Dan dia akan masuk ke dalam api yang menyala-nyala (neraka)."
+        },
+        {
+          "number": 13,
+          "textArabic": "إِنَّهُۥ كَانَ فِىٓ أَهْلِهِۦ مَسْرُورًا",
+          "textTransliteration": "",
+          "translationEnglish": "Indeed, he had [once] been among his people in happiness;",
+          "translationIndonesian": "Sungguh, dia dahulu (di dunia) bergembira di kalangan keluarganya (yang sama-sama kafir)."
+        },
+        {
+          "number": 14,
+          "textArabic": "إِنَّهُۥ ظَنَّ أَن لَّن يَحُورَ",
+          "textTransliteration": "",
+          "translationEnglish": "Indeed, he had thought he would never return [to Allāh].",
+          "translationIndonesian": "Sesungguhnya dia mengira bahwa dia tidak akan kembali (kepada Tuhannya)."
+        },
+        {
+          "number": 15,
+          "textArabic": "بَلَىٰٓ إِنَّ رَبَّهُۥ كَانَ بِهِۦ بَصِيرًا",
+          "textTransliteration": "",
+          "translationEnglish": "But yes! Indeed, his Lord was ever, of him, Seeing.",
+          "translationIndonesian": "Tidak demikian, sesungguhnya Tuhannya selalu melihatnya."
+        },
+        {
+          "number": 16,
+          "textArabic": "فَلَآ أُقْسِمُ بِٱلشَّفَقِ",
+          "textTransliteration": "",
+          "translationEnglish": "So I swear by the twilight glow",
+          "translationIndonesian": "Maka Aku bersumpah demi cahaya merah pada waktu senja,"
+        },
+        {
+          "number": 17,
+          "textArabic": "وَٱلَّيْلِ وَمَا وَسَقَ",
+          "textTransliteration": "",
+          "translationEnglish": "And [by] the night and what it envelops",
+          "translationIndonesian": "demi malam dan apa yang diselubunginya,"
+        },
+        {
+          "number": 18,
+          "textArabic": "وَٱلْقَمَرِ إِذَا ٱتَّسَقَ",
+          "textTransliteration": "",
+          "translationEnglish": "And [by] the moon when it becomes full",
+          "translationIndonesian": "demi bulan apabila jadi purnama,"
+        },
+        {
+          "number": 19,
+          "textArabic": "لَتَرْكَبُنَّ طَبَقًا عَن طَبَقٍ",
+          "textTransliteration": "",
+          "translationEnglish": "[That] you will surely embark upon [i.e., experience] state after state.",
+          "translationIndonesian": "sungguh, akan kamu jalani tingkat demi tingkat (dalam kehidupan)."
+        },
+        {
+          "number": 20,
+          "textArabic": "فَمَا لَهُمْ لَا يُؤْمِنُونَ",
+          "textTransliteration": "",
+          "translationEnglish": "So what is [the matter] with them [that] they do not believe,",
+          "translationIndonesian": "Maka mengapa mereka tidak mau beriman?"
+        },
+        {
+          "number": 21,
+          "textArabic": "وَإِذَا قُرِئَ عَلَيْهِمُ ٱلْقُرْءَانُ لَا يَسْجُدُونَ ۩",
+          "textTransliteration": "",
+          "translationEnglish": "And when the Qur’ān is recited to them, they do not prostrate [to Allāh]?",
+          "translationIndonesian": "Dan apabila Alquran dibacakan kepada mereka, mereka tidak (mau) bersujud,"
+        },
+        {
+          "number": 22,
+          "textArabic": "بَلِ ٱلَّذِينَ كَفَرُوا۟ يُكَذِّبُونَ",
+          "textTransliteration": "",
+          "translationEnglish": "But those who have disbelieved deny,",
+          "translationIndonesian": "bahkan orang-orang kafir itu mendustakan-(nya)."
+        },
+        {
+          "number": 23,
+          "textArabic": "وَٱللَّهُ أَعْلَمُ بِمَا يُوعُونَ",
+          "textTransliteration": "",
+          "translationEnglish": "And Allāh is most knowing of what they keep within themselves.",
+          "translationIndonesian": "Dan Allah lebih mengetahui apa yang mereka sembunyikan (dalam hati mereka)."
+        },
+        {
+          "number": 24,
+          "textArabic": "فَبَشِّرْهُم بِعَذَابٍ أَلِيمٍ",
+          "textTransliteration": "",
+          "translationEnglish": "So give them tidings of a painful punishment,",
+          "translationIndonesian": "Maka sampaikanlah kepada mereka (ancaman) azab yang pedih,"
+        },
+        {
+          "number": 25,
+          "textArabic": "إِلَّا ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ لَهُمْ أَجْرٌ غَيْرُ مَمْنُونٍۭ",
+          "textTransliteration": "",
+          "translationEnglish": "Except for those who believe and do righteous deeds. For them is a reward uninterrupted.",
+          "translationIndonesian": "kecuali orang-orang yang beriman dan mengerjakan kebajikan, mereka akan mendapat pahala yang tidak putus-putusnya."
+        }
+      ]
+    },
+    {
+      "number": 85,
+      "nameArabic": "البروج",
+      "nameTransliteration": "Al-Buruj",
+      "nameTranslation": "The Stars",
+      "ayahCount": 22,
+      "revelation": "Makkah",
+      "ayahs": [
+        {
+          "number": 1,
+          "textArabic": " وَٱلسَّمَآءِ ذَاتِ ٱلْبُرُوجِ",
+          "textTransliteration": "",
+          "translationEnglish": "By the sky containing great stars",
+          "translationIndonesian": "Demi langit yang mempunyai gugusan bintang,"
+        },
+        {
+          "number": 2,
+          "textArabic": "وَٱلْيَوْمِ ٱلْمَوْعُودِ",
+          "textTransliteration": "",
+          "translationEnglish": "And [by] the promised Day",
+          "translationIndonesian": "dan demi hari yang dijanjikan."
+        },
+        {
+          "number": 3,
+          "textArabic": "وَشَاهِدٍ وَمَشْهُودٍ",
+          "textTransliteration": "",
+          "translationEnglish": "And [by] the witness and what is witnessed,",
+          "translationIndonesian": "Demi yang menyaksikan dan yang disaksikan."
+        },
+        {
+          "number": 4,
+          "textArabic": "قُتِلَ أَصْحَـٰبُ ٱلْأُخْدُودِ",
+          "textTransliteration": "",
+          "translationEnglish": "Destroyed [i.e., cursed] were the companions of the trench",
+          "translationIndonesian": "Binasalah orang-orang yang membuat parit (yaitu para pembesar Najran di Yaman),"
+        },
+        {
+          "number": 5,
+          "textArabic": "ٱلنَّارِ ذَاتِ ٱلْوَقُودِ",
+          "textTransliteration": "",
+          "translationEnglish": "[Containing] the fire full of fuel,",
+          "translationIndonesian": "yang berapi (yang mempunyai) kayu bakar,"
+        },
+        {
+          "number": 6,
+          "textArabic": "إِذْ هُمْ عَلَيْهَا قُعُودٌ",
+          "textTransliteration": "",
+          "translationEnglish": "When they were sitting near it.",
+          "translationIndonesian": "ketika mereka duduk di sekitarnya,"
+        },
+        {
+          "number": 7,
+          "textArabic": "وَهُمْ عَلَىٰ مَا يَفْعَلُونَ بِٱلْمُؤْمِنِينَ شُهُودٌ",
+          "textTransliteration": "",
+          "translationEnglish": "And they, to what they were doing against the believers, were witnesses.",
+          "translationIndonesian": "sedang mereka menyaksikan apa yang mereka perbuat terhadap orang-orang mukmin."
+        },
+        {
+          "number": 8,
+          "textArabic": "وَمَا نَقَمُوا۟ مِنْهُمْ إِلَّآ أَن يُؤْمِنُوا۟ بِٱللَّهِ ٱلْعَزِيزِ ٱلْحَمِيدِ",
+          "textTransliteration": "",
+          "translationEnglish": "And they resented them not except because they believed in Allāh, the Exalted in Might, the Praiseworthy,",
+          "translationIndonesian": "Dan mereka menyiksa orang-orang mukmin itu hanya karena (orang-orang mukmin itu) beriman kepada Allah Yang Mahaperkasa, Maha Terpuji,"
+        },
+        {
+          "number": 9,
+          "textArabic": "ٱلَّذِى لَهُۥ مُلْكُ ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ ۚ وَٱللَّهُ عَلَىٰ كُلِّ شَىْءٍ شَهِيدٌ",
+          "textTransliteration": "",
+          "translationEnglish": "To whom belongs the dominion of the heavens and the earth. And Allāh, over all things, is Witness.",
+          "translationIndonesian": "yang memiliki kerajaan langit dan bumi. Dan Allah Maha Menyaksikan segala sesuatu."
+        },
+        {
+          "number": 10,
+          "textArabic": "إِنَّ ٱلَّذِينَ فَتَنُوا۟ ٱلْمُؤْمِنِينَ وَٱلْمُؤْمِنَـٰتِ ثُمَّ لَمْ يَتُوبُوا۟ فَلَهُمْ عَذَابُ جَهَنَّمَ وَلَهُمْ عَذَابُ ٱلْحَرِيقِ",
+          "textTransliteration": "",
+          "translationEnglish": "Indeed, those who have tortured the believing men and believing women and then have not repented will have the punishment of Hell, and they will have the punishment of the Burning Fire.",
+          "translationIndonesian": "Sungguh, orang-orang yang mendatangkan cobaan (bencana, membunuh, menyiksa) kepada orang-orang mukmin laki-laki dan perempuan lalu mereka tidak bertobat, maka mereka akan mendapat azab Jahanam dan mereka akan mendapat azab (neraka) yang membakar."
+        },
+        {
+          "number": 11,
+          "textArabic": "إِنَّ ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ لَهُمْ جَنَّـٰتٌ تَجْرِى مِن تَحْتِهَا ٱلْأَنْهَـٰرُ ۚ ذَٰلِكَ ٱلْفَوْزُ ٱلْكَبِيرُ",
+          "textTransliteration": "",
+          "translationEnglish": "Indeed, those who have believed and done righteous deeds will have gardens beneath which rivers flow. That is the great attainment.",
+          "translationIndonesian": "Sungguh, orang-orang yang beriman dan mengerjakan kebajikan, mereka akan mendapat surga yang mengalir di bawahnya sungai-sungai, itulah kemenangan yang agung."
+        },
+        {
+          "number": 12,
+          "textArabic": "إِنَّ بَطْشَ رَبِّكَ لَشَدِيدٌ",
+          "textTransliteration": "",
+          "translationEnglish": "Indeed, the assault [i.e., vengeance] of your Lord is severe.",
+          "translationIndonesian": "Sungguh, azab Tuhanmu sangat keras."
+        },
+        {
+          "number": 13,
+          "textArabic": "إِنَّهُۥ هُوَ يُبْدِئُ وَيُعِيدُ",
+          "textTransliteration": "",
+          "translationEnglish": "Indeed, it is He who originates [creation] and repeats.",
+          "translationIndonesian": "Sungguh, Dialah yang memulai penciptaan (makhluk) dan yang menghidupkannya (kembali)."
+        },
+        {
+          "number": 14,
+          "textArabic": "وَهُوَ ٱلْغَفُورُ ٱلْوَدُودُ",
+          "textTransliteration": "",
+          "translationEnglish": "And He is the Forgiving, the Affectionate,",
+          "translationIndonesian": "Dan Dialah Yang Maha Pengampun, Maha Pengasih,"
+        },
+        {
+          "number": 15,
+          "textArabic": "ذُو ٱلْعَرْشِ ٱلْمَجِيدُ",
+          "textTransliteration": "",
+          "translationEnglish": "Honorable Owner of the Throne,",
+          "translationIndonesian": "Yang memiliki Arasy, lagi Mahamulia,"
+        },
+        {
+          "number": 16,
+          "textArabic": "فَعَّالٌ لِّمَا يُرِيدُ",
+          "textTransliteration": "",
+          "translationEnglish": "Effecter of what He intends.",
+          "translationIndonesian": "Mahakuasa berbuat apa yang Dia kehendaki."
+        },
+        {
+          "number": 17,
+          "textArabic": "هَلْ أَتَىٰكَ حَدِيثُ ٱلْجُنُودِ",
+          "textTransliteration": "",
+          "translationEnglish": "Has there reached you the story of the soldiers -",
+          "translationIndonesian": "Sudahkah sampai kepadamu berita tentang bala tentara (penentang),"
+        },
+        {
+          "number": 18,
+          "textArabic": "فِرْعَوْنَ وَثَمُودَ",
+          "textTransliteration": "",
+          "translationEnglish": "[Those of] Pharaoh and Thamūd?",
+          "translationIndonesian": "(yaitu) Fir'aun dan Samud?"
+        },
+        {
+          "number": 19,
+          "textArabic": "بَلِ ٱلَّذِينَ كَفَرُوا۟ فِى تَكْذِيبٍ",
+          "textTransliteration": "",
+          "translationEnglish": "But they who disbelieve are in [persistent] denial,",
+          "translationIndonesian": "Memang orang-orang kafir (selalu) mendustakan,"
+        },
+        {
+          "number": 20,
+          "textArabic": "وَٱللَّهُ مِن وَرَآئِهِم مُّحِيطٌۢ",
+          "textTransliteration": "",
+          "translationEnglish": "While Allāh encompasses them from behind.",
+          "translationIndonesian": "padahal Allah mengepung dari belakang mereka (sehingga tidak dapat lolos)."
+        },
+        {
+          "number": 21,
+          "textArabic": "بَلْ هُوَ قُرْءَانٌ مَّجِيدٌ",
+          "textTransliteration": "",
+          "translationEnglish": "But this is an honored Qur’ān",
+          "translationIndonesian": "Bahkan (yang didustakan itu) ialah Alquran yang mulia,"
+        },
+        {
+          "number": 22,
+          "textArabic": "فِى لَوْحٍ مَّحْفُوظٍۭ",
+          "textTransliteration": "",
+          "translationEnglish": "[Inscribed] in a Preserved Slate.",
+          "translationIndonesian": "yang (tersimpan) dalam (tempat) yang terjaga (Lauḥ Maḥfūẓ)."
+        }
+      ]
+    },
+    {
+      "number": 86,
+      "nameArabic": "الطارق",
+      "nameTransliteration": "At-Tariq",
+      "nameTranslation": "The Nightcomer",
+      "ayahCount": 17,
+      "revelation": "Makkah",
+      "ayahs": [
+        {
+          "number": 1,
+          "textArabic": " وَٱلسَّمَآءِ وَٱلطَّارِقِ",
+          "textTransliteration": "",
+          "translationEnglish": "By the sky and the night comer",
+          "translationIndonesian": "Demi langit dan yang datang pada malam hari."
+        },
+        {
+          "number": 2,
+          "textArabic": "وَمَآ أَدْرَىٰكَ مَا ٱلطَّارِقُ",
+          "textTransliteration": "",
+          "translationEnglish": "And what can make you know what is the night comer?",
+          "translationIndonesian": "Dan tahukah kamu apakah yang datang pada malam hari itu?"
+        },
+        {
+          "number": 3,
+          "textArabic": "ٱلنَّجْمُ ٱلثَّاقِبُ",
+          "textTransliteration": "",
+          "translationEnglish": "It is the piercing star",
+          "translationIndonesian": "(Yaitu) bintang yang bersinar tajam,"
+        },
+        {
+          "number": 4,
+          "textArabic": "إِن كُلُّ نَفْسٍ لَّمَّا عَلَيْهَا حَافِظٌ",
+          "textTransliteration": "",
+          "translationEnglish": "There is no soul but that it has over it a protector.",
+          "translationIndonesian": "setiap orang pasti ada penjaganya."
+        },
+        {
+          "number": 5,
+          "textArabic": "فَلْيَنظُرِ ٱلْإِنسَـٰنُ مِمَّ خُلِقَ",
+          "textTransliteration": "",
+          "translationEnglish": "So let man observe from what he was created.",
+          "translationIndonesian": "Maka hendaklah manusia memperhatikan dari apa dia diciptakan."
+        },
+        {
+          "number": 6,
+          "textArabic": "خُلِقَ مِن مَّآءٍ دَافِقٍ",
+          "textTransliteration": "",
+          "translationEnglish": "He was created from a fluid, ejected,",
+          "translationIndonesian": "Dia diciptakan dari air (mani) yang terpancar,"
+        },
+        {
+          "number": 7,
+          "textArabic": "يَخْرُجُ مِنۢ بَيْنِ ٱلصُّلْبِ وَٱلتَّرَآئِبِ",
+          "textTransliteration": "",
+          "translationEnglish": "Emerging from between the backbone and the ribs.",
+          "translationIndonesian": "yang keluar dari antara tulang punggung (sulbi) dan tulang dada."
+        },
+        {
+          "number": 8,
+          "textArabic": "إِنَّهُۥ عَلَىٰ رَجْعِهِۦ لَقَادِرٌ",
+          "textTransliteration": "",
+          "translationEnglish": "Indeed, He [i.e., Allāh], to return him [to life], is Able.",
+          "translationIndonesian": "Sungguh, Allah benar-benar kuasa untuk mengembalikannya (hidup setelah mati)."
+        },
+        {
+          "number": 9,
+          "textArabic": "يَوْمَ تُبْلَى ٱلسَّرَآئِرُ",
+          "textTransliteration": "",
+          "translationEnglish": "The Day when secrets will be put on trial,",
+          "translationIndonesian": "Pada hari ditampakkan segala rahasia,"
+        },
+        {
+          "number": 10,
+          "textArabic": "فَمَا لَهُۥ مِن قُوَّةٍ وَلَا نَاصِرٍ",
+          "textTransliteration": "",
+          "translationEnglish": "Then he [i.e., man] will have no power or any helper.",
+          "translationIndonesian": "maka manusia tidak lagi mempunyai suatu kekuatan dan tidak (pula) ada penolong."
+        },
+        {
+          "number": 11,
+          "textArabic": "وَٱلسَّمَآءِ ذَاتِ ٱلرَّجْعِ",
+          "textTransliteration": "",
+          "translationEnglish": "By the sky which sends back",
+          "translationIndonesian": "Demi langit yang mengandung hujan,"
+        },
+        {
+          "number": 12,
+          "textArabic": "وَٱلْأَرْضِ ذَاتِ ٱلصَّدْعِ",
+          "textTransliteration": "",
+          "translationEnglish": "And [by] the earth which splits,",
+          "translationIndonesian": "dan bumi yang mempunyai tumbuh-tumbuhan,"
+        },
+        {
+          "number": 13,
+          "textArabic": "إِنَّهُۥ لَقَوْلٌ فَصْلٌ",
+          "textTransliteration": "",
+          "translationEnglish": "Indeed, it [i.e., the Qur’ān] is a decisive statement,",
+          "translationIndonesian": "sungguh, (Alquran) itu benar-benar firman pemisah (antara yang hak dan yang batil),"
+        },
+        {
+          "number": 14,
+          "textArabic": "وَمَا هُوَ بِٱلْهَزْلِ",
+          "textTransliteration": "",
+          "translationEnglish": "And it is not amusement.",
+          "translationIndonesian": "dan (Alquran) itu bukanlah senda gurauan."
+        },
+        {
+          "number": 15,
+          "textArabic": "إِنَّهُمْ يَكِيدُونَ كَيْدًا",
+          "textTransliteration": "",
+          "translationEnglish": "Indeed, they are planning a plan,",
+          "translationIndonesian": "Sungguh, mereka (orang kafir) merencanakan tipu daya yang jahat,"
+        },
+        {
+          "number": 16,
+          "textArabic": "وَأَكِيدُ كَيْدًا",
+          "textTransliteration": "",
+          "translationEnglish": "But I am planning a plan.",
+          "translationIndonesian": "dan Aku pun membuat rencana (tipu daya) yang jitu."
+        },
+        {
+          "number": 17,
+          "textArabic": "فَمَهِّلِ ٱلْكَـٰفِرِينَ أَمْهِلْهُمْ رُوَيْدًۢا",
+          "textTransliteration": "",
+          "translationEnglish": "So allow time for the disbelievers. Leave them awhile.",
+          "translationIndonesian": "Karena itu berilah penangguhan kepada orang-orang kafir. Berilah mereka kesempatan untuk sementara waktu."
+        }
+      ]
+    },
+    {
+      "number": 87,
+      "nameArabic": "الأعلى",
+      "nameTransliteration": "Al-A'la",
+      "nameTranslation": "The Most High",
+      "ayahCount": 19,
+      "revelation": "Makkah",
+      "ayahs": [
+        {
+          "number": 1,
+          "textArabic": " سَبِّحِ ٱسْمَ رَبِّكَ ٱلْأَعْلَى",
+          "textTransliteration": "",
+          "translationEnglish": "Exalt the name of your Lord, the Most High,",
+          "translationIndonesian": "Sucikanlah nama Tuhanmu Yang Mahatinggi,"
+        },
+        {
+          "number": 2,
+          "textArabic": "ٱلَّذِى خَلَقَ فَسَوَّىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "Who created and proportioned",
+          "translationIndonesian": "yang menciptakan, lalu menyempurnakan (penciptaan-Nya),"
+        },
+        {
+          "number": 3,
+          "textArabic": "وَٱلَّذِى قَدَّرَ فَهَدَىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "And who destined and [then] guided",
+          "translationIndonesian": "yang menentukan kadar (masing-masing) dan memberi petunjuk,"
+        },
+        {
+          "number": 4,
+          "textArabic": "وَٱلَّذِىٓ أَخْرَجَ ٱلْمَرْعَىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "And who brings out the pasture",
+          "translationIndonesian": "dan Yang menumbuhkan rerumputan,"
+        },
+        {
+          "number": 5,
+          "textArabic": "فَجَعَلَهُۥ غُثَآءً أَحْوَىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "And [then] makes it black stubble.",
+          "translationIndonesian": "lalu dijadikan-Nya (rumput-rumput) itu kering kehitam-hitaman."
+        },
+        {
+          "number": 6,
+          "textArabic": "سَنُقْرِئُكَ فَلَا تَنسَىٰٓ",
+          "textTransliteration": "",
+          "translationEnglish": "We will make you recite, [O Muḥammad], and you will not forget,",
+          "translationIndonesian": "Kami akan membacakan (Alquran) kepadamu (Muhammad) sehingga engkau tidak akan lupa,"
+        },
+        {
+          "number": 7,
+          "textArabic": "إِلَّا مَا شَآءَ ٱللَّهُ ۚ إِنَّهُۥ يَعْلَمُ ٱلْجَهْرَ وَمَا يَخْفَىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "Except what Allāh should will. Indeed, He knows what is declared and what is hidden.",
+          "translationIndonesian": "kecuali jika Allah menghendaki. Sungguh, Dia mengetahui yang terang dan yang tersembunyi."
+        },
+        {
+          "number": 8,
+          "textArabic": "وَنُيَسِّرُكَ لِلْيُسْرَىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "And We will ease you toward ease.",
+          "translationIndonesian": "Dan Kami akan memudahkan bagimu ke jalan kemudahan (mencapai kebahagian dunia dan akhirat),"
+        },
+        {
+          "number": 9,
+          "textArabic": "فَذَكِّرْ إِن نَّفَعَتِ ٱلذِّكْرَىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "So remind, if the reminder should benefit;",
+          "translationIndonesian": "oleh sebab itu berikanlah peringatan, karena peringatan itu bermanfaat,"
+        },
+        {
+          "number": 10,
+          "textArabic": "سَيَذَّكَّرُ مَن يَخْشَىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "He who fears [Allāh] will be reminded.",
+          "translationIndonesian": "orang yang takut (kepada Allah) akan mendapat pelajaran,"
+        },
+        {
+          "number": 11,
+          "textArabic": "وَيَتَجَنَّبُهَا ٱلْأَشْقَى",
+          "textTransliteration": "",
+          "translationEnglish": "But the wretched one will avoid it",
+          "translationIndonesian": "dan orang yang celaka (kafir) akan menjauhinya,"
+        },
+        {
+          "number": 12,
+          "textArabic": "ٱلَّذِى يَصْلَى ٱلنَّارَ ٱلْكُبْرَىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "[He] who will [enter and] burn in the greatest Fire,",
+          "translationIndonesian": "(yaitu) orang yang akan memasuki api yang besar (neraka),"
+        },
+        {
+          "number": 13,
+          "textArabic": "ثُمَّ لَا يَمُوتُ فِيهَا وَلَا يَحْيَىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "Neither dying therein nor living.",
+          "translationIndonesian": "selanjutnya dia di sana tidak mati dan tidak (pula) hidup."
+        },
+        {
+          "number": 14,
+          "textArabic": "قَدْ أَفْلَحَ مَن تَزَكَّىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "He has certainly succeeded who purifies himself",
+          "translationIndonesian": "Sungguh beruntung orang yang menyucikan diri (dengan beriman),"
+        },
+        {
+          "number": 15,
+          "textArabic": "وَذَكَرَ ٱسْمَ رَبِّهِۦ فَصَلَّىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "And mentions the name of his Lord and prays.",
+          "translationIndonesian": "dan mengingat nama Tuhannya, lalu dia salat."
+        },
+        {
+          "number": 16,
+          "textArabic": "بَلْ تُؤْثِرُونَ ٱلْحَيَوٰةَ ٱلدُّنْيَا",
+          "textTransliteration": "",
+          "translationEnglish": "But you prefer the worldly life,",
+          "translationIndonesian": "Sedangkan kamu (orang-orang kafir) memilih kehidupan dunia,"
+        },
+        {
+          "number": 17,
+          "textArabic": "وَٱلْـَٔاخِرَةُ خَيْرٌ وَأَبْقَىٰٓ",
+          "textTransliteration": "",
+          "translationEnglish": "While the Hereafter is better and more enduring.",
+          "translationIndonesian": "padahal kehidupan akhirat itu lebih baik dan lebih kekal."
+        },
+        {
+          "number": 18,
+          "textArabic": "إِنَّ هَـٰذَا لَفِى ٱلصُّحُفِ ٱلْأُولَىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "Indeed, this is in the former scriptures,",
+          "translationIndonesian": "Sesungguhnya ini terdapat dalam kitab-kitab yang dahulu,"
+        },
+        {
+          "number": 19,
+          "textArabic": "صُحُفِ إِبْرَٰهِيمَ وَمُوسَىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "The scriptures of Abraham and Moses.",
+          "translationIndonesian": "(yaitu) kitab-kitab Ibrahim dan Musa."
+        }
+      ]
+    },
+    {
+      "number": 88,
+      "nameArabic": "الغاشية",
+      "nameTransliteration": "Al-Ghashiyah",
+      "nameTranslation": "The Overwhelming",
+      "ayahCount": 26,
+      "revelation": "Makkah",
+      "ayahs": [
+        {
+          "number": 1,
+          "textArabic": " هَلْ أَتَىٰكَ حَدِيثُ ٱلْغَـٰشِيَةِ",
+          "textTransliteration": "",
+          "translationEnglish": "Has there reached you the report of the Overwhelming [event]?",
+          "translationIndonesian": "Sudahkah sampai kepadamu berita tentang (hari Kiamat)?"
+        },
+        {
+          "number": 2,
+          "textArabic": "وُجُوهٌ يَوْمَئِذٍ خَـٰشِعَةٌ",
+          "textTransliteration": "",
+          "translationEnglish": "[Some] faces, that Day, will be humbled,",
+          "translationIndonesian": "Pada hari itu banyak wajah yang tertunduk hina,"
+        },
+        {
+          "number": 3,
+          "textArabic": "عَامِلَةٌ نَّاصِبَةٌ",
+          "textTransliteration": "",
+          "translationEnglish": "Working [hard] and exhausted.",
+          "translationIndonesian": "(karena) bekerja keras lagi kepayahan,"
+        },
+        {
+          "number": 4,
+          "textArabic": "تَصْلَىٰ نَارًا حَامِيَةً",
+          "textTransliteration": "",
+          "translationEnglish": "They will [enter to] burn in an intensely hot Fire.",
+          "translationIndonesian": "mereka memasuki api yang sangat panas (neraka),"
+        },
+        {
+          "number": 5,
+          "textArabic": "تُسْقَىٰ مِنْ عَيْنٍ ءَانِيَةٍ",
+          "textTransliteration": "",
+          "translationEnglish": "They will be given drink from a boiling spring.",
+          "translationIndonesian": "diberi minum dari sumber mata air yang sangat panas."
+        },
+        {
+          "number": 6,
+          "textArabic": "لَّيْسَ لَهُمْ طَعَامٌ إِلَّا مِن ضَرِيعٍ",
+          "textTransliteration": "",
+          "translationEnglish": "For them there will be no food except from a poisonous, thorny plant",
+          "translationIndonesian": "Tidak ada makanan bagi mereka selain dari pohon yang berduri,"
+        },
+        {
+          "number": 7,
+          "textArabic": "لَّا يُسْمِنُ وَلَا يُغْنِى مِن جُوعٍ",
+          "textTransliteration": "",
+          "translationEnglish": "Which neither nourishes nor avails against hunger.",
+          "translationIndonesian": "yang tidak menggemukkan dan tidak menghilangkan lapar."
+        },
+        {
+          "number": 8,
+          "textArabic": "وُجُوهٌ يَوْمَئِذٍ نَّاعِمَةٌ",
+          "textTransliteration": "",
+          "translationEnglish": "[Other] faces, that Day, will show pleasure.",
+          "translationIndonesian": "Pada hari itu banyak (pula) wajah yang berseri-seri,"
+        },
+        {
+          "number": 9,
+          "textArabic": "لِّسَعْيِهَا رَاضِيَةٌ",
+          "textTransliteration": "",
+          "translationEnglish": "With their effort [they are] satisfied",
+          "translationIndonesian": "merasa senang karena usahanya (sendiri),"
+        },
+        {
+          "number": 10,
+          "textArabic": "فِى جَنَّةٍ عَالِيَةٍ",
+          "textTransliteration": "",
+          "translationEnglish": "In an elevated garden,",
+          "translationIndonesian": "(mereka) dalam surga yang tinggi,"
+        },
+        {
+          "number": 11,
+          "textArabic": "لَّا تَسْمَعُ فِيهَا لَـٰغِيَةً",
+          "textTransliteration": "",
+          "translationEnglish": "Wherein they will hear no unsuitable speech.",
+          "translationIndonesian": "di sana (kamu) tidak mendengar perkataan yang tidak berguna."
+        },
+        {
+          "number": 12,
+          "textArabic": "فِيهَا عَيْنٌ جَارِيَةٌ",
+          "textTransliteration": "",
+          "translationEnglish": "Within it is a flowing spring.",
+          "translationIndonesian": "Di sana ada mata air yang mengalir."
+        },
+        {
+          "number": 13,
+          "textArabic": "فِيهَا سُرُرٌ مَّرْفُوعَةٌ",
+          "textTransliteration": "",
+          "translationEnglish": "Within it are couches raised high",
+          "translationIndonesian": "Di sana ada dipan-dipan yang ditinggikan,"
+        },
+        {
+          "number": 14,
+          "textArabic": "وَأَكْوَابٌ مَّوْضُوعَةٌ",
+          "textTransliteration": "",
+          "translationEnglish": "And cups put in place",
+          "translationIndonesian": "dan gelas-gelas yang tersedia (di dekatnya),"
+        },
+        {
+          "number": 15,
+          "textArabic": "وَنَمَارِقُ مَصْفُوفَةٌ",
+          "textTransliteration": "",
+          "translationEnglish": "And cushions lined up",
+          "translationIndonesian": "dan bantal-bantal sandaran yang tersusun,"
+        },
+        {
+          "number": 16,
+          "textArabic": "وَزَرَابِىُّ مَبْثُوثَةٌ",
+          "textTransliteration": "",
+          "translationEnglish": "And carpets spread around.",
+          "translationIndonesian": "dan permadani-permadani yang terhampar."
+        },
+        {
+          "number": 17,
+          "textArabic": "أَفَلَا يَنظُرُونَ إِلَى ٱلْإِبِلِ كَيْفَ خُلِقَتْ",
+          "textTransliteration": "",
+          "translationEnglish": "Then do they not look at the camels - how they are created?",
+          "translationIndonesian": "Maka tidakkah mereka memperhatikan unta, bagaimana diciptakan?"
+        },
+        {
+          "number": 18,
+          "textArabic": "وَإِلَى ٱلسَّمَآءِ كَيْفَ رُفِعَتْ",
+          "textTransliteration": "",
+          "translationEnglish": "And at the sky - how it is raised?",
+          "translationIndonesian": "Dan langit, bagaimana ditinggikan?"
+        },
+        {
+          "number": 19,
+          "textArabic": "وَإِلَى ٱلْجِبَالِ كَيْفَ نُصِبَتْ",
+          "textTransliteration": "",
+          "translationEnglish": "And at the mountains - how they are erected?",
+          "translationIndonesian": "Dan gunung-gunung bagaimana ditegakkan?"
+        },
+        {
+          "number": 20,
+          "textArabic": "وَإِلَى ٱلْأَرْضِ كَيْفَ سُطِحَتْ",
+          "textTransliteration": "",
+          "translationEnglish": "And at the earth - how it is spread out?",
+          "translationIndonesian": "Dan bumi bagaimana dihamparkan?"
+        },
+        {
+          "number": 21,
+          "textArabic": "فَذَكِّرْ إِنَّمَآ أَنتَ مُذَكِّرٌ",
+          "textTransliteration": "",
+          "translationEnglish": "So remind, [O Muḥammad]; you are only a reminder.",
+          "translationIndonesian": "Maka berilah peringatan, karena sesungguhnya engkau (Muhammad) hanyalah pemberi peringatan."
+        },
+        {
+          "number": 22,
+          "textArabic": "لَّسْتَ عَلَيْهِم بِمُصَيْطِرٍ",
+          "textTransliteration": "",
+          "translationEnglish": "You are not over them a controller.",
+          "translationIndonesian": "Engkau bukanlah orang yang berkuasa atas mereka,"
+        },
+        {
+          "number": 23,
+          "textArabic": "إِلَّا مَن تَوَلَّىٰ وَكَفَرَ",
+          "textTransliteration": "",
+          "translationEnglish": "However, he who turns away and disbelieves",
+          "translationIndonesian": "kecuali (jika ada) orang yang berpaling dan kafir,"
+        },
+        {
+          "number": 24,
+          "textArabic": "فَيُعَذِّبُهُ ٱللَّهُ ٱلْعَذَابَ ٱلْأَكْبَرَ",
+          "textTransliteration": "",
+          "translationEnglish": "Then Allāh will punish him with the greatest punishment.",
+          "translationIndonesian": "maka Allah akan mengazabnya dengan azab yang besar."
+        },
+        {
+          "number": 25,
+          "textArabic": "إِنَّ إِلَيْنَآ إِيَابَهُمْ",
+          "textTransliteration": "",
+          "translationEnglish": "Indeed, to Us is their return.",
+          "translationIndonesian": "Sungguh, kepada Kami lah mereka kembali,"
+        },
+        {
+          "number": 26,
+          "textArabic": "ثُمَّ إِنَّ عَلَيْنَا حِسَابَهُم",
+          "textTransliteration": "",
+          "translationEnglish": "Then indeed, upon Us is their account.",
+          "translationIndonesian": "kemudian sesungguhnya (kewajiban) Kami lah membuat perhitungan atas mereka."
+        }
+      ]
+    },
+    {
+      "number": 89,
+      "nameArabic": "الفجر",
+      "nameTransliteration": "Al-Fajr",
+      "nameTranslation": "The Dawn",
+      "ayahCount": 30,
+      "revelation": "Makkah",
+      "ayahs": [
+        {
+          "number": 1,
+          "textArabic": " وَٱلْفَجْرِ",
+          "textTransliteration": "",
+          "translationEnglish": "By the dawn",
+          "translationIndonesian": "Demi fajar,"
+        },
+        {
+          "number": 2,
+          "textArabic": "وَلَيَالٍ عَشْرٍ",
+          "textTransliteration": "",
+          "translationEnglish": "And [by] ten nights",
+          "translationIndonesian": "demi malam yang sepuluh,"
+        },
+        {
+          "number": 3,
+          "textArabic": "وَٱلشَّفْعِ وَٱلْوَتْرِ",
+          "textTransliteration": "",
+          "translationEnglish": "And [by] the even [number] and the odd",
+          "translationIndonesian": "demi yang genap dan yang ganjil,"
+        },
+        {
+          "number": 4,
+          "textArabic": "وَٱلَّيْلِ إِذَا يَسْرِ",
+          "textTransliteration": "",
+          "translationEnglish": "And [by] the night when it passes,",
+          "translationIndonesian": "demi malam apabila berlalu."
+        },
+        {
+          "number": 5,
+          "textArabic": "هَلْ فِى ذَٰلِكَ قَسَمٌ لِّذِى حِجْرٍ",
+          "textTransliteration": "",
+          "translationEnglish": "Is there [not] in [all] that an oath [sufficient] for one of perception?",
+          "translationIndonesian": "Adakah pada yang demikian itu terdapat sumpah (yang dapat diterima) bagi orang-orang yang berakal?"
+        },
+        {
+          "number": 6,
+          "textArabic": "أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِعَادٍ",
+          "textTransliteration": "",
+          "translationEnglish": "Have you not considered how your Lord dealt with ʿAad -",
+          "translationIndonesian": "Tidakkah engkau (Muhammad) memperhatikan bagaimana Tuhanmu berbuat terhadap (kaum) 'Ād?"
+        },
+        {
+          "number": 7,
+          "textArabic": "إِرَمَ ذَاتِ ٱلْعِمَادِ",
+          "textTransliteration": "",
+          "translationEnglish": "[With] Iram - who had lofty pillars,",
+          "translationIndonesian": "(yaitu) penduduk Iram (ibukota kaum 'Ād) yang mempunyai bangunan-bangunan yang tinggi,"
+        },
+        {
+          "number": 8,
+          "textArabic": "ٱلَّتِى لَمْ يُخْلَقْ مِثْلُهَا فِى ٱلْبِلَـٰدِ",
+          "textTransliteration": "",
+          "translationEnglish": "The likes of whom had never been created in the land?",
+          "translationIndonesian": "yang belum pernah dibangun (suatu kota) seperti itu, di negeri-negeri lain,"
+        },
+        {
+          "number": 9,
+          "textArabic": "وَثَمُودَ ٱلَّذِينَ جَابُوا۟ ٱلصَّخْرَ بِٱلْوَادِ",
+          "textTransliteration": "",
+          "translationEnglish": "And [with] Thamūd, who carved out the rocks in the valley?",
+          "translationIndonesian": "dan (terhadap) kaum Samud yang memotong batu-batu besar di lembah,"
+        },
+        {
+          "number": 10,
+          "textArabic": "وَفِرْعَوْنَ ذِى ٱلْأَوْتَادِ",
+          "textTransliteration": "",
+          "translationEnglish": "And [with] Pharaoh, owner of the stakes?",
+          "translationIndonesian": "dan (terhadap) Fir'aun yang mempunyai pasak-pasak (bangunan yang besar),"
+        },
+        {
+          "number": 11,
+          "textArabic": "ٱلَّذِينَ طَغَوْا۟ فِى ٱلْبِلَـٰدِ",
+          "textTransliteration": "",
+          "translationEnglish": "[All of] whom oppressed within the lands",
+          "translationIndonesian": "yang berbuat sewenang-wenang dalam negeri,"
+        },
+        {
+          "number": 12,
+          "textArabic": "فَأَكْثَرُوا۟ فِيهَا ٱلْفَسَادَ",
+          "textTransliteration": "",
+          "translationEnglish": "And increased therein the corruption.",
+          "translationIndonesian": "lalu mereka banyak berbuat kerusakan dalam negeri itu,"
+        },
+        {
+          "number": 13,
+          "textArabic": "فَصَبَّ عَلَيْهِمْ رَبُّكَ سَوْطَ عَذَابٍ",
+          "textTransliteration": "",
+          "translationEnglish": "So your Lord poured upon them a scourge of punishment.",
+          "translationIndonesian": "karena itu Tuhanmu menimpakan cemeti azab kepada mereka,"
+        },
+        {
+          "number": 14,
+          "textArabic": "إِنَّ رَبَّكَ لَبِٱلْمِرْصَادِ",
+          "textTransliteration": "",
+          "translationEnglish": "Indeed, your Lord is in observation.",
+          "translationIndonesian": "sungguh, Tuhanmu benar-benar mengawasi."
+        },
+        {
+          "number": 15,
+          "textArabic": "فَأَمَّا ٱلْإِنسَـٰنُ إِذَا مَا ٱبْتَلَىٰهُ رَبُّهُۥ فَأَكْرَمَهُۥ وَنَعَّمَهُۥ فَيَقُولُ رَبِّىٓ أَكْرَمَنِ",
+          "textTransliteration": "",
+          "translationEnglish": "And as for man, when his Lord tries him and [thus] is generous to him and favors him, he says, \"My Lord has honored me.\"",
+          "translationIndonesian": "Adapun manusia, apabila Tuhan mengujinya lalu memuliakannya dan memberinya kesenangan, maka dia berkata, \"Tuhanku telah memuliakanku.\""
+        },
+        {
+          "number": 16,
+          "textArabic": "وَأَمَّآ إِذَا مَا ٱبْتَلَىٰهُ فَقَدَرَ عَلَيْهِ رِزْقَهُۥ فَيَقُولُ رَبِّىٓ أَهَـٰنَنِ",
+          "textTransliteration": "",
+          "translationEnglish": "But when He tries him and restricts his provision, he says, \"My Lord has humiliated me.\"",
+          "translationIndonesian": "Namun apabila Tuhan mengujinya lalu membatasi rezekinya, maka dia berkata, \"Tuhanku telah menghinaku.\""
+        },
+        {
+          "number": 17,
+          "textArabic": "كَلَّا ۖ بَل لَّا تُكْرِمُونَ ٱلْيَتِيمَ",
+          "textTransliteration": "",
+          "translationEnglish": "No! But you do not honor the orphan",
+          "translationIndonesian": "Sekali-kali tidak! Bahkan kamu tidak memuliakan anak yatim,"
+        },
+        {
+          "number": 18,
+          "textArabic": "وَلَا تَحَـٰٓضُّونَ عَلَىٰ طَعَامِ ٱلْمِسْكِينِ",
+          "textTransliteration": "",
+          "translationEnglish": "And you do not encourage one another to feed the poor.",
+          "translationIndonesian": "dan kamu tidak saling mengajak memberi makan orang miskin,"
+        },
+        {
+          "number": 19,
+          "textArabic": "وَتَأْكُلُونَ ٱلتُّرَاثَ أَكْلًا لَّمًّا",
+          "textTransliteration": "",
+          "translationEnglish": "And you consume inheritance, devouring [it] altogether,",
+          "translationIndonesian": "sedangkan kamu memakan harta warisan dengan cara mencampurbaurkan (yang halal dan yang haram),"
+        },
+        {
+          "number": 20,
+          "textArabic": "وَتُحِبُّونَ ٱلْمَالَ حُبًّا جَمًّا",
+          "textTransliteration": "",
+          "translationEnglish": "And you love wealth with immense love.",
+          "translationIndonesian": "dan kamu mencintai harta dengan kecintaan yang berlebihan."
+        },
+        {
+          "number": 21,
+          "textArabic": "كَلَّآ إِذَا دُكَّتِ ٱلْأَرْضُ دَكًّا دَكًّا",
+          "textTransliteration": "",
+          "translationEnglish": "No! When the earth has been leveled - pounded and crushed",
+          "translationIndonesian": "Sekali-kali tidak! Apabila bumi diguncangkan berturut-turut (berbenturan),"
+        },
+        {
+          "number": 22,
+          "textArabic": "وَجَآءَ رَبُّكَ وَٱلْمَلَكُ صَفًّا صَفًّا",
+          "textTransliteration": "",
+          "translationEnglish": "And your Lord has come and the angels, rank upon rank,",
+          "translationIndonesian": "dan datanglah Tuhanmu; dan malaikat berbaris-baris,"
+        },
+        {
+          "number": 23,
+          "textArabic": "وَجِا۟ىٓءَ يَوْمَئِذٍۭ بِجَهَنَّمَ ۚ يَوْمَئِذٍ يَتَذَكَّرُ ٱلْإِنسَـٰنُ وَأَنَّىٰ لَهُ ٱلذِّكْرَىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "And brought [within view], that Day, is Hell - that Day, man will remember, but how [i.e., what good] to him will be the remembrance?",
+          "translationIndonesian": "dan pada hari itu diperlihatkan neraka Jahanam; pada hari itu sadarlah manusia, tetapi tidak berguna lagi baginya kesadaran itu."
+        },
+        {
+          "number": 24,
+          "textArabic": "يَقُولُ يَـٰلَيْتَنِى قَدَّمْتُ لِحَيَاتِى",
+          "textTransliteration": "",
+          "translationEnglish": "He will say, \"Oh, I wish I had sent ahead [some good] for my life.\"",
+          "translationIndonesian": "Dia berkata, \"Alangkah baiknya sekiranya dahulu aku mengerjakan (kebajikan) untuk hidupku ini.\""
+        },
+        {
+          "number": 25,
+          "textArabic": "فَيَوْمَئِذٍ لَّا يُعَذِّبُ عَذَابَهُۥٓ أَحَدٌ",
+          "textTransliteration": "",
+          "translationEnglish": "So on that Day, none will punish [as severely] as His punishment,",
+          "translationIndonesian": "Maka pada hari itu tidak ada seorang pun yang mengazab seperti azab-Nya (yang adil),"
+        },
+        {
+          "number": 26,
+          "textArabic": "وَلَا يُوثِقُ وَثَاقَهُۥٓ أَحَدٌ",
+          "textTransliteration": "",
+          "translationEnglish": "And none will bind [as severely] as His binding [of the evildoers].",
+          "translationIndonesian": "dan tidak ada seorang pun yang mengikat seperti ikatan-Nya."
+        },
+        {
+          "number": 27,
+          "textArabic": "يَـٰٓأَيَّتُهَا ٱلنَّفْسُ ٱلْمُطْمَئِنَّةُ",
+          "textTransliteration": "",
+          "translationEnglish": "[To the righteous it will be said], \"O reassured soul,",
+          "translationIndonesian": "Wahai jiwa yang tenang!"
+        },
+        {
+          "number": 28,
+          "textArabic": "ٱرْجِعِىٓ إِلَىٰ رَبِّكِ رَاضِيَةً مَّرْضِيَّةً",
+          "textTransliteration": "",
+          "translationEnglish": "Return to your Lord, well-pleased and pleasing [to Him],",
+          "translationIndonesian": "Kembalilah kepada Tuhanmu dengan hati yang rida dan diridai-Nya."
+        },
+        {
+          "number": 29,
+          "textArabic": "فَٱدْخُلِى فِى عِبَـٰدِى",
+          "textTransliteration": "",
+          "translationEnglish": "And enter among My [righteous] servants",
+          "translationIndonesian": "Maka masuklah ke dalam golongan hamba-hamba-Ku,"
+        },
+        {
+          "number": 30,
+          "textArabic": "وَٱدْخُلِى جَنَّتِى",
+          "textTransliteration": "",
+          "translationEnglish": "And enter My Paradise.\"",
+          "translationIndonesian": "dan masuklah ke dalam surga-Ku."
+        }
+      ]
+    },
+    {
+      "number": 90,
+      "nameArabic": "البلد",
+      "nameTransliteration": "Al-Balad",
+      "nameTranslation": "The City",
+      "ayahCount": 20,
+      "revelation": "Makkah",
+      "ayahs": [
+        {
+          "number": 1,
+          "textArabic": " لَآ أُقْسِمُ بِهَـٰذَا ٱلْبَلَدِ",
+          "textTransliteration": "",
+          "translationEnglish": "I swear by this city [i.e., Makkah]",
+          "translationIndonesian": "Aku bersumpah dengan negeri ini (Mekkah),"
+        },
+        {
+          "number": 2,
+          "textArabic": "وَأَنتَ حِلٌّۢ بِهَـٰذَا ٱلْبَلَدِ",
+          "textTransliteration": "",
+          "translationEnglish": "And you, [O Muḥammad], are free of restriction in this city",
+          "translationIndonesian": "dan engkau (Muhammad), bertempat di negeri (Mekkah) ini,"
+        },
+        {
+          "number": 3,
+          "textArabic": "وَوَالِدٍ وَمَا وَلَدَ",
+          "textTransliteration": "",
+          "translationEnglish": "And [by] the father and that which was born [of him],",
+          "translationIndonesian": "dan demi (pertalian) bapak dan anaknya."
+        },
+        {
+          "number": 4,
+          "textArabic": "لَقَدْ خَلَقْنَا ٱلْإِنسَـٰنَ فِى كَبَدٍ",
+          "textTransliteration": "",
+          "translationEnglish": "We have certainly created man into hardship.",
+          "translationIndonesian": "Sungguh, Kami telah menciptakan manusia berada dalam susah payah."
+        },
+        {
+          "number": 5,
+          "textArabic": "أَيَحْسَبُ أَن لَّن يَقْدِرَ عَلَيْهِ أَحَدٌ",
+          "textTransliteration": "",
+          "translationEnglish": "Does he think that never will anyone overcome him?",
+          "translationIndonesian": "Apakah dia (manusia) itu mengira bahwa tidak ada sesuatu pun yang berkuasa atasnya?"
+        },
+        {
+          "number": 6,
+          "textArabic": "يَقُولُ أَهْلَكْتُ مَالًا لُّبَدًا",
+          "textTransliteration": "",
+          "translationEnglish": "He says, \"I have spent wealth in abundance.\"",
+          "translationIndonesian": "Dia mengatakan, \"Aku telah menghabiskan harta yang banyak.\""
+        },
+        {
+          "number": 7,
+          "textArabic": "أَيَحْسَبُ أَن لَّمْ يَرَهُۥٓ أَحَدٌ",
+          "textTransliteration": "",
+          "translationEnglish": "Does he think that no one has seen him?",
+          "translationIndonesian": "Apakah dia mengira bahwa tidak ada sesuatu pun yang melihatnya?"
+        },
+        {
+          "number": 8,
+          "textArabic": "أَلَمْ نَجْعَل لَّهُۥ عَيْنَيْنِ",
+          "textTransliteration": "",
+          "translationEnglish": "Have We not made for him two eyes?",
+          "translationIndonesian": "Bukankah Kami telah menjadikan untuknya sepasang mata,"
+        },
+        {
+          "number": 9,
+          "textArabic": "وَلِسَانًا وَشَفَتَيْنِ",
+          "textTransliteration": "",
+          "translationEnglish": "And a tongue and two lips?",
+          "translationIndonesian": "dan lidah dan sepasang bibir?"
+        },
+        {
+          "number": 10,
+          "textArabic": "وَهَدَيْنَـٰهُ ٱلنَّجْدَيْنِ",
+          "textTransliteration": "",
+          "translationEnglish": "And have shown him the two ways?",
+          "translationIndonesian": "Dan Kami telah menunjukkan kepadanya dua jalan (kebajikkan dan kejahatan)."
+        },
+        {
+          "number": 11,
+          "textArabic": "فَلَا ٱقْتَحَمَ ٱلْعَقَبَةَ",
+          "textTransliteration": "",
+          "translationEnglish": "But he has not broken through the difficult pass.",
+          "translationIndonesian": "Tetapi dia tidak menempuh jalan yang mendaki dan sukar?"
+        },
+        {
+          "number": 12,
+          "textArabic": "وَمَآ أَدْرَىٰكَ مَا ٱلْعَقَبَةُ",
+          "textTransliteration": "",
+          "translationEnglish": "And what can make you know what is [breaking through] the difficult pass?",
+          "translationIndonesian": "Dan tahukah kamu apakah jalan yang mendaki dan sukar itu?"
+        },
+        {
+          "number": 13,
+          "textArabic": "فَكُّ رَقَبَةٍ",
+          "textTransliteration": "",
+          "translationEnglish": "It is the freeing of a slave",
+          "translationIndonesian": "(Yaitu) membebaskan budak (hamba sahaya),"
+        },
+        {
+          "number": 14,
+          "textArabic": "أَوْ إِطْعَـٰمٌ فِى يَوْمٍ ذِى مَسْغَبَةٍ",
+          "textTransliteration": "",
+          "translationEnglish": "Or feeding on a day of severe hunger",
+          "translationIndonesian": "atau memberi makan pada hari terjadi kelaparan,"
+        },
+        {
+          "number": 15,
+          "textArabic": "يَتِيمًا ذَا مَقْرَبَةٍ",
+          "textTransliteration": "",
+          "translationEnglish": "An orphan of near relationship",
+          "translationIndonesian": "(kepada) anak yatim yang ada hubungan kerabat,"
+        },
+        {
+          "number": 16,
+          "textArabic": "أَوْ مِسْكِينًا ذَا مَتْرَبَةٍ",
+          "textTransliteration": "",
+          "translationEnglish": "Or a needy person in misery",
+          "translationIndonesian": "atau orang miskin yang sangat fakir."
+        },
+        {
+          "number": 17,
+          "textArabic": "ثُمَّ كَانَ مِنَ ٱلَّذِينَ ءَامَنُوا۟ وَتَوَاصَوْا۟ بِٱلصَّبْرِ وَتَوَاصَوْا۟ بِٱلْمَرْحَمَةِ",
+          "textTransliteration": "",
+          "translationEnglish": "And then being among those who believed and advised one another to patience and advised one another to compassion.",
+          "translationIndonesian": "Kemudian dia termasuk orang-orang yang beriman, dan saling berpesan untuk bersabar dan saling berpesan untuk berkasih sayang."
+        },
+        {
+          "number": 18,
+          "textArabic": "أُو۟لَـٰٓئِكَ أَصْحَـٰبُ ٱلْمَيْمَنَةِ",
+          "textTransliteration": "",
+          "translationEnglish": "Those are the companions of the right.",
+          "translationIndonesian": "Mereka (orang-orang yang beriman dan saling berpesan itu) adalah golongan kanan."
+        },
+        {
+          "number": 19,
+          "textArabic": "وَٱلَّذِينَ كَفَرُوا۟ بِـَٔايَـٰتِنَا هُمْ أَصْحَـٰبُ ٱلْمَشْـَٔمَةِ",
+          "textTransliteration": "",
+          "translationEnglish": "But they who disbelieved in Our signs - those are the companions of the left.",
+          "translationIndonesian": "Dan orang-orang yang kafir kepada ayat-ayat Kami, mereka itu adalah golongan kiri."
+        },
+        {
+          "number": 20,
+          "textArabic": "عَلَيْهِمْ نَارٌ مُّؤْصَدَةٌۢ",
+          "textTransliteration": "",
+          "translationEnglish": "Over them will be fire closed in.",
+          "translationIndonesian": "Mereka berada dalam neraka yang ditutup rapat."
+        }
+      ]
+    },
+    {
+      "number": 91,
+      "nameArabic": "الشمس",
+      "nameTransliteration": "Ash-Shams",
+      "nameTranslation": "The Sun",
+      "ayahCount": 15,
+      "revelation": "Makkah",
+      "ayahs": [
+        {
+          "number": 1,
+          "textArabic": " وَٱلشَّمْسِ وَضُحَىٰهَا",
+          "textTransliteration": "",
+          "translationEnglish": "By the sun and its brightness",
+          "translationIndonesian": "Demi matahari dan sinarnya pada pagi hari,"
+        },
+        {
+          "number": 2,
+          "textArabic": "وَٱلْقَمَرِ إِذَا تَلَىٰهَا",
+          "textTransliteration": "",
+          "translationEnglish": "And [by] the moon when it follows it",
+          "translationIndonesian": "demi bulan apabila mengiringinya,"
+        },
+        {
+          "number": 3,
+          "textArabic": "وَٱلنَّهَارِ إِذَا جَلَّىٰهَا",
+          "textTransliteration": "",
+          "translationEnglish": "And [by] the day when it displays it",
+          "translationIndonesian": "demi siang apabila menampakkannya,"
+        },
+        {
+          "number": 4,
+          "textArabic": "وَٱلَّيْلِ إِذَا يَغْشَىٰهَا",
+          "textTransliteration": "",
+          "translationEnglish": "And [by] the night when it covers [i.e., conceals] it",
+          "translationIndonesian": "demi malam apabila menutupinya (gelap gulita),"
+        },
+        {
+          "number": 5,
+          "textArabic": "وَٱلسَّمَآءِ وَمَا بَنَىٰهَا",
+          "textTransliteration": "",
+          "translationEnglish": "And [by] the sky and He who constructed it",
+          "translationIndonesian": "demi langit serta perancangannya (yang menakjubkan),"
+        },
+        {
+          "number": 6,
+          "textArabic": "وَٱلْأَرْضِ وَمَا طَحَىٰهَا",
+          "textTransliteration": "",
+          "translationEnglish": "And [by] the earth and He who spread it",
+          "translationIndonesian": "demi bumi serta penghamparannya,"
+        },
+        {
+          "number": 7,
+          "textArabic": "وَنَفْسٍ وَمَا سَوَّىٰهَا",
+          "textTransliteration": "",
+          "translationEnglish": "And [by] the soul and He who proportioned it",
+          "translationIndonesian": "demi jiwa serta penyempurnaan (ciptaan)nya,"
+        },
+        {
+          "number": 8,
+          "textArabic": "فَأَلْهَمَهَا فُجُورَهَا وَتَقْوَىٰهَا",
+          "textTransliteration": "",
+          "translationEnglish": "And inspired it [with discernment of] its wickedness and its righteousness,",
+          "translationIndonesian": "maka Dia mengilhamkan kepadanya (jalan) kejahatan dan ketakwaannya,"
+        },
+        {
+          "number": 9,
+          "textArabic": "قَدْ أَفْلَحَ مَن زَكَّىٰهَا",
+          "textTransliteration": "",
+          "translationEnglish": "He has succeeded who purifies it,",
+          "translationIndonesian": "sungguh beruntung orang yang menyucikannya (jiwa itu),"
+        },
+        {
+          "number": 10,
+          "textArabic": "وَقَدْ خَابَ مَن دَسَّىٰهَا",
+          "textTransliteration": "",
+          "translationEnglish": "And he has failed who instills it [with corruption].",
+          "translationIndonesian": "dan sungguh rugi orang yang mengotorinya."
+        },
+        {
+          "number": 11,
+          "textArabic": "كَذَّبَتْ ثَمُودُ بِطَغْوَىٰهَآ",
+          "textTransliteration": "",
+          "translationEnglish": "Thamūd denied [their prophet] by reason of their transgression,",
+          "translationIndonesian": "(Kaum) Samud telah mendustakan (rasulnya) karena mereka melampaui batas (zalim),"
+        },
+        {
+          "number": 12,
+          "textArabic": "إِذِ ٱنۢبَعَثَ أَشْقَىٰهَا",
+          "textTransliteration": "",
+          "translationEnglish": "When the most wretched of them was sent forth.",
+          "translationIndonesian": "ketika bangkit orang yang paling celaka di antara mereka,"
+        },
+        {
+          "number": 13,
+          "textArabic": "فَقَالَ لَهُمْ رَسُولُ ٱللَّهِ نَاقَةَ ٱللَّهِ وَسُقْيَـٰهَا",
+          "textTransliteration": "",
+          "translationEnglish": "And the messenger of Allāh [i.e., Ṣāliḥ] said to them, \"[Do not harm] the she-camel of Allāh or [prevent her from] her drink.\"",
+          "translationIndonesian": "lalu Rasul Allah (Saleh) berkata kepada mereka, \"(Biarkanlah) unta betina dari Allah ini dengan minumannya.\""
+        },
+        {
+          "number": 14,
+          "textArabic": "فَكَذَّبُوهُ فَعَقَرُوهَا فَدَمْدَمَ عَلَيْهِمْ رَبُّهُم بِذَنۢبِهِمْ فَسَوَّىٰهَا",
+          "textTransliteration": "",
+          "translationEnglish": "But they denied him and hamstrung her. So their Lord brought down upon them destruction for their sin and made it equal [upon all of them].",
+          "translationIndonesian": "Namun mereka mendustakannya dan menyembelihnya, karena itu Tuhan membinasakan mereka karena dosanya, lalu diratakan-Nya (dengan tanah)."
+        },
+        {
+          "number": 15,
+          "textArabic": "وَلَا يَخَافُ عُقْبَـٰهَا",
+          "textTransliteration": "",
+          "translationEnglish": "And He does not fear the consequence thereof.",
+          "translationIndonesian": "Dan Dia tidak takut terhadap akibatnya."
+        }
+      ]
+    },
+    {
+      "number": 92,
+      "nameArabic": "الليل",
+      "nameTransliteration": "Al-Layl",
+      "nameTranslation": "The Night",
+      "ayahCount": 21,
+      "revelation": "Makkah",
+      "ayahs": [
+        {
+          "number": 1,
+          "textArabic": " وَٱلَّيْلِ إِذَا يَغْشَىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "By the night when it covers",
+          "translationIndonesian": "Demi malam apabila menutupi (cahaya siang),"
+        },
+        {
+          "number": 2,
+          "textArabic": "وَٱلنَّهَارِ إِذَا تَجَلَّىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "And [by] the day when it appears",
+          "translationIndonesian": "demi siang bila terang benderang,"
+        },
+        {
+          "number": 3,
+          "textArabic": "وَمَا خَلَقَ ٱلذَّكَرَ وَٱلْأُنثَىٰٓ",
+          "textTransliteration": "",
+          "translationEnglish": "And [by] He who created the male and female,",
+          "translationIndonesian": "demi penciptaan laki-laki dan perempuan,"
+        },
+        {
+          "number": 4,
+          "textArabic": "إِنَّ سَعْيَكُمْ لَشَتَّىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "Indeed, your efforts are diverse.",
+          "translationIndonesian": "sungguh, usahamu memang beraneka macam."
+        },
+        {
+          "number": 5,
+          "textArabic": "فَأَمَّا مَنْ أَعْطَىٰ وَٱتَّقَىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "As for he who gives and fears Allāh",
+          "translationIndonesian": "Maka barangsiapa memberikan (hartanya di jalan Allah) dan bertakwa,"
+        },
+        {
+          "number": 6,
+          "textArabic": "وَصَدَّقَ بِٱلْحُسْنَىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "And believes in the best [reward],",
+          "translationIndonesian": "dan membenarkan (adanya pahala) yang terbaik (surga),"
+        },
+        {
+          "number": 7,
+          "textArabic": "فَسَنُيَسِّرُهُۥ لِلْيُسْرَىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "We will ease him toward ease.",
+          "translationIndonesian": "maka akan Kami mudahkan baginya jalan menuju kemudahan (kebahagiaan)."
+        },
+        {
+          "number": 8,
+          "textArabic": "وَأَمَّا مَنۢ بَخِلَ وَٱسْتَغْنَىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "But as for he who withholds and considers himself free of need",
+          "translationIndonesian": "Dan adapun orang yang kikir dan merasa dirinya cukup (tidak perlu pertolongan Allah),"
+        },
+        {
+          "number": 9,
+          "textArabic": "وَكَذَّبَ بِٱلْحُسْنَىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "And denies the best [reward],",
+          "translationIndonesian": "serta mendustakan (pahala) yang terbaik,"
+        },
+        {
+          "number": 10,
+          "textArabic": "فَسَنُيَسِّرُهُۥ لِلْعُسْرَىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "We will ease him toward difficulty.",
+          "translationIndonesian": "maka akan Kami mudahkan baginya jalan menuju kesukaran (kesengsaraan)."
+        },
+        {
+          "number": 11,
+          "textArabic": "وَمَا يُغْنِى عَنْهُ مَالُهُۥٓ إِذَا تَرَدَّىٰٓ",
+          "textTransliteration": "",
+          "translationEnglish": "And what will his wealth avail him when he falls?",
+          "translationIndonesian": "Dan hartanya tidak bermanfaat baginya apabila dia telah binasa."
+        },
+        {
+          "number": 12,
+          "textArabic": "إِنَّ عَلَيْنَا لَلْهُدَىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "Indeed, [incumbent] upon Us is guidance.",
+          "translationIndonesian": "Sesungguhnya Kami lah yang memberi petunjuk,"
+        },
+        {
+          "number": 13,
+          "textArabic": "وَإِنَّ لَنَا لَلْـَٔاخِرَةَ وَٱلْأُولَىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "And indeed, to us belongs the Hereafter and the first [life].",
+          "translationIndonesian": "dan sesungguhnya milik Kami lah akhirat dan dunia."
+        },
+        {
+          "number": 14,
+          "textArabic": "فَأَنذَرْتُكُمْ نَارًا تَلَظَّىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "So I have warned you of a Fire which is blazing.",
+          "translationIndonesian": "Maka aku memperingatkan kamu dengan neraka yang menyala-nyala,"
+        },
+        {
+          "number": 15,
+          "textArabic": "لَا يَصْلَىٰهَآ إِلَّا ٱلْأَشْقَى",
+          "textTransliteration": "",
+          "translationEnglish": "None will [enter to] burn therein except the most wretched one",
+          "translationIndonesian": "yang hanya dimasuki oleh orang yang paling celaka,"
+        },
+        {
+          "number": 16,
+          "textArabic": "ٱلَّذِى كَذَّبَ وَتَوَلَّىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "Who had denied and turned away.",
+          "translationIndonesian": "yang mendustakan (kebenaran) dan berpaling (dari iman)."
+        },
+        {
+          "number": 17,
+          "textArabic": "وَسَيُجَنَّبُهَا ٱلْأَتْقَى",
+          "textTransliteration": "",
+          "translationEnglish": "But the righteous one will avoid it",
+          "translationIndonesian": "Dan akan dijauhkan darinya (neraka) orang yang paling bertakwa,"
+        },
+        {
+          "number": 18,
+          "textArabic": "ٱلَّذِى يُؤْتِى مَالَهُۥ يَتَزَكَّىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "[He] who gives [from] his wealth to purify himself",
+          "translationIndonesian": "yang menginfakkan hartanya (di jalan Allah) untuk membersihkan (dirinya),"
+        },
+        {
+          "number": 19,
+          "textArabic": "وَمَا لِأَحَدٍ عِندَهُۥ مِن نِّعْمَةٍ تُجْزَىٰٓ",
+          "textTransliteration": "",
+          "translationEnglish": "And not [giving] for anyone who has [done him] a favor to be rewarded",
+          "translationIndonesian": "dan tidak ada seorang pun memberikan suatu nikmat padanya yang harus dibalasnya,"
+        },
+        {
+          "number": 20,
+          "textArabic": "إِلَّا ٱبْتِغَآءَ وَجْهِ رَبِّهِ ٱلْأَعْلَىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "But only seeking the face [i.e., acceptance] of his Lord, Most High.",
+          "translationIndonesian": "tetapi (dia memberikan itu semata-mata) karena mencari keridaan Tuhannya Yang Mahatinggi."
+        },
+        {
+          "number": 21,
+          "textArabic": "وَلَسَوْفَ يَرْضَىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "And he is going to be satisfied.",
+          "translationIndonesian": "Dan niscaya kelak dia akan mendapat kesenangan (yang sempurna)."
+        }
+      ]
+    },
+    {
+      "number": 93,
+      "nameArabic": "الضحى",
+      "nameTransliteration": "Ad-Duha",
+      "nameTranslation": "The Forenoon",
+      "ayahCount": 11,
+      "revelation": "Makkah",
+      "ayahs": [
+        {
+          "number": 1,
+          "textArabic": " وَٱلضُّحَىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "By the morning brightness",
+          "translationIndonesian": "Demi waktu duha (ketika matahari naik sepenggalan),"
+        },
+        {
+          "number": 2,
+          "textArabic": "وَٱلَّيْلِ إِذَا سَجَىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "And [by] the night when it covers with darkness,",
+          "translationIndonesian": "dan demi malam apabila telah sunyi,"
+        },
+        {
+          "number": 3,
+          "textArabic": "مَا وَدَّعَكَ رَبُّكَ وَمَا قَلَىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "Your Lord has not taken leave of you, [O Muḥammad], nor has He detested [you].",
+          "translationIndonesian": "Tuhanmu tidak meninggalkan engkau (Muhammad) dan tidak (pula) membencimu,"
+        },
+        {
+          "number": 4,
+          "textArabic": "وَلَلْـَٔاخِرَةُ خَيْرٌ لَّكَ مِنَ ٱلْأُولَىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "And the Hereafter is better for you than the first [life].",
+          "translationIndonesian": "dan sungguh, yang kemudian itu lebih baik bagimu daripada yang permulaan."
+        },
+        {
+          "number": 5,
+          "textArabic": "وَلَسَوْفَ يُعْطِيكَ رَبُّكَ فَتَرْضَىٰٓ",
+          "textTransliteration": "",
+          "translationEnglish": "And your Lord is going to give you, and you will be satisfied.",
+          "translationIndonesian": "Dan sungguh, kelak Tuhanmu pasti memberikan karunia-Nya kepadamu, sehingga engkau menjadi puas."
+        },
+        {
+          "number": 6,
+          "textArabic": "أَلَمْ يَجِدْكَ يَتِيمًا فَـَٔاوَىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "Did He not find you an orphan and give [you] refuge?",
+          "translationIndonesian": "Bukankah Dia mendapatimu sebagai seorang yatim, lalu Dia melindungi(mu)."
+        },
+        {
+          "number": 7,
+          "textArabic": "وَوَجَدَكَ ضَآلًّا فَهَدَىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "And He found you lost and guided [you],",
+          "translationIndonesian": "Dan Dia mendapatimu sebagai seorang yang bingung, lalu Dia memberikan petunjuk."
+        },
+        {
+          "number": 8,
+          "textArabic": "وَوَجَدَكَ عَآئِلًا فَأَغْنَىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "And He found you poor and made [you] self-sufficient.",
+          "translationIndonesian": "Dan Dia mendapatimu sebagai seorang yang kekurangan, lalu Dia memberikan kecukupan."
+        },
+        {
+          "number": 9,
+          "textArabic": "فَأَمَّا ٱلْيَتِيمَ فَلَا تَقْهَرْ",
+          "textTransliteration": "",
+          "translationEnglish": "So as for the orphan, do not oppress [him].",
+          "translationIndonesian": "Maka terhadap anak yatim janganlah engkau berlaku sewenang-wenang."
+        },
+        {
+          "number": 10,
+          "textArabic": "وَأَمَّا ٱلسَّآئِلَ فَلَا تَنْهَرْ",
+          "textTransliteration": "",
+          "translationEnglish": "And as for the petitioner, do not repel [him].",
+          "translationIndonesian": "Dan terhadap orang yang meminta-minta, janganlah engkau menghardik(nya)."
+        },
+        {
+          "number": 11,
+          "textArabic": "وَأَمَّا بِنِعْمَةِ رَبِّكَ فَحَدِّثْ",
+          "textTransliteration": "",
+          "translationEnglish": "But as for the favor of your Lord, report [it].",
+          "translationIndonesian": "Dan terhadap nikmat Tuhanmu, hendaklah engkau nyatakan (dengan bersyukur)."
+        }
+      ]
+    },
+    {
+      "number": 94,
+      "nameArabic": "الشرح",
+      "nameTransliteration": "Ash-Sharh",
+      "nameTranslation": "The Opening Forth",
+      "ayahCount": 8,
+      "revelation": "Makkah",
+      "ayahs": [
+        {
+          "number": 1,
+          "textArabic": " أَلَمْ نَشْرَحْ لَكَ صَدْرَكَ",
+          "textTransliteration": "",
+          "translationEnglish": "Did We not expand for you, [O Muḥammad], your breast?",
+          "translationIndonesian": "Bukankah kami telah melapangkan dadamu (Muhammad)?"
+        },
+        {
+          "number": 2,
+          "textArabic": "وَوَضَعْنَا عَنكَ وِزْرَكَ",
+          "textTransliteration": "",
+          "translationEnglish": "And We removed from you your burden",
+          "translationIndonesian": "dan kami pun telah menurunkan beban darimu,"
+        },
+        {
+          "number": 3,
+          "textArabic": "ٱلَّذِىٓ أَنقَضَ ظَهْرَكَ",
+          "textTransliteration": "",
+          "translationEnglish": "Which had weighed upon your back",
+          "translationIndonesian": "yang memberatkan punggungmu,"
+        },
+        {
+          "number": 4,
+          "textArabic": "وَرَفَعْنَا لَكَ ذِكْرَكَ",
+          "textTransliteration": "",
+          "translationEnglish": "And raised high for you your repute.",
+          "translationIndonesian": "dan kami tinggikan sebutan (nama)mu bagimu."
+        },
+        {
+          "number": 5,
+          "textArabic": "فَإِنَّ مَعَ ٱلْعُسْرِ يُسْرًا",
+          "textTransliteration": "",
+          "translationEnglish": "For indeed, with hardship [will be] ease [i.e., relief].",
+          "translationIndonesian": "Maka sesungguhnya bersama kesulitan ada kemudahan,"
+        },
+        {
+          "number": 6,
+          "textArabic": "إِنَّ مَعَ ٱلْعُسْرِ يُسْرًا",
+          "textTransliteration": "",
+          "translationEnglish": "Indeed, with hardship [will be] ease.",
+          "translationIndonesian": "sesungguhnya bersama kesulitan ada kemudahan."
+        },
+        {
+          "number": 7,
+          "textArabic": "فَإِذَا فَرَغْتَ فَٱنصَبْ",
+          "textTransliteration": "",
+          "translationEnglish": "So when you have finished [your duties], then stand up [for worship].",
+          "translationIndonesian": "Maka apabila engkau telah selesai (dari suatu urusan), tetaplah bekerja keras (untuk urusan yang lain),"
+        },
+        {
+          "number": 8,
+          "textArabic": "وَإِلَىٰ رَبِّكَ فَٱرْغَب",
+          "textTransliteration": "",
+          "translationEnglish": "And to your Lord direct [your] longing.",
+          "translationIndonesian": "dan hanya kepada Tuhanmulah engkau berharap."
+        }
+      ]
+    },
+    {
+      "number": 95,
+      "nameArabic": "التين",
+      "nameTransliteration": "At-Tin",
+      "nameTranslation": "The Fig",
+      "ayahCount": 8,
+      "revelation": "Makkah",
+      "ayahs": [
+        {
+          "number": 1,
+          "textArabic": "وَٱلتِّينِ وَٱلزَّيْتُونِ",
+          "textTransliteration": "",
+          "translationEnglish": "By the fig and the olive",
+          "translationIndonesian": "Demi (buah) Tin dan (buah) Zaitun,"
+        },
+        {
+          "number": 2,
+          "textArabic": "وَطُورِ سِينِينَ",
+          "textTransliteration": "",
+          "translationEnglish": "And [by] Mount Sinai",
+          "translationIndonesian": "demi gunung Sinai,"
+        },
+        {
+          "number": 3,
+          "textArabic": "وَهَـٰذَا ٱلْبَلَدِ ٱلْأَمِينِ",
+          "textTransliteration": "",
+          "translationEnglish": "And [by] this secure city [i.e., Makkah],",
+          "translationIndonesian": "dan demi negeri (Mekkah) yang aman ini."
+        },
+        {
+          "number": 4,
+          "textArabic": "لَقَدْ خَلَقْنَا ٱلْإِنسَـٰنَ فِىٓ أَحْسَنِ تَقْوِيمٍ",
+          "textTransliteration": "",
+          "translationEnglish": "We have certainly created man in the best of stature;",
+          "translationIndonesian": "Sungguh, Kami telah menciptakan manusia dalam bentuk yang sebaik-baiknya,"
+        },
+        {
+          "number": 5,
+          "textArabic": "ثُمَّ رَدَدْنَـٰهُ أَسْفَلَ سَـٰفِلِينَ",
+          "textTransliteration": "",
+          "translationEnglish": "Then We return him to the lowest of the low,",
+          "translationIndonesian": "kemudian Kami kembalikan dia ke tempat yang serendah-rendahnya,"
+        },
+        {
+          "number": 6,
+          "textArabic": "إِلَّا ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ فَلَهُمْ أَجْرٌ غَيْرُ مَمْنُونٍ",
+          "textTransliteration": "",
+          "translationEnglish": "Except for those who believe and do righteous deeds, for they will have a reward uninterrupted.",
+          "translationIndonesian": "kecuali orang-orang yang beriman dan mengerjakan kebajikan; maka mereka akan mendapat pahala yang tidak ada putus-putusnya."
+        },
+        {
+          "number": 7,
+          "textArabic": "فَمَا يُكَذِّبُكَ بَعْدُ بِٱلدِّينِ",
+          "textTransliteration": "",
+          "translationEnglish": "So what yet causes you to deny the Recompense?",
+          "translationIndonesian": "Maka apa yang menyebabkan (mereka) mendustakanmu (tentang) hari pembalasan setelah (adanya keterangan-keterangan) itu?"
+        },
+        {
+          "number": 8,
+          "textArabic": "أَلَيْسَ ٱللَّهُ بِأَحْكَمِ ٱلْحَـٰكِمِينَ",
+          "textTransliteration": "",
+          "translationEnglish": "Is not Allāh the most just of judges?",
+          "translationIndonesian": "Bukankah Allah Hakim yang paling adil?"
+        }
+      ]
+    },
+    {
+      "number": 96,
+      "nameArabic": "العلق",
+      "nameTransliteration": "Al-'Alaq",
+      "nameTranslation": "The Clot",
+      "ayahCount": 19,
+      "revelation": "Makkah",
+      "ayahs": [
+        {
+          "number": 1,
+          "textArabic": " ٱقْرَأْ بِٱسْمِ رَبِّكَ ٱلَّذِى خَلَقَ",
+          "textTransliteration": "",
+          "translationEnglish": "Recite in the name of your Lord who created",
+          "translationIndonesian": "Bacalah dengan (menyebut) nama Tuhanmu yang menciptakan,"
+        },
+        {
+          "number": 2,
+          "textArabic": "خَلَقَ ٱلْإِنسَـٰنَ مِنْ عَلَقٍ",
+          "textTransliteration": "",
+          "translationEnglish": "Created man from a clinging substance.",
+          "translationIndonesian": "Dia telah menciptakan manusia dari segumpal darah."
+        },
+        {
+          "number": 3,
+          "textArabic": "ٱقْرَأْ وَرَبُّكَ ٱلْأَكْرَمُ",
+          "textTransliteration": "",
+          "translationEnglish": "Recite, and your Lord is the most Generous -",
+          "translationIndonesian": "Bacalah, dan Tuhanmulah Yang Mahamulia."
+        },
+        {
+          "number": 4,
+          "textArabic": "ٱلَّذِى عَلَّمَ بِٱلْقَلَمِ",
+          "textTransliteration": "",
+          "translationEnglish": "Who taught by the pen",
+          "translationIndonesian": "Yang mengajar (manusia) dengan pena."
+        },
+        {
+          "number": 5,
+          "textArabic": "عَلَّمَ ٱلْإِنسَـٰنَ مَا لَمْ يَعْلَمْ",
+          "textTransliteration": "",
+          "translationEnglish": "Taught man that which he knew not.",
+          "translationIndonesian": "Dia mengajarkan manusia apa yang tidak diketahuinya."
+        },
+        {
+          "number": 6,
+          "textArabic": "كَلَّآ إِنَّ ٱلْإِنسَـٰنَ لَيَطْغَىٰٓ",
+          "textTransliteration": "",
+          "translationEnglish": "No! [But] indeed, man transgresses",
+          "translationIndonesian": "Sekali-sekali tidak! Sungguh, manusia itu benar-benar melampaui batas,"
+        },
+        {
+          "number": 7,
+          "textArabic": "أَن رَّءَاهُ ٱسْتَغْنَىٰٓ",
+          "textTransliteration": "",
+          "translationEnglish": "Because he sees himself self-sufficient.",
+          "translationIndonesian": "apabila melihat dirinya serba cukup."
+        },
+        {
+          "number": 8,
+          "textArabic": "إِنَّ إِلَىٰ رَبِّكَ ٱلرُّجْعَىٰٓ",
+          "textTransliteration": "",
+          "translationEnglish": "Indeed, to your Lord is the return.",
+          "translationIndonesian": "Sungguh, hanya kepada Tuhanmulah tempat kembali(mu)."
+        },
+        {
+          "number": 9,
+          "textArabic": "أَرَءَيْتَ ٱلَّذِى يَنْهَىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "Have you seen the one who forbids",
+          "translationIndonesian": "Bagaimana pendapatmu tentang orang yang melarang?"
+        },
+        {
+          "number": 10,
+          "textArabic": "عَبْدًا إِذَا صَلَّىٰٓ",
+          "textTransliteration": "",
+          "translationEnglish": "A servant when he prays?",
+          "translationIndonesian": "seorang hamba ketika dia melaksanakan salat,"
+        },
+        {
+          "number": 11,
+          "textArabic": "أَرَءَيْتَ إِن كَانَ عَلَى ٱلْهُدَىٰٓ",
+          "textTransliteration": "",
+          "translationEnglish": "Have you seen if he is upon guidance",
+          "translationIndonesian": "bagaimana pendapatmu jika dia (yang dilarang salat itu) berada di atas kebenaran (petunjuk),"
+        },
+        {
+          "number": 12,
+          "textArabic": "أَوْ أَمَرَ بِٱلتَّقْوَىٰٓ",
+          "textTransliteration": "",
+          "translationEnglish": "Or enjoins righteousness?",
+          "translationIndonesian": "atau dia menyuruh bertakwa (kepada Allah)?"
+        },
+        {
+          "number": 13,
+          "textArabic": "أَرَءَيْتَ إِن كَذَّبَ وَتَوَلَّىٰٓ",
+          "textTransliteration": "",
+          "translationEnglish": "Have you seen if he denies and turns away -",
+          "translationIndonesian": "Bagaimana pendapatmu jika dia (yang melarang) itu mendustakan dan berpaling?"
+        },
+        {
+          "number": 14,
+          "textArabic": "أَلَمْ يَعْلَم بِأَنَّ ٱللَّهَ يَرَىٰ",
+          "textTransliteration": "",
+          "translationEnglish": "Does he not know that Allāh sees?",
+          "translationIndonesian": "Tidakkah dia mengetahui bahwa sesungguhnya Allah melihat (segala perbuatannya)?"
+        },
+        {
+          "number": 15,
+          "textArabic": "كَلَّا لَئِن لَّمْ يَنتَهِ لَنَسْفَعًۢا بِٱلنَّاصِيَةِ",
+          "textTransliteration": "",
+          "translationEnglish": "No! If he does not desist, We will surely drag him by the forelock",
+          "translationIndonesian": "Sekali-kali tidak! Sungguh, jika dia tidak berhenti (berbuat demikian) niscaya Kami tarik ubun-ubunnya (ke dalam neraka),"
+        },
+        {
+          "number": 16,
+          "textArabic": "نَاصِيَةٍ كَـٰذِبَةٍ خَاطِئَةٍ",
+          "textTransliteration": "",
+          "translationEnglish": "A lying, sinning forelock.",
+          "translationIndonesian": "(yaitu) ubun-ubun orang yang mendustakan dan durhaka."
+        },
+        {
+          "number": 17,
+          "textArabic": "فَلْيَدْعُ نَادِيَهُۥ",
+          "textTransliteration": "",
+          "translationEnglish": "Then let him call his associates;",
+          "translationIndonesian": "Maka biarlah dia memanggil golongannya (untuk menolongnya),"
+        },
+        {
+          "number": 18,
+          "textArabic": "سَنَدْعُ ٱلزَّبَانِيَةَ",
+          "textTransliteration": "",
+          "translationEnglish": "We will call the angels of Hell.",
+          "translationIndonesian": "kelak Kami akan memanggil Malaikat Zabaniyah (penyiksa orang-orang yang berdosa)"
+        },
+        {
+          "number": 19,
+          "textArabic": "كَلَّا لَا تُطِعْهُ وَٱسْجُدْ وَٱقْتَرِب ۩",
+          "textTransliteration": "",
+          "translationEnglish": "No! Do not obey him. But prostrate and draw near [to Allāh].",
+          "translationIndonesian": "sekali-kali tidak! Janganlah kamu patuh kepadanya; dan sujudlah serta dekatkanlah (dirimu kepada Allah)."
+        }
+      ]
+    },
+    {
+      "number": 97,
+      "nameArabic": "القدر",
+      "nameTransliteration": "Al-Qadar",
+      "nameTranslation": "The Night of Decree",
+      "ayahCount": 5,
+      "revelation": "Makkah",
+      "ayahs": [
+        {
+          "number": 1,
+          "textArabic": "إِنَّآ أَنزَلْنَـٰهُ فِى لَيْلَةِ ٱلْقَدْرِ",
+          "textTransliteration": "",
+          "translationEnglish": "Indeed, We sent it [i.e., the Qur’ān] down during the Night of Decree.",
+          "translationIndonesian": "Sesungguhnya Kami telah menurunkannya (Alquran) pada malam qadar."
+        },
+        {
+          "number": 2,
+          "textArabic": "وَمَآ أَدْرَىٰكَ مَا لَيْلَةُ ٱلْقَدْرِ",
+          "textTransliteration": "",
+          "translationEnglish": "And what can make you know what is the Night of Decree?",
+          "translationIndonesian": "Dan tahukah kamu apakah malam kemuliaan itu?"
+        },
+        {
+          "number": 3,
+          "textArabic": "لَيْلَةُ ٱلْقَدْرِ خَيْرٌ مِّنْ أَلْفِ شَهْرٍ",
+          "textTransliteration": "",
+          "translationEnglish": "The Night of Decree is better than a thousand months.",
+          "translationIndonesian": "Malam kemuliaan itu lebih baik daripada seribu bulan."
+        },
+        {
+          "number": 4,
+          "textArabic": "تَنَزَّلُ ٱلْمَلَـٰٓئِكَةُ وَٱلرُّوحُ فِيهَا بِإِذْنِ رَبِّهِم مِّن كُلِّ أَمْرٍ",
+          "textTransliteration": "",
+          "translationEnglish": "The angels and the Spirit [i.e., Gabriel] descend therein by permission of their Lord for every matter.",
+          "translationIndonesian": "Pada malam itu turun para malaikat dan Ruh (Jibril) dengan izin Tuhannya untuk mengatur semua urusan."
+        },
+        {
+          "number": 5,
+          "textArabic": "سَلَـٰمٌ هِىَ حَتَّىٰ مَطْلَعِ ٱلْفَجْرِ",
+          "textTransliteration": "",
+          "translationEnglish": "Peace it is until the emergence of dawn.",
+          "translationIndonesian": "Sejahteralah (malam itu) sampai terbit fajar."
+        }
+      ]
+    },
+    {
+      "number": 98,
+      "nameArabic": "البينة",
+      "nameTransliteration": "Al-Bayyinah",
+      "nameTranslation": "The Clear Evidence",
+      "ayahCount": 8,
+      "revelation": "Madinah",
+      "ayahs": [
+        {
+          "number": 1,
+          "textArabic": " لَمْ يَكُنِ ٱلَّذِينَ كَفَرُوا۟ مِنْ أَهْلِ ٱلْكِتَـٰبِ وَٱلْمُشْرِكِينَ مُنفَكِّينَ حَتَّىٰ تَأْتِيَهُمُ ٱلْبَيِّنَةُ",
+          "textTransliteration": "",
+          "translationEnglish": "Those who disbelieved among the People of the Scripture and the polytheists were not to be parted [from misbelief] until there came to them clear evidence",
+          "translationIndonesian": "Orang-orang yang kafir dari golongan Ahli Kitab dan orang-orang musyrik tidak akan meninggalkan (agama mereka) sampai datang kepada mereka bukti yang nyata,"
+        },
+        {
+          "number": 2,
+          "textArabic": "رَسُولٌ مِّنَ ٱللَّهِ يَتْلُوا۟ صُحُفًا مُّطَهَّرَةً",
+          "textTransliteration": "",
+          "translationEnglish": "A Messenger from Allāh, reciting purified scriptures",
+          "translationIndonesian": "(yaitu) seorang Rasul dari Allah (Muhammad) yang membacakan lembaran-lembaran yang suci (Alquran),"
+        },
+        {
+          "number": 3,
+          "textArabic": "فِيهَا كُتُبٌ قَيِّمَةٌ",
+          "textTransliteration": "",
+          "translationEnglish": "Within which are correct writings [i.e., rulings and laws].",
+          "translationIndonesian": "di dalamnya terdapat (isi) kitab-kitab yang lurus (benar)."
+        },
+        {
+          "number": 4,
+          "textArabic": "وَمَا تَفَرَّقَ ٱلَّذِينَ أُوتُوا۟ ٱلْكِتَـٰبَ إِلَّا مِنۢ بَعْدِ مَا جَآءَتْهُمُ ٱلْبَيِّنَةُ",
+          "textTransliteration": "",
+          "translationEnglish": "Nor did those who were given the Scripture become divided until after there had come to them clear evidence.",
+          "translationIndonesian": "Dan tidaklah terpecah belah orang-orang Ahli Kitab melainkan setelah datang kepada mereka bukti yang nyata."
+        },
+        {
+          "number": 5,
+          "textArabic": "وَمَآ أُمِرُوٓا۟ إِلَّا لِيَعْبُدُوا۟ ٱللَّهَ مُخْلِصِينَ لَهُ ٱلدِّينَ حُنَفَآءَ وَيُقِيمُوا۟ ٱلصَّلَوٰةَ وَيُؤْتُوا۟ ٱلزَّكَوٰةَ ۚ وَذَٰلِكَ دِينُ ٱلْقَيِّمَةِ",
+          "textTransliteration": "",
+          "translationEnglish": "And they were not commanded except to worship Allāh, [being] sincere to Him in religion, inclining to truth, and to establish prayer and to give zakāh. And that is the correct religion.",
+          "translationIndonesian": "Padahal mereka hanya diperintah menyembah Allah dengan ikhlas menaati-Nya semata-mata karena (menjalankan) agama, dan juga agar melaksanakan salat dan menunaikan zakat; dan yang demikian itulah agama yang lurus (benar)."
+        },
+        {
+          "number": 6,
+          "textArabic": "إِنَّ ٱلَّذِينَ كَفَرُوا۟ مِنْ أَهْلِ ٱلْكِتَـٰبِ وَٱلْمُشْرِكِينَ فِى نَارِ جَهَنَّمَ خَـٰلِدِينَ فِيهَآ ۚ أُو۟لَـٰٓئِكَ هُمْ شَرُّ ٱلْبَرِيَّةِ",
+          "textTransliteration": "",
+          "translationEnglish": "Indeed, they who disbelieved among the People of the Scripture and the polytheists will be in the fire of Hell, abiding eternally therein. Those are the worst of creatures.",
+          "translationIndonesian": "Sungguh, orang-orang yang kafir dari golongan Ahli Kitab dan orang-orang musyrik (akan masuk) ke neraka Jahanam; mereka kekal di dalamnya selama-lamanya. Mereka itu adalah sejahat-jahat makhluk."
+        },
+        {
+          "number": 7,
+          "textArabic": "إِنَّ ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ أُو۟لَـٰٓئِكَ هُمْ خَيْرُ ٱلْبَرِيَّةِ",
+          "textTransliteration": "",
+          "translationEnglish": "Indeed, they who have believed and done righteous deeds - those are the best of creatures.",
+          "translationIndonesian": "Sungguh, orang-orang yang beriman dan mengerjakan kebajikan, mereka itulah sebaik-baik makhluk."
+        },
+        {
+          "number": 8,
+          "textArabic": "جَزَآؤُهُمْ عِندَ رَبِّهِمْ جَنَّـٰتُ عَدْنٍ تَجْرِى مِن تَحْتِهَا ٱلْأَنْهَـٰرُ خَـٰلِدِينَ فِيهَآ أَبَدًا ۖ رَّضِىَ ٱللَّهُ عَنْهُمْ وَرَضُوا۟ عَنْهُ ۚ ذَٰلِكَ لِمَنْ خَشِىَ رَبَّهُۥ",
+          "textTransliteration": "",
+          "translationEnglish": "Their reward with their Lord will be gardens of perpetual residence beneath which rivers flow, wherein they will abide forever, Allāh being pleased with them and they with Him. That is for whoever has feared his Lord.",
+          "translationIndonesian": "Balasan mereka di sisi Tuhan mereka ialah surga 'Ādn yang mengalir di bawahnya sungai-sungai; mereka kekal di dalamnya selama-lamanya. Allah rida terhadap mereka dan mereka pun rida kepada-Nya. Yang demikian itu adalah (balasan) bagi orang yang takut kepada Tuhannya."
+        }
+      ]
+    },
+    {
+      "number": 99,
+      "nameArabic": "الزلزلة",
+      "nameTransliteration": "Az-Zalzalah",
+      "nameTranslation": "The Earthquake",
+      "ayahCount": 8,
+      "revelation": "Madinah",
+      "ayahs": [
+        {
+          "number": 1,
+          "textArabic": " إِذَا زُلْزِلَتِ ٱلْأَرْضُ زِلْزَالَهَا",
+          "textTransliteration": "",
+          "translationEnglish": "When the earth is shaken with its [final] earthquake",
+          "translationIndonesian": "Apabila bumi diguncangkan dengan guncangan yang dahsyat,"
+        },
+        {
+          "number": 2,
+          "textArabic": "وَأَخْرَجَتِ ٱلْأَرْضُ أَثْقَالَهَا",
+          "textTransliteration": "",
+          "translationEnglish": "And the earth discharges its burdens",
+          "translationIndonesian": "dan bumi telah mengeluarkan beban-beban berat (yang dikandung)nya,"
+        },
+        {
+          "number": 3,
+          "textArabic": "وَقَالَ ٱلْإِنسَـٰنُ مَا لَهَا",
+          "textTransliteration": "",
+          "translationEnglish": "And man says, \"What is [wrong] with it?\" -",
+          "translationIndonesian": "dan manusia bertanya, \"Apa yang terjadi pada bumi ini?\""
+        },
+        {
+          "number": 4,
+          "textArabic": "يَوْمَئِذٍ تُحَدِّثُ أَخْبَارَهَا",
+          "textTransliteration": "",
+          "translationEnglish": "That Day, it will report its news",
+          "translationIndonesian": "Pada hari itu bumi menyampaikan beritanya,"
+        },
+        {
+          "number": 5,
+          "textArabic": "بِأَنَّ رَبَّكَ أَوْحَىٰ لَهَا",
+          "textTransliteration": "",
+          "translationEnglish": "Because your Lord has inspired [i.e., commanded] it.",
+          "translationIndonesian": "karena sesungguhnya Tuhanmu telah memerintahkan (yang sedemikian itu) padanya."
+        },
+        {
+          "number": 6,
+          "textArabic": "يَوْمَئِذٍ يَصْدُرُ ٱلنَّاسُ أَشْتَاتًا لِّيُرَوْا۟ أَعْمَـٰلَهُمْ",
+          "textTransliteration": "",
+          "translationEnglish": "That Day, the people will depart separated [into categories] to be shown [the result of] their deeds.",
+          "translationIndonesian": "Pada hari itu manusia keluar dari kuburnya dalam keadaan berkelompok-kelompok, untuk diperlihatkan kepada mereka (balasan) semua amal perbuatannya."
+        },
+        {
+          "number": 7,
+          "textArabic": "فَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ خَيْرًا يَرَهُۥ",
+          "textTransliteration": "",
+          "translationEnglish": "So whoever does an atom's weight of good will see it,",
+          "translationIndonesian": "Maka barangsiapa mengerjakan kebaikan seberat zarah, niscaya dia akan melihat (balasan)nya."
+        },
+        {
+          "number": 8,
+          "textArabic": "وَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ شَرًّا يَرَهُۥ",
+          "textTransliteration": "",
+          "translationEnglish": "And whoever does an atom's weight of evil will see it.",
+          "translationIndonesian": "Dan barangsiapa mengerjakan kejahatan seberat zarah, niscaya dia akan melihat (balasan)nya."
+        }
+      ]
+    },
+    {
+      "number": 100,
+      "nameArabic": "العاديات",
+      "nameTransliteration": "Al-'Adiyat",
+      "nameTranslation": "The Courser",
+      "ayahCount": 11,
+      "revelation": "Makkah",
+      "ayahs": [
+        {
+          "number": 1,
+          "textArabic": " وَٱلْعَـٰدِيَـٰتِ ضَبْحًا",
+          "textTransliteration": "",
+          "translationEnglish": "By the racers, panting,",
+          "translationIndonesian": "Demi kuda perang yang berlari kencang terengah-engah,"
+        },
+        {
+          "number": 2,
+          "textArabic": "فَٱلْمُورِيَـٰتِ قَدْحًا",
+          "textTransliteration": "",
+          "translationEnglish": "And the producers of sparks [when] striking",
+          "translationIndonesian": "dan kuda yang memercikkan bunga api (dengan pukulan kuku kakinya),"
+        },
+        {
+          "number": 3,
+          "textArabic": "فَٱلْمُغِيرَٰتِ صُبْحًا",
+          "textTransliteration": "",
+          "translationEnglish": "And the chargers at dawn,",
+          "translationIndonesian": "dan kuda yang menyerang (dengan tiba-tiba) pada waktu pagi,"
+        },
+        {
+          "number": 4,
+          "textArabic": "فَأَثَرْنَ بِهِۦ نَقْعًا",
+          "textTransliteration": "",
+          "translationEnglish": "Stirring up thereby [clouds of] dust,",
+          "translationIndonesian": "sehingga menerbangkan debu,"
+        },
+        {
+          "number": 5,
+          "textArabic": "فَوَسَطْنَ بِهِۦ جَمْعًا",
+          "textTransliteration": "",
+          "translationEnglish": "Arriving thereby in the center collectively,",
+          "translationIndonesian": "lalu menyerbu ke tengah-tengah kumpulan musuh,"
+        },
+        {
+          "number": 6,
+          "textArabic": "إِنَّ ٱلْإِنسَـٰنَ لِرَبِّهِۦ لَكَنُودٌ",
+          "textTransliteration": "",
+          "translationEnglish": "Indeed mankind, to his Lord, is ungrateful.",
+          "translationIndonesian": "sungguh, manusia itu sangat ingkar, (tidak bersyukur) kepada Tuhannya,"
+        },
+        {
+          "number": 7,
+          "textArabic": "وَإِنَّهُۥ عَلَىٰ ذَٰلِكَ لَشَهِيدٌ",
+          "textTransliteration": "",
+          "translationEnglish": "And indeed, he is to that a witness.",
+          "translationIndonesian": "dan sesungguhnya dia (manusia) menyaksikan (mengakui) keingkarannya,"
+        },
+        {
+          "number": 8,
+          "textArabic": "وَإِنَّهُۥ لِحُبِّ ٱلْخَيْرِ لَشَدِيدٌ",
+          "textTransliteration": "",
+          "translationEnglish": "And indeed he is, in love of wealth, intense.",
+          "translationIndonesian": "dan sesungguhnya cintanya kepada harta benar-benar berlebihan."
+        },
+        {
+          "number": 9,
+          "textArabic": "۞ أَفَلَا يَعْلَمُ إِذَا بُعْثِرَ مَا فِى ٱلْقُبُورِ",
+          "textTransliteration": "",
+          "translationEnglish": "But does he not know that when the contents of the graves are scattered",
+          "translationIndonesian": "Maka tidakkah dia mengetahui apabila apa yang di dalam kubur dikeluarkan,"
+        },
+        {
+          "number": 10,
+          "textArabic": "وَحُصِّلَ مَا فِى ٱلصُّدُورِ",
+          "textTransliteration": "",
+          "translationEnglish": "And that within the breasts is obtained,",
+          "translationIndonesian": "dan apa yang tersimpan di dalam dada dikeluarkan?"
+        },
+        {
+          "number": 11,
+          "textArabic": "إِنَّ رَبَّهُم بِهِمْ يَوْمَئِذٍ لَّخَبِيرٌۢ",
+          "textTransliteration": "",
+          "translationEnglish": "Indeed, their Lord with them, that Day, is [fully] Aware.",
+          "translationIndonesian": "sungguh, Tuhan mereka pada hari itu Mahateliti terhadap keadaan mereka."
+        }
+      ]
+    },
+    {
+      "number": 101,
+      "nameArabic": "القارعة",
+      "nameTransliteration": "Al-Qari'ah",
+      "nameTranslation": "The Striking Hour",
+      "ayahCount": 11,
+      "revelation": "Makkah",
+      "ayahs": [
+        {
+          "number": 1,
+          "textArabic": " ٱلْقَارِعَةُ",
+          "textTransliteration": "",
+          "translationEnglish": "The Striking Calamity -",
+          "translationIndonesian": "Hari Kiamat,"
+        },
+        {
+          "number": 2,
+          "textArabic": "مَا ٱلْقَارِعَةُ",
+          "textTransliteration": "",
+          "translationEnglish": "What is the Striking Calamity?",
+          "translationIndonesian": "Apakah hari Kiamat itu?"
+        },
+        {
+          "number": 3,
+          "textArabic": "وَمَآ أَدْرَىٰكَ مَا ٱلْقَارِعَةُ",
+          "textTransliteration": "",
+          "translationEnglish": "And what can make you know what is the Striking Calamity?",
+          "translationIndonesian": "Dan tahukah kamu apakah hari Kiamat itu?"
+        },
+        {
+          "number": 4,
+          "textArabic": "يَوْمَ يَكُونُ ٱلنَّاسُ كَٱلْفَرَاشِ ٱلْمَبْثُوثِ",
+          "textTransliteration": "",
+          "translationEnglish": "It is the Day when people will be like moths, dispersed,",
+          "translationIndonesian": "Pada hari itu manusia seperti laron yang beterbangan,"
+        },
+        {
+          "number": 5,
+          "textArabic": "وَتَكُونُ ٱلْجِبَالُ كَٱلْعِهْنِ ٱلْمَنفُوشِ",
+          "textTransliteration": "",
+          "translationEnglish": "And the mountains will be like wool, fluffed up.",
+          "translationIndonesian": "dan gunung-gunung seperti bulu yang dihambur-hamburkan."
+        },
+        {
+          "number": 6,
+          "textArabic": "فَأَمَّا مَن ثَقُلَتْ مَوَٰزِينُهُۥ",
+          "textTransliteration": "",
+          "translationEnglish": "Then as for one whose scales are heavy [with good deeds],",
+          "translationIndonesian": "Maka adapun orang yang berat timbangan (kebaikan)nya,"
+        },
+        {
+          "number": 7,
+          "textArabic": "فَهُوَ فِى عِيشَةٍ رَّاضِيَةٍ",
+          "textTransliteration": "",
+          "translationEnglish": "He will be in a pleasant life.",
+          "translationIndonesian": "maka dia berada dalam kehidupan yang memuaskan (senang)."
+        },
+        {
+          "number": 8,
+          "textArabic": "وَأَمَّا مَنْ خَفَّتْ مَوَٰزِينُهُۥ",
+          "textTransliteration": "",
+          "translationEnglish": "But as for one whose scales are light,",
+          "translationIndonesian": "Dan adapun orang yang ringan timbangan (kebaikan)nya,"
+        },
+        {
+          "number": 9,
+          "textArabic": "فَأُمُّهُۥ هَاوِيَةٌ",
+          "textTransliteration": "",
+          "translationEnglish": "His refuge will be an abyss.",
+          "translationIndonesian": "maka tempat kembalinya adalah neraka Hāwiyah."
+        },
+        {
+          "number": 10,
+          "textArabic": "وَمَآ أَدْرَىٰكَ مَا هِيَهْ",
+          "textTransliteration": "",
+          "translationEnglish": "And what can make you know what that is?",
+          "translationIndonesian": "Dan tahukah kamu apakah neraka Hāwiyah itu?"
+        },
+        {
+          "number": 11,
+          "textArabic": "نَارٌ حَامِيَةٌۢ",
+          "textTransliteration": "",
+          "translationEnglish": "It is a Fire, intensely hot.",
+          "translationIndonesian": "(Yaitu) api yang sangat panas."
+        }
+      ]
+    },
+    {
+      "number": 102,
+      "nameArabic": "التكاثر",
+      "nameTransliteration": "At-Takathur",
+      "nameTranslation": "The Rivalry in World Increase",
+      "ayahCount": 8,
+      "revelation": "Makkah",
+      "ayahs": [
+        {
+          "number": 1,
+          "textArabic": " أَلْهَىٰكُمُ ٱلتَّكَاثُرُ",
+          "textTransliteration": "",
+          "translationEnglish": "Competition in [worldly] increase diverts you",
+          "translationIndonesian": "Bermegah-megahan telah melalaikan kamu,"
+        },
+        {
+          "number": 2,
+          "textArabic": "حَتَّىٰ زُرْتُمُ ٱلْمَقَابِرَ",
+          "textTransliteration": "",
+          "translationEnglish": "Until you visit the graveyards.",
+          "translationIndonesian": "sampai kamu masuk ke dalam kubur."
+        },
+        {
+          "number": 3,
+          "textArabic": "كَلَّا سَوْفَ تَعْلَمُونَ",
+          "textTransliteration": "",
+          "translationEnglish": "No! You are going to know.",
+          "translationIndonesian": "Sekali-kali tidak! Kelak kamu akan mengetahui (akibat perbuatanmu itu),"
+        },
+        {
+          "number": 4,
+          "textArabic": "ثُمَّ كَلَّا سَوْفَ تَعْلَمُونَ",
+          "textTransliteration": "",
+          "translationEnglish": "Then, no! You are going to know.",
+          "translationIndonesian": "kemudian sekali-kali tidak! Kelak kamu akan mengetahui."
+        },
+        {
+          "number": 5,
+          "textArabic": "كَلَّا لَوْ تَعْلَمُونَ عِلْمَ ٱلْيَقِينِ",
+          "textTransliteration": "",
+          "translationEnglish": "No! If you only knew with knowledge of certainty...",
+          "translationIndonesian": "Sekali-kali tidak! Sekiranya kamu mengetahui dengan pasti,"
+        },
+        {
+          "number": 6,
+          "textArabic": "لَتَرَوُنَّ ٱلْجَحِيمَ",
+          "textTransliteration": "",
+          "translationEnglish": "You will surely see the Hellfire.",
+          "translationIndonesian": "niscaya kamu benar-benar akan melihat neraka Jahim,"
+        },
+        {
+          "number": 7,
+          "textArabic": "ثُمَّ لَتَرَوُنَّهَا عَيْنَ ٱلْيَقِينِ",
+          "textTransliteration": "",
+          "translationEnglish": "Then you will surely see it with the eye of certainty.",
+          "translationIndonesian": "kemudian kamu benar-benar akan melihatnya dengan mata kepala sendiri,"
+        },
+        {
+          "number": 8,
+          "textArabic": "ثُمَّ لَتُسْـَٔلُنَّ يَوْمَئِذٍ عَنِ ٱلنَّعِيمِ",
+          "textTransliteration": "",
+          "translationEnglish": "Then you will surely be asked that Day about pleasure.",
+          "translationIndonesian": "kemudian kamu benar-benar akan ditanya pada hari itu tentang kenikmatan (yang megah di dunia itu)."
+        }
+      ]
+    },
+    {
+      "number": 103,
+      "nameArabic": "العصر",
+      "nameTransliteration": "Al-'Asr",
+      "nameTranslation": "The Time",
+      "ayahCount": 3,
+      "revelation": "Makkah",
+      "ayahs": [
+        {
+          "number": 1,
+          "textArabic": " وَٱلْعَصْرِ",
+          "textTransliteration": "",
+          "translationEnglish": "By time,",
+          "translationIndonesian": "Demi masa."
+        },
+        {
+          "number": 2,
+          "textArabic": "إِنَّ ٱلْإِنسَـٰنَ لَفِى خُسْرٍ",
+          "textTransliteration": "",
+          "translationEnglish": "Indeed, mankind is in loss,",
+          "translationIndonesian": "Sungguh, manusia berada dalam kerugian,"
+        },
+        {
+          "number": 3,
+          "textArabic": "إِلَّا ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ وَتَوَاصَوْا۟ بِٱلْحَقِّ وَتَوَاصَوْا۟ بِٱلصَّبْرِ",
+          "textTransliteration": "",
+          "translationEnglish": "Except for those who have believed and done righteous deeds and advised each other to truth and advised each other to patience.",
+          "translationIndonesian": "kecuali orang-orang yang beriman dan mengerjakan kebajikan serta saling menasihati untuk kebenaran dan saling menasihati untuk kesabaran."
+        }
+      ]
+    },
+    {
+      "number": 104,
+      "nameArabic": "الهمزة",
+      "nameTransliteration": "Al-Humazah",
+      "nameTranslation": "The Slanderer",
+      "ayahCount": 9,
+      "revelation": "Makkah",
+      "ayahs": [
+        {
+          "number": 1,
+          "textArabic": " وَيْلٌ لِّكُلِّ هُمَزَةٍ لُّمَزَةٍ",
+          "textTransliteration": "",
+          "translationEnglish": "Woe to every scorner and mocker",
+          "translationIndonesian": "Celakalah bagi setiap pengumpat dan pencela,"
+        },
+        {
+          "number": 2,
+          "textArabic": "ٱلَّذِى جَمَعَ مَالًا وَعَدَّدَهُۥ",
+          "textTransliteration": "",
+          "translationEnglish": "Who collects wealth and [continuously] counts it.",
+          "translationIndonesian": "yang mengumpulkan harta dan menghitung-hitungnya,"
+        },
+        {
+          "number": 3,
+          "textArabic": "يَحْسَبُ أَنَّ مَالَهُۥٓ أَخْلَدَهُۥ",
+          "textTransliteration": "",
+          "translationEnglish": "He thinks that his wealth will make him immortal.",
+          "translationIndonesian": "dia (manusia) mengira bahwa hartanya itu dapat mengekalkannya."
+        },
+        {
+          "number": 4,
+          "textArabic": "كَلَّا ۖ لَيُنۢبَذَنَّ فِى ٱلْحُطَمَةِ",
+          "textTransliteration": "",
+          "translationEnglish": "No! He will surely be thrown into the Crusher.",
+          "translationIndonesian": "Sekali-kali tidak! Pasti dia akan dilemparkan ke dalam (neraka) Ḥuṭamah."
+        },
+        {
+          "number": 5,
+          "textArabic": "وَمَآ أَدْرَىٰكَ مَا ٱلْحُطَمَةُ",
+          "textTransliteration": "",
+          "translationEnglish": "And what can make you know what is the Crusher?",
+          "translationIndonesian": "Dan tahukah kamu apakah (neraka) Ḥuṭamah itu?"
+        },
+        {
+          "number": 6,
+          "textArabic": "نَارُ ٱللَّهِ ٱلْمُوقَدَةُ",
+          "textTransliteration": "",
+          "translationEnglish": "It is the fire of Allāh, [eternally] fueled,",
+          "translationIndonesian": "(Yaitu) api (azab) Allah yang dinyalakan,"
+        },
+        {
+          "number": 7,
+          "textArabic": "ٱلَّتِى تَطَّلِعُ عَلَى ٱلْأَفْـِٔدَةِ",
+          "textTransliteration": "",
+          "translationEnglish": "Which mounts directed at the hearts.",
+          "translationIndonesian": "yang (membakar) sampai ke hati."
+        },
+        {
+          "number": 8,
+          "textArabic": "إِنَّهَا عَلَيْهِم مُّؤْصَدَةٌ",
+          "textTransliteration": "",
+          "translationEnglish": "Indeed, it [i.e., Hellfire] will be closed down upon them",
+          "translationIndonesian": "Sungguh, api itu ditutup rapat atas (diri) mereka,"
+        },
+        {
+          "number": 9,
+          "textArabic": "فِى عَمَدٍ مُّمَدَّدَةٍۭ",
+          "textTransliteration": "",
+          "translationEnglish": "In extended columns.",
+          "translationIndonesian": "(sedang mereka itu) diikat pada tiang-tiang yang panjang."
+        }
+      ]
+    },
+    {
+      "number": 105,
+      "nameArabic": "الفيل",
+      "nameTransliteration": "Al-Fil",
+      "nameTranslation": "The Elephant",
+      "ayahCount": 5,
+      "revelation": "Makkah",
+      "ayahs": [
+        {
+          "number": 1,
+          "textArabic": " أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِأَصْحَـٰبِ ٱلْفِيلِ",
+          "textTransliteration": "",
+          "translationEnglish": "Have you not considered, [O Muḥammad], how your Lord dealt with the companions of the elephant?",
+          "translationIndonesian": "Tidakkah engkau (Muhammad) perhatikan bagaimana Tuhanmu telah bertindak terhadap pasukan bergajah?"
+        },
+        {
+          "number": 2,
+          "textArabic": "أَلَمْ يَجْعَلْ كَيْدَهُمْ فِى تَضْلِيلٍ",
+          "textTransliteration": "",
+          "translationEnglish": "Did He not make their plan into misguidance?",
+          "translationIndonesian": "Bukankah Dia telah menjadikan tipu daya mereka itu sia-sia?"
+        },
+        {
+          "number": 3,
+          "textArabic": "وَأَرْسَلَ عَلَيْهِمْ طَيْرًا أَبَابِيلَ",
+          "textTransliteration": "",
+          "translationEnglish": "And He sent against them birds in flocks,",
+          "translationIndonesian": "dan Dia mengirimkan kepada mereka burung yang berbondong-bondong,"
+        },
+        {
+          "number": 4,
+          "textArabic": "تَرْمِيهِم بِحِجَارَةٍ مِّن سِجِّيلٍ",
+          "textTransliteration": "",
+          "translationEnglish": "Striking them with stones of hard clay,",
+          "translationIndonesian": "yang melempari mereka dengan batu dari tanah liat yang dibakar,"
+        },
+        {
+          "number": 5,
+          "textArabic": "فَجَعَلَهُمْ كَعَصْفٍ مَّأْكُولٍۭ",
+          "textTransliteration": "",
+          "translationEnglish": "And He made them like eaten straw.",
+          "translationIndonesian": "sehingga mereka dijadikan-Nya seperti daun-daun yang dimakan (ulat)."
+        }
+      ]
+    },
+    {
+      "number": 106,
+      "nameArabic": "قريش",
+      "nameTransliteration": "Quraysh",
+      "nameTranslation": "Quraysh",
+      "ayahCount": 4,
+      "revelation": "Makkah",
+      "ayahs": [
+        {
+          "number": 1,
+          "textArabic": " لِإِيلَـٰفِ قُرَيْشٍ",
+          "textTransliteration": "",
+          "translationEnglish": "For the accustomed security of the Quraysh -",
+          "translationIndonesian": "Karena kebiasaan orang-orang Quraisy,"
+        },
+        {
+          "number": 2,
+          "textArabic": "إِۦلَـٰفِهِمْ رِحْلَةَ ٱلشِّتَآءِ وَٱلصَّيْفِ",
+          "textTransliteration": "",
+          "translationEnglish": "Their accustomed security [in] the caravan of winter and summer -",
+          "translationIndonesian": "(yaitu) kebiasaan mereka bepergian pada musim dingin dan musim panas."
+        },
+        {
+          "number": 3,
+          "textArabic": "فَلْيَعْبُدُوا۟ رَبَّ هَـٰذَا ٱلْبَيْتِ",
+          "textTransliteration": "",
+          "translationEnglish": "Let them worship the Lord of this House,",
+          "translationIndonesian": "Maka hendaklah mereka menyembah Tuhan (pemilik) rumah ini (Ka'bah),"
+        },
+        {
+          "number": 4,
+          "textArabic": "ٱلَّذِىٓ أَطْعَمَهُم مِّن جُوعٍ وَءَامَنَهُم مِّنْ خَوْفٍۭ",
+          "textTransliteration": "",
+          "translationEnglish": "Who has fed them, [saving them] from hunger and made them safe, [saving them] from fear.",
+          "translationIndonesian": "yang telah memberi makanan kepada mereka untuk menghilangkan lapar dan mengamankan mereka dari rasa ketakutan."
+        }
+      ]
+    },
+    {
+      "number": 107,
+      "nameArabic": "الماعون",
+      "nameTransliteration": "Al-Ma'un",
+      "nameTranslation": "The Small Kindnesses",
+      "ayahCount": 7,
+      "revelation": "Makkah",
+      "ayahs": [
+        {
+          "number": 1,
+          "textArabic": " أَرَءَيْتَ ٱلَّذِى يُكَذِّبُ بِٱلدِّينِ",
+          "textTransliteration": "",
+          "translationEnglish": "Have you seen the one who denies the Recompense?",
+          "translationIndonesian": "Tahukah kamu (orang) yang mendustakan agama?"
+        },
+        {
+          "number": 2,
+          "textArabic": "فَذَٰلِكَ ٱلَّذِى يَدُعُّ ٱلْيَتِيمَ",
+          "textTransliteration": "",
+          "translationEnglish": "For that is the one who drives away the orphan",
+          "translationIndonesian": "Maka itulah orang yang menghardik anak yatim,"
+        },
+        {
+          "number": 3,
+          "textArabic": "وَلَا يَحُضُّ عَلَىٰ طَعَامِ ٱلْمِسْكِينِ",
+          "textTransliteration": "",
+          "translationEnglish": "And does not encourage the feeding of the poor.",
+          "translationIndonesian": "dan tidak mengajak memberi makan orang miskin."
+        },
+        {
+          "number": 4,
+          "textArabic": "فَوَيْلٌ لِّلْمُصَلِّينَ",
+          "textTransliteration": "",
+          "translationEnglish": "So woe to those who pray",
+          "translationIndonesian": "Maka celakalah orang yang salat,"
+        },
+        {
+          "number": 5,
+          "textArabic": "ٱلَّذِينَ هُمْ عَن صَلَاتِهِمْ سَاهُونَ",
+          "textTransliteration": "",
+          "translationEnglish": "[But] who are heedless of their prayer -",
+          "translationIndonesian": "(yaitu) orang-orang yang lalai terhadap salatnya,"
+        },
+        {
+          "number": 6,
+          "textArabic": "ٱلَّذِينَ هُمْ يُرَآءُونَ",
+          "textTransliteration": "",
+          "translationEnglish": "Those who make show [of their deeds]",
+          "translationIndonesian": "yang berbuat riya`,"
+        },
+        {
+          "number": 7,
+          "textArabic": "وَيَمْنَعُونَ ٱلْمَاعُونَ",
+          "textTransliteration": "",
+          "translationEnglish": "And withhold [simple] assistance.",
+          "translationIndonesian": "dan enggan (memberikan) bantuan."
+        }
+      ]
+    },
+    {
+      "number": 108,
+      "nameArabic": "الكوثر",
+      "nameTransliteration": "Al-Kawthar",
+      "nameTranslation": "The Abundance",
+      "ayahCount": 3,
+      "revelation": "Makkah",
+      "ayahs": [
+        {
+          "number": 1,
+          "textArabic": " إِنَّآ أَعْطَيْنَـٰكَ ٱلْكَوْثَرَ",
+          "textTransliteration": "",
+          "translationEnglish": "Indeed, We have granted you, [O Muḥammad], al-Kawthar.",
+          "translationIndonesian": "Sungguh, Kami telah memberimu (Muhammad) nikmat yang banyak."
+        },
+        {
+          "number": 2,
+          "textArabic": "فَصَلِّ لِرَبِّكَ وَٱنْحَرْ",
+          "textTransliteration": "",
+          "translationEnglish": "So pray to your Lord and offer sacrifice [to Him alone].",
+          "translationIndonesian": "Maka laksanakanlah salat karena Tuhanmu, dan berkurbanlah (sebagai ibadah dan mendekatkan diri kepada Allah)."
+        },
+        {
+          "number": 3,
+          "textArabic": "إِنَّ شَانِئَكَ هُوَ ٱلْأَبْتَرُ",
+          "textTransliteration": "",
+          "translationEnglish": "Indeed, your enemy is the one cut off.",
+          "translationIndonesian": "Sungguh, orang-orang yang membencimu dialah yang terputus (dari rahmat Allah)."
+        }
+      ]
+    },
+    {
+      "number": 109,
+      "nameArabic": "الكافرون",
+      "nameTransliteration": "Al-Kafirun",
+      "nameTranslation": "The Disbelievers",
+      "ayahCount": 6,
+      "revelation": "Makkah",
+      "ayahs": [
+        {
+          "number": 1,
+          "textArabic": " قُلْ يَـٰٓأَيُّهَا ٱلْكَـٰفِرُونَ",
+          "textTransliteration": "",
+          "translationEnglish": "Say, \"O disbelievers,",
+          "translationIndonesian": "Katakanlah (Muhammad), \"Wahai orang-orang kafir!"
+        },
+        {
+          "number": 2,
+          "textArabic": "لَآ أَعْبُدُ مَا تَعْبُدُونَ",
+          "textTransliteration": "",
+          "translationEnglish": "I do not worship what you worship.",
+          "translationIndonesian": "aku tidak akan menyembah apa yang kamu sembah,"
+        },
+        {
+          "number": 3,
+          "textArabic": "وَلَآ أَنتُمْ عَـٰبِدُونَ مَآ أَعْبُدُ",
+          "textTransliteration": "",
+          "translationEnglish": "Nor are you worshippers of what I worship.",
+          "translationIndonesian": "dan kamu bukan penyembah apa yang aku sembah,"
+        },
+        {
+          "number": 4,
+          "textArabic": "وَلَآ أَنَا۠ عَابِدٌ مَّا عَبَدتُّمْ",
+          "textTransliteration": "",
+          "translationEnglish": "Nor will I be a worshipper of what you worship.",
+          "translationIndonesian": "dan aku tidak pernah menjadi penyembah apa yang kamu sembah,"
+        },
+        {
+          "number": 5,
+          "textArabic": "وَلَآ أَنتُمْ عَـٰبِدُونَ مَآ أَعْبُدُ",
+          "textTransliteration": "",
+          "translationEnglish": "Nor will you be worshippers of what I worship.",
+          "translationIndonesian": "dan kamu tidak pernah (pula) menjadi penyembah apa yang aku sembah."
+        },
+        {
+          "number": 6,
+          "textArabic": "لَكُمْ دِينُكُمْ وَلِىَ دِينِ",
+          "textTransliteration": "",
+          "translationEnglish": "For you is your religion, and for me is my religion.\"",
+          "translationIndonesian": "Untukmu agamamu, dan untukku agamaku.\""
+        }
+      ]
+    },
+    {
+      "number": 110,
+      "nameArabic": "النصر",
+      "nameTransliteration": "An-Nasr",
+      "nameTranslation": "The Help",
+      "ayahCount": 3,
+      "revelation": "Madinah",
+      "ayahs": [
+        {
+          "number": 1,
+          "textArabic": " إِذَا جَآءَ نَصْرُ ٱللَّهِ وَٱلْفَتْحُ",
+          "textTransliteration": "",
+          "translationEnglish": "When the victory of Allāh has come and the conquest,",
+          "translationIndonesian": "Apabila telah datang pertolongan Allah dan kemenangan,"
+        },
+        {
+          "number": 2,
+          "textArabic": "وَرَأَيْتَ ٱلنَّاسَ يَدْخُلُونَ فِى دِينِ ٱللَّهِ أَفْوَاجًا",
+          "textTransliteration": "",
+          "translationEnglish": "And you see the people entering into the religion of Allāh in multitudes,",
+          "translationIndonesian": "dan engkau melihat manusia berbondong-bondong masuk agama Allah."
+        },
+        {
+          "number": 3,
+          "textArabic": "فَسَبِّحْ بِحَمْدِ رَبِّكَ وَٱسْتَغْفِرْهُ ۚ إِنَّهُۥ كَانَ تَوَّابًۢا",
+          "textTransliteration": "",
+          "translationEnglish": "Then exalt [Him] with praise of your Lord and ask forgiveness of Him. Indeed, He is ever Accepting of Repentance.",
+          "translationIndonesian": "maka bertasbihlah dengan memuji Tuhanmu dan mohonlah ampunan kepada-Nya. Sungguh, Dia Maha Penerima tobat."
+        }
+      ]
+    },
+    {
+      "number": 111,
+      "nameArabic": "المسد",
+      "nameTransliteration": "Al-Masad",
+      "nameTranslation": "The Palm Fiber",
+      "ayahCount": 5,
+      "revelation": "Makkah",
+      "ayahs": [
+        {
+          "number": 1,
+          "textArabic": " تَبَّتْ يَدَآ أَبِى لَهَبٍ وَتَبَّ",
+          "textTransliteration": "",
+          "translationEnglish": "May the hands of Abū Lahab be ruined, and ruined is he.",
+          "translationIndonesian": "Binasalah kedua tangan Abu Lahab dan benar-benar binasa dia!"
+        },
+        {
+          "number": 2,
+          "textArabic": "مَآ أَغْنَىٰ عَنْهُ مَالُهُۥ وَمَا كَسَبَ",
+          "textTransliteration": "",
+          "translationEnglish": "His wealth will not avail him or that which he gained.",
+          "translationIndonesian": "Tidaklah berguna baginya hartanya dan apa yang dia usahakan."
+        },
+        {
+          "number": 3,
+          "textArabic": "سَيَصْلَىٰ نَارًا ذَاتَ لَهَبٍ",
+          "textTransliteration": "",
+          "translationEnglish": "He will [enter to] burn in a Fire of [blazing] flame",
+          "translationIndonesian": "Kelak dia akan masuk ke dalam api yang bergejolak (neraka)."
+        },
+        {
+          "number": 4,
+          "textArabic": "وَٱمْرَأَتُهُۥ حَمَّالَةَ ٱلْحَطَبِ",
+          "textTransliteration": "",
+          "translationEnglish": "And his wife [as well] - the carrier of firewood.",
+          "translationIndonesian": "Dan (begitu pula) istrinya, pembawa kayu bakar (penyebar fitnah)."
+        },
+        {
+          "number": 5,
+          "textArabic": "فِى جِيدِهَا حَبْلٌ مِّن مَّسَدٍۭ",
+          "textTransliteration": "",
+          "translationEnglish": "Around her neck is a rope of [twisted] fiber.",
+          "translationIndonesian": "Di lehernya ada tali dari sabut yang dipintal."
+        }
+      ]
+    },
+    {
+      "number": 112,
+      "nameArabic": "الإخلاص",
+      "nameTransliteration": "Al-Ikhlas",
+      "nameTranslation": "The Sincerity",
+      "ayahCount": 4,
+      "revelation": "Makkah",
+      "ayahs": [
+        {
+          "number": 1,
+          "textArabic": " قُلْ هُوَ ٱللَّهُ أَحَدٌ",
+          "textTransliteration": "",
+          "translationEnglish": "Say, \"He is Allāh, [who is] One,",
+          "translationIndonesian": "Katakanlah (Muhammad), \"Dialah Allah, Yang Maha Esa."
+        },
+        {
+          "number": 2,
+          "textArabic": "ٱللَّهُ ٱلصَّمَدُ",
+          "textTransliteration": "",
+          "translationEnglish": "Allāh, the Eternal Refuge.",
+          "translationIndonesian": "Allah tempat meminta segala sesuatu."
+        },
+        {
+          "number": 3,
+          "textArabic": "لَمْ يَلِدْ وَلَمْ يُولَدْ",
+          "textTransliteration": "",
+          "translationEnglish": "He neither begets nor is born,",
+          "translationIndonesian": "(Allah) tidak beranak dan tidak pula diperanakkan."
+        },
+        {
+          "number": 4,
+          "textArabic": "وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌۢ",
+          "textTransliteration": "",
+          "translationEnglish": "Nor is there to Him any equivalent.\"",
+          "translationIndonesian": "Dan tidak ada sesuatu yang setara dengan Dia.\""
+        }
+      ]
+    },
+    {
+      "number": 113,
+      "nameArabic": "الفلق",
+      "nameTransliteration": "Al-Falaq",
+      "nameTranslation": "The Daybreak",
+      "ayahCount": 5,
+      "revelation": "Makkah",
+      "ayahs": [
+        {
+          "number": 1,
+          "textArabic": " قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ",
+          "textTransliteration": "",
+          "translationEnglish": "Say, \"I seek refuge in the Lord of daybreak",
+          "translationIndonesian": "Katakanlah, \"Aku berlindung kepada Tuhan yang menguasai subuh (fajar),"
+        },
+        {
+          "number": 2,
+          "textArabic": "مِن شَرِّ مَا خَلَقَ",
+          "textTransliteration": "",
+          "translationEnglish": "From the evil of that which He created",
+          "translationIndonesian": "dari kejahatan (makhluk yang) Dia ciptakan,"
+        },
+        {
+          "number": 3,
+          "textArabic": "وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ",
+          "textTransliteration": "",
+          "translationEnglish": "And from the evil of darkness when it settles",
+          "translationIndonesian": "dan dari kejahatan malam apabila telah gelap gulita,"
+        },
+        {
+          "number": 4,
+          "textArabic": "وَمِن شَرِّ ٱلنَّفَّـٰثَـٰتِ فِى ٱلْعُقَدِ",
+          "textTransliteration": "",
+          "translationEnglish": "And from the evil of the blowers in knots",
+          "translationIndonesian": "dan dari kejahatan (perempuan-perempuan) penyihir yang meniup pada buhul-buhul (talinya),"
+        },
+        {
+          "number": 5,
+          "textArabic": "وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ",
+          "textTransliteration": "",
+          "translationEnglish": "And from the evil of an envier when he envies.\"",
+          "translationIndonesian": "dan dari kejahatan orang yang dengki apabila dia dengki.\""
+        }
+      ]
+    },
+    {
+      "number": 114,
+      "nameArabic": "الناس",
+      "nameTransliteration": "An-Nas",
+      "nameTranslation": "Mankind",
+      "ayahCount": 6,
+      "revelation": "Makkah",
+      "ayahs": [
+        {
+          "number": 1,
+          "textArabic": " قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ",
+          "textTransliteration": "",
+          "translationEnglish": "Say, \"I seek refuge in the Lord of mankind,",
+          "translationIndonesian": "Katakanlah, \"Aku berlindung kepada Tuhannya manusia,"
+        },
+        {
+          "number": 2,
+          "textArabic": "مَلِكِ ٱلنَّاسِ",
+          "textTransliteration": "",
+          "translationEnglish": "The Sovereign of mankind,",
+          "translationIndonesian": "Raja manusia,"
+        },
+        {
+          "number": 3,
+          "textArabic": "إِلَـٰهِ ٱلنَّاسِ",
+          "textTransliteration": "",
+          "translationEnglish": "The God of mankind,",
+          "translationIndonesian": "sembahan manusia,"
+        },
+        {
+          "number": 4,
+          "textArabic": "مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ",
+          "textTransliteration": "",
+          "translationEnglish": "From the evil of the retreating whisperer -",
+          "translationIndonesian": "dari kejahatan (bisikan) setan yang bersembunyi,"
+        },
+        {
+          "number": 5,
+          "textArabic": "ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ",
+          "textTransliteration": "",
+          "translationEnglish": "Who whispers [evil] into the breasts of mankind -",
+          "translationIndonesian": "yang membisikkan (kejahatan) ke dalam dada manusia,"
+        },
+        {
+          "number": 6,
+          "textArabic": "مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ",
+          "textTransliteration": "",
+          "translationEnglish": "From among the jinn and mankind\".",
+          "translationIndonesian": "dari (golongan) jin dan manusia.\""
+        }
+      ]
+    }
+  ]
+}
