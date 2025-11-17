@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct LaunchScreenView: View {
     var body: some View {
@@ -63,4 +64,5 @@ struct LaunchScreenView: View {
 
 #Preview {
     LaunchScreenView()
+        .modelContainer(for: [Surah.self, Ayah.self, AppSettings.self, Translation.self], inMemory: true)
 }

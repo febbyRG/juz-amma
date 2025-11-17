@@ -311,5 +311,5 @@ struct EmptyStateView: View {
 
 #Preview {
     SurahListView()
-        .modelContainer(for: [Surah.self, Ayah.self, AppSettings.self], inMemory: true)
+        .modelContainer(for: [Surah.self, Ayah.self, AppSettings.self, Translation.self], inMemory: true)
 }

@@ -409,5 +409,5 @@ struct Badge: View {
             revelation: "Makkah"
         ))
     }
-    .modelContainer(for: [Surah.self, Ayah.self, AppSettings.self], inMemory: true)
+    .modelContainer(for: [Surah.self, Ayah.self, AppSettings.self, Translation.self], inMemory: true)
 }

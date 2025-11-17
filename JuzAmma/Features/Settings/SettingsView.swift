@@ -17,7 +17,6 @@ struct SettingsView: View {
     }
     
     @State private var selectedTheme: ThemeMode = .auto
-    @State private var showTransliteration = true
     @State private var notificationsEnabled = false
     @State private var showTranslationManager = false
     
@@ -123,7 +122,7 @@ struct SettingsView: View {
                         .foregroundStyle(.secondary)
                 }
                 
-                Link(destination: URL(string: "https://github.com/febbyRG/juz-amma-ios")!) {
+                Link(destination: URL(string: "https://github.com/febbyRG/juz-amma")!) {
                     HStack {
                         Label("GitHub Repository", systemImage: "link")
                         Spacer()
@@ -191,7 +190,6 @@ struct SettingsView: View {
         }
         
         selectedTheme = settings.themeMode
-        showTransliteration = settings.showTransliteration
         notificationsEnabled = settings.notificationsEnabled
     }
     
@@ -253,5 +251,5 @@ struct StatRow: View {
     NavigationStack {
         SettingsView()
     }
-    .modelContainer(for: [AppSettings.self, Surah.self], inMemory: true)
+    .modelContainer(for: [Surah.self, Ayah.self, AppSettings.self, Translation.self], inMemory: true)
 }
