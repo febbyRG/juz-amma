@@ -56,6 +56,25 @@ struct SettingsView: View {
                 Text("Download and manage translations in multiple languages")
             }
             
+            // Audio Settings
+            Section {
+                NavigationLink {
+                    QariSettingsView()
+                } label: {
+                    HStack {
+                        Label("Reciter (Qari)", systemImage: "speaker.wave.2")
+                        Spacer()
+                        Text(settings?.selectedQari ?? "Mishary Alafasy")
+                            .foregroundStyle(.secondary)
+                            .lineLimit(1)
+                    }
+                }
+            } header: {
+                Label("Audio", systemImage: "speaker.wave.3")
+            } footer: {
+                Text("Choose your preferred Quran reciter")
+            }
+            
             // Notifications
             Section {
                 Toggle(isOn: $notificationsEnabled) {

@@ -1,4 +1,7 @@
-# Juz Amma - iOS App
+#!/usr/bin/env python3
+"""Script to update README.md with clean format and Phase 3."""
+
+readme_content = """# Juz Amma - iOS App
 
 A Modern SwiftUI App for Memorizing Juz Amma
 
@@ -262,3 +265,14 @@ Febby Rachmat Gumilar (@febbyRG)
 Made with love in Bandung, Indonesia
 
 Bismillah, let us make Quranic learning accessible for everyone!
+"""
+
+if __name__ == "__main__":
+    import os
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    readme_path = os.path.join(script_dir, "..", "README.md")
+    
+    with open(readme_path, "w", encoding="utf-8") as f:
+        f.write(readme_content)
+    
+    print(f"README.md updated successfully at {readme_path}")

@@ -17,6 +17,9 @@ struct SurahDetailView: View {
     @State private var showTranslationPicker = false
     @State private var showTranslationManager = false
     @State private var availableTranslations: [DownloadedTranslation] = []
+    @State private var showAudioPlayer = false
+    @State private var showQariPicker = false
+    @StateObject private var audioService = AudioPlayerService()
     
     private var settings: AppSettings? {
         appSettings.first
@@ -29,50 +32,60 @@ struct SurahDetailView: View {
     }
     
     var body: some View {
-        ScrollView {
-            VStack(spacing: 24) {
-                // Surah Header
-                SurahHeader(surah: surah)
-                    .padding(.horizontal)
-                
-                // Bismillah (except for Surah 9)
-                if surah.number != 9 {
-                    BismillahView()
+        ZStack(alignment: .bottom) {
+            ScrollView {
+                VStack(spacing: 24) {
+                    // Surah Header with Play Button
+                    SurahHeader(surah: surah, audioService: audioService)
                         .padding(.horizontal)
-                }
-                
-                // Ayah List
-                if let ayahs = surah.ayahs, !ayahs.isEmpty {
-                    VStack(spacing: 20) {
-                        ForEach(ayahs.sorted(by: { $0.number < $1.number })) { ayah in
-                            AyahView(
-                                ayah: ayah,
-                                fontSize: fontSize,
-                                settings: settings
-                            )
+                    
+                    // Bismillah (except for Surah 9)
+                    if surah.number != 9 {
+                        BismillahView()
+                            .padding(.horizontal)
+                    }
+                    
+                    // Ayah List
+                    if let ayahs = surah.ayahs, !ayahs.isEmpty {
+                        VStack(spacing: 20) {
+                            ForEach(ayahs.sorted(by: { $0.number < $1.number })) { ayah in
+                                AyahView(
+                                    ayah: ayah,
+                                    fontSize: fontSize,
+                                    settings: settings,
+                                    audioService: audioService,
+                                    surahNumber: surah.number
+                                )
+                            }
                         }
+                        .padding(.horizontal)
+                    } else {
+                        // No ayahs loaded yet
+                        VStack(spacing: 16) {
+                            Image(systemName: "book.closed")
+                                .font(.system(size: 48))
+                                .foregroundStyle(.secondary)
+                            
+                            Text("Ayahs not available yet")
+                                .font(.headline)
+                                .foregroundStyle(.secondary)
+                            
+                            Text("Full content will be added soon")
+                                .font(.subheadline)
+                                .foregroundStyle(.tertiary)
+                        }
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 60)
                     }
-                    .padding(.horizontal)
-                } else {
-                    // No ayahs loaded yet
-                    VStack(spacing: 16) {
-                        Image(systemName: "book.closed")
-                            .font(.system(size: 48))
-                            .foregroundStyle(.secondary)
-                        
-                        Text("Ayahs not available yet")
-                            .font(.headline)
-                            .foregroundStyle(.secondary)
-                        
-                        Text("Full content will be added soon")
-                            .font(.subheadline)
-                            .foregroundStyle(.tertiary)
+                    
+                    // Bottom padding for audio player
+                    if showAudioPlayer {
+                        Spacer()
+                            .frame(height: 80)
                     }
-                    .frame(maxWidth: .infinity)
-                    .padding(.vertical, 60)
                 }
+                .padding(.vertical)
             }
-            .padding(.vertical)
         }
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
@@ -144,6 +157,40 @@ struct SurahDetailView: View {
                     Image(systemName: "ellipsis.circle")
                 }
             }
+            
+            // Audio Play Button in toolbar
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button {
+                    if audioService.state.isPlaying {
+                        audioService.pause()
+                    } else if audioService.state == .paused {
+                        audioService.resume()
+                    } else {
+                        showAudioPlayer = true
+                        Task {
+                            await audioService.playSurahFull(surah.number)
+                        }
+                    }
+                } label: {
+                    Image(systemName: audioService.state.isPlaying ? "pause.circle.fill" : "play.circle.fill")
+                        .font(.title2)
+                        .foregroundStyle(AppColors.primaryGreen)
+                }
+            }
+        }
+        // Audio Player overlay
+        .safeAreaInset(edge: .bottom) {
+            if showAudioPlayer || audioService.state != .idle {
+                AudioPlayerView(
+                    audioService: audioService,
+                    surahNumber: surah.number,
+                    surahName: surah.nameTransliteration,
+                    onShowQariPicker: {
+                        showQariPicker = true
+                    }
+                )
+                .transition(.move(edge: .bottom))
+            }
         }
         .sheet(isPresented: $showTranslationPicker) {
             TranslationPickerView(
@@ -159,6 +206,16 @@ struct SurahDetailView: View {
             NavigationStack {
                 TranslationManagerView()
             }
+        }
+        .sheet(isPresented: $showQariPicker) {
+            QariPickerView(
+                selectedQari: audioService.selectedQari,
+                onSelect: { qari in
+                    audioService.setQari(qari)
+                    showQariPicker = false
+                }
+            )
+            .presentationDetents([.medium, .large])
         }
         .onChange(of: showTranslationManager) { _, isShowing in
             // Reload translations when coming back from TranslationManagerView
@@ -238,12 +295,13 @@ struct SurahDetailView: View {
 // MARK: - Surah Header
 struct SurahHeader: View {
     let surah: Surah
+    @ObservedObject var audioService: AudioPlayerService
     
     var body: some View {
         VStack(spacing: 12) {
             // Arabic Name (Large)
             Text(surah.nameArabic)
-                .font(.custom("GeezaPro-Bold", size: 40))
+                .font(.custom(AppConstants.Fonts.arabicDisplayBold, size: 40))
                 .environment(\.layoutDirection, .rightToLeft)
             
             // Transliteration & Translation
@@ -262,6 +320,37 @@ struct SurahHeader: View {
             }
             .font(.subheadline)
             .foregroundStyle(.secondary)
+            
+            // Play Audio Button
+            Button {
+                if audioService.state.isPlaying {
+                    audioService.pause()
+                } else if audioService.state == .paused {
+                    audioService.resume()
+                } else {
+                    Task {
+                        await audioService.playSurahFull(surah.number)
+                    }
+                }
+            } label: {
+                HStack(spacing: 8) {
+                    if audioService.state.isLoading {
+                        ProgressView()
+                            .scaleEffect(0.8)
+                            .tint(.white)
+                    } else {
+                        Image(systemName: audioService.state.isPlaying ? "pause.fill" : "play.fill")
+                    }
+                    Text(audioService.state.isPlaying ? "Pause" : "Play Surah")
+                        .font(.subheadline.bold())
+                }
+                .foregroundStyle(.white)
+                .padding(.horizontal, 20)
+                .padding(.vertical, 10)
+                .background(AppColors.primaryGreen)
+                .clipShape(Capsule())
+            }
+            .padding(.top, 8)
             
             // Status Badges
             HStack(spacing: 12) {
@@ -310,10 +399,12 @@ struct AyahView: View {
     let ayah: Ayah
     let fontSize: CGFloat
     let settings: AppSettings?
+    @ObservedObject var audioService: AudioPlayerService
+    let surahNumber: Int
     
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
-            // Ayah Number Badge
+            // Ayah Number Badge with Audio Button
             HStack {
                 Text("\(ayah.number)")
                     .font(.caption.bold())
@@ -323,6 +414,13 @@ struct AyahView: View {
                     .clipShape(Capsule())
                 
                 Spacer()
+                
+                // Verse Audio Button
+                VerseAudioButton(
+                    audioService: audioService,
+                    surahNumber: surahNumber,
+                    verseNumber: ayah.number
+                )
             }
             
             // Arabic Text (RTL, larger font)

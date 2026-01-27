@@ -30,6 +30,12 @@ enum AppConstants {
         static let baseURL = "https://api.quran.com/api/v4"
         static let translationsEndpoint = "/resources/translations"
         static let quranTranslationsEndpoint = "/quran/translations"
+        static let recitationsEndpoint = "/resources/recitations"
+        static let chapterRecitationsEndpoint = "/chapter_recitations"
+        static let verseRecitationsEndpoint = "/recitations"
+        
+        /// Base URL for verse-level audio files
+        static let verseAudioBaseURL = "https://verses.quran.com"
         
         /// Rate limiting delay between API calls (in milliseconds)
         static let rateLimitDelay: UInt64 = 300
@@ -125,6 +131,9 @@ enum AccessibilityIdentifiers {
     static let translationManager = "translation_manager"
     static let progressCard = "progress_card"
     static let filterChip = "filter_chip"
+    static let audioPlayer = "audio_player"
+    static let playButton = "play_button"
+    static let pauseButton = "pause_button"
 }
 
 // MARK: - Localization Keys (for future i18n support)
