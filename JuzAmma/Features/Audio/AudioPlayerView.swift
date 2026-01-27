@@ -15,10 +15,9 @@ struct AudioPlayerView: View {
     let surahNumber: Int
     let surahName: String
     
-    // Callback to show qari picker in parent view (avoids UIReparentingView error)
+    // Callbacks to show pickers in parent view (avoids UIReparentingView error)
     var onShowQariPicker: (() -> Void)?
-    
-    @State private var showSpeedPicker = false
+    var onShowOptionsSheet: (() -> Void)?
     
     private var isPlaying: Bool {
         audioService.state == .playing
@@ -123,51 +122,9 @@ struct AudioPlayerView: View {
                 }
                 .frame(width: 50)
                 
-                // More Options
-                Menu {
-                    // Qari Selection
-                    Button {
-                        onShowQariPicker?()
-                    } label: {
-                        Label("Change Reciter", systemImage: "person.wave.2")
-                    }
-                    
-                    // Playback Speed
-                    Menu {
-                        ForEach([0.5, 0.75, 1.0, 1.25, 1.5], id: \.self) { speed in
-                            Button {
-                                audioService.setPlaybackSpeed(Float(speed))
-                            } label: {
-                                HStack {
-                                    Text("\(speed, specifier: "%.2g")x")
-                                    if audioService.playbackSpeed == Float(speed) {
-                                        Image(systemName: "checkmark")
-                                    }
-                                }
-                            }
-                        }
-                    } label: {
-                        Label("Playback Speed", systemImage: "speedometer")
-                    }
-                    
-                    // Repeat Toggle
-                    Button {
-                        audioService.isRepeatEnabled.toggle()
-                    } label: {
-                        Label(
-                            audioService.isRepeatEnabled ? "Repeat: On" : "Repeat: Off",
-                            systemImage: audioService.isRepeatEnabled ? "repeat.1" : "repeat"
-                        )
-                    }
-                    
-                    Divider()
-                    
-                    // Stop
-                    Button(role: .destructive) {
-                        audioService.stop()
-                    } label: {
-                        Label("Stop", systemImage: "stop.circle")
-                    }
+                // More Options - use button instead of Menu to avoid UIReparentingView
+                Button {
+                    onShowOptionsSheet?()
                 } label: {
                     Image(systemName: "ellipsis.circle")
                         .font(.title2)
@@ -368,6 +325,98 @@ struct VerseAudioButton: View {
                 .foregroundStyle(isThisVersePlaying ? AppColors.primaryGreen : .secondary)
         }
         .buttonStyle(.plain)
+    }
+}
+
+// MARK: - Audio Options Sheet
+
+/// Sheet view for audio player options (replaces Menu to avoid UIReparentingView issues)
+struct AudioOptionsSheet: View {
+    @ObservedObject var audioService: AudioPlayerService
+    @Environment(\.dismiss) private var dismiss
+    var onShowQariPicker: (() -> Void)?
+    
+    var body: some View {
+        NavigationStack {
+            List {
+                // Qari Selection
+                Section {
+                    Button {
+                        dismiss()
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                            onShowQariPicker?()
+                        }
+                    } label: {
+                        Label {
+                            VStack(alignment: .leading) {
+                                Text("Change Reciter")
+                                Text(audioService.selectedQari.displayName)
+                                    .font(.caption)
+                                    .foregroundStyle(.secondary)
+                            }
+                        } icon: {
+                            Image(systemName: "person.wave.2")
+                                .foregroundStyle(AppColors.primaryGreen)
+                        }
+                    }
+                    .foregroundStyle(.primary)
+                }
+                
+                // Playback Speed
+                Section("Playback Speed") {
+                    ForEach([0.5, 0.75, 1.0, 1.25, 1.5], id: \.self) { speed in
+                        Button {
+                            audioService.setPlaybackSpeed(Float(speed))
+                        } label: {
+                            HStack {
+                                Text("\(speed, specifier: "%.2g")x")
+                                    .foregroundStyle(.primary)
+                                Spacer()
+                                if audioService.playbackSpeed == Float(speed) {
+                                    Image(systemName: "checkmark")
+                                        .foregroundStyle(AppColors.primaryGreen)
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                // Repeat Toggle
+                Section {
+                    Button {
+                        audioService.isRepeatEnabled.toggle()
+                    } label: {
+                        Label {
+                            Text(audioService.isRepeatEnabled ? "Repeat: On" : "Repeat: Off")
+                        } icon: {
+                            Image(systemName: audioService.isRepeatEnabled ? "repeat.1" : "repeat")
+                                .foregroundStyle(audioService.isRepeatEnabled ? AppColors.primaryGreen : .secondary)
+                        }
+                    }
+                    .foregroundStyle(.primary)
+                }
+                
+                // Stop
+                Section {
+                    Button(role: .destructive) {
+                        audioService.stop()
+                        dismiss()
+                    } label: {
+                        Label("Stop Playback", systemImage: "stop.circle")
+                    }
+                }
+            }
+            .navigationTitle("Audio Options")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button("Done") {
+                        dismiss()
+                    }
+                }
+            }
+        }
+        .presentationDetents([.medium])
     }
 }
 

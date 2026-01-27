@@ -19,6 +19,7 @@ struct SurahDetailView: View {
     @State private var availableTranslations: [DownloadedTranslation] = []
     @State private var showAudioPlayer = false
     @State private var showQariPicker = false
+    @State private var showAudioOptions = false
     @StateObject private var audioService = AudioPlayerService()
     
     private var settings: AppSettings? {
@@ -187,6 +188,9 @@ struct SurahDetailView: View {
                     surahName: surah.nameTransliteration,
                     onShowQariPicker: {
                         showQariPicker = true
+                    },
+                    onShowOptionsSheet: {
+                        showAudioOptions = true
                     }
                 )
                 .transition(.move(edge: .bottom))
@@ -216,6 +220,14 @@ struct SurahDetailView: View {
                 }
             )
             .presentationDetents([.medium, .large])
+        }
+        .sheet(isPresented: $showAudioOptions) {
+            AudioOptionsSheet(
+                audioService: audioService,
+                onShowQariPicker: {
+                    showQariPicker = true
+                }
+            )
         }
         .onChange(of: showTranslationManager) { _, isShowing in
             // Reload translations when coming back from TranslationManagerView
