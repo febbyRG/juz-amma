@@ -16,13 +16,15 @@ struct SurahDetailView: View {
     @State private var fontSize: CGFloat = 20
     @State private var showTranslationPicker = false
     @State private var showTranslationManager = false
-    @State private var availableTranslations: [(id: Int, name: String, code: String)] = []
+    @State private var availableTranslations: [DownloadedTranslation] = []
     
     private var settings: AppSettings? {
         appSettings.first
     }
     
-    private var service: QuranDataService {
+    /// Creates a QuranDataService instance for data operations
+    /// Note: Service is intentionally created fresh as it's a lightweight wrapper around ModelContext
+    private func makeQuranService() -> QuranDataService {
         QuranDataService(modelContext: modelContext)
     }
     
@@ -172,7 +174,7 @@ struct SurahDetailView: View {
     
     private func toggleBookmark() {
         do {
-            try service.toggleBookmark(for: surah)
+            try makeQuranService().toggleBookmark(for: surah)
         } catch {
             print("Failed to toggle bookmark: \(error.localizedDescription)")
         }
@@ -180,7 +182,7 @@ struct SurahDetailView: View {
     
     private func toggleMemorization() {
         do {
-            try service.toggleMemorization(for: surah)
+            try makeQuranService().toggleMemorization(for: surah)
         } catch {
             print("Failed to toggle memorization: \(error.localizedDescription)")
         }
@@ -194,7 +196,7 @@ struct SurahDetailView: View {
                 try modelContext.save()
             } else {
                 // Set as next to memorize
-                try service.setNextToMemorize(surah)
+                try makeQuranService().setNextToMemorize(surah)
             }
         } catch {
             print("Failed to toggle next to memorize: \(error.localizedDescription)")
@@ -220,7 +222,11 @@ struct SurahDetailView: View {
             let grouped = Dictionary(grouping: allTranslations, by: { $0.id })
             availableTranslations = grouped.compactMap { id, translations in
                 guard let first = translations.first else { return nil }
-                return (id: id, name: first.name, code: first.languageCode)
+                return DownloadedTranslation(
+                    id: id,
+                    name: first.name,
+                    languageCode: first.languageCode
+                )
             }.sorted { $0.name < $1.name }
             
         } catch {
@@ -322,7 +328,7 @@ struct AyahView: View {
             // Arabic Text (RTL, larger font)
             // Using Amiri Quran font for proper harakat rendering
             Text(ayah.textArabic)
-                .font(.custom("Amiri Quran", size: fontSize + 8))
+                .font(.custom(AppConstants.Fonts.quranArabic, size: fontSize + 8))
                 .tracking(0.5)
                 .frame(maxWidth: .infinity, alignment: .trailing)
                 .environment(\.layoutDirection, .rightToLeft)

@@ -111,18 +111,18 @@ struct SettingsView: View {
                 HStack {
                     Text("Version")
                     Spacer()
-                    Text("1.0.0")
+                    Text(AppConstants.appVersion)
                         .foregroundStyle(.secondary)
                 }
                 
                 HStack {
                     Text("Developer")
                     Spacer()
-                    Text("Febby Rachmat G.")
+                    Text(AppConstants.developerName)
                         .foregroundStyle(.secondary)
                 }
                 
-                Link(destination: URL(string: "https://github.com/febbyRG/juz-amma")!) {
+                Link(destination: AppConstants.githubURL) {
                     HStack {
                         Label("GitHub Repository", systemImage: "link")
                         Spacer()
@@ -140,11 +140,11 @@ struct SettingsView: View {
                         Spacer()
                     }
                 }
-            } header: {
+            } header:{
                 Label("About", systemImage: "info.circle")
             } footer: {
                 VStack(alignment: .leading, spacing: 8) {
-                    Text("Juz Amma - Islamic Learning App")
+                    Text("\(AppConstants.appName) - Islamic Learning App")
                     Text("Made with ❤️ for Muslims worldwide")
                     Text("Open source • Free • No Ads")
                 }

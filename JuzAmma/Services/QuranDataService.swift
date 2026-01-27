@@ -10,12 +10,19 @@ import SwiftData
 
 /// Service for loading and managing Quran data
 @MainActor
-class QuranDataService {
+final class QuranDataService {
+    
+    // MARK: - Properties
+    
     private let modelContext: ModelContext
+    
+    // MARK: - Initialization
     
     init(modelContext: ModelContext) {
         self.modelContext = modelContext
     }
+    
+    // MARK: - Data Loading
     
     /// Load Juz Amma data from JSON file into SwiftData
     func loadJuzAmmaData() async throws {

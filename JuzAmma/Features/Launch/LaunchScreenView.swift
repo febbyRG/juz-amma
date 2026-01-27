@@ -12,15 +12,8 @@ struct LaunchScreenView: View {
     var body: some View {
         ZStack {
             // Background gradient
-            LinearGradient(
-                colors: [
-                    Color(red: 0.165, green: 0.620, blue: 0.427),
-                    Color(red: 0.263, green: 0.722, blue: 0.549)
-                ],
-                startPoint: .topLeading,
-                endPoint: .bottomTrailing
-            )
-            .ignoresSafeArea()
+            AppColors.brandGradient
+                .ignoresSafeArea()
             
             VStack(spacing: 24) {
                 Spacer()
@@ -29,19 +22,19 @@ struct LaunchScreenView: View {
                 Image("AppIconImage")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 120, height: 120)
-                    .cornerRadius(26.4)
+                    .frame(width: AppConstants.Layout.iconSizeLarge, height: AppConstants.Layout.iconSizeLarge)
+                    .cornerRadius(AppConstants.Layout.appIconCornerRadius)
                     .shadow(color: .black.opacity(0.2), radius: 10, x: 0, y: 4)
                 
                 // Bismillah
                 Text("بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ")
-                    .font(.custom("Amiri Quran", size: 24))
+                    .font(.custom(AppConstants.Fonts.quranArabic, size: 24))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal)
                 
                 // App Name
-                Text("Juz Amma")
+                Text(AppConstants.appName)
                     .font(.system(size: 36, weight: .bold, design: .rounded))
                     .foregroundColor(.white)
                 
@@ -53,7 +46,7 @@ struct LaunchScreenView: View {
                 Spacer()
                 
                 // Version
-                Text("Version 1.0")
+                Text("Version \(AppConstants.appVersion)")
                     .font(.system(size: 12, weight: .regular))
                     .foregroundColor(.white.opacity(0.7))
                     .padding(.bottom, 20)

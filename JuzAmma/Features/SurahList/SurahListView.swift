@@ -132,13 +132,24 @@ struct SurahListView: View {
 struct SurahRow: View {
     let surah: Surah
     
+    private var accessibilityDescription: String {
+        var description = "Surah \(surah.number), \(surah.nameTransliteration), \(surah.nameTranslation), \(surah.ayahCount) verses"
+        if surah.isBookmarked {
+            description += ", bookmarked"
+        }
+        if surah.isMemorized {
+            description += ", memorized"
+        }
+        return description
+    }
+    
     var body: some View {
         HStack(spacing: 16) {
             // Surah Number Circle
             ZStack {
                 Circle()
                     .fill(Color.accentColor.opacity(0.1))
-                    .frame(width: 50, height: 50)
+                    .frame(width: AppConstants.Layout.iconSizeSmall, height: AppConstants.Layout.iconSizeSmall)
                 
                 Text("\(surah.number)")
                     .font(.system(.body, design: .rounded, weight: .semibold))
@@ -168,7 +179,7 @@ struct SurahRow: View {
             
             // Arabic Name
             Text(surah.nameArabic)
-                .font(.custom("GeezaPro", size: 20))
+                .font(.custom(AppConstants.Fonts.arabicDisplay, size: 20))
                 .environment(\.layoutDirection, .rightToLeft)
             
             // Status Indicators
@@ -176,17 +187,20 @@ struct SurahRow: View {
                 if surah.isBookmarked {
                     Image(systemName: "bookmark.fill")
                         .font(.caption)
-                        .foregroundStyle(Color.accentColor)
+                        .foregroundStyle(AppColors.bookmarked)
                 }
                 
                 if surah.isMemorized {
                     Image(systemName: "checkmark.circle.fill")
                         .font(.caption)
-                        .foregroundStyle(.green)
+                        .foregroundStyle(AppColors.memorized)
                 }
             }
         }
         .padding(.vertical, 4)
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel(accessibilityDescription)
+        .accessibilityIdentifier(AccessibilityIdentifiers.surahRow)
     }
 }
 

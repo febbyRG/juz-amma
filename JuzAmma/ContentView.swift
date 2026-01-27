@@ -131,19 +131,18 @@ struct ContentView: View {
         loadError = nil
         
         do {
-            let service = QuranDataService(modelContext: modelContext)
-            try await service.loadJuzAmmaData()
+            let quranService = QuranDataService(modelContext: modelContext)
+            try await quranService.loadJuzAmmaData()
             
             // Clean existing translations that have HTML tags
             let translationService = TranslationService(modelContext: modelContext)
             try translationService.cleanExistingTranslations()
             
             // Small delay for smooth transition
-            try? await Task.sleep(for: .seconds(0.5))
+            try? await Task.sleep(for: .seconds(AppConstants.Animation.loadingTransitionDelay))
             
             isLoading = false
         } catch {
-            print("Failed to load Quran data: \(error.localizedDescription)")
             loadError = error
             isLoading = false
         }

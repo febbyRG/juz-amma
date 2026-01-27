@@ -60,6 +60,20 @@ struct TranslationInfo: Codable, Identifiable, Hashable {
     }
 }
 
+/// Represents a downloaded translation with its metadata
+/// Used instead of tuples for type safety and clarity
+struct DownloadedTranslation: Identifiable, Hashable {
+    let id: Int
+    let name: String
+    let languageCode: String
+    
+    init(id: Int, name: String, languageCode: String) {
+        self.id = id
+        self.name = name
+        self.languageCode = languageCode
+    }
+}
+
 /// Popular pre-defined translations
 enum PopularTranslation: CaseIterable, Identifiable {
     case saheehInternational

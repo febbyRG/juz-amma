@@ -21,7 +21,9 @@ struct TranslationManagerView: View {
     @State private var translationToDelete: (id: Int, name: String)?
     @State private var showDeleteConfirmation = false
     
-    private var service: TranslationService {
+    /// Creates a TranslationService instance for data operations
+    /// Note: Service is intentionally created fresh as it's a lightweight wrapper around ModelContext
+    private func makeTranslationService() -> TranslationService {
         TranslationService(modelContext: modelContext)
     }
     
@@ -144,6 +146,8 @@ struct TranslationManagerView: View {
         isLoading = true
         errorMessage = nil
         
+        let service = makeTranslationService()
+        
         do {
             // Load downloaded IDs
             downloadedIds = try service.getDownloadedTranslationIds()
@@ -165,6 +169,8 @@ struct TranslationManagerView: View {
     private func downloadTranslation(id: Int, languageCode: String, name: String) async {
         // Set initial progress
         downloadingProgress[id] = 0
+        
+        let service = makeTranslationService()
         
         do {
             try await service.downloadTranslation(
@@ -190,6 +196,8 @@ struct TranslationManagerView: View {
     }
     
     private func deleteTranslation(id: Int) {
+        let service = makeTranslationService()
+        
         do {
             try service.deleteTranslation(translationId: id)
             downloadedIds = try service.getDownloadedTranslationIds()

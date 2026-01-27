@@ -10,9 +10,13 @@ import SwiftData
 
 /// Service for managing Quran translations
 @MainActor
-class TranslationService {
+final class TranslationService {
+    
+    // MARK: - Properties
+    
     private let modelContext: ModelContext
-    private let baseURL = "https://api.quran.com/api/v4"
+    
+    // MARK: - Initialization
     
     init(modelContext: ModelContext) {
         self.modelContext = modelContext
@@ -105,7 +109,10 @@ class TranslationService {
     
     /// Fetch list of all available translations from API
     func fetchAvailableTranslations() async throws -> [TranslationInfo] {
-        let url = URL(string: "\(baseURL)/resources/translations")!
+        guard let url = URL(string: "\(AppConstants.API.baseURL)\(AppConstants.API.translationsEndpoint)") else {
+            throw TranslationError.networkError
+        }
+        
         let (data, _) = try await URLSession.shared.data(from: url)
         
         struct Response: Codable {
@@ -137,9 +144,9 @@ class TranslationService {
         translationId: Int,
         languageCode: String,
         name: String,
-        progress: @escaping (Double) -> Void
+        progress: @escaping @Sendable (Double) -> Void
     ) async throws {
-        let juzAmmaSurahs = 78...114
+        let juzAmmaSurahs = AppConstants.juzAmmaSurahRange
         let totalSurahs = juzAmmaSurahs.count
         var completed = 0
         
@@ -163,7 +170,10 @@ class TranslationService {
         languageCode: String,
         name: String
     ) async throws {
-        let url = URL(string: "\(baseURL)/quran/translations/\(translationId)?chapter_number=\(surahNumber)")!
+        guard let url = URL(string: "\(AppConstants.API.baseURL)\(AppConstants.API.quranTranslationsEndpoint)/\(translationId)?chapter_number=\(surahNumber)") else {
+            throw TranslationError.networkError
+        }
+        
         let (data, _) = try await URLSession.shared.data(from: url)
         
         struct Response: Codable {
@@ -217,7 +227,7 @@ class TranslationService {
         try modelContext.save()
         
         // Small delay to avoid rate limiting
-        try await Task.sleep(for: .milliseconds(300))
+        try await Task.sleep(for: .milliseconds(AppConstants.API.rateLimitDelay))
     }
     
     // MARK: - Manage Downloaded Translations

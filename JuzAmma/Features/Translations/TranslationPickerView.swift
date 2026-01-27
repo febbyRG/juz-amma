@@ -13,18 +13,11 @@ struct TranslationPickerView: View {
     @Environment(\.dismiss) private var dismiss
     @Query private var appSettings: [AppSettings]
     
-    let availableTranslations: [(id: Int, name: String, code: String)]
+    let availableTranslations: [DownloadedTranslation]
     let onManageTranslations: () -> Void
     
     private var settings: AppSettings? {
-        if let existing = appSettings.first {
-            return existing
-        }
-        // Create settings if it doesn't exist
-        let newSettings = AppSettings()
-        modelContext.insert(newSettings)
-        try? modelContext.save()
-        return newSettings
+        appSettings.first
     }
     
     var body: some View {
@@ -53,7 +46,7 @@ struct TranslationPickerView: View {
                                         Text(translation.name)
                                             .font(.headline)
                                         
-                                        Text(translation.code.uppercased())
+                                        Text(translation.languageCode.uppercased())
                                             .font(.caption)
                                             .foregroundStyle(.secondary)
                                     }
@@ -99,7 +92,7 @@ struct TranslationPickerView: View {
                                             Text(translation.name)
                                                 .font(.headline)
                                             
-                                            Text(translation.code.uppercased())
+                                            Text(translation.languageCode.uppercased())
                                                 .font(.caption)
                                                 .foregroundStyle(.secondary)
                                         }
@@ -142,15 +135,13 @@ struct TranslationPickerView: View {
         }
     }
     
-    private func selectPrimaryTranslation(_ translation: (id: Int, name: String, code: String)) {
-        print("🔍 Selecting primary translation: \(translation.name) (ID: \(translation.id))")
+    private func selectPrimaryTranslation(_ translation: DownloadedTranslation) {
         guard let settings = settings else {
-            print("❌ Settings is nil!")
             return
         }
         
         settings.primaryTranslationId = translation.id
-        settings.primaryTranslationLanguage = translation.code
+        settings.primaryTranslationLanguage = translation.languageCode
         
         // If secondary is same as primary, clear it
         if settings.secondaryTranslationId == translation.id {
@@ -160,17 +151,16 @@ struct TranslationPickerView: View {
         
         do {
             try modelContext.save()
-            print("✅ Primary translation saved: \(translation.name)")
         } catch {
-            print("❌ Failed to save: \(error)")
+            // Handle save error silently - UI will still reflect the change
         }
     }
     
-    private func selectSecondaryTranslation(_ translation: (id: Int, name: String, code: String)) {
+    private func selectSecondaryTranslation(_ translation: DownloadedTranslation) {
         guard let settings = settings else { return }
         
         settings.secondaryTranslationId = translation.id
-        settings.secondaryTranslationLanguage = translation.code
+        settings.secondaryTranslationLanguage = translation.languageCode
         
         try? modelContext.save()
     }
