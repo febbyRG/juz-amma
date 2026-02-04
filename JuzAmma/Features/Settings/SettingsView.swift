@@ -19,6 +19,9 @@ struct SettingsView: View {
     @State private var selectedTheme: ThemeMode = .auto
     @State private var notificationsEnabled = false
     @State private var showTranslationManager = false
+    @State private var audioCacheSize: String = "Calculating..."
+    @State private var audioCacheCount: Int = 0
+    @State private var showClearCacheAlert = false
     
     var body: some View {
         Form {
@@ -69,10 +72,35 @@ struct SettingsView: View {
                             .lineLimit(1)
                     }
                 }
+                
+                // Audio Cache Management
+                HStack {
+                    Label("Audio Cache", systemImage: "internaldrive")
+                    Spacer()
+                    VStack(alignment: .trailing) {
+                        Text(audioCacheSize)
+                            .foregroundStyle(.secondary)
+                        if audioCacheCount > 0 {
+                            Text("\(audioCacheCount) surahs cached")
+                                .font(.caption)
+                                .foregroundStyle(.tertiary)
+                        }
+                    }
+                }
+                
+                Button(role: .destructive) {
+                    showClearCacheAlert = true
+                } label: {
+                    HStack {
+                        Label("Clear Audio Cache", systemImage: "trash")
+                        Spacer()
+                    }
+                }
+                .disabled(audioCacheCount == 0)
             } header: {
                 Label("Audio", systemImage: "speaker.wave.3")
             } footer: {
-                Text("Choose your preferred Quran reciter")
+                Text("Cached audio plays offline. Clear cache to free up storage.")
             }
             
             // Notifications
@@ -180,6 +208,15 @@ struct SettingsView: View {
         }
         .onAppear {
             loadSettings()
+            loadCacheInfo()
+        }
+        .alert("Clear Audio Cache?", isPresented: $showClearCacheAlert) {
+            Button("Cancel", role: .cancel) { }
+            Button("Clear", role: .destructive) {
+                clearAudioCache()
+            }
+        } message: {
+            Text("This will delete all cached audio files (\(audioCacheSize)). You can re-download them when playing.")
         }
     }
     
@@ -238,6 +275,31 @@ struct SettingsView: View {
     
     private func shareApp() {
         // TODO: Implement share functionality
+    }
+    
+    private func loadCacheInfo() {
+        Task {
+            let size = await AudioCacheService.shared.getFormattedCacheSize()
+            let count = await AudioCacheService.shared.getCachedFileCount()
+            await MainActor.run {
+                audioCacheSize = size
+                audioCacheCount = count
+            }
+        }
+    }
+    
+    private func clearAudioCache() {
+        Task {
+            do {
+                try await AudioCacheService.shared.clearCache()
+                await MainActor.run {
+                    audioCacheSize = "0 MB"
+                    audioCacheCount = 0
+                }
+            } catch {
+                print("Failed to clear cache: \(error.localizedDescription)")
+            }
+        }
     }
 }
 

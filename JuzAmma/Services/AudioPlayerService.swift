@@ -254,7 +254,7 @@ final class AudioPlayerService: NSObject, ObservableObject {
     
     // MARK: - Private Methods
     
-    /// Play chapter-level audio (single MP3 for entire surah)
+    /// Play chapter-level audio (single MP3 for entire surah) with caching support
     private func playChapterAudio(surahNumber: Int) async {
         do {
             let audioFile = try await fetchChapterAudio(surahNumber: surahNumber)
@@ -271,16 +271,19 @@ final class AudioPlayerService: NSObject, ObservableObject {
                 print("[Audio] No verse timings available")
             }
             
-            guard let url = URL(string: audioFile.audioUrl) else {
+            guard let remoteURL = URL(string: audioFile.audioUrl) else {
                 state = .error("Invalid audio URL")
                 return
             }
             
-            // Store the audio URL for verse playback
-            currentChapterAudioUrl = url
+            // Check cache first, then stream and cache in background
+            let playbackURL = await getPlaybackURL(remoteURL: remoteURL, surahNumber: surahNumber)
             
-            print("[Audio] Playing chapter audio: \(url)")
-            await playAudio(from: url)
+            // Store the audio URL for verse playback
+            currentChapterAudioUrl = playbackURL
+            
+            print("[Audio] Playing chapter audio: \(playbackURL)")
+            await playAudio(from: playbackURL)
         } catch {
             state = .error("Failed to load audio: \(error.localizedDescription)")
         }
@@ -301,24 +304,43 @@ final class AudioPlayerService: NSObject, ObservableObject {
                 verseTimings = []
             }
             
-            guard let url = URL(string: audioFile.audioUrl) else {
+            guard let remoteURL = URL(string: audioFile.audioUrl) else {
                 state = .error("Invalid audio URL")
                 return
             }
             
-            currentChapterAudioUrl = url
+            // Check cache first, then stream and cache in background
+            let playbackURL = await getPlaybackURL(remoteURL: remoteURL, surahNumber: surahNumber)
+            currentChapterAudioUrl = playbackURL
             
             // Find the timestamp for the requested verse
             if let verseTiming = verseTimings.first(where: { $0.verse == verseNumber }) {
                 print("[Audio] Playing verse \(verseNumber) from chapter audio, seeking to \(verseTiming.startTime)s")
-                await playAudio(from: url, seekTo: verseTiming.startTime)
+                await playAudio(from: playbackURL, seekTo: verseTiming.startTime)
             } else {
                 print("[Audio] Verse timing not found for verse \(verseNumber), playing from start")
-                await playAudio(from: url)
+                await playAudio(from: playbackURL)
             }
         } catch {
             state = .error("Failed to load audio: \(error.localizedDescription)")
         }
+    }
+    
+    /// Get playback URL - returns cached URL if available, otherwise returns remote URL and caches in background
+    private func getPlaybackURL(remoteURL: URL, surahNumber: Int) async -> URL {
+        let qariId = selectedQari.id
+        
+        // Check if cached
+        if let cachedURL = await AudioCacheService.shared.getCachedAudioURL(surahNumber: surahNumber, qariId: qariId) {
+            print("[Audio] Playing from cache: \(cachedURL.lastPathComponent)")
+            return cachedURL
+        }
+        
+        // Not cached - start background download and return remote URL for streaming
+        print("[Audio] Streaming from remote, caching in background...")
+        await AudioCacheService.shared.cacheAudioInBackground(from: remoteURL, surahNumber: surahNumber, qariId: qariId)
+        
+        return remoteURL
     }
     
     /// Play verse-by-verse audio (deprecated - keeping for reference)
