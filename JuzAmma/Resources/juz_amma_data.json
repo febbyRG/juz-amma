@@ -10,163 +10,203 @@
       "ayahs": [
         {
           "number": 1,
-          "textArabic": " عَمَّ يَتَسَآءَلُونَ"
+          "textArabic": " عَمَّ يَتَسَآءَلُونَ",
+          "textTransliteration": "'Amma yatasaaa'aloon"
         },
         {
           "number": 2,
-          "textArabic": "عَنِ ٱلنَّبَإِ ٱلْعَظِيمِ"
+          "textArabic": "عَنِ ٱلنَّبَإِ ٱلْعَظِيمِ",
+          "textTransliteration": "'Anin-naba-il-'azeem"
         },
         {
           "number": 3,
-          "textArabic": "ٱلَّذِى هُمْ فِيهِ مُخْتَلِفُونَ"
+          "textArabic": "ٱلَّذِى هُمْ فِيهِ مُخْتَلِفُونَ",
+          "textTransliteration": "Allazee hum feehi mukhtalifoon"
         },
         {
           "number": 4,
-          "textArabic": "كَلَّا سَيَعْلَمُونَ"
+          "textArabic": "كَلَّا سَيَعْلَمُونَ",
+          "textTransliteration": "Kallaa sa-ya'lamoon"
         },
         {
           "number": 5,
-          "textArabic": "ثُمَّ كَلَّا سَيَعْلَمُونَ"
+          "textArabic": "ثُمَّ كَلَّا سَيَعْلَمُونَ",
+          "textTransliteration": "Thumma kallaa sa-ya'lamoon"
         },
         {
           "number": 6,
-          "textArabic": "أَلَمْ نَجْعَلِ ٱلْأَرْضَ مِهَـٰدًا"
+          "textArabic": "أَلَمْ نَجْعَلِ ٱلْأَرْضَ مِهَـٰدًا",
+          "textTransliteration": "Alam naj'alil-arda mihaadaa"
         },
         {
           "number": 7,
-          "textArabic": "وَٱلْجِبَالَ أَوْتَادًا"
+          "textArabic": "وَٱلْجِبَالَ أَوْتَادًا",
+          "textTransliteration": "Wal-jibaala awtaadaa"
         },
         {
           "number": 8,
-          "textArabic": "وَخَلَقْنَـٰكُمْ أَزْوَٰجًا"
+          "textArabic": "وَخَلَقْنَـٰكُمْ أَزْوَٰجًا",
+          "textTransliteration": "Wa khalaqnaakum azwaajaa"
         },
         {
           "number": 9,
-          "textArabic": "وَجَعَلْنَا نَوْمَكُمْ سُبَاتًا"
+          "textArabic": "وَجَعَلْنَا نَوْمَكُمْ سُبَاتًا",
+          "textTransliteration": "Wa ja'alnaa nawmakum subaataa"
         },
         {
           "number": 10,
-          "textArabic": "وَجَعَلْنَا ٱلَّيْلَ لِبَاسًا"
+          "textArabic": "وَجَعَلْنَا ٱلَّيْلَ لِبَاسًا",
+          "textTransliteration": "Wa ja'alnal-layla libaasaa"
         },
         {
           "number": 11,
-          "textArabic": "وَجَعَلْنَا ٱلنَّهَارَ مَعَاشًا"
+          "textArabic": "وَجَعَلْنَا ٱلنَّهَارَ مَعَاشًا",
+          "textTransliteration": "Wa ja'alnan-nahaara ma'aashaa"
         },
         {
           "number": 12,
-          "textArabic": "وَبَنَيْنَا فَوْقَكُمْ سَبْعًا شِدَادًا"
+          "textArabic": "وَبَنَيْنَا فَوْقَكُمْ سَبْعًا شِدَادًا",
+          "textTransliteration": "Wa banaynaa fawqakum sab'an shidaadaa"
         },
         {
           "number": 13,
-          "textArabic": "وَجَعَلْنَا سِرَاجًا وَهَّاجًا"
+          "textArabic": "وَجَعَلْنَا سِرَاجًا وَهَّاجًا",
+          "textTransliteration": "Wa ja'alnaa siraajaw-wahhaajaa"
         },
         {
           "number": 14,
-          "textArabic": "وَأَنزَلْنَا مِنَ ٱلْمُعْصِرَٰتِ مَآءً ثَجَّاجًا"
+          "textArabic": "وَأَنزَلْنَا مِنَ ٱلْمُعْصِرَٰتِ مَآءً ثَجَّاجًا",
+          "textTransliteration": "Wa anzalnaa minal-mu'siraati maaa'an thajjaajaa"
         },
         {
           "number": 15,
-          "textArabic": "لِّنُخْرِجَ بِهِۦ حَبًّا وَنَبَاتًا"
+          "textArabic": "لِّنُخْرِجَ بِهِۦ حَبًّا وَنَبَاتًا",
+          "textTransliteration": "Linukhrija bihee habbaw-wa nabaataa"
         },
         {
           "number": 16,
-          "textArabic": "وَجَنَّـٰتٍ أَلْفَافًا"
+          "textArabic": "وَجَنَّـٰتٍ أَلْفَافًا",
+          "textTransliteration": "Wa jannaatin alfaafaa"
         },
         {
           "number": 17,
-          "textArabic": "إِنَّ يَوْمَ ٱلْفَصْلِ كَانَ مِيقَـٰتًا"
+          "textArabic": "إِنَّ يَوْمَ ٱلْفَصْلِ كَانَ مِيقَـٰتًا",
+          "textTransliteration": "Inna yawmal-fasli kaana meeqaataa"
         },
         {
           "number": 18,
-          "textArabic": "يَوْمَ يُنفَخُ فِى ٱلصُّورِ فَتَأْتُونَ أَفْوَاجًا"
+          "textArabic": "يَوْمَ يُنفَخُ فِى ٱلصُّورِ فَتَأْتُونَ أَفْوَاجًا",
+          "textTransliteration": "Yawma yunfakhu fis-soori fata'toona afwaajaa"
         },
         {
           "number": 19,
-          "textArabic": "وَفُتِحَتِ ٱلسَّمَآءُ فَكَانَتْ أَبْوَٰبًا"
+          "textArabic": "وَفُتِحَتِ ٱلسَّمَآءُ فَكَانَتْ أَبْوَٰبًا",
+          "textTransliteration": "Wa futihatis-samaaa'u fakaanat abwaabaa"
         },
         {
           "number": 20,
-          "textArabic": "وَسُيِّرَتِ ٱلْجِبَالُ فَكَانَتْ سَرَابًا"
+          "textArabic": "وَسُيِّرَتِ ٱلْجِبَالُ فَكَانَتْ سَرَابًا",
+          "textTransliteration": "Wa suyyiratil-jibaalu fakaanat saraabaa"
         },
         {
           "number": 21,
-          "textArabic": "إِنَّ جَهَنَّمَ كَانَتْ مِرْصَادًا"
+          "textArabic": "إِنَّ جَهَنَّمَ كَانَتْ مِرْصَادًا",
+          "textTransliteration": "Inna jahannama kaanat mirsaadaa"
         },
         {
           "number": 22,
-          "textArabic": "لِّلطَّـٰغِينَ مَـَٔابًا"
+          "textArabic": "لِّلطَّـٰغِينَ مَـَٔابًا",
+          "textTransliteration": "Littaagheena ma'aabaa"
         },
         {
           "number": 23,
-          "textArabic": "لَّـٰبِثِينَ فِيهَآ أَحْقَابًا"
+          "textArabic": "لَّـٰبِثِينَ فِيهَآ أَحْقَابًا",
+          "textTransliteration": "Laabitheena feehaaa ahqaabaa"
         },
         {
           "number": 24,
-          "textArabic": "لَّا يَذُوقُونَ فِيهَا بَرْدًا وَلَا شَرَابًا"
+          "textArabic": "لَّا يَذُوقُونَ فِيهَا بَرْدًا وَلَا شَرَابًا",
+          "textTransliteration": "Laa yazooqoona feehaa bardaw-wa laa sharaabaa"
         },
         {
           "number": 25,
-          "textArabic": "إِلَّا حَمِيمًا وَغَسَّاقًا"
+          "textArabic": "إِلَّا حَمِيمًا وَغَسَّاقًا",
+          "textTransliteration": "Illaa hameemaw-wa ghassaaqaa"
         },
         {
           "number": 26,
-          "textArabic": "جَزَآءً وِفَاقًا"
+          "textArabic": "جَزَآءً وِفَاقًا",
+          "textTransliteration": "Jazaaa'aw-wifaaqaa"
         },
         {
           "number": 27,
-          "textArabic": "إِنَّهُمْ كَانُوا۟ لَا يَرْجُونَ حِسَابًا"
+          "textArabic": "إِنَّهُمْ كَانُوا۟ لَا يَرْجُونَ حِسَابًا",
+          "textTransliteration": "Innahum kaanoo laa yarjoona hisaabaa"
         },
         {
           "number": 28,
-          "textArabic": "وَكَذَّبُوا۟ بِـَٔايَـٰتِنَا كِذَّابًا"
+          "textArabic": "وَكَذَّبُوا۟ بِـَٔايَـٰتِنَا كِذَّابًا",
+          "textTransliteration": "Wa kazzaboo bi-Aayaatinaa kizzaabaa"
         },
         {
           "number": 29,
-          "textArabic": "وَكُلَّ شَىْءٍ أَحْصَيْنَـٰهُ كِتَـٰبًا"
+          "textArabic": "وَكُلَّ شَىْءٍ أَحْصَيْنَـٰهُ كِتَـٰبًا",
+          "textTransliteration": "Wa kulla shay'in ahsaynaahu kitaabaa"
         },
         {
           "number": 30,
-          "textArabic": "فَذُوقُوا۟ فَلَن نَّزِيدَكُمْ إِلَّا عَذَابًا"
+          "textArabic": "فَذُوقُوا۟ فَلَن نَّزِيدَكُمْ إِلَّا عَذَابًا",
+          "textTransliteration": "Fazooqoo falan-nazeedakum illaa 'azaabaa"
         },
         {
           "number": 31,
-          "textArabic": "إِنَّ لِلْمُتَّقِينَ مَفَازًا"
+          "textArabic": "إِنَّ لِلْمُتَّقِينَ مَفَازًا",
+          "textTransliteration": "Inna lilmuttaqeena mafaazaa"
         },
         {
           "number": 32,
-          "textArabic": "حَدَآئِقَ وَأَعْنَـٰبًا"
+          "textArabic": "حَدَآئِقَ وَأَعْنَـٰبًا",
+          "textTransliteration": "Hadaaa'iqa wa a'naabaa"
         },
         {
           "number": 33,
-          "textArabic": "وَكَوَاعِبَ أَتْرَابًا"
+          "textArabic": "وَكَوَاعِبَ أَتْرَابًا",
+          "textTransliteration": "Wa kawaa'iba atraabaa"
         },
         {
           "number": 34,
-          "textArabic": "وَكَأْسًا دِهَاقًا"
+          "textArabic": "وَكَأْسًا دِهَاقًا",
+          "textTransliteration": "Wa ka'san dihaaqaa"
         },
         {
           "number": 35,
-          "textArabic": "لَّا يَسْمَعُونَ فِيهَا لَغْوًا وَلَا كِذَّٰبًا"
+          "textArabic": "لَّا يَسْمَعُونَ فِيهَا لَغْوًا وَلَا كِذَّٰبًا",
+          "textTransliteration": "Laa yasma'oona feehaa laghwaw-wa laa kizzaabaa"
         },
         {
           "number": 36,
-          "textArabic": "جَزَآءً مِّن رَّبِّكَ عَطَآءً حِسَابًا"
+          "textArabic": "جَزَآءً مِّن رَّبِّكَ عَطَآءً حِسَابًا",
+          "textTransliteration": "Jazaaa'am-mir-rabbika 'ataaa'an hisaabaa"
         },
         {
           "number": 37,
-          "textArabic": "رَّبِّ ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ وَمَا بَيْنَهُمَا ٱلرَّحْمَـٰنِ ۖ لَا يَمْلِكُونَ مِنْهُ خِطَابًا"
+          "textArabic": "رَّبِّ ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ وَمَا بَيْنَهُمَا ٱلرَّحْمَـٰنِ ۖ لَا يَمْلِكُونَ مِنْهُ خِطَابًا",
+          "textTransliteration": "Rabbis-samaawaati wal-ardi wa maa baynahumar-Rahmaani laa yamlikoona minhu khitaabaa"
         },
         {
           "number": 38,
-          "textArabic": "يَوْمَ يَقُومُ ٱلرُّوحُ وَٱلْمَلَـٰٓئِكَةُ صَفًّا ۖ لَّا يَتَكَلَّمُونَ إِلَّا مَنْ أَذِنَ لَهُ ٱلرَّحْمَـٰنُ وَقَالَ صَوَابًا"
+          "textArabic": "يَوْمَ يَقُومُ ٱلرُّوحُ وَٱلْمَلَـٰٓئِكَةُ صَفًّا ۖ لَّا يَتَكَلَّمُونَ إِلَّا مَنْ أَذِنَ لَهُ ٱلرَّحْمَـٰنُ وَقَالَ صَوَابًا",
+          "textTransliteration": "Yawma yaqoomur-roohu wal-malaaa'ikatu saffal-laa yatakallamoona illaa man azina lahur-Rahmaanu wa qaala sawaabaa"
         },
         {
           "number": 39,
-          "textArabic": "ذَٰلِكَ ٱلْيَوْمُ ٱلْحَقُّ ۖ فَمَن شَآءَ ٱتَّخَذَ إِلَىٰ رَبِّهِۦ مَـَٔابًا"
+          "textArabic": "ذَٰلِكَ ٱلْيَوْمُ ٱلْحَقُّ ۖ فَمَن شَآءَ ٱتَّخَذَ إِلَىٰ رَبِّهِۦ مَـَٔابًا",
+          "textTransliteration": "Zaalikal-yawmul-haqqu faman shaaa'at-takhaza ilaa Rabbihee ma'aabaa"
         },
         {
           "number": 40,
-          "textArabic": "إِنَّآ أَنذَرْنَـٰكُمْ عَذَابًا قَرِيبًا يَوْمَ يَنظُرُ ٱلْمَرْءُ مَا قَدَّمَتْ يَدَاهُ وَيَقُولُ ٱلْكَافِرُ يَـٰلَيْتَنِى كُنتُ تُرَٰبًۢا"
+          "textArabic": "إِنَّآ أَنذَرْنَـٰكُمْ عَذَابًا قَرِيبًا يَوْمَ يَنظُرُ ٱلْمَرْءُ مَا قَدَّمَتْ يَدَاهُ وَيَقُولُ ٱلْكَافِرُ يَـٰلَيْتَنِى كُنتُ تُرَٰبًۢا",
+          "textTransliteration": "Innaaa anzarnaakum 'azaaban qareeban yawma yanzurul-mar'u maa qaddamat yadaahu wa yaqoolul-kaafiru yaa laytanee kuntu turaabaa"
         }
       ]
     },
@@ -180,187 +220,233 @@
       "ayahs": [
         {
           "number": 1,
-          "textArabic": " وَٱلنَّـٰزِعَـٰتِ غَرْقًا"
+          "textArabic": " وَٱلنَّـٰزِعَـٰتِ غَرْقًا",
+          "textTransliteration": "Wannaazi'aati gharqaa"
         },
         {
           "number": 2,
-          "textArabic": "وَٱلنَّـٰشِطَـٰتِ نَشْطًا"
+          "textArabic": "وَٱلنَّـٰشِطَـٰتِ نَشْطًا",
+          "textTransliteration": "Wannaashitaati nashtaa"
         },
         {
           "number": 3,
-          "textArabic": "وَٱلسَّـٰبِحَـٰتِ سَبْحًا"
+          "textArabic": "وَٱلسَّـٰبِحَـٰتِ سَبْحًا",
+          "textTransliteration": "Wassaabi-haati sabhaa"
         },
         {
           "number": 4,
-          "textArabic": "فَٱلسَّـٰبِقَـٰتِ سَبْقًا"
+          "textArabic": "فَٱلسَّـٰبِقَـٰتِ سَبْقًا",
+          "textTransliteration": "Fassaabiqaati sabqaa"
         },
         {
           "number": 5,
-          "textArabic": "فَٱلْمُدَبِّرَٰتِ أَمْرًا"
+          "textArabic": "فَٱلْمُدَبِّرَٰتِ أَمْرًا",
+          "textTransliteration": "Falmudab-biraati amraa"
         },
         {
           "number": 6,
-          "textArabic": "يَوْمَ تَرْجُفُ ٱلرَّاجِفَةُ"
+          "textArabic": "يَوْمَ تَرْجُفُ ٱلرَّاجِفَةُ",
+          "textTransliteration": "Yawma tarjufur-raajifah"
         },
         {
           "number": 7,
-          "textArabic": "تَتْبَعُهَا ٱلرَّادِفَةُ"
+          "textArabic": "تَتْبَعُهَا ٱلرَّادِفَةُ",
+          "textTransliteration": "Tatba'uhar-raadifah"
         },
         {
           "number": 8,
-          "textArabic": "قُلُوبٌ يَوْمَئِذٍ وَاجِفَةٌ"
+          "textArabic": "قُلُوبٌ يَوْمَئِذٍ وَاجِفَةٌ",
+          "textTransliteration": "Quloobuy-yaw-ma'izinw-waajifah"
         },
         {
           "number": 9,
-          "textArabic": "أَبْصَـٰرُهَا خَـٰشِعَةٌ"
+          "textArabic": "أَبْصَـٰرُهَا خَـٰشِعَةٌ",
+          "textTransliteration": "Absaaruha khaashi'ah"
         },
         {
           "number": 10,
-          "textArabic": "يَقُولُونَ أَءِنَّا لَمَرْدُودُونَ فِى ٱلْحَافِرَةِ"
+          "textArabic": "يَقُولُونَ أَءِنَّا لَمَرْدُودُونَ فِى ٱلْحَافِرَةِ",
+          "textTransliteration": "Yaqooloona a-innaa lamar-doo-doona fil-haafirah"
         },
         {
           "number": 11,
-          "textArabic": "أَءِذَا كُنَّا عِظَـٰمًا نَّخِرَةً"
+          "textArabic": "أَءِذَا كُنَّا عِظَـٰمًا نَّخِرَةً",
+          "textTransliteration": "A-izaa kunnaa 'izaaman-nakhirah"
         },
         {
           "number": 12,
-          "textArabic": "قَالُوا۟ تِلْكَ إِذًا كَرَّةٌ خَاسِرَةٌ"
+          "textArabic": "قَالُوا۟ تِلْكَ إِذًا كَرَّةٌ خَاسِرَةٌ",
+          "textTransliteration": "Qaaloo tilka izan karratun khaasirah"
         },
         {
           "number": 13,
-          "textArabic": "فَإِنَّمَا هِىَ زَجْرَةٌ وَٰحِدَةٌ"
+          "textArabic": "فَإِنَّمَا هِىَ زَجْرَةٌ وَٰحِدَةٌ",
+          "textTransliteration": "Fa-innamaa hiya zajratuw-waahidah"
         },
         {
           "number": 14,
-          "textArabic": "فَإِذَا هُم بِٱلسَّاهِرَةِ"
+          "textArabic": "فَإِذَا هُم بِٱلسَّاهِرَةِ",
+          "textTransliteration": "Fa-izaa hum bis-saahirah"
         },
         {
           "number": 15,
-          "textArabic": "هَلْ أَتَىٰكَ حَدِيثُ مُوسَىٰٓ"
+          "textArabic": "هَلْ أَتَىٰكَ حَدِيثُ مُوسَىٰٓ",
+          "textTransliteration": "Hal ataaka hadeethu Moosaa"
         },
         {
           "number": 16,
-          "textArabic": "إِذْ نَادَىٰهُ رَبُّهُۥ بِٱلْوَادِ ٱلْمُقَدَّسِ طُوًى"
+          "textArabic": "إِذْ نَادَىٰهُ رَبُّهُۥ بِٱلْوَادِ ٱلْمُقَدَّسِ طُوًى",
+          "textTransliteration": "Iz naadaahu Rabbuhoo bilwaadil-muqaddasi Tuwaa"
         },
         {
           "number": 17,
-          "textArabic": "ٱذْهَبْ إِلَىٰ فِرْعَوْنَ إِنَّهُۥ طَغَىٰ"
+          "textArabic": "ٱذْهَبْ إِلَىٰ فِرْعَوْنَ إِنَّهُۥ طَغَىٰ",
+          "textTransliteration": "Izhab ilaa Fir'awna innahoo taghaa"
         },
         {
           "number": 18,
-          "textArabic": "فَقُلْ هَل لَّكَ إِلَىٰٓ أَن تَزَكَّىٰ"
+          "textArabic": "فَقُلْ هَل لَّكَ إِلَىٰٓ أَن تَزَكَّىٰ",
+          "textTransliteration": "Faqul hal laka ilaaa an tazakkaa"
         },
         {
           "number": 19,
-          "textArabic": "وَأَهْدِيَكَ إِلَىٰ رَبِّكَ فَتَخْشَىٰ"
+          "textArabic": "وَأَهْدِيَكَ إِلَىٰ رَبِّكَ فَتَخْشَىٰ",
+          "textTransliteration": "Wa ahdiyaka ilaa Rabbika fatakhshaa"
         },
         {
           "number": 20,
-          "textArabic": "فَأَرَىٰهُ ٱلْـَٔايَةَ ٱلْكُبْرَىٰ"
+          "textArabic": "فَأَرَىٰهُ ٱلْـَٔايَةَ ٱلْكُبْرَىٰ",
+          "textTransliteration": "Fa-araahul-Aayatal-Kubraa"
         },
         {
           "number": 21,
-          "textArabic": "فَكَذَّبَ وَعَصَىٰ"
+          "textArabic": "فَكَذَّبَ وَعَصَىٰ",
+          "textTransliteration": "Fakazzaba wa 'asaa"
         },
         {
           "number": 22,
-          "textArabic": "ثُمَّ أَدْبَرَ يَسْعَىٰ"
+          "textArabic": "ثُمَّ أَدْبَرَ يَسْعَىٰ",
+          "textTransliteration": "Thumma adbara yas'aa"
         },
         {
           "number": 23,
-          "textArabic": "فَحَشَرَ فَنَادَىٰ"
+          "textArabic": "فَحَشَرَ فَنَادَىٰ",
+          "textTransliteration": "Fahashara fanaadaa"
         },
         {
           "number": 24,
-          "textArabic": "فَقَالَ أَنَا۠ رَبُّكُمُ ٱلْأَعْلَىٰ"
+          "textArabic": "فَقَالَ أَنَا۠ رَبُّكُمُ ٱلْأَعْلَىٰ",
+          "textTransliteration": "Faqaala ana Rabbukumul-A'laa"
         },
         {
           "number": 25,
-          "textArabic": "فَأَخَذَهُ ٱللَّهُ نَكَالَ ٱلْـَٔاخِرَةِ وَٱلْأُولَىٰٓ"
+          "textArabic": "فَأَخَذَهُ ٱللَّهُ نَكَالَ ٱلْـَٔاخِرَةِ وَٱلْأُولَىٰٓ",
+          "textTransliteration": "Fa-akhazahul-laahu nakaalal-Aakhirati wal-oolaa"
         },
         {
           "number": 26,
-          "textArabic": "إِنَّ فِى ذَٰلِكَ لَعِبْرَةً لِّمَن يَخْشَىٰٓ"
+          "textArabic": "إِنَّ فِى ذَٰلِكَ لَعِبْرَةً لِّمَن يَخْشَىٰٓ",
+          "textTransliteration": "Inna fee zaalika la'ibratal-limany-yakhshaa"
         },
         {
           "number": 27,
-          "textArabic": "ءَأَنتُمْ أَشَدُّ خَلْقًا أَمِ ٱلسَّمَآءُ ۚ بَنَىٰهَا"
+          "textArabic": "ءَأَنتُمْ أَشَدُّ خَلْقًا أَمِ ٱلسَّمَآءُ ۚ بَنَىٰهَا",
+          "textTransliteration": "A-antum ashaddu khalqan amis-samaaa'u banaahaa"
         },
         {
           "number": 28,
-          "textArabic": "رَفَعَ سَمْكَهَا فَسَوَّىٰهَا"
+          "textArabic": "رَفَعَ سَمْكَهَا فَسَوَّىٰهَا",
+          "textTransliteration": "Rafa'a samkahaa fasawwaahaa"
         },
         {
           "number": 29,
-          "textArabic": "وَأَغْطَشَ لَيْلَهَا وَأَخْرَجَ ضُحَىٰهَا"
+          "textArabic": "وَأَغْطَشَ لَيْلَهَا وَأَخْرَجَ ضُحَىٰهَا",
+          "textTransliteration": "Wa aghtasha laylahaa wa akhraja duhaahaa"
         },
         {
           "number": 30,
-          "textArabic": "وَٱلْأَرْضَ بَعْدَ ذَٰلِكَ دَحَىٰهَآ"
+          "textArabic": "وَٱلْأَرْضَ بَعْدَ ذَٰلِكَ دَحَىٰهَآ",
+          "textTransliteration": "Wal-arda ba'da zaalika dahaahaa"
         },
         {
           "number": 31,
-          "textArabic": "أَخْرَجَ مِنْهَا مَآءَهَا وَمَرْعَىٰهَا"
+          "textArabic": "أَخْرَجَ مِنْهَا مَآءَهَا وَمَرْعَىٰهَا",
+          "textTransliteration": "Akhraja minhaa maaa'ahaa wa mar'aahaa"
         },
         {
           "number": 32,
-          "textArabic": "وَٱلْجِبَالَ أَرْسَىٰهَا"
+          "textArabic": "وَٱلْجِبَالَ أَرْسَىٰهَا",
+          "textTransliteration": "Wal-jibaala arsaahaa"
         },
         {
           "number": 33,
-          "textArabic": "مَتَـٰعًا لَّكُمْ وَلِأَنْعَـٰمِكُمْ"
+          "textArabic": "مَتَـٰعًا لَّكُمْ وَلِأَنْعَـٰمِكُمْ",
+          "textTransliteration": "Mataa'al-lakum wa li-an'aamikum"
         },
         {
           "number": 34,
-          "textArabic": "فَإِذَا جَآءَتِ ٱلطَّآمَّةُ ٱلْكُبْرَىٰ"
+          "textArabic": "فَإِذَا جَآءَتِ ٱلطَّآمَّةُ ٱلْكُبْرَىٰ",
+          "textTransliteration": "Fa-izaa jaaa'atit-Taaammatul-Kubraa"
         },
         {
           "number": 35,
-          "textArabic": "يَوْمَ يَتَذَكَّرُ ٱلْإِنسَـٰنُ مَا سَعَىٰ"
+          "textArabic": "يَوْمَ يَتَذَكَّرُ ٱلْإِنسَـٰنُ مَا سَعَىٰ",
+          "textTransliteration": "Yawma yatazakkarul-insaanu maa sa'aa"
         },
         {
           "number": 36,
-          "textArabic": "وَبُرِّزَتِ ٱلْجَحِيمُ لِمَن يَرَىٰ"
+          "textArabic": "وَبُرِّزَتِ ٱلْجَحِيمُ لِمَن يَرَىٰ",
+          "textTransliteration": "Wa burrizatil-jaheemu limany-yaraa"
         },
         {
           "number": 37,
-          "textArabic": "فَأَمَّا مَن طَغَىٰ"
+          "textArabic": "فَأَمَّا مَن طَغَىٰ",
+          "textTransliteration": "Fa-ammaa man taghaa"
         },
         {
           "number": 38,
-          "textArabic": "وَءَاثَرَ ٱلْحَيَوٰةَ ٱلدُّنْيَا"
+          "textArabic": "وَءَاثَرَ ٱلْحَيَوٰةَ ٱلدُّنْيَا",
+          "textTransliteration": "Wa aasaral-hayaatad-dunyaa"
         },
         {
           "number": 39,
-          "textArabic": "فَإِنَّ ٱلْجَحِيمَ هِىَ ٱلْمَأْوَىٰ"
+          "textArabic": "فَإِنَّ ٱلْجَحِيمَ هِىَ ٱلْمَأْوَىٰ",
+          "textTransliteration": "Fa-innal-jaheema hiyal-ma'waa"
         },
         {
           "number": 40,
-          "textArabic": "وَأَمَّا مَنْ خَافَ مَقَامَ رَبِّهِۦ وَنَهَى ٱلنَّفْسَ عَنِ ٱلْهَوَىٰ"
+          "textArabic": "وَأَمَّا مَنْ خَافَ مَقَامَ رَبِّهِۦ وَنَهَى ٱلنَّفْسَ عَنِ ٱلْهَوَىٰ",
+          "textTransliteration": "Wa ammaa man khaafa maqaama Rabbihee wa nahan-nafsa 'anil-hawaa"
         },
         {
           "number": 41,
-          "textArabic": "فَإِنَّ ٱلْجَنَّةَ هِىَ ٱلْمَأْوَىٰ"
+          "textArabic": "فَإِنَّ ٱلْجَنَّةَ هِىَ ٱلْمَأْوَىٰ",
+          "textTransliteration": "Fa-innal-jannata hiyal-ma'waa"
         },
         {
           "number": 42,
-          "textArabic": "يَسْـَٔلُونَكَ عَنِ ٱلسَّاعَةِ أَيَّانَ مُرْسَىٰهَا"
+          "textArabic": "يَسْـَٔلُونَكَ عَنِ ٱلسَّاعَةِ أَيَّانَ مُرْسَىٰهَا",
+          "textTransliteration": "Yas'aloonaka 'anis-Saa'ati ayyaana mursaahaa"
         },
         {
           "number": 43,
-          "textArabic": "فِيمَ أَنتَ مِن ذِكْرَىٰهَآ"
+          "textArabic": "فِيمَ أَنتَ مِن ذِكْرَىٰهَآ",
+          "textTransliteration": "Feema anta min zikraahaa"
         },
         {
           "number": 44,
-          "textArabic": "إِلَىٰ رَبِّكَ مُنتَهَىٰهَآ"
+          "textArabic": "إِلَىٰ رَبِّكَ مُنتَهَىٰهَآ",
+          "textTransliteration": "Ilaa Rabbika muntahaahaa"
         },
         {
           "number": 45,
-          "textArabic": "إِنَّمَآ أَنتَ مُنذِرُ مَن يَخْشَىٰهَا"
+          "textArabic": "إِنَّمَآ أَنتَ مُنذِرُ مَن يَخْشَىٰهَا",
+          "textTransliteration": "Innamaaa anta munziru many-yakhshaahaa"
         },
         {
           "number": 46,
-          "textArabic": "كَأَنَّهُمْ يَوْمَ يَرَوْنَهَا لَمْ يَلْبَثُوٓا۟ إِلَّا عَشِيَّةً أَوْ ضُحَىٰهَا"
+          "textArabic": "كَأَنَّهُمْ يَوْمَ يَرَوْنَهَا لَمْ يَلْبَثُوٓا۟ إِلَّا عَشِيَّةً أَوْ ضُحَىٰهَا",
+          "textTransliteration": "Ka-annahum yawma yarawnahaa lam yalbasooo illaa 'ashiyyatan aw duhaahaa"
         }
       ]
     },
@@ -374,171 +460,213 @@
       "ayahs": [
         {
           "number": 1,
-          "textArabic": " عَبَسَ وَتَوَلَّىٰٓ"
+          "textArabic": " عَبَسَ وَتَوَلَّىٰٓ",
+          "textTransliteration": "'Abasa wa tawallaa"
         },
         {
           "number": 2,
-          "textArabic": "أَن جَآءَهُ ٱلْأَعْمَىٰ"
+          "textArabic": "أَن جَآءَهُ ٱلْأَعْمَىٰ",
+          "textTransliteration": "An jaaa'ahul-a'maa"
         },
         {
           "number": 3,
-          "textArabic": "وَمَا يُدْرِيكَ لَعَلَّهُۥ يَزَّكَّىٰٓ"
+          "textArabic": "وَمَا يُدْرِيكَ لَعَلَّهُۥ يَزَّكَّىٰٓ",
+          "textTransliteration": "Wa maa yudreeka la'allahoo yazzakkaa"
         },
         {
           "number": 4,
-          "textArabic": "أَوْ يَذَّكَّرُ فَتَنفَعَهُ ٱلذِّكْرَىٰٓ"
+          "textArabic": "أَوْ يَذَّكَّرُ فَتَنفَعَهُ ٱلذِّكْرَىٰٓ",
+          "textTransliteration": "Aw yazzakkaru fatanfa'ahuz-zikraa"
         },
         {
           "number": 5,
-          "textArabic": "أَمَّا مَنِ ٱسْتَغْنَىٰ"
+          "textArabic": "أَمَّا مَنِ ٱسْتَغْنَىٰ",
+          "textTransliteration": "Ammaa manis-taghnaa"
         },
         {
           "number": 6,
-          "textArabic": "فَأَنتَ لَهُۥ تَصَدَّىٰ"
+          "textArabic": "فَأَنتَ لَهُۥ تَصَدَّىٰ",
+          "textTransliteration": "Fa-anta lahoo tasaddaa"
         },
         {
           "number": 7,
-          "textArabic": "وَمَا عَلَيْكَ أَلَّا يَزَّكَّىٰ"
+          "textArabic": "وَمَا عَلَيْكَ أَلَّا يَزَّكَّىٰ",
+          "textTransliteration": "Wa maa 'alayka allaa yazzakkaa"
         },
         {
           "number": 8,
-          "textArabic": "وَأَمَّا مَن جَآءَكَ يَسْعَىٰ"
+          "textArabic": "وَأَمَّا مَن جَآءَكَ يَسْعَىٰ",
+          "textTransliteration": "Wa ammaa man jaaa'aka yas'aa"
         },
         {
           "number": 9,
-          "textArabic": "وَهُوَ يَخْشَىٰ"
+          "textArabic": "وَهُوَ يَخْشَىٰ",
+          "textTransliteration": "Wa huwa yakhshaa"
         },
         {
           "number": 10,
-          "textArabic": "فَأَنتَ عَنْهُ تَلَهَّىٰ"
+          "textArabic": "فَأَنتَ عَنْهُ تَلَهَّىٰ",
+          "textTransliteration": "Fa-anta 'anhu talahhaa"
         },
         {
           "number": 11,
-          "textArabic": "كَلَّآ إِنَّهَا تَذْكِرَةٌ"
+          "textArabic": "كَلَّآ إِنَّهَا تَذْكِرَةٌ",
+          "textTransliteration": "Kallaaa innahaa tazkirah"
         },
         {
           "number": 12,
-          "textArabic": "فَمَن شَآءَ ذَكَرَهُۥ"
+          "textArabic": "فَمَن شَآءَ ذَكَرَهُۥ",
+          "textTransliteration": "Faman shaaa'a zakarah"
         },
         {
           "number": 13,
-          "textArabic": "فِى صُحُفٍ مُّكَرَّمَةٍ"
+          "textArabic": "فِى صُحُفٍ مُّكَرَّمَةٍ",
+          "textTransliteration": "Fee suhufim-mukarramah"
         },
         {
           "number": 14,
-          "textArabic": "مَّرْفُوعَةٍ مُّطَهَّرَةٍۭ"
+          "textArabic": "مَّرْفُوعَةٍ مُّطَهَّرَةٍۭ",
+          "textTransliteration": "Marfoo'atim-mutahharah"
         },
         {
           "number": 15,
-          "textArabic": "بِأَيْدِى سَفَرَةٍ"
+          "textArabic": "بِأَيْدِى سَفَرَةٍ",
+          "textTransliteration": "Bi-aydee safarah"
         },
         {
           "number": 16,
-          "textArabic": "كِرَامٍۭ بَرَرَةٍ"
+          "textArabic": "كِرَامٍۭ بَرَرَةٍ",
+          "textTransliteration": "Kiraamim-bararah"
         },
         {
           "number": 17,
-          "textArabic": "قُتِلَ ٱلْإِنسَـٰنُ مَآ أَكْفَرَهُۥ"
+          "textArabic": "قُتِلَ ٱلْإِنسَـٰنُ مَآ أَكْفَرَهُۥ",
+          "textTransliteration": "Qutilal-insaanu maaa akfarah"
         },
         {
           "number": 18,
-          "textArabic": "مِنْ أَىِّ شَىْءٍ خَلَقَهُۥ"
+          "textArabic": "مِنْ أَىِّ شَىْءٍ خَلَقَهُۥ",
+          "textTransliteration": "Min ayyi shay'in khalaqah"
         },
         {
           "number": 19,
-          "textArabic": "مِن نُّطْفَةٍ خَلَقَهُۥ فَقَدَّرَهُۥ"
+          "textArabic": "مِن نُّطْفَةٍ خَلَقَهُۥ فَقَدَّرَهُۥ",
+          "textTransliteration": "Min nutfatin khalaqahoo faqaddarah"
         },
         {
           "number": 20,
-          "textArabic": "ثُمَّ ٱلسَّبِيلَ يَسَّرَهُۥ"
+          "textArabic": "ثُمَّ ٱلسَّبِيلَ يَسَّرَهُۥ",
+          "textTransliteration": "Thummas-sabeela yassarah"
         },
         {
           "number": 21,
-          "textArabic": "ثُمَّ أَمَاتَهُۥ فَأَقْبَرَهُۥ"
+          "textArabic": "ثُمَّ أَمَاتَهُۥ فَأَقْبَرَهُۥ",
+          "textTransliteration": "Thumma amaatahoo fa-aqbarah"
         },
         {
           "number": 22,
-          "textArabic": "ثُمَّ إِذَا شَآءَ أَنشَرَهُۥ"
+          "textArabic": "ثُمَّ إِذَا شَآءَ أَنشَرَهُۥ",
+          "textTransliteration": "Thumma izaa shaaa'a ansharah"
         },
         {
           "number": 23,
-          "textArabic": "كَلَّا لَمَّا يَقْضِ مَآ أَمَرَهُۥ"
+          "textArabic": "كَلَّا لَمَّا يَقْضِ مَآ أَمَرَهُۥ",
+          "textTransliteration": "Kallaa lammaa yaqdi maaa amarah"
         },
         {
           "number": 24,
-          "textArabic": "فَلْيَنظُرِ ٱلْإِنسَـٰنُ إِلَىٰ طَعَامِهِۦٓ"
+          "textArabic": "فَلْيَنظُرِ ٱلْإِنسَـٰنُ إِلَىٰ طَعَامِهِۦٓ",
+          "textTransliteration": "Falyanzuril-insaanu ilaa ta'aamih"
         },
         {
           "number": 25,
-          "textArabic": "أَنَّا صَبَبْنَا ٱلْمَآءَ صَبًّا"
+          "textArabic": "أَنَّا صَبَبْنَا ٱلْمَآءَ صَبًّا",
+          "textTransliteration": "Annaa sababnal-maaa'a sabbaa"
         },
         {
           "number": 26,
-          "textArabic": "ثُمَّ شَقَقْنَا ٱلْأَرْضَ شَقًّا"
+          "textArabic": "ثُمَّ شَقَقْنَا ٱلْأَرْضَ شَقًّا",
+          "textTransliteration": "Thumma shaqaqnal-arda shaqqaa"
         },
         {
           "number": 27,
-          "textArabic": "فَأَنۢبَتْنَا فِيهَا حَبًّا"
+          "textArabic": "فَأَنۢبَتْنَا فِيهَا حَبًّا",
+          "textTransliteration": "Fa-ambatnaa feehaa habbaa"
         },
         {
           "number": 28,
-          "textArabic": "وَعِنَبًا وَقَضْبًا"
+          "textArabic": "وَعِنَبًا وَقَضْبًا",
+          "textTransliteration": "Wa 'inabaw-wa qadbaa"
         },
         {
           "number": 29,
-          "textArabic": "وَزَيْتُونًا وَنَخْلًا"
+          "textArabic": "وَزَيْتُونًا وَنَخْلًا",
+          "textTransliteration": "Wa zaytoonaw-wa nakhlaa"
         },
         {
           "number": 30,
-          "textArabic": "وَحَدَآئِقَ غُلْبًا"
+          "textArabic": "وَحَدَآئِقَ غُلْبًا",
+          "textTransliteration": "Wa hadaaa'iqa ghulbaa"
         },
         {
           "number": 31,
-          "textArabic": "وَفَـٰكِهَةً وَأَبًّا"
+          "textArabic": "وَفَـٰكِهَةً وَأَبًّا",
+          "textTransliteration": "Wa faakihataw-wa abbaa"
         },
         {
           "number": 32,
-          "textArabic": "مَّتَـٰعًا لَّكُمْ وَلِأَنْعَـٰمِكُمْ"
+          "textArabic": "مَّتَـٰعًا لَّكُمْ وَلِأَنْعَـٰمِكُمْ",
+          "textTransliteration": "Mataa'al-lakum wa li-an'aamikum"
         },
         {
           "number": 33,
-          "textArabic": "فَإِذَا جَآءَتِ ٱلصَّآخَّةُ"
+          "textArabic": "فَإِذَا جَآءَتِ ٱلصَّآخَّةُ",
+          "textTransliteration": "Fa-izaa jaaa'atis-Saaakhkhah"
         },
         {
           "number": 34,
-          "textArabic": "يَوْمَ يَفِرُّ ٱلْمَرْءُ مِنْ أَخِيهِ"
+          "textArabic": "يَوْمَ يَفِرُّ ٱلْمَرْءُ مِنْ أَخِيهِ",
+          "textTransliteration": "Yawma yafirrul-mar'u min akhiih"
         },
         {
           "number": 35,
-          "textArabic": "وَأُمِّهِۦ وَأَبِيهِ"
+          "textArabic": "وَأُمِّهِۦ وَأَبِيهِ",
+          "textTransliteration": "Wa ummihee wa abeeh"
         },
         {
           "number": 36,
-          "textArabic": "وَصَـٰحِبَتِهِۦ وَبَنِيهِ"
+          "textArabic": "وَصَـٰحِبَتِهِۦ وَبَنِيهِ",
+          "textTransliteration": "Wa saahibatihee wa baneeh"
         },
         {
           "number": 37,
-          "textArabic": "لِكُلِّ ٱمْرِئٍ مِّنْهُمْ يَوْمَئِذٍ شَأْنٌ يُغْنِيهِ"
+          "textArabic": "لِكُلِّ ٱمْرِئٍ مِّنْهُمْ يَوْمَئِذٍ شَأْنٌ يُغْنِيهِ",
+          "textTransliteration": "Likulli-imri-im-minhum yawma-izin shaa-nuny-yughneeh"
         },
         {
           "number": 38,
-          "textArabic": "وُجُوهٌ يَوْمَئِذٍ مُّسْفِرَةٌ"
+          "textArabic": "وُجُوهٌ يَوْمَئِذٍ مُّسْفِرَةٌ",
+          "textTransliteration": "Wujoohun yawma-izim-musfirah"
         },
         {
           "number": 39,
-          "textArabic": "ضَاحِكَةٌ مُّسْتَبْشِرَةٌ"
+          "textArabic": "ضَاحِكَةٌ مُّسْتَبْشِرَةٌ",
+          "textTransliteration": "Daahikatun mustabshirah"
         },
         {
           "number": 40,
-          "textArabic": "وَوُجُوهٌ يَوْمَئِذٍ عَلَيْهَا غَبَرَةٌ"
+          "textArabic": "وَوُجُوهٌ يَوْمَئِذٍ عَلَيْهَا غَبَرَةٌ",
+          "textTransliteration": "Wa wujoohun yawma-izin 'alayhaa ghabarah"
         },
         {
           "number": 41,
-          "textArabic": "تَرْهَقُهَا قَتَرَةٌ"
+          "textArabic": "تَرْهَقُهَا قَتَرَةٌ",
+          "textTransliteration": "Tarhaquhaa qatarah"
         },
         {
           "number": 42,
-          "textArabic": "أُو۟لَـٰٓئِكَ هُمُ ٱلْكَفَرَةُ ٱلْفَجَرَةُ"
+          "textArabic": "أُو۟لَـٰٓئِكَ هُمُ ٱلْكَفَرَةُ ٱلْفَجَرَةُ",
+          "textTransliteration": "Ulaaa'ika humul-kafaratul-fajarah"
         }
       ]
     },
@@ -552,119 +680,148 @@
       "ayahs": [
         {
           "number": 1,
-          "textArabic": " إِذَا ٱلشَّمْسُ كُوِّرَتْ"
+          "textArabic": " إِذَا ٱلشَّمْسُ كُوِّرَتْ",
+          "textTransliteration": "Izash-shamsu kuwwirat"
         },
         {
           "number": 2,
-          "textArabic": "وَإِذَا ٱلنُّجُومُ ٱنكَدَرَتْ"
+          "textArabic": "وَإِذَا ٱلنُّجُومُ ٱنكَدَرَتْ",
+          "textTransliteration": "Wa izan-nujoomun-kadarat"
         },
         {
           "number": 3,
-          "textArabic": "وَإِذَا ٱلْجِبَالُ سُيِّرَتْ"
+          "textArabic": "وَإِذَا ٱلْجِبَالُ سُيِّرَتْ",
+          "textTransliteration": "Wa izal-jibaalu suyyirat"
         },
         {
           "number": 4,
-          "textArabic": "وَإِذَا ٱلْعِشَارُ عُطِّلَتْ"
+          "textArabic": "وَإِذَا ٱلْعِشَارُ عُطِّلَتْ",
+          "textTransliteration": "Wa izal-'ishaaru 'uttilat"
         },
         {
           "number": 5,
-          "textArabic": "وَإِذَا ٱلْوُحُوشُ حُشِرَتْ"
+          "textArabic": "وَإِذَا ٱلْوُحُوشُ حُشِرَتْ",
+          "textTransliteration": "Wa izal-wuhooshu hushirat"
         },
         {
           "number": 6,
-          "textArabic": "وَإِذَا ٱلْبِحَارُ سُجِّرَتْ"
+          "textArabic": "وَإِذَا ٱلْبِحَارُ سُجِّرَتْ",
+          "textTransliteration": "Wa izal-bihaaru sujjirat"
         },
         {
           "number": 7,
-          "textArabic": "وَإِذَا ٱلنُّفُوسُ زُوِّجَتْ"
+          "textArabic": "وَإِذَا ٱلنُّفُوسُ زُوِّجَتْ",
+          "textTransliteration": "Wa izan-nufoosu zuwwijat"
         },
         {
           "number": 8,
-          "textArabic": "وَإِذَا ٱلْمَوْءُۥدَةُ سُئِلَتْ"
+          "textArabic": "وَإِذَا ٱلْمَوْءُۥدَةُ سُئِلَتْ",
+          "textTransliteration": "Wa izal-maw'oodatu su'ilat"
         },
         {
           "number": 9,
-          "textArabic": "بِأَىِّ ذَنۢبٍ قُتِلَتْ"
+          "textArabic": "بِأَىِّ ذَنۢبٍ قُتِلَتْ",
+          "textTransliteration": "Bi-ayyi zambin qutilat"
         },
         {
           "number": 10,
-          "textArabic": "وَإِذَا ٱلصُّحُفُ نُشِرَتْ"
+          "textArabic": "وَإِذَا ٱلصُّحُفُ نُشِرَتْ",
+          "textTransliteration": "Wa izas-suhufu nushirat"
         },
         {
           "number": 11,
-          "textArabic": "وَإِذَا ٱلسَّمَآءُ كُشِطَتْ"
+          "textArabic": "وَإِذَا ٱلسَّمَآءُ كُشِطَتْ",
+          "textTransliteration": "Wa izas-samaaa'u kushitat"
         },
         {
           "number": 12,
-          "textArabic": "وَإِذَا ٱلْجَحِيمُ سُعِّرَتْ"
+          "textArabic": "وَإِذَا ٱلْجَحِيمُ سُعِّرَتْ",
+          "textTransliteration": "Wa izal-jaheemu su'-'irat"
         },
         {
           "number": 13,
-          "textArabic": "وَإِذَا ٱلْجَنَّةُ أُزْلِفَتْ"
+          "textArabic": "وَإِذَا ٱلْجَنَّةُ أُزْلِفَتْ",
+          "textTransliteration": "Wa izal-jannatu uzlifat"
         },
         {
           "number": 14,
-          "textArabic": "عَلِمَتْ نَفْسٌ مَّآ أَحْضَرَتْ"
+          "textArabic": "عَلِمَتْ نَفْسٌ مَّآ أَحْضَرَتْ",
+          "textTransliteration": "'Alimat nafsum-maaa ahdarat"
         },
         {
           "number": 15,
-          "textArabic": "فَلَآ أُقْسِمُ بِٱلْخُنَّسِ"
+          "textArabic": "فَلَآ أُقْسِمُ بِٱلْخُنَّسِ",
+          "textTransliteration": "Falaaa uqsimu bil-khunnas"
         },
         {
           "number": 16,
-          "textArabic": "ٱلْجَوَارِ ٱلْكُنَّسِ"
+          "textArabic": "ٱلْجَوَارِ ٱلْكُنَّسِ",
+          "textTransliteration": "Al-jawaaril-kunnas"
         },
         {
           "number": 17,
-          "textArabic": "وَٱلَّيْلِ إِذَا عَسْعَسَ"
+          "textArabic": "وَٱلَّيْلِ إِذَا عَسْعَسَ",
+          "textTransliteration": "Wallayli izaa 'as'as"
         },
         {
           "number": 18,
-          "textArabic": "وَٱلصُّبْحِ إِذَا تَنَفَّسَ"
+          "textArabic": "وَٱلصُّبْحِ إِذَا تَنَفَّسَ",
+          "textTransliteration": "Wassubhi izaa tanaffas"
         },
         {
           "number": 19,
-          "textArabic": "إِنَّهُۥ لَقَوْلُ رَسُولٍ كَرِيمٍ"
+          "textArabic": "إِنَّهُۥ لَقَوْلُ رَسُولٍ كَرِيمٍ",
+          "textTransliteration": "Innahoo laqawlu rasoolim kareem"
         },
         {
           "number": 20,
-          "textArabic": "ذِى قُوَّةٍ عِندَ ذِى ٱلْعَرْشِ مَكِينٍ"
+          "textArabic": "ذِى قُوَّةٍ عِندَ ذِى ٱلْعَرْشِ مَكِينٍ",
+          "textTransliteration": "Zee quwwatin 'inda zil-'arshi makeen"
         },
         {
           "number": 21,
-          "textArabic": "مُّطَاعٍ ثَمَّ أَمِينٍ"
+          "textArabic": "مُّطَاعٍ ثَمَّ أَمِينٍ",
+          "textTransliteration": "Mutaa'in samma ameen"
         },
         {
           "number": 22,
-          "textArabic": "وَمَا صَاحِبُكُم بِمَجْنُونٍ"
+          "textArabic": "وَمَا صَاحِبُكُم بِمَجْنُونٍ",
+          "textTransliteration": "Wa maa saahibukum bimajnoon"
         },
         {
           "number": 23,
-          "textArabic": "وَلَقَدْ رَءَاهُ بِٱلْأُفُقِ ٱلْمُبِينِ"
+          "textArabic": "وَلَقَدْ رَءَاهُ بِٱلْأُفُقِ ٱلْمُبِينِ",
+          "textTransliteration": "Wa laqad ra'aahu bil-ufuqil-mubeen"
         },
         {
           "number": 24,
-          "textArabic": "وَمَا هُوَ عَلَى ٱلْغَيْبِ بِضَنِينٍ"
+          "textArabic": "وَمَا هُوَ عَلَى ٱلْغَيْبِ بِضَنِينٍ",
+          "textTransliteration": "Wa maa huwa 'alal-ghaybi bidaneen"
         },
         {
           "number": 25,
-          "textArabic": "وَمَا هُوَ بِقَوْلِ شَيْطَـٰنٍ رَّجِيمٍ"
+          "textArabic": "وَمَا هُوَ بِقَوْلِ شَيْطَـٰنٍ رَّجِيمٍ",
+          "textTransliteration": "Wa maa huwa biqawli shaytaanir-rajeem"
         },
         {
           "number": 26,
-          "textArabic": "فَأَيْنَ تَذْهَبُونَ"
+          "textArabic": "فَأَيْنَ تَذْهَبُونَ",
+          "textTransliteration": "Fa-ayna tazhaboon"
         },
         {
           "number": 27,
-          "textArabic": "إِنْ هُوَ إِلَّا ذِكْرٌ لِّلْعَـٰلَمِينَ"
+          "textArabic": "إِنْ هُوَ إِلَّا ذِكْرٌ لِّلْعَـٰلَمِينَ",
+          "textTransliteration": "In huwa illaa zikrul-lil'aalameen"
         },
         {
           "number": 28,
-          "textArabic": "لِمَن شَآءَ مِنكُمْ أَن يَسْتَقِيمَ"
+          "textArabic": "لِمَن شَآءَ مِنكُمْ أَن يَسْتَقِيمَ",
+          "textTransliteration": "Liman shaaa'a minkum any-yastaqeem"
         },
         {
           "number": 29,
-          "textArabic": "وَمَا تَشَآءُونَ إِلَّآ أَن يَشَآءَ ٱللَّهُ رَبُّ ٱلْعَـٰلَمِينَ"
+          "textArabic": "وَمَا تَشَآءُونَ إِلَّآ أَن يَشَآءَ ٱللَّهُ رَبُّ ٱلْعَـٰلَمِينَ",
+          "textTransliteration": "Wa maa tashaaa'oona illaaa any-yashaaa'al-laahu Rabbul-'Aalameen"
         }
       ]
     },
@@ -678,79 +835,98 @@
       "ayahs": [
         {
           "number": 1,
-          "textArabic": " إِذَا ٱلسَّمَآءُ ٱنفَطَرَتْ"
+          "textArabic": " إِذَا ٱلسَّمَآءُ ٱنفَطَرَتْ",
+          "textTransliteration": "Izas-samaaa'un-fatarat"
         },
         {
           "number": 2,
-          "textArabic": "وَإِذَا ٱلْكَوَاكِبُ ٱنتَثَرَتْ"
+          "textArabic": "وَإِذَا ٱلْكَوَاكِبُ ٱنتَثَرَتْ",
+          "textTransliteration": "Wa izal-kawaakibun-tatharat"
         },
         {
           "number": 3,
-          "textArabic": "وَإِذَا ٱلْبِحَارُ فُجِّرَتْ"
+          "textArabic": "وَإِذَا ٱلْبِحَارُ فُجِّرَتْ",
+          "textTransliteration": "Wa izal-bihaaru fujjirat"
         },
         {
           "number": 4,
-          "textArabic": "وَإِذَا ٱلْقُبُورُ بُعْثِرَتْ"
+          "textArabic": "وَإِذَا ٱلْقُبُورُ بُعْثِرَتْ",
+          "textTransliteration": "Wa izal-qubooru bu'thirat"
         },
         {
           "number": 5,
-          "textArabic": "عَلِمَتْ نَفْسٌ مَّا قَدَّمَتْ وَأَخَّرَتْ"
+          "textArabic": "عَلِمَتْ نَفْسٌ مَّا قَدَّمَتْ وَأَخَّرَتْ",
+          "textTransliteration": "'Alimat nafsum-maa qaddamat wa akhkharat"
         },
         {
           "number": 6,
-          "textArabic": "يَـٰٓأَيُّهَا ٱلْإِنسَـٰنُ مَا غَرَّكَ بِرَبِّكَ ٱلْكَرِيمِ"
+          "textArabic": "يَـٰٓأَيُّهَا ٱلْإِنسَـٰنُ مَا غَرَّكَ بِرَبِّكَ ٱلْكَرِيمِ",
+          "textTransliteration": "Yaaa ayyuhal-insaanu maa gharraka bi-Rabbikal-Kareem"
         },
         {
           "number": 7,
-          "textArabic": "ٱلَّذِى خَلَقَكَ فَسَوَّىٰكَ فَعَدَلَكَ"
+          "textArabic": "ٱلَّذِى خَلَقَكَ فَسَوَّىٰكَ فَعَدَلَكَ",
+          "textTransliteration": "Allazee khalaqaka fasawwaaka fa'adalak"
         },
         {
           "number": 8,
-          "textArabic": "فِىٓ أَىِّ صُورَةٍ مَّا شَآءَ رَكَّبَكَ"
+          "textArabic": "فِىٓ أَىِّ صُورَةٍ مَّا شَآءَ رَكَّبَكَ",
+          "textTransliteration": "Feee ayyi sooratim-maa shaaa'a rakkabak"
         },
         {
           "number": 9,
-          "textArabic": "كَلَّا بَلْ تُكَذِّبُونَ بِٱلدِّينِ"
+          "textArabic": "كَلَّا بَلْ تُكَذِّبُونَ بِٱلدِّينِ",
+          "textTransliteration": "Kallaa bal tukazziboonad-deen"
         },
         {
           "number": 10,
-          "textArabic": "وَإِنَّ عَلَيْكُمْ لَحَـٰفِظِينَ"
+          "textArabic": "وَإِنَّ عَلَيْكُمْ لَحَـٰفِظِينَ",
+          "textTransliteration": "Wa inna 'alaykum lahaaifizeen"
         },
         {
           "number": 11,
-          "textArabic": "كِرَامًا كَـٰتِبِينَ"
+          "textArabic": "كِرَامًا كَـٰتِبِينَ",
+          "textTransliteration": "Kiraaman kaatibeen"
         },
         {
           "number": 12,
-          "textArabic": "يَعْلَمُونَ مَا تَفْعَلُونَ"
+          "textArabic": "يَعْلَمُونَ مَا تَفْعَلُونَ",
+          "textTransliteration": "Ya'lamoona maa taf'aloon"
         },
         {
           "number": 13,
-          "textArabic": "إِنَّ ٱلْأَبْرَارَ لَفِى نَعِيمٍ"
+          "textArabic": "إِنَّ ٱلْأَبْرَارَ لَفِى نَعِيمٍ",
+          "textTransliteration": "Innal-abraara lafee na'eem"
         },
         {
           "number": 14,
-          "textArabic": "وَإِنَّ ٱلْفُجَّارَ لَفِى جَحِيمٍ"
+          "textArabic": "وَإِنَّ ٱلْفُجَّارَ لَفِى جَحِيمٍ",
+          "textTransliteration": "Wa innal-fujjaara lafee jaheem"
         },
         {
           "number": 15,
-          "textArabic": "يَصْلَوْنَهَا يَوْمَ ٱلدِّينِ"
+          "textArabic": "يَصْلَوْنَهَا يَوْمَ ٱلدِّينِ",
+          "textTransliteration": "Yaslawnahaa yawmad-deen"
         },
         {
           "number": 16,
-          "textArabic": "وَمَا هُمْ عَنْهَا بِغَآئِبِينَ"
+          "textArabic": "وَمَا هُمْ عَنْهَا بِغَآئِبِينَ",
+          "textTransliteration": "Wa maa hum 'anhaa bighaaa'ibeen"
         },
         {
           "number": 17,
-          "textArabic": "وَمَآ أَدْرَىٰكَ مَا يَوْمُ ٱلدِّينِ"
+          "textArabic": "وَمَآ أَدْرَىٰكَ مَا يَوْمُ ٱلدِّينِ",
+          "textTransliteration": "Wa maaa adraaka maa yawmud-deen"
         },
         {
           "number": 18,
-          "textArabic": "ثُمَّ مَآ أَدْرَىٰكَ مَا يَوْمُ ٱلدِّينِ"
+          "textArabic": "ثُمَّ مَآ أَدْرَىٰكَ مَا يَوْمُ ٱلدِّينِ",
+          "textTransliteration": "Thumma maaa adraaka maa yawmud-deen"
         },
         {
           "number": 19,
-          "textArabic": "يَوْمَ لَا تَمْلِكُ نَفْسٌ لِّنَفْسٍ شَيْـًٔا ۖ وَٱلْأَمْرُ يَوْمَئِذٍ لِّلَّهِ"
+          "textArabic": "يَوْمَ لَا تَمْلِكُ نَفْسٌ لِّنَفْسٍ شَيْـًٔا ۖ وَٱلْأَمْرُ يَوْمَئِذٍ لِّلَّهِ",
+          "textTransliteration": "Yawma laa tamliku nafsul-linafsin shay'aa; wal-amru yawma'izil-lillaah"
         }
       ]
     },
@@ -764,147 +940,183 @@
       "ayahs": [
         {
           "number": 1,
-          "textArabic": " وَيْلٌ لِّلْمُطَفِّفِينَ"
+          "textArabic": " وَيْلٌ لِّلْمُطَفِّفِينَ",
+          "textTransliteration": "Waylul-lilmutaffifeen"
         },
         {
           "number": 2,
-          "textArabic": "ٱلَّذِينَ إِذَا ٱكْتَالُوا۟ عَلَى ٱلنَّاسِ يَسْتَوْفُونَ"
+          "textArabic": "ٱلَّذِينَ إِذَا ٱكْتَالُوا۟ عَلَى ٱلنَّاسِ يَسْتَوْفُونَ",
+          "textTransliteration": "Allazeena izak-taaloo 'alan-naasi yastawfoon"
         },
         {
           "number": 3,
-          "textArabic": "وَإِذَا كَالُوهُمْ أَو وَّزَنُوهُمْ يُخْسِرُونَ"
+          "textArabic": "وَإِذَا كَالُوهُمْ أَو وَّزَنُوهُمْ يُخْسِرُونَ",
+          "textTransliteration": "Wa izaa kaaloohum aw wazanoohum yukhsiroon"
         },
         {
           "number": 4,
-          "textArabic": "أَلَا يَظُنُّ أُو۟لَـٰٓئِكَ أَنَّهُم مَّبْعُوثُونَ"
+          "textArabic": "أَلَا يَظُنُّ أُو۟لَـٰٓئِكَ أَنَّهُم مَّبْعُوثُونَ",
+          "textTransliteration": "Alaa yazunnu ulaaa'ika annahum mab'oothoon"
         },
         {
           "number": 5,
-          "textArabic": "لِيَوْمٍ عَظِيمٍ"
+          "textArabic": "لِيَوْمٍ عَظِيمٍ",
+          "textTransliteration": "Li-Yawmin 'Azeem"
         },
         {
           "number": 6,
-          "textArabic": "يَوْمَ يَقُومُ ٱلنَّاسُ لِرَبِّ ٱلْعَـٰلَمِينَ"
+          "textArabic": "يَوْمَ يَقُومُ ٱلنَّاسُ لِرَبِّ ٱلْعَـٰلَمِينَ",
+          "textTransliteration": "Yawma yaqoomun-naasu li-Rabbil-'Aalameen"
         },
         {
           "number": 7,
-          "textArabic": "كَلَّآ إِنَّ كِتَـٰبَ ٱلْفُجَّارِ لَفِى سِجِّينٍ"
+          "textArabic": "كَلَّآ إِنَّ كِتَـٰبَ ٱلْفُجَّارِ لَفِى سِجِّينٍ",
+          "textTransliteration": "Kallaaa inna kitaabal-fujjaari lafee Sijjeen"
         },
         {
           "number": 8,
-          "textArabic": "وَمَآ أَدْرَىٰكَ مَا سِجِّينٌ"
+          "textArabic": "وَمَآ أَدْرَىٰكَ مَا سِجِّينٌ",
+          "textTransliteration": "Wa maaa adraaka maa Sijjeen"
         },
         {
           "number": 9,
-          "textArabic": "كِتَـٰبٌ مَّرْقُومٌ"
+          "textArabic": "كِتَـٰبٌ مَّرْقُومٌ",
+          "textTransliteration": "Kitaabum-marqoom"
         },
         {
           "number": 10,
-          "textArabic": "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ"
+          "textArabic": "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
+          "textTransliteration": "Waylun yawma'izil-lilmukazzibeen"
         },
         {
           "number": 11,
-          "textArabic": "ٱلَّذِينَ يُكَذِّبُونَ بِيَوْمِ ٱلدِّينِ"
+          "textArabic": "ٱلَّذِينَ يُكَذِّبُونَ بِيَوْمِ ٱلدِّينِ",
+          "textTransliteration": "Allazeena yukazziboo-na bi-Yawmid-Deen"
         },
         {
           "number": 12,
-          "textArabic": "وَمَا يُكَذِّبُ بِهِۦٓ إِلَّا كُلُّ مُعْتَدٍ أَثِيمٍ"
+          "textArabic": "وَمَا يُكَذِّبُ بِهِۦٓ إِلَّا كُلُّ مُعْتَدٍ أَثِيمٍ",
+          "textTransliteration": "Wa maa yukaz-zibu biheee illaa kullu mu'tadin atheem"
         },
         {
           "number": 13,
-          "textArabic": "إِذَا تُتْلَىٰ عَلَيْهِ ءَايَـٰتُنَا قَالَ أَسَـٰطِيرُ ٱلْأَوَّلِينَ"
+          "textArabic": "إِذَا تُتْلَىٰ عَلَيْهِ ءَايَـٰتُنَا قَالَ أَسَـٰطِيرُ ٱلْأَوَّلِينَ",
+          "textTransliteration": "Izaa tutlaa 'alayhi Aayaatunaa qaala asaateerul-awwaleen"
         },
         {
           "number": 14,
-          "textArabic": "كَلَّا ۖ بَلْ ۜ رَانَ عَلَىٰ قُلُوبِهِم مَّا كَانُوا۟ يَكْسِبُونَ"
+          "textArabic": "كَلَّا ۖ بَلْ ۜ رَانَ عَلَىٰ قُلُوبِهِم مَّا كَانُوا۟ يَكْسِبُونَ",
+          "textTransliteration": "Kallaa bal raana 'alaa quloobihim maa kaanoo yaksiboon"
         },
         {
           "number": 15,
-          "textArabic": "كَلَّآ إِنَّهُمْ عَن رَّبِّهِمْ يَوْمَئِذٍ لَّمَحْجُوبُونَ"
+          "textArabic": "كَلَّآ إِنَّهُمْ عَن رَّبِّهِمْ يَوْمَئِذٍ لَّمَحْجُوبُونَ",
+          "textTransliteration": "Kallaaa innahum 'ar-Rabbihim yawma'izil-lamahjoo-boon"
         },
         {
           "number": 16,
-          "textArabic": "ثُمَّ إِنَّهُمْ لَصَالُوا۟ ٱلْجَحِيمِ"
+          "textArabic": "ثُمَّ إِنَّهُمْ لَصَالُوا۟ ٱلْجَحِيمِ",
+          "textTransliteration": "Thumma innahum lasaalul-jaheem"
         },
         {
           "number": 17,
-          "textArabic": "ثُمَّ يُقَالُ هَـٰذَا ٱلَّذِى كُنتُم بِهِۦ تُكَذِّبُونَ"
+          "textArabic": "ثُمَّ يُقَالُ هَـٰذَا ٱلَّذِى كُنتُم بِهِۦ تُكَذِّبُونَ",
+          "textTransliteration": "Thumma yuqaalu haazal-lazee kuntum bihee tukazziboon"
         },
         {
           "number": 18,
-          "textArabic": "كَلَّآ إِنَّ كِتَـٰبَ ٱلْأَبْرَارِ لَفِى عِلِّيِّينَ"
+          "textArabic": "كَلَّآ إِنَّ كِتَـٰبَ ٱلْأَبْرَارِ لَفِى عِلِّيِّينَ",
+          "textTransliteration": "Kallaaa inna kitaabal-abraari lafee 'Illiyyeen"
         },
         {
           "number": 19,
-          "textArabic": "وَمَآ أَدْرَىٰكَ مَا عِلِّيُّونَ"
+          "textArabic": "وَمَآ أَدْرَىٰكَ مَا عِلِّيُّونَ",
+          "textTransliteration": "Wa maaa adraaka maa 'Illiyyoon"
         },
         {
           "number": 20,
-          "textArabic": "كِتَـٰبٌ مَّرْقُومٌ"
+          "textArabic": "كِتَـٰبٌ مَّرْقُومٌ",
+          "textTransliteration": "Kitaabum-marqoom"
         },
         {
           "number": 21,
-          "textArabic": "يَشْهَدُهُ ٱلْمُقَرَّبُونَ"
+          "textArabic": "يَشْهَدُهُ ٱلْمُقَرَّبُونَ",
+          "textTransliteration": "Yash-haduhul-muqarraboon"
         },
         {
           "number": 22,
-          "textArabic": "إِنَّ ٱلْأَبْرَارَ لَفِى نَعِيمٍ"
+          "textArabic": "إِنَّ ٱلْأَبْرَارَ لَفِى نَعِيمٍ",
+          "textTransliteration": "Innal-abraara lafee Na'eem"
         },
         {
           "number": 23,
-          "textArabic": "عَلَى ٱلْأَرَآئِكِ يَنظُرُونَ"
+          "textArabic": "عَلَى ٱلْأَرَآئِكِ يَنظُرُونَ",
+          "textTransliteration": "'Alal-araaa'iki yanzuroon"
         },
         {
           "number": 24,
-          "textArabic": "تَعْرِفُ فِى وُجُوهِهِمْ نَضْرَةَ ٱلنَّعِيمِ"
+          "textArabic": "تَعْرِفُ فِى وُجُوهِهِمْ نَضْرَةَ ٱلنَّعِيمِ",
+          "textTransliteration": "Ta'rifu fee wujoohihim nadrata-na'eem"
         },
         {
           "number": 25,
-          "textArabic": "يُسْقَوْنَ مِن رَّحِيقٍ مَّخْتُومٍ"
+          "textArabic": "يُسْقَوْنَ مِن رَّحِيقٍ مَّخْتُومٍ",
+          "textTransliteration": "Yusqawna mir-raheeqim-makhtoom"
         },
         {
           "number": 26,
-          "textArabic": "خِتَـٰمُهُۥ مِسْكٌ ۚ وَفِى ذَٰلِكَ فَلْيَتَنَافَسِ ٱلْمُتَنَـٰفِسُونَ"
+          "textArabic": "خِتَـٰمُهُۥ مِسْكٌ ۚ وَفِى ذَٰلِكَ فَلْيَتَنَافَسِ ٱلْمُتَنَـٰفِسُونَ",
+          "textTransliteration": "Khitaamuhoo misk; wa fee zaalika falyatanaafasil-mutanaafisoon"
         },
         {
           "number": 27,
-          "textArabic": "وَمِزَاجُهُۥ مِن تَسْنِيمٍ"
+          "textArabic": "وَمِزَاجُهُۥ مِن تَسْنِيمٍ",
+          "textTransliteration": "Wa mizaajuhoo min tasneem"
         },
         {
           "number": 28,
-          "textArabic": "عَيْنًا يَشْرَبُ بِهَا ٱلْمُقَرَّبُونَ"
+          "textArabic": "عَيْنًا يَشْرَبُ بِهَا ٱلْمُقَرَّبُونَ",
+          "textTransliteration": "'Aynany-yashrabu bihal-muqarraboon"
         },
         {
           "number": 29,
-          "textArabic": "إِنَّ ٱلَّذِينَ أَجْرَمُوا۟ كَانُوا۟ مِنَ ٱلَّذِينَ ءَامَنُوا۟ يَضْحَكُونَ"
+          "textArabic": "إِنَّ ٱلَّذِينَ أَجْرَمُوا۟ كَانُوا۟ مِنَ ٱلَّذِينَ ءَامَنُوا۟ يَضْحَكُونَ",
+          "textTransliteration": "Innal-lazeena ajramoo kaanoo minal-lazeena aamanoo yadhakoon"
         },
         {
           "number": 30,
-          "textArabic": "وَإِذَا مَرُّوا۟ بِهِمْ يَتَغَامَزُونَ"
+          "textArabic": "وَإِذَا مَرُّوا۟ بِهِمْ يَتَغَامَزُونَ",
+          "textTransliteration": "Wa izaa marroo bihim yataghaamazoon"
         },
         {
           "number": 31,
-          "textArabic": "وَإِذَا ٱنقَلَبُوٓا۟ إِلَىٰٓ أَهْلِهِمُ ٱنقَلَبُوا۟ فَكِهِينَ"
+          "textArabic": "وَإِذَا ٱنقَلَبُوٓا۟ إِلَىٰٓ أَهْلِهِمُ ٱنقَلَبُوا۟ فَكِهِينَ",
+          "textTransliteration": "Wa izan-qalabooo ilaaa ahlihimun-qalaboo fakiheen"
         },
         {
           "number": 32,
-          "textArabic": "وَإِذَا رَأَوْهُمْ قَالُوٓا۟ إِنَّ هَـٰٓؤُلَآءِ لَضَآلُّونَ"
+          "textArabic": "وَإِذَا رَأَوْهُمْ قَالُوٓا۟ إِنَّ هَـٰٓؤُلَآءِ لَضَآلُّونَ",
+          "textTransliteration": "Wa izaa ra-awhum qaalooo inna haaa'ulaaa'i ladaaalloon"
         },
         {
           "number": 33,
-          "textArabic": "وَمَآ أُرْسِلُوا۟ عَلَيْهِمْ حَـٰفِظِينَ"
+          "textArabic": "وَمَآ أُرْسِلُوا۟ عَلَيْهِمْ حَـٰفِظِينَ",
+          "textTransliteration": "Wa maaa ursiloo 'alayhim haafizeen"
         },
         {
           "number": 34,
-          "textArabic": "فَٱلْيَوْمَ ٱلَّذِينَ ءَامَنُوا۟ مِنَ ٱلْكُفَّارِ يَضْحَكُونَ"
+          "textArabic": "فَٱلْيَوْمَ ٱلَّذِينَ ءَامَنُوا۟ مِنَ ٱلْكُفَّارِ يَضْحَكُونَ",
+          "textTransliteration": "Fal-yawmal-lazeena aamanoo minal-kuffaari yadhakoon"
         },
         {
           "number": 35,
-          "textArabic": "عَلَى ٱلْأَرَآئِكِ يَنظُرُونَ"
+          "textArabic": "عَلَى ٱلْأَرَآئِكِ يَنظُرُونَ",
+          "textTransliteration": "'Alal-araaa'iki yanzuroon"
         },
         {
           "number": 36,
-          "textArabic": "هَلْ ثُوِّبَ ٱلْكُفَّارُ مَا كَانُوا۟ يَفْعَلُونَ"
+          "textArabic": "هَلْ ثُوِّبَ ٱلْكُفَّارُ مَا كَانُوا۟ يَفْعَلُونَ",
+          "textTransliteration": "Hal thuwwibal-kuffaaru maa kaanoo yaf'aloon"
         }
       ]
     },
@@ -918,103 +1130,128 @@
       "ayahs": [
         {
           "number": 1,
-          "textArabic": " إِذَا ٱلسَّمَآءُ ٱنشَقَّتْ"
+          "textArabic": " إِذَا ٱلسَّمَآءُ ٱنشَقَّتْ",
+          "textTransliteration": "Izas-samaaa'un-shaqqat"
         },
         {
           "number": 2,
-          "textArabic": "وَأَذِنَتْ لِرَبِّهَا وَحُقَّتْ"
+          "textArabic": "وَأَذِنَتْ لِرَبِّهَا وَحُقَّتْ",
+          "textTransliteration": "Wa azinat li-Rabbihaa wa huqqat"
         },
         {
           "number": 3,
-          "textArabic": "وَإِذَا ٱلْأَرْضُ مُدَّتْ"
+          "textArabic": "وَإِذَا ٱلْأَرْضُ مُدَّتْ",
+          "textTransliteration": "Wa izal-ardu muddat"
         },
         {
           "number": 4,
-          "textArabic": "وَأَلْقَتْ مَا فِيهَا وَتَخَلَّتْ"
+          "textArabic": "وَأَلْقَتْ مَا فِيهَا وَتَخَلَّتْ",
+          "textTransliteration": "Wa alqat maa feehaa wa takhallat"
         },
         {
           "number": 5,
-          "textArabic": "وَأَذِنَتْ لِرَبِّهَا وَحُقَّتْ"
+          "textArabic": "وَأَذِنَتْ لِرَبِّهَا وَحُقَّتْ",
+          "textTransliteration": "Wa azinat li-Rabbihaa wa huqqat"
         },
         {
           "number": 6,
-          "textArabic": "يَـٰٓأَيُّهَا ٱلْإِنسَـٰنُ إِنَّكَ كَادِحٌ إِلَىٰ رَبِّكَ كَدْحًا فَمُلَـٰقِيهِ"
+          "textArabic": "يَـٰٓأَيُّهَا ٱلْإِنسَـٰنُ إِنَّكَ كَادِحٌ إِلَىٰ رَبِّكَ كَدْحًا فَمُلَـٰقِيهِ",
+          "textTransliteration": "Yaaa ayyuhal-insaanu innaka kaadihun ilaa Rabbika kadhan famulaa-qeeh"
         },
         {
           "number": 7,
-          "textArabic": "فَأَمَّا مَنْ أُوتِىَ كِتَـٰبَهُۥ بِيَمِينِهِۦ"
+          "textArabic": "فَأَمَّا مَنْ أُوتِىَ كِتَـٰبَهُۥ بِيَمِينِهِۦ",
+          "textTransliteration": "Fa-ammaa man ootiya kitaabahoo bi-yameenih"
         },
         {
           "number": 8,
-          "textArabic": "فَسَوْفَ يُحَاسَبُ حِسَابًا يَسِيرًا"
+          "textArabic": "فَسَوْفَ يُحَاسَبُ حِسَابًا يَسِيرًا",
+          "textTransliteration": "Fasawfa yuhaasabu hisaabany-yaseeraa"
         },
         {
           "number": 9,
-          "textArabic": "وَيَنقَلِبُ إِلَىٰٓ أَهْلِهِۦ مَسْرُورًا"
+          "textArabic": "وَيَنقَلِبُ إِلَىٰٓ أَهْلِهِۦ مَسْرُورًا",
+          "textTransliteration": "Wa yanqalibu ilaaa ahlihee masrooraa"
         },
         {
           "number": 10,
-          "textArabic": "وَأَمَّا مَنْ أُوتِىَ كِتَـٰبَهُۥ وَرَآءَ ظَهْرِهِۦ"
+          "textArabic": "وَأَمَّا مَنْ أُوتِىَ كِتَـٰبَهُۥ وَرَآءَ ظَهْرِهِۦ",
+          "textTransliteration": "Wa ammaa man ootiya kitaabahoo waraaa'a zahrih"
         },
         {
           "number": 11,
-          "textArabic": "فَسَوْفَ يَدْعُوا۟ ثُبُورًا"
+          "textArabic": "فَسَوْفَ يَدْعُوا۟ ثُبُورًا",
+          "textTransliteration": "Fasawfa yad'oo thubooraa"
         },
         {
           "number": 12,
-          "textArabic": "وَيَصْلَىٰ سَعِيرًا"
+          "textArabic": "وَيَصْلَىٰ سَعِيرًا",
+          "textTransliteration": "Wa yaslaa sa'eeraa"
         },
         {
           "number": 13,
-          "textArabic": "إِنَّهُۥ كَانَ فِىٓ أَهْلِهِۦ مَسْرُورًا"
+          "textArabic": "إِنَّهُۥ كَانَ فِىٓ أَهْلِهِۦ مَسْرُورًا",
+          "textTransliteration": "Innahoo kaana feee ahlihee masrooraa"
         },
         {
           "number": 14,
-          "textArabic": "إِنَّهُۥ ظَنَّ أَن لَّن يَحُورَ"
+          "textArabic": "إِنَّهُۥ ظَنَّ أَن لَّن يَحُورَ",
+          "textTransliteration": "Innahoo zanna al-lany-yahoor"
         },
         {
           "number": 15,
-          "textArabic": "بَلَىٰٓ إِنَّ رَبَّهُۥ كَانَ بِهِۦ بَصِيرًا"
+          "textArabic": "بَلَىٰٓ إِنَّ رَبَّهُۥ كَانَ بِهِۦ بَصِيرًا",
+          "textTransliteration": "Balaaa inna Rabbahoo kaana bihee baseeraa"
         },
         {
           "number": 16,
-          "textArabic": "فَلَآ أُقْسِمُ بِٱلشَّفَقِ"
+          "textArabic": "فَلَآ أُقْسِمُ بِٱلشَّفَقِ",
+          "textTransliteration": "Falaaa uqsimu bish-shafaq"
         },
         {
           "number": 17,
-          "textArabic": "وَٱلَّيْلِ وَمَا وَسَقَ"
+          "textArabic": "وَٱلَّيْلِ وَمَا وَسَقَ",
+          "textTransliteration": "Wallayli wa maa wasaq"
         },
         {
           "number": 18,
-          "textArabic": "وَٱلْقَمَرِ إِذَا ٱتَّسَقَ"
+          "textArabic": "وَٱلْقَمَرِ إِذَا ٱتَّسَقَ",
+          "textTransliteration": "Walqamari izan-tasaq"
         },
         {
           "number": 19,
-          "textArabic": "لَتَرْكَبُنَّ طَبَقًا عَن طَبَقٍ"
+          "textArabic": "لَتَرْكَبُنَّ طَبَقًا عَن طَبَقٍ",
+          "textTransliteration": "Latarkabunna tabaqan 'an tabaq"
         },
         {
           "number": 20,
-          "textArabic": "فَمَا لَهُمْ لَا يُؤْمِنُونَ"
+          "textArabic": "فَمَا لَهُمْ لَا يُؤْمِنُونَ",
+          "textTransliteration": "Famaa lahum laa yu'minoon"
         },
         {
           "number": 21,
-          "textArabic": "وَإِذَا قُرِئَ عَلَيْهِمُ ٱلْقُرْءَانُ لَا يَسْجُدُونَ ۩"
+          "textArabic": "وَإِذَا قُرِئَ عَلَيْهِمُ ٱلْقُرْءَانُ لَا يَسْجُدُونَ ۩",
+          "textTransliteration": "Wa izaa quri'a 'alayhimul-Qur'aanu laa yasjudoon"
         },
         {
           "number": 22,
-          "textArabic": "بَلِ ٱلَّذِينَ كَفَرُوا۟ يُكَذِّبُونَ"
+          "textArabic": "بَلِ ٱلَّذِينَ كَفَرُوا۟ يُكَذِّبُونَ",
+          "textTransliteration": "Balil-lazeena kafaroo yukazziboon"
         },
         {
           "number": 23,
-          "textArabic": "وَٱللَّهُ أَعْلَمُ بِمَا يُوعُونَ"
+          "textArabic": "وَٱللَّهُ أَعْلَمُ بِمَا يُوعُونَ",
+          "textTransliteration": "Wallaahu a'lamu bimaa yoo'oon"
         },
         {
           "number": 24,
-          "textArabic": "فَبَشِّرْهُم بِعَذَابٍ أَلِيمٍ"
+          "textArabic": "فَبَشِّرْهُم بِعَذَابٍ أَلِيمٍ",
+          "textTransliteration": "Fabash-shirhum bi'azaabin aleem"
         },
         {
           "number": 25,
-          "textArabic": "إِلَّا ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ لَهُمْ أَجْرٌ غَيْرُ مَمْنُونٍۭ"
+          "textArabic": "إِلَّا ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ لَهُمْ أَجْرٌ غَيْرُ مَمْنُونٍۭ",
+          "textTransliteration": "Illal-lazeena aamanoo wa 'amilus-saalihaati lahum ajrun ghayru mamnoon"
         }
       ]
     },
@@ -1028,91 +1265,113 @@
       "ayahs": [
         {
           "number": 1,
-          "textArabic": " وَٱلسَّمَآءِ ذَاتِ ٱلْبُرُوجِ"
+          "textArabic": " وَٱلسَّمَآءِ ذَاتِ ٱلْبُرُوجِ",
+          "textTransliteration": "Wassamaaa'i zaatil-burooj"
         },
         {
           "number": 2,
-          "textArabic": "وَٱلْيَوْمِ ٱلْمَوْعُودِ"
+          "textArabic": "وَٱلْيَوْمِ ٱلْمَوْعُودِ",
+          "textTransliteration": "Wal-yawmil-maw'ood"
         },
         {
           "number": 3,
-          "textArabic": "وَشَاهِدٍ وَمَشْهُودٍ"
+          "textArabic": "وَشَاهِدٍ وَمَشْهُودٍ",
+          "textTransliteration": "Wa shaahidinw-wa mashhood"
         },
         {
           "number": 4,
-          "textArabic": "قُتِلَ أَصْحَـٰبُ ٱلْأُخْدُودِ"
+          "textArabic": "قُتِلَ أَصْحَـٰبُ ٱلْأُخْدُودِ",
+          "textTransliteration": "Qutila as-haabul-ukhdood"
         },
         {
           "number": 5,
-          "textArabic": "ٱلنَّارِ ذَاتِ ٱلْوَقُودِ"
+          "textArabic": "ٱلنَّارِ ذَاتِ ٱلْوَقُودِ",
+          "textTransliteration": "An-naari zaatil-waqood"
         },
         {
           "number": 6,
-          "textArabic": "إِذْ هُمْ عَلَيْهَا قُعُودٌ"
+          "textArabic": "إِذْ هُمْ عَلَيْهَا قُعُودٌ",
+          "textTransliteration": "Iz hum 'alayhaa qu'ood"
         },
         {
           "number": 7,
-          "textArabic": "وَهُمْ عَلَىٰ مَا يَفْعَلُونَ بِٱلْمُؤْمِنِينَ شُهُودٌ"
+          "textArabic": "وَهُمْ عَلَىٰ مَا يَفْعَلُونَ بِٱلْمُؤْمِنِينَ شُهُودٌ",
+          "textTransliteration": "Wa hum 'alaa maa yaf'aloona bil-mu'mineena shuhood"
         },
         {
           "number": 8,
-          "textArabic": "وَمَا نَقَمُوا۟ مِنْهُمْ إِلَّآ أَن يُؤْمِنُوا۟ بِٱللَّهِ ٱلْعَزِيزِ ٱلْحَمِيدِ"
+          "textArabic": "وَمَا نَقَمُوا۟ مِنْهُمْ إِلَّآ أَن يُؤْمِنُوا۟ بِٱللَّهِ ٱلْعَزِيزِ ٱلْحَمِيدِ",
+          "textTransliteration": "Wa maa naqamoo minhum illaa any-yu'minoo billaahil-'Azeezil-Hameed"
         },
         {
           "number": 9,
-          "textArabic": "ٱلَّذِى لَهُۥ مُلْكُ ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ ۚ وَٱللَّهُ عَلَىٰ كُلِّ شَىْءٍ شَهِيدٌ"
+          "textArabic": "ٱلَّذِى لَهُۥ مُلْكُ ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ ۚ وَٱللَّهُ عَلَىٰ كُلِّ شَىْءٍ شَهِيدٌ",
+          "textTransliteration": "Allazee lahoo mulkus-samaawaati wal-ard; wallaahu 'alaa kulli shay'in Shaheed"
         },
         {
           "number": 10,
-          "textArabic": "إِنَّ ٱلَّذِينَ فَتَنُوا۟ ٱلْمُؤْمِنِينَ وَٱلْمُؤْمِنَـٰتِ ثُمَّ لَمْ يَتُوبُوا۟ فَلَهُمْ عَذَابُ جَهَنَّمَ وَلَهُمْ عَذَابُ ٱلْحَرِيقِ"
+          "textArabic": "إِنَّ ٱلَّذِينَ فَتَنُوا۟ ٱلْمُؤْمِنِينَ وَٱلْمُؤْمِنَـٰتِ ثُمَّ لَمْ يَتُوبُوا۟ فَلَهُمْ عَذَابُ جَهَنَّمَ وَلَهُمْ عَذَابُ ٱلْحَرِيقِ",
+          "textTransliteration": "Innal-lazeena fatanul-mu'mineena wal-mu'minaati thumma lam yatooboo falahum 'azaabu jahannama wa lahum 'azaabul-hareeq"
         },
         {
           "number": 11,
-          "textArabic": "إِنَّ ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ لَهُمْ جَنَّـٰتٌ تَجْرِى مِن تَحْتِهَا ٱلْأَنْهَـٰرُ ۚ ذَٰلِكَ ٱلْفَوْزُ ٱلْكَبِيرُ"
+          "textArabic": "إِنَّ ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ لَهُمْ جَنَّـٰتٌ تَجْرِى مِن تَحْتِهَا ٱلْأَنْهَـٰرُ ۚ ذَٰلِكَ ٱلْفَوْزُ ٱلْكَبِيرُ",
+          "textTransliteration": "Innal-lazeena aamanoo wa 'amilus-saalihaati lahum jannaatun tajree min tahtihal-anhaar; zaalikal-fawzul-kabeer"
         },
         {
           "number": 12,
-          "textArabic": "إِنَّ بَطْشَ رَبِّكَ لَشَدِيدٌ"
+          "textArabic": "إِنَّ بَطْشَ رَبِّكَ لَشَدِيدٌ",
+          "textTransliteration": "Inna batsha Rabbika lashadeed"
         },
         {
           "number": 13,
-          "textArabic": "إِنَّهُۥ هُوَ يُبْدِئُ وَيُعِيدُ"
+          "textArabic": "إِنَّهُۥ هُوَ يُبْدِئُ وَيُعِيدُ",
+          "textTransliteration": "Innahoo Huwa yubdi'u wa yu'eed"
         },
         {
           "number": 14,
-          "textArabic": "وَهُوَ ٱلْغَفُورُ ٱلْوَدُودُ"
+          "textArabic": "وَهُوَ ٱلْغَفُورُ ٱلْوَدُودُ",
+          "textTransliteration": "Wa Huwal-Ghafoorul-Wadood"
         },
         {
           "number": 15,
-          "textArabic": "ذُو ٱلْعَرْشِ ٱلْمَجِيدُ"
+          "textArabic": "ذُو ٱلْعَرْشِ ٱلْمَجِيدُ",
+          "textTransliteration": "Zul-'Arshil-Majeed"
         },
         {
           "number": 16,
-          "textArabic": "فَعَّالٌ لِّمَا يُرِيدُ"
+          "textArabic": "فَعَّالٌ لِّمَا يُرِيدُ",
+          "textTransliteration": "Fa'-'aalul-limaa yureed"
         },
         {
           "number": 17,
-          "textArabic": "هَلْ أَتَىٰكَ حَدِيثُ ٱلْجُنُودِ"
+          "textArabic": "هَلْ أَتَىٰكَ حَدِيثُ ٱلْجُنُودِ",
+          "textTransliteration": "Hal ataaka hadeethul-junood"
         },
         {
           "number": 18,
-          "textArabic": "فِرْعَوْنَ وَثَمُودَ"
+          "textArabic": "فِرْعَوْنَ وَثَمُودَ",
+          "textTransliteration": "Fir'awna wa Thamood"
         },
         {
           "number": 19,
-          "textArabic": "بَلِ ٱلَّذِينَ كَفَرُوا۟ فِى تَكْذِيبٍ"
+          "textArabic": "بَلِ ٱلَّذِينَ كَفَرُوا۟ فِى تَكْذِيبٍ",
+          "textTransliteration": "Balil-lazeena kafaroo fee takzeeb"
         },
         {
           "number": 20,
-          "textArabic": "وَٱللَّهُ مِن وَرَآئِهِم مُّحِيطٌۢ"
+          "textArabic": "وَٱللَّهُ مِن وَرَآئِهِم مُّحِيطٌۢ",
+          "textTransliteration": "Wallaahu minw-waraaa'ihim muheet"
         },
         {
           "number": 21,
-          "textArabic": "بَلْ هُوَ قُرْءَانٌ مَّجِيدٌ"
+          "textArabic": "بَلْ هُوَ قُرْءَانٌ مَّجِيدٌ",
+          "textTransliteration": "Bal huwa Qur'aanum-Majeed"
         },
         {
           "number": 22,
-          "textArabic": "فِى لَوْحٍ مَّحْفُوظٍۭ"
+          "textArabic": "فِى لَوْحٍ مَّحْفُوظٍۭ",
+          "textTransliteration": "Fee Lawhim-Mahfooz"
         }
       ]
     },
@@ -1126,71 +1385,88 @@
       "ayahs": [
         {
           "number": 1,
-          "textArabic": " وَٱلسَّمَآءِ وَٱلطَّارِقِ"
+          "textArabic": " وَٱلسَّمَآءِ وَٱلطَّارِقِ",
+          "textTransliteration": "Wassamaaa'i wattaariq"
         },
         {
           "number": 2,
-          "textArabic": "وَمَآ أَدْرَىٰكَ مَا ٱلطَّارِقُ"
+          "textArabic": "وَمَآ أَدْرَىٰكَ مَا ٱلطَّارِقُ",
+          "textTransliteration": "Wa maaa adraaka mat-taariq"
         },
         {
           "number": 3,
-          "textArabic": "ٱلنَّجْمُ ٱلثَّاقِبُ"
+          "textArabic": "ٱلنَّجْمُ ٱلثَّاقِبُ",
+          "textTransliteration": "An-najmuth-thaaqib"
         },
         {
           "number": 4,
-          "textArabic": "إِن كُلُّ نَفْسٍ لَّمَّا عَلَيْهَا حَافِظٌ"
+          "textArabic": "إِن كُلُّ نَفْسٍ لَّمَّا عَلَيْهَا حَافِظٌ",
+          "textTransliteration": "In kullu nafsil-lammaa 'alayhaa haafiz"
         },
         {
           "number": 5,
-          "textArabic": "فَلْيَنظُرِ ٱلْإِنسَـٰنُ مِمَّ خُلِقَ"
+          "textArabic": "فَلْيَنظُرِ ٱلْإِنسَـٰنُ مِمَّ خُلِقَ",
+          "textTransliteration": "Falyanzuril-insaanu mimma khuliq"
         },
         {
           "number": 6,
-          "textArabic": "خُلِقَ مِن مَّآءٍ دَافِقٍ"
+          "textArabic": "خُلِقَ مِن مَّآءٍ دَافِقٍ",
+          "textTransliteration": "Khuliqa mim-maaa'in daafiq"
         },
         {
           "number": 7,
-          "textArabic": "يَخْرُجُ مِنۢ بَيْنِ ٱلصُّلْبِ وَٱلتَّرَآئِبِ"
+          "textArabic": "يَخْرُجُ مِنۢ بَيْنِ ٱلصُّلْبِ وَٱلتَّرَآئِبِ",
+          "textTransliteration": "Yakhruju mim baynis-sulbi wat-taraaa'ib"
         },
         {
           "number": 8,
-          "textArabic": "إِنَّهُۥ عَلَىٰ رَجْعِهِۦ لَقَادِرٌ"
+          "textArabic": "إِنَّهُۥ عَلَىٰ رَجْعِهِۦ لَقَادِرٌ",
+          "textTransliteration": "Innahoo 'alaa raj'ihee laqaadir"
         },
         {
           "number": 9,
-          "textArabic": "يَوْمَ تُبْلَى ٱلسَّرَآئِرُ"
+          "textArabic": "يَوْمَ تُبْلَى ٱلسَّرَآئِرُ",
+          "textTransliteration": "Yawma tublas-saraaa'ir"
         },
         {
           "number": 10,
-          "textArabic": "فَمَا لَهُۥ مِن قُوَّةٍ وَلَا نَاصِرٍ"
+          "textArabic": "فَمَا لَهُۥ مِن قُوَّةٍ وَلَا نَاصِرٍ",
+          "textTransliteration": "Famaa lahoo min quwwatinw-wa laa naasir"
         },
         {
           "number": 11,
-          "textArabic": "وَٱلسَّمَآءِ ذَاتِ ٱلرَّجْعِ"
+          "textArabic": "وَٱلسَّمَآءِ ذَاتِ ٱلرَّجْعِ",
+          "textTransliteration": "Wassamaaa'i zaatir-raj'"
         },
         {
           "number": 12,
-          "textArabic": "وَٱلْأَرْضِ ذَاتِ ٱلصَّدْعِ"
+          "textArabic": "وَٱلْأَرْضِ ذَاتِ ٱلصَّدْعِ",
+          "textTransliteration": "Wal-ardi zaatis-sad'"
         },
         {
           "number": 13,
-          "textArabic": "إِنَّهُۥ لَقَوْلٌ فَصْلٌ"
+          "textArabic": "إِنَّهُۥ لَقَوْلٌ فَصْلٌ",
+          "textTransliteration": "Innahoo laqawlun fasl"
         },
         {
           "number": 14,
-          "textArabic": "وَمَا هُوَ بِٱلْهَزْلِ"
+          "textArabic": "وَمَا هُوَ بِٱلْهَزْلِ",
+          "textTransliteration": "Wa maa huwa bil-hazl"
         },
         {
           "number": 15,
-          "textArabic": "إِنَّهُمْ يَكِيدُونَ كَيْدًا"
+          "textArabic": "إِنَّهُمْ يَكِيدُونَ كَيْدًا",
+          "textTransliteration": "Innahum yakeedoona kaydaa"
         },
         {
           "number": 16,
-          "textArabic": "وَأَكِيدُ كَيْدًا"
+          "textArabic": "وَأَكِيدُ كَيْدًا",
+          "textTransliteration": "Wa akeeda kaydaa"
         },
         {
           "number": 17,
-          "textArabic": "فَمَهِّلِ ٱلْكَـٰفِرِينَ أَمْهِلْهُمْ رُوَيْدًۢا"
+          "textArabic": "فَمَهِّلِ ٱلْكَـٰفِرِينَ أَمْهِلْهُمْ رُوَيْدًۢا",
+          "textTransliteration": "Famahhilil-kaafireena amhilhum ruwaidaa"
         }
       ]
     },
@@ -1204,79 +1480,98 @@
       "ayahs": [
         {
           "number": 1,
-          "textArabic": " سَبِّحِ ٱسْمَ رَبِّكَ ٱلْأَعْلَى"
+          "textArabic": " سَبِّحِ ٱسْمَ رَبِّكَ ٱلْأَعْلَى",
+          "textTransliteration": "Sabbihisma Rabbikal-A'laa"
         },
         {
           "number": 2,
-          "textArabic": "ٱلَّذِى خَلَقَ فَسَوَّىٰ"
+          "textArabic": "ٱلَّذِى خَلَقَ فَسَوَّىٰ",
+          "textTransliteration": "Allazee khalaqa fasawwaa"
         },
         {
           "number": 3,
-          "textArabic": "وَٱلَّذِى قَدَّرَ فَهَدَىٰ"
+          "textArabic": "وَٱلَّذِى قَدَّرَ فَهَدَىٰ",
+          "textTransliteration": "Wallazee qaddara fahadaa"
         },
         {
           "number": 4,
-          "textArabic": "وَٱلَّذِىٓ أَخْرَجَ ٱلْمَرْعَىٰ"
+          "textArabic": "وَٱلَّذِىٓ أَخْرَجَ ٱلْمَرْعَىٰ",
+          "textTransliteration": "Wallazee akhrajal-mar'aa"
         },
         {
           "number": 5,
-          "textArabic": "فَجَعَلَهُۥ غُثَآءً أَحْوَىٰ"
+          "textArabic": "فَجَعَلَهُۥ غُثَآءً أَحْوَىٰ",
+          "textTransliteration": "Faja'alahoo ghuthaaa'an ahwaa"
         },
         {
           "number": 6,
-          "textArabic": "سَنُقْرِئُكَ فَلَا تَنسَىٰٓ"
+          "textArabic": "سَنُقْرِئُكَ فَلَا تَنسَىٰٓ",
+          "textTransliteration": "Sanuqri'uka falaa tansaaa"
         },
         {
           "number": 7,
-          "textArabic": "إِلَّا مَا شَآءَ ٱللَّهُ ۚ إِنَّهُۥ يَعْلَمُ ٱلْجَهْرَ وَمَا يَخْفَىٰ"
+          "textArabic": "إِلَّا مَا شَآءَ ٱللَّهُ ۚ إِنَّهُۥ يَعْلَمُ ٱلْجَهْرَ وَمَا يَخْفَىٰ",
+          "textTransliteration": "Illaa maa shaaa'allaah; innahoo ya'lamul-jahra wa maa yakhfaa"
         },
         {
           "number": 8,
-          "textArabic": "وَنُيَسِّرُكَ لِلْيُسْرَىٰ"
+          "textArabic": "وَنُيَسِّرُكَ لِلْيُسْرَىٰ",
+          "textTransliteration": "Wa nuyassiruka lilyusraa"
         },
         {
           "number": 9,
-          "textArabic": "فَذَكِّرْ إِن نَّفَعَتِ ٱلذِّكْرَىٰ"
+          "textArabic": "فَذَكِّرْ إِن نَّفَعَتِ ٱلذِّكْرَىٰ",
+          "textTransliteration": "Fazakkir in-nafa'atiz-zikraa"
         },
         {
           "number": 10,
-          "textArabic": "سَيَذَّكَّرُ مَن يَخْشَىٰ"
+          "textArabic": "سَيَذَّكَّرُ مَن يَخْشَىٰ",
+          "textTransliteration": "Sa-yaz-zak-karu many-yakhshaa"
         },
         {
           "number": 11,
-          "textArabic": "وَيَتَجَنَّبُهَا ٱلْأَشْقَى"
+          "textArabic": "وَيَتَجَنَّبُهَا ٱلْأَشْقَى",
+          "textTransliteration": "Wa yatajannabuhal-ashqaa"
         },
         {
           "number": 12,
-          "textArabic": "ٱلَّذِى يَصْلَى ٱلنَّارَ ٱلْكُبْرَىٰ"
+          "textArabic": "ٱلَّذِى يَصْلَى ٱلنَّارَ ٱلْكُبْرَىٰ",
+          "textTransliteration": "Allazee yaslan-naaral-kubraa"
         },
         {
           "number": 13,
-          "textArabic": "ثُمَّ لَا يَمُوتُ فِيهَا وَلَا يَحْيَىٰ"
+          "textArabic": "ثُمَّ لَا يَمُوتُ فِيهَا وَلَا يَحْيَىٰ",
+          "textTransliteration": "Thumma laa yamootu feehaa wa laa yahyaa"
         },
         {
           "number": 14,
-          "textArabic": "قَدْ أَفْلَحَ مَن تَزَكَّىٰ"
+          "textArabic": "قَدْ أَفْلَحَ مَن تَزَكَّىٰ",
+          "textTransliteration": "Qad aflaha man tazakkaa"
         },
         {
           "number": 15,
-          "textArabic": "وَذَكَرَ ٱسْمَ رَبِّهِۦ فَصَلَّىٰ"
+          "textArabic": "وَذَكَرَ ٱسْمَ رَبِّهِۦ فَصَلَّىٰ",
+          "textTransliteration": "Wa zakaras-ma Rabbihee fasallaa"
         },
         {
           "number": 16,
-          "textArabic": "بَلْ تُؤْثِرُونَ ٱلْحَيَوٰةَ ٱلدُّنْيَا"
+          "textArabic": "بَلْ تُؤْثِرُونَ ٱلْحَيَوٰةَ ٱلدُّنْيَا",
+          "textTransliteration": "Bal tu'thiroonal-hayaatad-dunyaa"
         },
         {
           "number": 17,
-          "textArabic": "وَٱلْـَٔاخِرَةُ خَيْرٌ وَأَبْقَىٰٓ"
+          "textArabic": "وَٱلْـَٔاخِرَةُ خَيْرٌ وَأَبْقَىٰٓ",
+          "textTransliteration": "Wal-Aakhiratu khayrunw-wa abqaa"
         },
         {
           "number": 18,
-          "textArabic": "إِنَّ هَـٰذَا لَفِى ٱلصُّحُفِ ٱلْأُولَىٰ"
+          "textArabic": "إِنَّ هَـٰذَا لَفِى ٱلصُّحُفِ ٱلْأُولَىٰ",
+          "textTransliteration": "Inna haazaa lafis-suhu-fil-oolaa"
         },
         {
           "number": 19,
-          "textArabic": "صُحُفِ إِبْرَٰهِيمَ وَمُوسَىٰ"
+          "textArabic": "صُحُفِ إِبْرَٰهِيمَ وَمُوسَىٰ",
+          "textTransliteration": "Suhufi Ibraaheema wa Moosaa"
         }
       ]
     },
@@ -1290,107 +1585,133 @@
       "ayahs": [
         {
           "number": 1,
-          "textArabic": " هَلْ أَتَىٰكَ حَدِيثُ ٱلْغَـٰشِيَةِ"
+          "textArabic": " هَلْ أَتَىٰكَ حَدِيثُ ٱلْغَـٰشِيَةِ",
+          "textTransliteration": "Hal ataaka hadeethul-ghaashiyah"
         },
         {
           "number": 2,
-          "textArabic": "وُجُوهٌ يَوْمَئِذٍ خَـٰشِعَةٌ"
+          "textArabic": "وُجُوهٌ يَوْمَئِذٍ خَـٰشِعَةٌ",
+          "textTransliteration": "Wujoohun yawma'izin khaashi'ah"
         },
         {
           "number": 3,
-          "textArabic": "عَامِلَةٌ نَّاصِبَةٌ"
+          "textArabic": "عَامِلَةٌ نَّاصِبَةٌ",
+          "textTransliteration": "'Aamilatun naasibah"
         },
         {
           "number": 4,
-          "textArabic": "تَصْلَىٰ نَارًا حَامِيَةً"
+          "textArabic": "تَصْلَىٰ نَارًا حَامِيَةً",
+          "textTransliteration": "Taslaa naaran haamiyah"
         },
         {
           "number": 5,
-          "textArabic": "تُسْقَىٰ مِنْ عَيْنٍ ءَانِيَةٍ"
+          "textArabic": "تُسْقَىٰ مِنْ عَيْنٍ ءَانِيَةٍ",
+          "textTransliteration": "Tusqaa min 'aynin aaniyah"
         },
         {
           "number": 6,
-          "textArabic": "لَّيْسَ لَهُمْ طَعَامٌ إِلَّا مِن ضَرِيعٍ"
+          "textArabic": "لَّيْسَ لَهُمْ طَعَامٌ إِلَّا مِن ضَرِيعٍ",
+          "textTransliteration": "Laysa lahum ta'aamun illaa min daree'"
         },
         {
           "number": 7,
-          "textArabic": "لَّا يُسْمِنُ وَلَا يُغْنِى مِن جُوعٍ"
+          "textArabic": "لَّا يُسْمِنُ وَلَا يُغْنِى مِن جُوعٍ",
+          "textTransliteration": "Laa yusminu wa laa yughnee min joo'"
         },
         {
           "number": 8,
-          "textArabic": "وُجُوهٌ يَوْمَئِذٍ نَّاعِمَةٌ"
+          "textArabic": "وُجُوهٌ يَوْمَئِذٍ نَّاعِمَةٌ",
+          "textTransliteration": "Wujoohun yawma-izin naa'imah"
         },
         {
           "number": 9,
-          "textArabic": "لِّسَعْيِهَا رَاضِيَةٌ"
+          "textArabic": "لِّسَعْيِهَا رَاضِيَةٌ",
+          "textTransliteration": "Lisa'yihaa raadiyah"
         },
         {
           "number": 10,
-          "textArabic": "فِى جَنَّةٍ عَالِيَةٍ"
+          "textArabic": "فِى جَنَّةٍ عَالِيَةٍ",
+          "textTransliteration": "Fee jannatin 'aaliyah"
         },
         {
           "number": 11,
-          "textArabic": "لَّا تَسْمَعُ فِيهَا لَـٰغِيَةً"
+          "textArabic": "لَّا تَسْمَعُ فِيهَا لَـٰغِيَةً",
+          "textTransliteration": "Laa tasma'u feehaa laaghiyah"
         },
         {
           "number": 12,
-          "textArabic": "فِيهَا عَيْنٌ جَارِيَةٌ"
+          "textArabic": "فِيهَا عَيْنٌ جَارِيَةٌ",
+          "textTransliteration": "Feehaa 'aynun jaariyah"
         },
         {
           "number": 13,
-          "textArabic": "فِيهَا سُرُرٌ مَّرْفُوعَةٌ"
+          "textArabic": "فِيهَا سُرُرٌ مَّرْفُوعَةٌ",
+          "textTransliteration": "Feehaa sururum-marfoo'ah"
         },
         {
           "number": 14,
-          "textArabic": "وَأَكْوَابٌ مَّوْضُوعَةٌ"
+          "textArabic": "وَأَكْوَابٌ مَّوْضُوعَةٌ",
+          "textTransliteration": "Wa akwaabum-mawdoo'ah"
         },
         {
           "number": 15,
-          "textArabic": "وَنَمَارِقُ مَصْفُوفَةٌ"
+          "textArabic": "وَنَمَارِقُ مَصْفُوفَةٌ",
+          "textTransliteration": "Wa namaariqu masfoofah"
         },
         {
           "number": 16,
-          "textArabic": "وَزَرَابِىُّ مَبْثُوثَةٌ"
+          "textArabic": "وَزَرَابِىُّ مَبْثُوثَةٌ",
+          "textTransliteration": "Wa zaraabiyyu mab-thoothah"
         },
         {
           "number": 17,
-          "textArabic": "أَفَلَا يَنظُرُونَ إِلَى ٱلْإِبِلِ كَيْفَ خُلِقَتْ"
+          "textArabic": "أَفَلَا يَنظُرُونَ إِلَى ٱلْإِبِلِ كَيْفَ خُلِقَتْ",
+          "textTransliteration": "Afalaa yanzuroona ilal-ibili kayfa khuliqat"
         },
         {
           "number": 18,
-          "textArabic": "وَإِلَى ٱلسَّمَآءِ كَيْفَ رُفِعَتْ"
+          "textArabic": "وَإِلَى ٱلسَّمَآءِ كَيْفَ رُفِعَتْ",
+          "textTransliteration": "Wa ilas-samaaa'i kayfa rufi'at"
         },
         {
           "number": 19,
-          "textArabic": "وَإِلَى ٱلْجِبَالِ كَيْفَ نُصِبَتْ"
+          "textArabic": "وَإِلَى ٱلْجِبَالِ كَيْفَ نُصِبَتْ",
+          "textTransliteration": "Wa ilal-jibaali kayfa nusibat"
         },
         {
           "number": 20,
-          "textArabic": "وَإِلَى ٱلْأَرْضِ كَيْفَ سُطِحَتْ"
+          "textArabic": "وَإِلَى ٱلْأَرْضِ كَيْفَ سُطِحَتْ",
+          "textTransliteration": "Wa ilal-ardi kayfa sutihat"
         },
         {
           "number": 21,
-          "textArabic": "فَذَكِّرْ إِنَّمَآ أَنتَ مُذَكِّرٌ"
+          "textArabic": "فَذَكِّرْ إِنَّمَآ أَنتَ مُذَكِّرٌ",
+          "textTransliteration": "Fazakkir innamaa anta muzakkir"
         },
         {
           "number": 22,
-          "textArabic": "لَّسْتَ عَلَيْهِم بِمُصَيْطِرٍ"
+          "textArabic": "لَّسْتَ عَلَيْهِم بِمُصَيْطِرٍ",
+          "textTransliteration": "Lasta 'alayhim bimusaytir"
         },
         {
           "number": 23,
-          "textArabic": "إِلَّا مَن تَوَلَّىٰ وَكَفَرَ"
+          "textArabic": "إِلَّا مَن تَوَلَّىٰ وَكَفَرَ",
+          "textTransliteration": "Illaa man tawallaa wa kafar"
         },
         {
           "number": 24,
-          "textArabic": "فَيُعَذِّبُهُ ٱللَّهُ ٱلْعَذَابَ ٱلْأَكْبَرَ"
+          "textArabic": "فَيُعَذِّبُهُ ٱللَّهُ ٱلْعَذَابَ ٱلْأَكْبَرَ",
+          "textTransliteration": "Fa-yu'azzi-buhul-laahul-'azaabal-akbar"
         },
         {
           "number": 25,
-          "textArabic": "إِنَّ إِلَيْنَآ إِيَابَهُمْ"
+          "textArabic": "إِنَّ إِلَيْنَآ إِيَابَهُمْ",
+          "textTransliteration": "Inna ilaynaa iyaabahum"
         },
         {
           "number": 26,
-          "textArabic": "ثُمَّ إِنَّ عَلَيْنَا حِسَابَهُم"
+          "textArabic": "ثُمَّ إِنَّ عَلَيْنَا حِسَابَهُم",
+          "textTransliteration": "Thumma inna 'alaynaa hisaabahum"
         }
       ]
     },
@@ -1404,123 +1725,153 @@
       "ayahs": [
         {
           "number": 1,
-          "textArabic": " وَٱلْفَجْرِ"
+          "textArabic": " وَٱلْفَجْرِ",
+          "textTransliteration": "Wal-Fajr"
         },
         {
           "number": 2,
-          "textArabic": "وَلَيَالٍ عَشْرٍ"
+          "textArabic": "وَلَيَالٍ عَشْرٍ",
+          "textTransliteration": "Wa layaalin 'ashr"
         },
         {
           "number": 3,
-          "textArabic": "وَٱلشَّفْعِ وَٱلْوَتْرِ"
+          "textArabic": "وَٱلشَّفْعِ وَٱلْوَتْرِ",
+          "textTransliteration": "Wash-shaf'i wal-watr"
         },
         {
           "number": 4,
-          "textArabic": "وَٱلَّيْلِ إِذَا يَسْرِ"
+          "textArabic": "وَٱلَّيْلِ إِذَا يَسْرِ",
+          "textTransliteration": "Wallayli izaa yasr"
         },
         {
           "number": 5,
-          "textArabic": "هَلْ فِى ذَٰلِكَ قَسَمٌ لِّذِى حِجْرٍ"
+          "textArabic": "هَلْ فِى ذَٰلِكَ قَسَمٌ لِّذِى حِجْرٍ",
+          "textTransliteration": "Hal fee zaalika qasamul-lizee hijr"
         },
         {
           "number": 6,
-          "textArabic": "أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِعَادٍ"
+          "textArabic": "أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِعَادٍ",
+          "textTransliteration": "Alam tara kayfa fa'ala Rabbuka bi-'Aad"
         },
         {
           "number": 7,
-          "textArabic": "إِرَمَ ذَاتِ ٱلْعِمَادِ"
+          "textArabic": "إِرَمَ ذَاتِ ٱلْعِمَادِ",
+          "textTransliteration": "Iramaa zaatil-'imaad"
         },
         {
           "number": 8,
-          "textArabic": "ٱلَّتِى لَمْ يُخْلَقْ مِثْلُهَا فِى ٱلْبِلَـٰدِ"
+          "textArabic": "ٱلَّتِى لَمْ يُخْلَقْ مِثْلُهَا فِى ٱلْبِلَـٰدِ",
+          "textTransliteration": "Allatee lam yukhlaq mithluhaa fil-bilaad"
         },
         {
           "number": 9,
-          "textArabic": "وَثَمُودَ ٱلَّذِينَ جَابُوا۟ ٱلصَّخْرَ بِٱلْوَادِ"
+          "textArabic": "وَثَمُودَ ٱلَّذِينَ جَابُوا۟ ٱلصَّخْرَ بِٱلْوَادِ",
+          "textTransliteration": "Wa Thamooda-llazeena jaabuss-sakhra bil-waad"
         },
         {
           "number": 10,
-          "textArabic": "وَفِرْعَوْنَ ذِى ٱلْأَوْتَادِ"
+          "textArabic": "وَفِرْعَوْنَ ذِى ٱلْأَوْتَادِ",
+          "textTransliteration": "Wa Fir'awna zil-awtaad"
         },
         {
           "number": 11,
-          "textArabic": "ٱلَّذِينَ طَغَوْا۟ فِى ٱلْبِلَـٰدِ"
+          "textArabic": "ٱلَّذِينَ طَغَوْا۟ فِى ٱلْبِلَـٰدِ",
+          "textTransliteration": "Allazeena taghaw fil-bilaad"
         },
         {
           "number": 12,
-          "textArabic": "فَأَكْثَرُوا۟ فِيهَا ٱلْفَسَادَ"
+          "textArabic": "فَأَكْثَرُوا۟ فِيهَا ٱلْفَسَادَ",
+          "textTransliteration": "Fa-aktharoo feehal-fasaad"
         },
         {
           "number": 13,
-          "textArabic": "فَصَبَّ عَلَيْهِمْ رَبُّكَ سَوْطَ عَذَابٍ"
+          "textArabic": "فَصَبَّ عَلَيْهِمْ رَبُّكَ سَوْطَ عَذَابٍ",
+          "textTransliteration": "Fasabba 'alayhim Rabbuka sawta 'azaab"
         },
         {
           "number": 14,
-          "textArabic": "إِنَّ رَبَّكَ لَبِٱلْمِرْصَادِ"
+          "textArabic": "إِنَّ رَبَّكَ لَبِٱلْمِرْصَادِ",
+          "textTransliteration": "Inna Rabbaka labil-mirsaad"
         },
         {
           "number": 15,
-          "textArabic": "فَأَمَّا ٱلْإِنسَـٰنُ إِذَا مَا ٱبْتَلَىٰهُ رَبُّهُۥ فَأَكْرَمَهُۥ وَنَعَّمَهُۥ فَيَقُولُ رَبِّىٓ أَكْرَمَنِ"
+          "textArabic": "فَأَمَّا ٱلْإِنسَـٰنُ إِذَا مَا ٱبْتَلَىٰهُ رَبُّهُۥ فَأَكْرَمَهُۥ وَنَعَّمَهُۥ فَيَقُولُ رَبِّىٓ أَكْرَمَنِ",
+          "textTransliteration": "Fa-ammal-insaanu izaa mab-talaahu Rabbuhoo fa-akramahoo wa na'-'amahoo fa-yaqoolu Rabbee akraman"
         },
         {
           "number": 16,
-          "textArabic": "وَأَمَّآ إِذَا مَا ٱبْتَلَىٰهُ فَقَدَرَ عَلَيْهِ رِزْقَهُۥ فَيَقُولُ رَبِّىٓ أَهَـٰنَنِ"
+          "textArabic": "وَأَمَّآ إِذَا مَا ٱبْتَلَىٰهُ فَقَدَرَ عَلَيْهِ رِزْقَهُۥ فَيَقُولُ رَبِّىٓ أَهَـٰنَنِ",
+          "textTransliteration": "Wa ammaaa izaa mab-talaahu faqadara 'alayhi rizqahoo fa-yaqoolu Rabbee ahaanan"
         },
         {
           "number": 17,
-          "textArabic": "كَلَّا ۖ بَل لَّا تُكْرِمُونَ ٱلْيَتِيمَ"
+          "textArabic": "كَلَّا ۖ بَل لَّا تُكْرِمُونَ ٱلْيَتِيمَ",
+          "textTransliteration": "Kallaa bal laa tukrimoonal-yateem"
         },
         {
           "number": 18,
-          "textArabic": "وَلَا تَحَـٰٓضُّونَ عَلَىٰ طَعَامِ ٱلْمِسْكِينِ"
+          "textArabic": "وَلَا تَحَـٰٓضُّونَ عَلَىٰ طَعَامِ ٱلْمِسْكِينِ",
+          "textTransliteration": "Wa laa tahaaaddoona 'alaa ta'aamil-miskeen"
         },
         {
           "number": 19,
-          "textArabic": "وَتَأْكُلُونَ ٱلتُّرَاثَ أَكْلًا لَّمًّا"
+          "textArabic": "وَتَأْكُلُونَ ٱلتُّرَاثَ أَكْلًا لَّمًّا",
+          "textTransliteration": "Wa ta'kuloonat-turaatha aklal-lammaa"
         },
         {
           "number": 20,
-          "textArabic": "وَتُحِبُّونَ ٱلْمَالَ حُبًّا جَمًّا"
+          "textArabic": "وَتُحِبُّونَ ٱلْمَالَ حُبًّا جَمًّا",
+          "textTransliteration": "Wa tuhibboonal-maala hub-banjam-maa"
         },
         {
           "number": 21,
-          "textArabic": "كَلَّآ إِذَا دُكَّتِ ٱلْأَرْضُ دَكًّا دَكًّا"
+          "textArabic": "كَلَّآ إِذَا دُكَّتِ ٱلْأَرْضُ دَكًّا دَكًّا",
+          "textTransliteration": "Kallaaa izaa dukkatil-ardu dakkan dakkaa"
         },
         {
           "number": 22,
-          "textArabic": "وَجَآءَ رَبُّكَ وَٱلْمَلَكُ صَفًّا صَفًّا"
+          "textArabic": "وَجَآءَ رَبُّكَ وَٱلْمَلَكُ صَفًّا صَفًّا",
+          "textTransliteration": "Wa jaaa'a Rabbuka wal-malaku saf-fan saffaa"
         },
         {
           "number": 23,
-          "textArabic": "وَجِا۟ىٓءَ يَوْمَئِذٍۭ بِجَهَنَّمَ ۚ يَوْمَئِذٍ يَتَذَكَّرُ ٱلْإِنسَـٰنُ وَأَنَّىٰ لَهُ ٱلذِّكْرَىٰ"
+          "textArabic": "وَجِا۟ىٓءَ يَوْمَئِذٍۭ بِجَهَنَّمَ ۚ يَوْمَئِذٍ يَتَذَكَّرُ ٱلْإِنسَـٰنُ وَأَنَّىٰ لَهُ ٱلذِّكْرَىٰ",
+          "textTransliteration": "Wa jeee'a yawma'izim-bi-Jahannam; yawma'iziny-yatazakkarul-insaanu wa annaa lahuz-zikraa"
         },
         {
           "number": 24,
-          "textArabic": "يَقُولُ يَـٰلَيْتَنِى قَدَّمْتُ لِحَيَاتِى"
+          "textArabic": "يَقُولُ يَـٰلَيْتَنِى قَدَّمْتُ لِحَيَاتِى",
+          "textTransliteration": "Yaqoolu yaa laytanee qaddamtu lihayaatee"
         },
         {
           "number": 25,
-          "textArabic": "فَيَوْمَئِذٍ لَّا يُعَذِّبُ عَذَابَهُۥٓ أَحَدٌ"
+          "textArabic": "فَيَوْمَئِذٍ لَّا يُعَذِّبُ عَذَابَهُۥٓ أَحَدٌ",
+          "textTransliteration": "Fa-yawma-izil-laa yu'azzibu 'azaabahoo ahad"
         },
         {
           "number": 26,
-          "textArabic": "وَلَا يُوثِقُ وَثَاقَهُۥٓ أَحَدٌ"
+          "textArabic": "وَلَا يُوثِقُ وَثَاقَهُۥٓ أَحَدٌ",
+          "textTransliteration": "Wa laa yoothiqu wathaaqahoo ahad"
         },
         {
           "number": 27,
-          "textArabic": "يَـٰٓأَيَّتُهَا ٱلنَّفْسُ ٱلْمُطْمَئِنَّةُ"
+          "textArabic": "يَـٰٓأَيَّتُهَا ٱلنَّفْسُ ٱلْمُطْمَئِنَّةُ",
+          "textTransliteration": "Yaaa ayyatuhannafsul-mutma'innah"
         },
         {
           "number": 28,
-          "textArabic": "ٱرْجِعِىٓ إِلَىٰ رَبِّكِ رَاضِيَةً مَّرْضِيَّةً"
+          "textArabic": "ٱرْجِعِىٓ إِلَىٰ رَبِّكِ رَاضِيَةً مَّرْضِيَّةً",
+          "textTransliteration": "Irji'eee ilaa Rabbiki raadiyatam-mardiyyah"
         },
         {
           "number": 29,
-          "textArabic": "فَٱدْخُلِى فِى عِبَـٰدِى"
+          "textArabic": "فَٱدْخُلِى فِى عِبَـٰدِى",
+          "textTransliteration": "Fadkhulee fee 'ibaadee"
         },
         {
           "number": 30,
-          "textArabic": "وَٱدْخُلِى جَنَّتِى"
+          "textArabic": "وَٱدْخُلِى جَنَّتِى",
+          "textTransliteration": "Wadkhulee jannatee"
         }
       ]
     },
@@ -1534,83 +1885,103 @@
       "ayahs": [
         {
           "number": 1,
-          "textArabic": " لَآ أُقْسِمُ بِهَـٰذَا ٱلْبَلَدِ"
+          "textArabic": " لَآ أُقْسِمُ بِهَـٰذَا ٱلْبَلَدِ",
+          "textTransliteration": "Laaa uqsimu bihaazal-balad"
         },
         {
           "number": 2,
-          "textArabic": "وَأَنتَ حِلٌّۢ بِهَـٰذَا ٱلْبَلَدِ"
+          "textArabic": "وَأَنتَ حِلٌّۢ بِهَـٰذَا ٱلْبَلَدِ",
+          "textTransliteration": "Wa anta hillum-bihaazal-balad"
         },
         {
           "number": 3,
-          "textArabic": "وَوَالِدٍ وَمَا وَلَدَ"
+          "textArabic": "وَوَالِدٍ وَمَا وَلَدَ",
+          "textTransliteration": "Wa waalidinw-wa maa walad"
         },
         {
           "number": 4,
-          "textArabic": "لَقَدْ خَلَقْنَا ٱلْإِنسَـٰنَ فِى كَبَدٍ"
+          "textArabic": "لَقَدْ خَلَقْنَا ٱلْإِنسَـٰنَ فِى كَبَدٍ",
+          "textTransliteration": "Laqad khalaqnal-insaana fee kabad"
         },
         {
           "number": 5,
-          "textArabic": "أَيَحْسَبُ أَن لَّن يَقْدِرَ عَلَيْهِ أَحَدٌ"
+          "textArabic": "أَيَحْسَبُ أَن لَّن يَقْدِرَ عَلَيْهِ أَحَدٌ",
+          "textTransliteration": "A-yahsabu al-lany-yaqdira 'alayhi ahad"
         },
         {
           "number": 6,
-          "textArabic": "يَقُولُ أَهْلَكْتُ مَالًا لُّبَدًا"
+          "textArabic": "يَقُولُ أَهْلَكْتُ مَالًا لُّبَدًا",
+          "textTransliteration": "Yaqoolu ahlaktu maalal-lubadaa"
         },
         {
           "number": 7,
-          "textArabic": "أَيَحْسَبُ أَن لَّمْ يَرَهُۥٓ أَحَدٌ"
+          "textArabic": "أَيَحْسَبُ أَن لَّمْ يَرَهُۥٓ أَحَدٌ",
+          "textTransliteration": "A-yahsabu al-lam yarahooo ahad"
         },
         {
           "number": 8,
-          "textArabic": "أَلَمْ نَجْعَل لَّهُۥ عَيْنَيْنِ"
+          "textArabic": "أَلَمْ نَجْعَل لَّهُۥ عَيْنَيْنِ",
+          "textTransliteration": "Alam naj'al-lahoo 'aynayn"
         },
         {
           "number": 9,
-          "textArabic": "وَلِسَانًا وَشَفَتَيْنِ"
+          "textArabic": "وَلِسَانًا وَشَفَتَيْنِ",
+          "textTransliteration": "Wa lisaananw-wa shafatayn"
         },
         {
           "number": 10,
-          "textArabic": "وَهَدَيْنَـٰهُ ٱلنَّجْدَيْنِ"
+          "textArabic": "وَهَدَيْنَـٰهُ ٱلنَّجْدَيْنِ",
+          "textTransliteration": "Wa hadaynaahun-najdayn"
         },
         {
           "number": 11,
-          "textArabic": "فَلَا ٱقْتَحَمَ ٱلْعَقَبَةَ"
+          "textArabic": "فَلَا ٱقْتَحَمَ ٱلْعَقَبَةَ",
+          "textTransliteration": "Falaq-tahamal-'aqabah"
         },
         {
           "number": 12,
-          "textArabic": "وَمَآ أَدْرَىٰكَ مَا ٱلْعَقَبَةُ"
+          "textArabic": "وَمَآ أَدْرَىٰكَ مَا ٱلْعَقَبَةُ",
+          "textTransliteration": "Wa maaa adraaka mal-'aqabah"
         },
         {
           "number": 13,
-          "textArabic": "فَكُّ رَقَبَةٍ"
+          "textArabic": "فَكُّ رَقَبَةٍ",
+          "textTransliteration": "Fakku raqabah"
         },
         {
           "number": 14,
-          "textArabic": "أَوْ إِطْعَـٰمٌ فِى يَوْمٍ ذِى مَسْغَبَةٍ"
+          "textArabic": "أَوْ إِطْعَـٰمٌ فِى يَوْمٍ ذِى مَسْغَبَةٍ",
+          "textTransliteration": "Aw it'aamun fee yawmin zee masghbah"
         },
         {
           "number": 15,
-          "textArabic": "يَتِيمًا ذَا مَقْرَبَةٍ"
+          "textArabic": "يَتِيمًا ذَا مَقْرَبَةٍ",
+          "textTransliteration": "Yateeman zaa maqrabah"
         },
         {
           "number": 16,
-          "textArabic": "أَوْ مِسْكِينًا ذَا مَتْرَبَةٍ"
+          "textArabic": "أَوْ مِسْكِينًا ذَا مَتْرَبَةٍ",
+          "textTransliteration": "Aw miskeenan zaa matrabah"
         },
         {
           "number": 17,
-          "textArabic": "ثُمَّ كَانَ مِنَ ٱلَّذِينَ ءَامَنُوا۟ وَتَوَاصَوْا۟ بِٱلصَّبْرِ وَتَوَاصَوْا۟ بِٱلْمَرْحَمَةِ"
+          "textArabic": "ثُمَّ كَانَ مِنَ ٱلَّذِينَ ءَامَنُوا۟ وَتَوَاصَوْا۟ بِٱلصَّبْرِ وَتَوَاصَوْا۟ بِٱلْمَرْحَمَةِ",
+          "textTransliteration": "Thumma kaana minal-lazeena aamanoo wa tawaassaw bis-sabri wa tawaassaw bil-marhamah"
         },
         {
           "number": 18,
-          "textArabic": "أُو۟لَـٰٓئِكَ أَصْحَـٰبُ ٱلْمَيْمَنَةِ"
+          "textArabic": "أُو۟لَـٰٓئِكَ أَصْحَـٰبُ ٱلْمَيْمَنَةِ",
+          "textTransliteration": "Ulaaa'ika as-haabul-maymanah"
         },
         {
           "number": 19,
-          "textArabic": "وَٱلَّذِينَ كَفَرُوا۟ بِـَٔايَـٰتِنَا هُمْ أَصْحَـٰبُ ٱلْمَشْـَٔمَةِ"
+          "textArabic": "وَٱلَّذِينَ كَفَرُوا۟ بِـَٔايَـٰتِنَا هُمْ أَصْحَـٰبُ ٱلْمَشْـَٔمَةِ",
+          "textTransliteration": "Wallazeena kafaroo bi-Aayaatinaa hum as-haabul-mash'amah"
         },
         {
           "number": 20,
-          "textArabic": "عَلَيْهِمْ نَارٌ مُّؤْصَدَةٌۢ"
+          "textArabic": "عَلَيْهِمْ نَارٌ مُّؤْصَدَةٌۢ",
+          "textTransliteration": "'Alayhim naarum-mu'sadah"
         }
       ]
     },
@@ -1624,63 +1995,78 @@
       "ayahs": [
         {
           "number": 1,
-          "textArabic": " وَٱلشَّمْسِ وَضُحَىٰهَا"
+          "textArabic": " وَٱلشَّمْسِ وَضُحَىٰهَا",
+          "textTransliteration": "Wash-shamsi wa duhaahaa"
         },
         {
           "number": 2,
-          "textArabic": "وَٱلْقَمَرِ إِذَا تَلَىٰهَا"
+          "textArabic": "وَٱلْقَمَرِ إِذَا تَلَىٰهَا",
+          "textTransliteration": "Wal-qamari izaa talaahaa"
         },
         {
           "number": 3,
-          "textArabic": "وَٱلنَّهَارِ إِذَا جَلَّىٰهَا"
+          "textArabic": "وَٱلنَّهَارِ إِذَا جَلَّىٰهَا",
+          "textTransliteration": "Wan-nahaari izaa jallaahaa"
         },
         {
           "number": 4,
-          "textArabic": "وَٱلَّيْلِ إِذَا يَغْشَىٰهَا"
+          "textArabic": "وَٱلَّيْلِ إِذَا يَغْشَىٰهَا",
+          "textTransliteration": "Wallayli izaa yaghshaahaa"
         },
         {
           "number": 5,
-          "textArabic": "وَٱلسَّمَآءِ وَمَا بَنَىٰهَا"
+          "textArabic": "وَٱلسَّمَآءِ وَمَا بَنَىٰهَا",
+          "textTransliteration": "Wassamaaa'i wa maa banaahaa"
         },
         {
           "number": 6,
-          "textArabic": "وَٱلْأَرْضِ وَمَا طَحَىٰهَا"
+          "textArabic": "وَٱلْأَرْضِ وَمَا طَحَىٰهَا",
+          "textTransliteration": "Wal-ardi wa maa tahaahaa"
         },
         {
           "number": 7,
-          "textArabic": "وَنَفْسٍ وَمَا سَوَّىٰهَا"
+          "textArabic": "وَنَفْسٍ وَمَا سَوَّىٰهَا",
+          "textTransliteration": "Wa nafsinw-wa maa sawwaahaa"
         },
         {
           "number": 8,
-          "textArabic": "فَأَلْهَمَهَا فُجُورَهَا وَتَقْوَىٰهَا"
+          "textArabic": "فَأَلْهَمَهَا فُجُورَهَا وَتَقْوَىٰهَا",
+          "textTransliteration": "Fa-alhamahaa fujoorahaa wa taqwaahaa"
         },
         {
           "number": 9,
-          "textArabic": "قَدْ أَفْلَحَ مَن زَكَّىٰهَا"
+          "textArabic": "قَدْ أَفْلَحَ مَن زَكَّىٰهَا",
+          "textTransliteration": "Qad aflaha man zakkaahaa"
         },
         {
           "number": 10,
-          "textArabic": "وَقَدْ خَابَ مَن دَسَّىٰهَا"
+          "textArabic": "وَقَدْ خَابَ مَن دَسَّىٰهَا",
+          "textTransliteration": "Wa qad khaaba man dassaahaa"
         },
         {
           "number": 11,
-          "textArabic": "كَذَّبَتْ ثَمُودُ بِطَغْوَىٰهَآ"
+          "textArabic": "كَذَّبَتْ ثَمُودُ بِطَغْوَىٰهَآ",
+          "textTransliteration": "Kazzabat Thamoodu bi-taghwaahaa"
         },
         {
           "number": 12,
-          "textArabic": "إِذِ ٱنۢبَعَثَ أَشْقَىٰهَا"
+          "textArabic": "إِذِ ٱنۢبَعَثَ أَشْقَىٰهَا",
+          "textTransliteration": "Izim-ba'atha ashqaahaa"
         },
         {
           "number": 13,
-          "textArabic": "فَقَالَ لَهُمْ رَسُولُ ٱللَّهِ نَاقَةَ ٱللَّهِ وَسُقْيَـٰهَا"
+          "textArabic": "فَقَالَ لَهُمْ رَسُولُ ٱللَّهِ نَاقَةَ ٱللَّهِ وَسُقْيَـٰهَا",
+          "textTransliteration": "Faqaala lahum Rasoolul-laahi naaqatal-laahi wa suqyaahaa"
         },
         {
           "number": 14,
-          "textArabic": "فَكَذَّبُوهُ فَعَقَرُوهَا فَدَمْدَمَ عَلَيْهِمْ رَبُّهُم بِذَنۢبِهِمْ فَسَوَّىٰهَا"
+          "textArabic": "فَكَذَّبُوهُ فَعَقَرُوهَا فَدَمْدَمَ عَلَيْهِمْ رَبُّهُم بِذَنۢبِهِمْ فَسَوَّىٰهَا",
+          "textTransliteration": "Fakazzaboohu fa'aqaroohaa fadamdama 'alayhim Rabbuhum bi-zambihim fasawwaahaa"
         },
         {
           "number": 15,
-          "textArabic": "وَلَا يَخَافُ عُقْبَـٰهَا"
+          "textArabic": "وَلَا يَخَافُ عُقْبَـٰهَا",
+          "textTransliteration": "Wa laa yakhaafu 'uqbaahaa"
         }
       ]
     },
@@ -1694,87 +2080,108 @@
       "ayahs": [
         {
           "number": 1,
-          "textArabic": " وَٱلَّيْلِ إِذَا يَغْشَىٰ"
+          "textArabic": " وَٱلَّيْلِ إِذَا يَغْشَىٰ",
+          "textTransliteration": "Wallayli izaa yaghshaa"
         },
         {
           "number": 2,
-          "textArabic": "وَٱلنَّهَارِ إِذَا تَجَلَّىٰ"
+          "textArabic": "وَٱلنَّهَارِ إِذَا تَجَلَّىٰ",
+          "textTransliteration": "Wannahaari izaa tajallaa"
         },
         {
           "number": 3,
-          "textArabic": "وَمَا خَلَقَ ٱلذَّكَرَ وَٱلْأُنثَىٰٓ"
+          "textArabic": "وَمَا خَلَقَ ٱلذَّكَرَ وَٱلْأُنثَىٰٓ",
+          "textTransliteration": "Wa maa khalaqaz-zakara wal-unthaa"
         },
         {
           "number": 4,
-          "textArabic": "إِنَّ سَعْيَكُمْ لَشَتَّىٰ"
+          "textArabic": "إِنَّ سَعْيَكُمْ لَشَتَّىٰ",
+          "textTransliteration": "Inna sa'yakum lashattaa"
         },
         {
           "number": 5,
-          "textArabic": "فَأَمَّا مَنْ أَعْطَىٰ وَٱتَّقَىٰ"
+          "textArabic": "فَأَمَّا مَنْ أَعْطَىٰ وَٱتَّقَىٰ",
+          "textTransliteration": "Fa-ammaa man a'taa wattaqaa"
         },
         {
           "number": 6,
-          "textArabic": "وَصَدَّقَ بِٱلْحُسْنَىٰ"
+          "textArabic": "وَصَدَّقَ بِٱلْحُسْنَىٰ",
+          "textTransliteration": "Wa saddaqa bil-husnaa"
         },
         {
           "number": 7,
-          "textArabic": "فَسَنُيَسِّرُهُۥ لِلْيُسْرَىٰ"
+          "textArabic": "فَسَنُيَسِّرُهُۥ لِلْيُسْرَىٰ",
+          "textTransliteration": "Fasanu-yassiruhoo lil-yusraa"
         },
         {
           "number": 8,
-          "textArabic": "وَأَمَّا مَنۢ بَخِلَ وَٱسْتَغْنَىٰ"
+          "textArabic": "وَأَمَّا مَنۢ بَخِلَ وَٱسْتَغْنَىٰ",
+          "textTransliteration": "Wa ammaa mam-bakhila wastaghnaa"
         },
         {
           "number": 9,
-          "textArabic": "وَكَذَّبَ بِٱلْحُسْنَىٰ"
+          "textArabic": "وَكَذَّبَ بِٱلْحُسْنَىٰ",
+          "textTransliteration": "Wa kazzaba bil-husnaa"
         },
         {
           "number": 10,
-          "textArabic": "فَسَنُيَسِّرُهُۥ لِلْعُسْرَىٰ"
+          "textArabic": "فَسَنُيَسِّرُهُۥ لِلْعُسْرَىٰ",
+          "textTransliteration": "Fasanu-yassiruhoo lil'usraa"
         },
         {
           "number": 11,
-          "textArabic": "وَمَا يُغْنِى عَنْهُ مَالُهُۥٓ إِذَا تَرَدَّىٰٓ"
+          "textArabic": "وَمَا يُغْنِى عَنْهُ مَالُهُۥٓ إِذَا تَرَدَّىٰٓ",
+          "textTransliteration": "Wa maa yughnee 'anhu maaluhoo izaa taraddaa"
         },
         {
           "number": 12,
-          "textArabic": "إِنَّ عَلَيْنَا لَلْهُدَىٰ"
+          "textArabic": "إِنَّ عَلَيْنَا لَلْهُدَىٰ",
+          "textTransliteration": "Inna 'alaynaa lalhudaa"
         },
         {
           "number": 13,
-          "textArabic": "وَإِنَّ لَنَا لَلْـَٔاخِرَةَ وَٱلْأُولَىٰ"
+          "textArabic": "وَإِنَّ لَنَا لَلْـَٔاخِرَةَ وَٱلْأُولَىٰ",
+          "textTransliteration": "Wa inna lanaa lal-Aakhirata wal-oolaa"
         },
         {
           "number": 14,
-          "textArabic": "فَأَنذَرْتُكُمْ نَارًا تَلَظَّىٰ"
+          "textArabic": "فَأَنذَرْتُكُمْ نَارًا تَلَظَّىٰ",
+          "textTransliteration": "Fa-anzartukum naaran talazzaa"
         },
         {
           "number": 15,
-          "textArabic": "لَا يَصْلَىٰهَآ إِلَّا ٱلْأَشْقَى"
+          "textArabic": "لَا يَصْلَىٰهَآ إِلَّا ٱلْأَشْقَى",
+          "textTransliteration": "Laa yaslaahaaa illal-ashqaa"
         },
         {
           "number": 16,
-          "textArabic": "ٱلَّذِى كَذَّبَ وَتَوَلَّىٰ"
+          "textArabic": "ٱلَّذِى كَذَّبَ وَتَوَلَّىٰ",
+          "textTransliteration": "Allazee kazzaba wa tawallaa"
         },
         {
           "number": 17,
-          "textArabic": "وَسَيُجَنَّبُهَا ٱلْأَتْقَى"
+          "textArabic": "وَسَيُجَنَّبُهَا ٱلْأَتْقَى",
+          "textTransliteration": "Wa sa-yujannabuhal-atqaa"
         },
         {
           "number": 18,
-          "textArabic": "ٱلَّذِى يُؤْتِى مَالَهُۥ يَتَزَكَّىٰ"
+          "textArabic": "ٱلَّذِى يُؤْتِى مَالَهُۥ يَتَزَكَّىٰ",
+          "textTransliteration": "Allazee yu'tee maalahoo yatazakkaa"
         },
         {
           "number": 19,
-          "textArabic": "وَمَا لِأَحَدٍ عِندَهُۥ مِن نِّعْمَةٍ تُجْزَىٰٓ"
+          "textArabic": "وَمَا لِأَحَدٍ عِندَهُۥ مِن نِّعْمَةٍ تُجْزَىٰٓ",
+          "textTransliteration": "Wa maa li-ahadin 'indahoo min ni'matin tujzaa"
         },
         {
           "number": 20,
-          "textArabic": "إِلَّا ٱبْتِغَآءَ وَجْهِ رَبِّهِ ٱلْأَعْلَىٰ"
+          "textArabic": "إِلَّا ٱبْتِغَآءَ وَجْهِ رَبِّهِ ٱلْأَعْلَىٰ",
+          "textTransliteration": "Illab-tighaaaa'a wajhi Rabbihil-A'laa"
         },
         {
           "number": 21,
-          "textArabic": "وَلَسَوْفَ يَرْضَىٰ"
+          "textArabic": "وَلَسَوْفَ يَرْضَىٰ",
+          "textTransliteration": "Wa lasawfa yardaa"
         }
       ]
     },
@@ -1788,47 +2195,58 @@
       "ayahs": [
         {
           "number": 1,
-          "textArabic": " وَٱلضُّحَىٰ"
+          "textArabic": " وَٱلضُّحَىٰ",
+          "textTransliteration": "Wad-duhaa"
         },
         {
           "number": 2,
-          "textArabic": "وَٱلَّيْلِ إِذَا سَجَىٰ"
+          "textArabic": "وَٱلَّيْلِ إِذَا سَجَىٰ",
+          "textTransliteration": "Wallayli izaa sajaa"
         },
         {
           "number": 3,
-          "textArabic": "مَا وَدَّعَكَ رَبُّكَ وَمَا قَلَىٰ"
+          "textArabic": "مَا وَدَّعَكَ رَبُّكَ وَمَا قَلَىٰ",
+          "textTransliteration": "Maa wadda'aka Rabbuka wa maa qalaa"
         },
         {
           "number": 4,
-          "textArabic": "وَلَلْـَٔاخِرَةُ خَيْرٌ لَّكَ مِنَ ٱلْأُولَىٰ"
+          "textArabic": "وَلَلْـَٔاخِرَةُ خَيْرٌ لَّكَ مِنَ ٱلْأُولَىٰ",
+          "textTransliteration": "Wa lal-Aakhiratu khayrul-laka minal-oolaa"
         },
         {
           "number": 5,
-          "textArabic": "وَلَسَوْفَ يُعْطِيكَ رَبُّكَ فَتَرْضَىٰٓ"
+          "textArabic": "وَلَسَوْفَ يُعْطِيكَ رَبُّكَ فَتَرْضَىٰٓ",
+          "textTransliteration": "Wa lasawfa yu'teeka Rabbuka fatardaa"
         },
         {
           "number": 6,
-          "textArabic": "أَلَمْ يَجِدْكَ يَتِيمًا فَـَٔاوَىٰ"
+          "textArabic": "أَلَمْ يَجِدْكَ يَتِيمًا فَـَٔاوَىٰ",
+          "textTransliteration": "Alam yajidka yateeman fa-aawaa"
         },
         {
           "number": 7,
-          "textArabic": "وَوَجَدَكَ ضَآلًّا فَهَدَىٰ"
+          "textArabic": "وَوَجَدَكَ ضَآلًّا فَهَدَىٰ",
+          "textTransliteration": "Wa wajadaka daallan fahadaa"
         },
         {
           "number": 8,
-          "textArabic": "وَوَجَدَكَ عَآئِلًا فَأَغْنَىٰ"
+          "textArabic": "وَوَجَدَكَ عَآئِلًا فَأَغْنَىٰ",
+          "textTransliteration": "Wa wajadaka 'aaa'ilan fa-aghnaa"
         },
         {
           "number": 9,
-          "textArabic": "فَأَمَّا ٱلْيَتِيمَ فَلَا تَقْهَرْ"
+          "textArabic": "فَأَمَّا ٱلْيَتِيمَ فَلَا تَقْهَرْ",
+          "textTransliteration": "Fa-ammal-yateema falaa taqhar"
         },
         {
           "number": 10,
-          "textArabic": "وَأَمَّا ٱلسَّآئِلَ فَلَا تَنْهَرْ"
+          "textArabic": "وَأَمَّا ٱلسَّآئِلَ فَلَا تَنْهَرْ",
+          "textTransliteration": "Wa ammas-saaa'ila falaa tanhar"
         },
         {
           "number": 11,
-          "textArabic": "وَأَمَّا بِنِعْمَةِ رَبِّكَ فَحَدِّثْ"
+          "textArabic": "وَأَمَّا بِنِعْمَةِ رَبِّكَ فَحَدِّثْ",
+          "textTransliteration": "Wa ammaa bini'mati Rabbika fahaddith"
         }
       ]
     },
@@ -1842,35 +2260,43 @@
       "ayahs": [
         {
           "number": 1,
-          "textArabic": " أَلَمْ نَشْرَحْ لَكَ صَدْرَكَ"
+          "textArabic": " أَلَمْ نَشْرَحْ لَكَ صَدْرَكَ",
+          "textTransliteration": "Alam nashrah laka sadrak"
         },
         {
           "number": 2,
-          "textArabic": "وَوَضَعْنَا عَنكَ وِزْرَكَ"
+          "textArabic": "وَوَضَعْنَا عَنكَ وِزْرَكَ",
+          "textTransliteration": "Wa wada'naa 'anka wizrak"
         },
         {
           "number": 3,
-          "textArabic": "ٱلَّذِىٓ أَنقَضَ ظَهْرَكَ"
+          "textArabic": "ٱلَّذِىٓ أَنقَضَ ظَهْرَكَ",
+          "textTransliteration": "Allazee anqada zahrak"
         },
         {
           "number": 4,
-          "textArabic": "وَرَفَعْنَا لَكَ ذِكْرَكَ"
+          "textArabic": "وَرَفَعْنَا لَكَ ذِكْرَكَ",
+          "textTransliteration": "Wa rafa'naa laka zikrak"
         },
         {
           "number": 5,
-          "textArabic": "فَإِنَّ مَعَ ٱلْعُسْرِ يُسْرًا"
+          "textArabic": "فَإِنَّ مَعَ ٱلْعُسْرِ يُسْرًا",
+          "textTransliteration": "Fa-inna ma'al-'usri yusraa"
         },
         {
           "number": 6,
-          "textArabic": "إِنَّ مَعَ ٱلْعُسْرِ يُسْرًا"
+          "textArabic": "إِنَّ مَعَ ٱلْعُسْرِ يُسْرًا",
+          "textTransliteration": "Inna ma'al-'usri yusraa"
         },
         {
           "number": 7,
-          "textArabic": "فَإِذَا فَرَغْتَ فَٱنصَبْ"
+          "textArabic": "فَإِذَا فَرَغْتَ فَٱنصَبْ",
+          "textTransliteration": "Fa-izaa faraghta fansab"
         },
         {
           "number": 8,
-          "textArabic": "وَإِلَىٰ رَبِّكَ فَٱرْغَب"
+          "textArabic": "وَإِلَىٰ رَبِّكَ فَٱرْغَب",
+          "textTransliteration": "Wa ilaa Rabbika farghab"
         }
       ]
     },
@@ -1884,35 +2310,43 @@
       "ayahs": [
         {
           "number": 1,
-          "textArabic": "وَٱلتِّينِ وَٱلزَّيْتُونِ"
+          "textArabic": "وَٱلتِّينِ وَٱلزَّيْتُونِ",
+          "textTransliteration": "Wat-teeni waz-zaytoon"
         },
         {
           "number": 2,
-          "textArabic": "وَطُورِ سِينِينَ"
+          "textArabic": "وَطُورِ سِينِينَ",
+          "textTransliteration": "Wa toori sineen"
         },
         {
           "number": 3,
-          "textArabic": "وَهَـٰذَا ٱلْبَلَدِ ٱلْأَمِينِ"
+          "textArabic": "وَهَـٰذَا ٱلْبَلَدِ ٱلْأَمِينِ",
+          "textTransliteration": "Wa haazal-baladil-ameen"
         },
         {
           "number": 4,
-          "textArabic": "لَقَدْ خَلَقْنَا ٱلْإِنسَـٰنَ فِىٓ أَحْسَنِ تَقْوِيمٍ"
+          "textArabic": "لَقَدْ خَلَقْنَا ٱلْإِنسَـٰنَ فِىٓ أَحْسَنِ تَقْوِيمٍ",
+          "textTransliteration": "Laqad khalaqnal-insaana fee ahsani taqweem"
         },
         {
           "number": 5,
-          "textArabic": "ثُمَّ رَدَدْنَـٰهُ أَسْفَلَ سَـٰفِلِينَ"
+          "textArabic": "ثُمَّ رَدَدْنَـٰهُ أَسْفَلَ سَـٰفِلِينَ",
+          "textTransliteration": "Thumma ra-dadnaahu asfala saafileen"
         },
         {
           "number": 6,
-          "textArabic": "إِلَّا ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ فَلَهُمْ أَجْرٌ غَيْرُ مَمْنُونٍ"
+          "textArabic": "إِلَّا ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ فَلَهُمْ أَجْرٌ غَيْرُ مَمْنُونٍ",
+          "textTransliteration": "Illal-lazeena aamanoo wa 'amilus-saalihaati falahum ajrun ghayru mamnoon"
         },
         {
           "number": 7,
-          "textArabic": "فَمَا يُكَذِّبُكَ بَعْدُ بِٱلدِّينِ"
+          "textArabic": "فَمَا يُكَذِّبُكَ بَعْدُ بِٱلدِّينِ",
+          "textTransliteration": "Famaa yukazzibuka ba'du bid-deen"
         },
         {
           "number": 8,
-          "textArabic": "أَلَيْسَ ٱللَّهُ بِأَحْكَمِ ٱلْحَـٰكِمِينَ"
+          "textArabic": "أَلَيْسَ ٱللَّهُ بِأَحْكَمِ ٱلْحَـٰكِمِينَ",
+          "textTransliteration": "Alaysal-laahu bi-ahkamil-haakimeen"
         }
       ]
     },
@@ -1926,79 +2360,98 @@
       "ayahs": [
         {
           "number": 1,
-          "textArabic": " ٱقْرَأْ بِٱسْمِ رَبِّكَ ٱلَّذِى خَلَقَ"
+          "textArabic": " ٱقْرَأْ بِٱسْمِ رَبِّكَ ٱلَّذِى خَلَقَ",
+          "textTransliteration": "Iqra' bismi Rabbikal-lazee khalaq"
         },
         {
           "number": 2,
-          "textArabic": "خَلَقَ ٱلْإِنسَـٰنَ مِنْ عَلَقٍ"
+          "textArabic": "خَلَقَ ٱلْإِنسَـٰنَ مِنْ عَلَقٍ",
+          "textTransliteration": "Khalaqal-insaana min 'alaq"
         },
         {
           "number": 3,
-          "textArabic": "ٱقْرَأْ وَرَبُّكَ ٱلْأَكْرَمُ"
+          "textArabic": "ٱقْرَأْ وَرَبُّكَ ٱلْأَكْرَمُ",
+          "textTransliteration": "Iqra' wa Rabbukal-Akram"
         },
         {
           "number": 4,
-          "textArabic": "ٱلَّذِى عَلَّمَ بِٱلْقَلَمِ"
+          "textArabic": "ٱلَّذِى عَلَّمَ بِٱلْقَلَمِ",
+          "textTransliteration": "Allazee 'allama bil-qalam"
         },
         {
           "number": 5,
-          "textArabic": "عَلَّمَ ٱلْإِنسَـٰنَ مَا لَمْ يَعْلَمْ"
+          "textArabic": "عَلَّمَ ٱلْإِنسَـٰنَ مَا لَمْ يَعْلَمْ",
+          "textTransliteration": "'Allamal-insaana maa lam ya'lam"
         },
         {
           "number": 6,
-          "textArabic": "كَلَّآ إِنَّ ٱلْإِنسَـٰنَ لَيَطْغَىٰٓ"
+          "textArabic": "كَلَّآ إِنَّ ٱلْإِنسَـٰنَ لَيَطْغَىٰٓ",
+          "textTransliteration": "Kallaaa innal-insaana la-yatghaa"
         },
         {
           "number": 7,
-          "textArabic": "أَن رَّءَاهُ ٱسْتَغْنَىٰٓ"
+          "textArabic": "أَن رَّءَاهُ ٱسْتَغْنَىٰٓ",
+          "textTransliteration": "Ar-ra-aahus-taghnaa"
         },
         {
           "number": 8,
-          "textArabic": "إِنَّ إِلَىٰ رَبِّكَ ٱلرُّجْعَىٰٓ"
+          "textArabic": "إِنَّ إِلَىٰ رَبِّكَ ٱلرُّجْعَىٰٓ",
+          "textTransliteration": "Inna ilaa Rabbikar-ruj'aa"
         },
         {
           "number": 9,
-          "textArabic": "أَرَءَيْتَ ٱلَّذِى يَنْهَىٰ"
+          "textArabic": "أَرَءَيْتَ ٱلَّذِى يَنْهَىٰ",
+          "textTransliteration": "Ara-aytal-lazee yanhaa"
         },
         {
           "number": 10,
-          "textArabic": "عَبْدًا إِذَا صَلَّىٰٓ"
+          "textArabic": "عَبْدًا إِذَا صَلَّىٰٓ",
+          "textTransliteration": "'Abdan izaa sallaa"
         },
         {
           "number": 11,
-          "textArabic": "أَرَءَيْتَ إِن كَانَ عَلَى ٱلْهُدَىٰٓ"
+          "textArabic": "أَرَءَيْتَ إِن كَانَ عَلَى ٱلْهُدَىٰٓ",
+          "textTransliteration": "Ara-ayta in kaana 'alal-hudaa"
         },
         {
           "number": 12,
-          "textArabic": "أَوْ أَمَرَ بِٱلتَّقْوَىٰٓ"
+          "textArabic": "أَوْ أَمَرَ بِٱلتَّقْوَىٰٓ",
+          "textTransliteration": "Aw amara bit-taqwaa"
         },
         {
           "number": 13,
-          "textArabic": "أَرَءَيْتَ إِن كَذَّبَ وَتَوَلَّىٰٓ"
+          "textArabic": "أَرَءَيْتَ إِن كَذَّبَ وَتَوَلَّىٰٓ",
+          "textTransliteration": "Ara-ayta in kazzaba wa tawallaa"
         },
         {
           "number": 14,
-          "textArabic": "أَلَمْ يَعْلَم بِأَنَّ ٱللَّهَ يَرَىٰ"
+          "textArabic": "أَلَمْ يَعْلَم بِأَنَّ ٱللَّهَ يَرَىٰ",
+          "textTransliteration": "Alam ya'lam bi-annal-laaha yaraa"
         },
         {
           "number": 15,
-          "textArabic": "كَلَّا لَئِن لَّمْ يَنتَهِ لَنَسْفَعًۢا بِٱلنَّاصِيَةِ"
+          "textArabic": "كَلَّا لَئِن لَّمْ يَنتَهِ لَنَسْفَعًۢا بِٱلنَّاصِيَةِ",
+          "textTransliteration": "Kallaa la-il-lam yantahi lanasfa'am-bin-naasiyah"
         },
         {
           "number": 16,
-          "textArabic": "نَاصِيَةٍ كَـٰذِبَةٍ خَاطِئَةٍ"
+          "textArabic": "نَاصِيَةٍ كَـٰذِبَةٍ خَاطِئَةٍ",
+          "textTransliteration": "Naasiyatin kaazibatin khaati'ah"
         },
         {
           "number": 17,
-          "textArabic": "فَلْيَدْعُ نَادِيَهُۥ"
+          "textArabic": "فَلْيَدْعُ نَادِيَهُۥ",
+          "textTransliteration": "Falyad'u naadiyah"
         },
         {
           "number": 18,
-          "textArabic": "سَنَدْعُ ٱلزَّبَانِيَةَ"
+          "textArabic": "سَنَدْعُ ٱلزَّبَانِيَةَ",
+          "textTransliteration": "Sanad'uz-zabaaniyah"
         },
         {
           "number": 19,
-          "textArabic": "كَلَّا لَا تُطِعْهُ وَٱسْجُدْ وَٱقْتَرِب ۩"
+          "textArabic": "كَلَّا لَا تُطِعْهُ وَٱسْجُدْ وَٱقْتَرِب ۩",
+          "textTransliteration": "Kallaa laa tuti'hu wasjud waqtarib"
         }
       ]
     },
@@ -2012,23 +2465,28 @@
       "ayahs": [
         {
           "number": 1,
-          "textArabic": "إِنَّآ أَنزَلْنَـٰهُ فِى لَيْلَةِ ٱلْقَدْرِ"
+          "textArabic": "إِنَّآ أَنزَلْنَـٰهُ فِى لَيْلَةِ ٱلْقَدْرِ",
+          "textTransliteration": "Innaaa anzalnaahu fee Laylatil-Qadr"
         },
         {
           "number": 2,
-          "textArabic": "وَمَآ أَدْرَىٰكَ مَا لَيْلَةُ ٱلْقَدْرِ"
+          "textArabic": "وَمَآ أَدْرَىٰكَ مَا لَيْلَةُ ٱلْقَدْرِ",
+          "textTransliteration": "Wa maaa adraaka maa Laylatul-Qadr"
         },
         {
           "number": 3,
-          "textArabic": "لَيْلَةُ ٱلْقَدْرِ خَيْرٌ مِّنْ أَلْفِ شَهْرٍ"
+          "textArabic": "لَيْلَةُ ٱلْقَدْرِ خَيْرٌ مِّنْ أَلْفِ شَهْرٍ",
+          "textTransliteration": "Laylatul-Qadri khayrum-min alfi shahr"
         },
         {
           "number": 4,
-          "textArabic": "تَنَزَّلُ ٱلْمَلَـٰٓئِكَةُ وَٱلرُّوحُ فِيهَا بِإِذْنِ رَبِّهِم مِّن كُلِّ أَمْرٍ"
+          "textArabic": "تَنَزَّلُ ٱلْمَلَـٰٓئِكَةُ وَٱلرُّوحُ فِيهَا بِإِذْنِ رَبِّهِم مِّن كُلِّ أَمْرٍ",
+          "textTransliteration": "Tanaz-zalul-malaaa'ikatu war-Roohu feehaa bi-izni Rabbihim min kulli amr"
         },
         {
           "number": 5,
-          "textArabic": "سَلَـٰمٌ هِىَ حَتَّىٰ مَطْلَعِ ٱلْفَجْرِ"
+          "textArabic": "سَلَـٰمٌ هِىَ حَتَّىٰ مَطْلَعِ ٱلْفَجْرِ",
+          "textTransliteration": "Salaamun hiya hattaa matla'il-Fajr"
         }
       ]
     },
@@ -2042,35 +2500,43 @@
       "ayahs": [
         {
           "number": 1,
-          "textArabic": " لَمْ يَكُنِ ٱلَّذِينَ كَفَرُوا۟ مِنْ أَهْلِ ٱلْكِتَـٰبِ وَٱلْمُشْرِكِينَ مُنفَكِّينَ حَتَّىٰ تَأْتِيَهُمُ ٱلْبَيِّنَةُ"
+          "textArabic": " لَمْ يَكُنِ ٱلَّذِينَ كَفَرُوا۟ مِنْ أَهْلِ ٱلْكِتَـٰبِ وَٱلْمُشْرِكِينَ مُنفَكِّينَ حَتَّىٰ تَأْتِيَهُمُ ٱلْبَيِّنَةُ",
+          "textTransliteration": "Lam ya-kunil-lazeena kafaroo min ahlil-Kitaabi wal-mushrikeena munfakkeena hattaa ta'-tiyahumul-bayyinah"
         },
         {
           "number": 2,
-          "textArabic": "رَسُولٌ مِّنَ ٱللَّهِ يَتْلُوا۟ صُحُفًا مُّطَهَّرَةً"
+          "textArabic": "رَسُولٌ مِّنَ ٱللَّهِ يَتْلُوا۟ صُحُفًا مُّطَهَّرَةً",
+          "textTransliteration": "Rasoolum-minal-laahi yatloo suhufam-mutahharah"
         },
         {
           "number": 3,
-          "textArabic": "فِيهَا كُتُبٌ قَيِّمَةٌ"
+          "textArabic": "فِيهَا كُتُبٌ قَيِّمَةٌ",
+          "textTransliteration": "Feehaa kutubun qayyimah"
         },
         {
           "number": 4,
-          "textArabic": "وَمَا تَفَرَّقَ ٱلَّذِينَ أُوتُوا۟ ٱلْكِتَـٰبَ إِلَّا مِنۢ بَعْدِ مَا جَآءَتْهُمُ ٱلْبَيِّنَةُ"
+          "textArabic": "وَمَا تَفَرَّقَ ٱلَّذِينَ أُوتُوا۟ ٱلْكِتَـٰبَ إِلَّا مِنۢ بَعْدِ مَا جَآءَتْهُمُ ٱلْبَيِّنَةُ",
+          "textTransliteration": "Wa maa tafarraqal-lazeena ootul-Kitaaba illaa mim-ba'di maa jaaa'at-humul-bayyinah"
         },
         {
           "number": 5,
-          "textArabic": "وَمَآ أُمِرُوٓا۟ إِلَّا لِيَعْبُدُوا۟ ٱللَّهَ مُخْلِصِينَ لَهُ ٱلدِّينَ حُنَفَآءَ وَيُقِيمُوا۟ ٱلصَّلَوٰةَ وَيُؤْتُوا۟ ٱلزَّكَوٰةَ ۚ وَذَٰلِكَ دِينُ ٱلْقَيِّمَةِ"
+          "textArabic": "وَمَآ أُمِرُوٓا۟ إِلَّا لِيَعْبُدُوا۟ ٱللَّهَ مُخْلِصِينَ لَهُ ٱلدِّينَ حُنَفَآءَ وَيُقِيمُوا۟ ٱلصَّلَوٰةَ وَيُؤْتُوا۟ ٱلزَّكَوٰةَ ۚ وَذَٰلِكَ دِينُ ٱلْقَيِّمَةِ",
+          "textTransliteration": "Wa maaa umirooo illaa li-ya'budul-laaha mukhliseena lahud-deena hunafaaa'a wa yuqeemus-Salaata wa yu'tuz-Zakaata wa zaalika deenul-qayyimah"
         },
         {
           "number": 6,
-          "textArabic": "إِنَّ ٱلَّذِينَ كَفَرُوا۟ مِنْ أَهْلِ ٱلْكِتَـٰبِ وَٱلْمُشْرِكِينَ فِى نَارِ جَهَنَّمَ خَـٰلِدِينَ فِيهَآ ۚ أُو۟لَـٰٓئِكَ هُمْ شَرُّ ٱلْبَرِيَّةِ"
+          "textArabic": "إِنَّ ٱلَّذِينَ كَفَرُوا۟ مِنْ أَهْلِ ٱلْكِتَـٰبِ وَٱلْمُشْرِكِينَ فِى نَارِ جَهَنَّمَ خَـٰلِدِينَ فِيهَآ ۚ أُو۟لَـٰٓئِكَ هُمْ شَرُّ ٱلْبَرِيَّةِ",
+          "textTransliteration": "Innal-lazeena kafaroo min ahlil-Kitaabi wal-mushrikeena fee naari Jahannama khaalideena feehaa; ulaaa'ika hum shar-rul-bareey'ah"
         },
         {
           "number": 7,
-          "textArabic": "إِنَّ ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ أُو۟لَـٰٓئِكَ هُمْ خَيْرُ ٱلْبَرِيَّةِ"
+          "textArabic": "إِنَّ ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ أُو۟لَـٰٓئِكَ هُمْ خَيْرُ ٱلْبَرِيَّةِ",
+          "textTransliteration": "Innal-lazeena aamanoo wa 'amilus-saalihaati ulaaa'ika hum khayrul-bareey'ah"
         },
         {
           "number": 8,
-          "textArabic": "جَزَآؤُهُمْ عِندَ رَبِّهِمْ جَنَّـٰتُ عَدْنٍ تَجْرِى مِن تَحْتِهَا ٱلْأَنْهَـٰرُ خَـٰلِدِينَ فِيهَآ أَبَدًا ۖ رَّضِىَ ٱللَّهُ عَنْهُمْ وَرَضُوا۟ عَنْهُ ۚ ذَٰلِكَ لِمَنْ خَشِىَ رَبَّهُۥ"
+          "textArabic": "جَزَآؤُهُمْ عِندَ رَبِّهِمْ جَنَّـٰتُ عَدْنٍ تَجْرِى مِن تَحْتِهَا ٱلْأَنْهَـٰرُ خَـٰلِدِينَ فِيهَآ أَبَدًا ۖ رَّضِىَ ٱللَّهُ عَنْهُمْ وَرَضُوا۟ عَنْهُ ۚ ذَٰلِكَ لِمَنْ خَشِىَ رَبَّهُۥ",
+          "textTransliteration": "Jazaaa'uhum 'inda Rabbihim Jannaatu 'Adnin tajree min tahtihal-anhaaru khaalideena feehaaa abadaa; radiyallaahu 'anhum wa radoo 'anh; zaalika liman khashiya Rabbah"
         }
       ]
     },
@@ -2084,35 +2550,43 @@
       "ayahs": [
         {
           "number": 1,
-          "textArabic": " إِذَا زُلْزِلَتِ ٱلْأَرْضُ زِلْزَالَهَا"
+          "textArabic": " إِذَا زُلْزِلَتِ ٱلْأَرْضُ زِلْزَالَهَا",
+          "textTransliteration": "Izaa zulzilatil-ardu zilzaalahaa"
         },
         {
           "number": 2,
-          "textArabic": "وَأَخْرَجَتِ ٱلْأَرْضُ أَثْقَالَهَا"
+          "textArabic": "وَأَخْرَجَتِ ٱلْأَرْضُ أَثْقَالَهَا",
+          "textTransliteration": "Wa akhrajatil-ardu athqaalahaa"
         },
         {
           "number": 3,
-          "textArabic": "وَقَالَ ٱلْإِنسَـٰنُ مَا لَهَا"
+          "textArabic": "وَقَالَ ٱلْإِنسَـٰنُ مَا لَهَا",
+          "textTransliteration": "Wa qaalal-insaanu maa lahaa"
         },
         {
           "number": 4,
-          "textArabic": "يَوْمَئِذٍ تُحَدِّثُ أَخْبَارَهَا"
+          "textArabic": "يَوْمَئِذٍ تُحَدِّثُ أَخْبَارَهَا",
+          "textTransliteration": "Yawma-izin tuhaddithu akhbaarahaa"
         },
         {
           "number": 5,
-          "textArabic": "بِأَنَّ رَبَّكَ أَوْحَىٰ لَهَا"
+          "textArabic": "بِأَنَّ رَبَّكَ أَوْحَىٰ لَهَا",
+          "textTransliteration": "Bi-anna Rabbaka awhaa lahaa"
         },
         {
           "number": 6,
-          "textArabic": "يَوْمَئِذٍ يَصْدُرُ ٱلنَّاسُ أَشْتَاتًا لِّيُرَوْا۟ أَعْمَـٰلَهُمْ"
+          "textArabic": "يَوْمَئِذٍ يَصْدُرُ ٱلنَّاسُ أَشْتَاتًا لِّيُرَوْا۟ أَعْمَـٰلَهُمْ",
+          "textTransliteration": "Yawma-iziny-yasdur-runaasu ash-taatal-liyuraw a'maalahum"
         },
         {
           "number": 7,
-          "textArabic": "فَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ خَيْرًا يَرَهُۥ"
+          "textArabic": "فَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ خَيْرًا يَرَهُۥ",
+          "textTransliteration": "Famanyyia'mal mithqaala zarratin khayranyyarah"
         },
         {
           "number": 8,
-          "textArabic": "وَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ شَرًّا يَرَهُۥ"
+          "textArabic": "وَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ شَرًّا يَرَهُۥ",
+          "textTransliteration": "Wa manyyia'mal mithqaala zarratin sharranyyarah"
         }
       ]
     },
@@ -2126,47 +2600,58 @@
       "ayahs": [
         {
           "number": 1,
-          "textArabic": " وَٱلْعَـٰدِيَـٰتِ ضَبْحًا"
+          "textArabic": " وَٱلْعَـٰدِيَـٰتِ ضَبْحًا",
+          "textTransliteration": "Wal-'aadi-yaati dabha"
         },
         {
           "number": 2,
-          "textArabic": "فَٱلْمُورِيَـٰتِ قَدْحًا"
+          "textArabic": "فَٱلْمُورِيَـٰتِ قَدْحًا",
+          "textTransliteration": "Fal-moori-yaati qadha"
         },
         {
           "number": 3,
-          "textArabic": "فَٱلْمُغِيرَٰتِ صُبْحًا"
+          "textArabic": "فَٱلْمُغِيرَٰتِ صُبْحًا",
+          "textTransliteration": "Fal-mugheera-ati subha"
         },
         {
           "number": 4,
-          "textArabic": "فَأَثَرْنَ بِهِۦ نَقْعًا"
+          "textArabic": "فَأَثَرْنَ بِهِۦ نَقْعًا",
+          "textTransliteration": "Fa-atharna bihee naq'aa"
         },
         {
           "number": 5,
-          "textArabic": "فَوَسَطْنَ بِهِۦ جَمْعًا"
+          "textArabic": "فَوَسَطْنَ بِهِۦ جَمْعًا",
+          "textTransliteration": "Fawasatna bihee jam'aa"
         },
         {
           "number": 6,
-          "textArabic": "إِنَّ ٱلْإِنسَـٰنَ لِرَبِّهِۦ لَكَنُودٌ"
+          "textArabic": "إِنَّ ٱلْإِنسَـٰنَ لِرَبِّهِۦ لَكَنُودٌ",
+          "textTransliteration": "Innal-insaana li-Rabbihee la-kanood"
         },
         {
           "number": 7,
-          "textArabic": "وَإِنَّهُۥ عَلَىٰ ذَٰلِكَ لَشَهِيدٌ"
+          "textArabic": "وَإِنَّهُۥ عَلَىٰ ذَٰلِكَ لَشَهِيدٌ",
+          "textTransliteration": "Wa innahoo 'alaa zaalika la-shaheed"
         },
         {
           "number": 8,
-          "textArabic": "وَإِنَّهُۥ لِحُبِّ ٱلْخَيْرِ لَشَدِيدٌ"
+          "textArabic": "وَإِنَّهُۥ لِحُبِّ ٱلْخَيْرِ لَشَدِيدٌ",
+          "textTransliteration": "Wa innahoo lihubbil-khayri la-shadeed"
         },
         {
           "number": 9,
-          "textArabic": "۞ أَفَلَا يَعْلَمُ إِذَا بُعْثِرَ مَا فِى ٱلْقُبُورِ"
+          "textArabic": "۞ أَفَلَا يَعْلَمُ إِذَا بُعْثِرَ مَا فِى ٱلْقُبُورِ",
+          "textTransliteration": "Afalaa ya'lamu izaa bu'thira maa fil-quboor"
         },
         {
           "number": 10,
-          "textArabic": "وَحُصِّلَ مَا فِى ٱلصُّدُورِ"
+          "textArabic": "وَحُصِّلَ مَا فِى ٱلصُّدُورِ",
+          "textTransliteration": "Wa hussila maa fis-sudoor"
         },
         {
           "number": 11,
-          "textArabic": "إِنَّ رَبَّهُم بِهِمْ يَوْمَئِذٍ لَّخَبِيرٌۢ"
+          "textArabic": "إِنَّ رَبَّهُم بِهِمْ يَوْمَئِذٍ لَّخَبِيرٌۢ",
+          "textTransliteration": "Inna Rabbahum bihim yawma-izil-la-Khabeer"
         }
       ]
     },
@@ -2180,47 +2665,58 @@
       "ayahs": [
         {
           "number": 1,
-          "textArabic": " ٱلْقَارِعَةُ"
+          "textArabic": " ٱلْقَارِعَةُ",
+          "textTransliteration": "Al-Qaari'ah"
         },
         {
           "number": 2,
-          "textArabic": "مَا ٱلْقَارِعَةُ"
+          "textArabic": "مَا ٱلْقَارِعَةُ",
+          "textTransliteration": "Mal-Qaari'ah"
         },
         {
           "number": 3,
-          "textArabic": "وَمَآ أَدْرَىٰكَ مَا ٱلْقَارِعَةُ"
+          "textArabic": "وَمَآ أَدْرَىٰكَ مَا ٱلْقَارِعَةُ",
+          "textTransliteration": "Wa maaa adraaka mal-Qaari'ah"
         },
         {
           "number": 4,
-          "textArabic": "يَوْمَ يَكُونُ ٱلنَّاسُ كَٱلْفَرَاشِ ٱلْمَبْثُوثِ"
+          "textArabic": "يَوْمَ يَكُونُ ٱلنَّاسُ كَٱلْفَرَاشِ ٱلْمَبْثُوثِ",
+          "textTransliteration": "Yawma ya-koonun-naasu kal-faraashil-mabthooth"
         },
         {
           "number": 5,
-          "textArabic": "وَتَكُونُ ٱلْجِبَالُ كَٱلْعِهْنِ ٱلْمَنفُوشِ"
+          "textArabic": "وَتَكُونُ ٱلْجِبَالُ كَٱلْعِهْنِ ٱلْمَنفُوشِ",
+          "textTransliteration": "Wa takoonul-jibaalu kal-'ihnil-manfoosh"
         },
         {
           "number": 6,
-          "textArabic": "فَأَمَّا مَن ثَقُلَتْ مَوَٰزِينُهُۥ"
+          "textArabic": "فَأَمَّا مَن ثَقُلَتْ مَوَٰزِينُهُۥ",
+          "textTransliteration": "Fa-ammaa man thaqulat mawaa-zeenuh"
         },
         {
           "number": 7,
-          "textArabic": "فَهُوَ فِى عِيشَةٍ رَّاضِيَةٍ"
+          "textArabic": "فَهُوَ فِى عِيشَةٍ رَّاضِيَةٍ",
+          "textTransliteration": "Fahuwa fee 'eeshatir-raadiyah"
         },
         {
           "number": 8,
-          "textArabic": "وَأَمَّا مَنْ خَفَّتْ مَوَٰزِينُهُۥ"
+          "textArabic": "وَأَمَّا مَنْ خَفَّتْ مَوَٰزِينُهُۥ",
+          "textTransliteration": "Wa ammaa man khaffat mawaa-zeenuh"
         },
         {
           "number": 9,
-          "textArabic": "فَأُمُّهُۥ هَاوِيَةٌ"
+          "textArabic": "فَأُمُّهُۥ هَاوِيَةٌ",
+          "textTransliteration": "Fa-ummuhoo haawiyah"
         },
         {
           "number": 10,
-          "textArabic": "وَمَآ أَدْرَىٰكَ مَا هِيَهْ"
+          "textArabic": "وَمَآ أَدْرَىٰكَ مَا هِيَهْ",
+          "textTransliteration": "Wa maaa adraaka maa hiyah"
         },
         {
           "number": 11,
-          "textArabic": "نَارٌ حَامِيَةٌۢ"
+          "textArabic": "نَارٌ حَامِيَةٌۢ",
+          "textTransliteration": "Naarun haamiyah"
         }
       ]
     },
@@ -2234,35 +2730,43 @@
       "ayahs": [
         {
           "number": 1,
-          "textArabic": " أَلْهَىٰكُمُ ٱلتَّكَاثُرُ"
+          "textArabic": " أَلْهَىٰكُمُ ٱلتَّكَاثُرُ",
+          "textTransliteration": "Alhaa-kumut-takaathur"
         },
         {
           "number": 2,
-          "textArabic": "حَتَّىٰ زُرْتُمُ ٱلْمَقَابِرَ"
+          "textArabic": "حَتَّىٰ زُرْتُمُ ٱلْمَقَابِرَ",
+          "textTransliteration": "Hattaa zurtumul-maqaabir"
         },
         {
           "number": 3,
-          "textArabic": "كَلَّا سَوْفَ تَعْلَمُونَ"
+          "textArabic": "كَلَّا سَوْفَ تَعْلَمُونَ",
+          "textTransliteration": "Kallaa sawfa ta'lamoon"
         },
         {
           "number": 4,
-          "textArabic": "ثُمَّ كَلَّا سَوْفَ تَعْلَمُونَ"
+          "textArabic": "ثُمَّ كَلَّا سَوْفَ تَعْلَمُونَ",
+          "textTransliteration": "Thumma kallaa sawfa ta'lamoon"
         },
         {
           "number": 5,
-          "textArabic": "كَلَّا لَوْ تَعْلَمُونَ عِلْمَ ٱلْيَقِينِ"
+          "textArabic": "كَلَّا لَوْ تَعْلَمُونَ عِلْمَ ٱلْيَقِينِ",
+          "textTransliteration": "Kallaa law ta'lamoona 'ilmal-yaqeen"
         },
         {
           "number": 6,
-          "textArabic": "لَتَرَوُنَّ ٱلْجَحِيمَ"
+          "textArabic": "لَتَرَوُنَّ ٱلْجَحِيمَ",
+          "textTransliteration": "Latara-wunnal-jaheem"
         },
         {
           "number": 7,
-          "textArabic": "ثُمَّ لَتَرَوُنَّهَا عَيْنَ ٱلْيَقِينِ"
+          "textArabic": "ثُمَّ لَتَرَوُنَّهَا عَيْنَ ٱلْيَقِينِ",
+          "textTransliteration": "Thumma latara-wunnaha 'ainal-yaqeen"
         },
         {
           "number": 8,
-          "textArabic": "ثُمَّ لَتُسْـَٔلُنَّ يَوْمَئِذٍ عَنِ ٱلنَّعِيمِ"
+          "textArabic": "ثُمَّ لَتُسْـَٔلُنَّ يَوْمَئِذٍ عَنِ ٱلنَّعِيمِ",
+          "textTransliteration": "Thumma latus'alunna yawma-izin 'anin-na'eem"
         }
       ]
     },
@@ -2276,15 +2780,18 @@
       "ayahs": [
         {
           "number": 1,
-          "textArabic": " وَٱلْعَصْرِ"
+          "textArabic": " وَٱلْعَصْرِ",
+          "textTransliteration": "Wal-'Asr"
         },
         {
           "number": 2,
-          "textArabic": "إِنَّ ٱلْإِنسَـٰنَ لَفِى خُسْرٍ"
+          "textArabic": "إِنَّ ٱلْإِنسَـٰنَ لَفِى خُسْرٍ",
+          "textTransliteration": "Innal-insaana la-fee khusr"
         },
         {
           "number": 3,
-          "textArabic": "إِلَّا ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ وَتَوَاصَوْا۟ بِٱلْحَقِّ وَتَوَاصَوْا۟ بِٱلصَّبْرِ"
+          "textArabic": "إِلَّا ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ وَتَوَاصَوْا۟ بِٱلْحَقِّ وَتَوَاصَوْا۟ بِٱلصَّبْرِ",
+          "textTransliteration": "Illal-lazeena aamanoo wa 'amilus-saalihaati wa tawaasau bil-haqqi wa tawaasau bis-sabr"
         }
       ]
     },
@@ -2298,39 +2805,48 @@
       "ayahs": [
         {
           "number": 1,
-          "textArabic": " وَيْلٌ لِّكُلِّ هُمَزَةٍ لُّمَزَةٍ"
+          "textArabic": " وَيْلٌ لِّكُلِّ هُمَزَةٍ لُّمَزَةٍ",
+          "textTransliteration": "Waylul-likulli humazatil-lumazah"
         },
         {
           "number": 2,
-          "textArabic": "ٱلَّذِى جَمَعَ مَالًا وَعَدَّدَهُۥ"
+          "textArabic": "ٱلَّذِى جَمَعَ مَالًا وَعَدَّدَهُۥ",
+          "textTransliteration": "Allazee jama'a maalaw-wa 'ad-dadah"
         },
         {
           "number": 3,
-          "textArabic": "يَحْسَبُ أَنَّ مَالَهُۥٓ أَخْلَدَهُۥ"
+          "textArabic": "يَحْسَبُ أَنَّ مَالَهُۥٓ أَخْلَدَهُۥ",
+          "textTransliteration": "Yahsabu anna maalahoo akh-ladah"
         },
         {
           "number": 4,
-          "textArabic": "كَلَّا ۖ لَيُنۢبَذَنَّ فِى ٱلْحُطَمَةِ"
+          "textArabic": "كَلَّا ۖ لَيُنۢبَذَنَّ فِى ٱلْحُطَمَةِ",
+          "textTransliteration": "Kallaa la-yunba-zanna fil-Hutamah"
         },
         {
           "number": 5,
-          "textArabic": "وَمَآ أَدْرَىٰكَ مَا ٱلْحُطَمَةُ"
+          "textArabic": "وَمَآ أَدْرَىٰكَ مَا ٱلْحُطَمَةُ",
+          "textTransliteration": "Wa maaa adraaka mal-Hutamah"
         },
         {
           "number": 6,
-          "textArabic": "نَارُ ٱللَّهِ ٱلْمُوقَدَةُ"
+          "textArabic": "نَارُ ٱللَّهِ ٱلْمُوقَدَةُ",
+          "textTransliteration": "Naarul-laahil-mooqadah"
         },
         {
           "number": 7,
-          "textArabic": "ٱلَّتِى تَطَّلِعُ عَلَى ٱلْأَفْـِٔدَةِ"
+          "textArabic": "ٱلَّتِى تَطَّلِعُ عَلَى ٱلْأَفْـِٔدَةِ",
+          "textTransliteration": "Allatee tattali'u 'alal-af'idah"
         },
         {
           "number": 8,
-          "textArabic": "إِنَّهَا عَلَيْهِم مُّؤْصَدَةٌ"
+          "textArabic": "إِنَّهَا عَلَيْهِم مُّؤْصَدَةٌ",
+          "textTransliteration": "Innahaa 'alayhim mu'sadah"
         },
         {
           "number": 9,
-          "textArabic": "فِى عَمَدٍ مُّمَدَّدَةٍۭ"
+          "textArabic": "فِى عَمَدٍ مُّمَدَّدَةٍۭ",
+          "textTransliteration": "Fee 'amadim-mumad-dadah"
         }
       ]
     },
@@ -2344,23 +2860,28 @@
       "ayahs": [
         {
           "number": 1,
-          "textArabic": " أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِأَصْحَـٰبِ ٱلْفِيلِ"
+          "textArabic": " أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِأَصْحَـٰبِ ٱلْفِيلِ",
+          "textTransliteration": "Alam tara kayfa fa'ala Rabbuka bi-Ashaabil-Feel"
         },
         {
           "number": 2,
-          "textArabic": "أَلَمْ يَجْعَلْ كَيْدَهُمْ فِى تَضْلِيلٍ"
+          "textArabic": "أَلَمْ يَجْعَلْ كَيْدَهُمْ فِى تَضْلِيلٍ",
+          "textTransliteration": "Alam yaj'al kaydahum fee tadleel"
         },
         {
           "number": 3,
-          "textArabic": "وَأَرْسَلَ عَلَيْهِمْ طَيْرًا أَبَابِيلَ"
+          "textArabic": "وَأَرْسَلَ عَلَيْهِمْ طَيْرًا أَبَابِيلَ",
+          "textTransliteration": "Wa arsala 'alayhim tayran Abaabeel"
         },
         {
           "number": 4,
-          "textArabic": "تَرْمِيهِم بِحِجَارَةٍ مِّن سِجِّيلٍ"
+          "textArabic": "تَرْمِيهِم بِحِجَارَةٍ مِّن سِجِّيلٍ",
+          "textTransliteration": "Tarmeehim bi-hijaaratim-min sijjeel"
         },
         {
           "number": 5,
-          "textArabic": "فَجَعَلَهُمْ كَعَصْفٍ مَّأْكُولٍۭ"
+          "textArabic": "فَجَعَلَهُمْ كَعَصْفٍ مَّأْكُولٍۭ",
+          "textTransliteration": "Faja'alahum ka'asfim-ma'kool"
         }
       ]
     },
@@ -2374,19 +2895,23 @@
       "ayahs": [
         {
           "number": 1,
-          "textArabic": " لِإِيلَـٰفِ قُرَيْشٍ"
+          "textArabic": " لِإِيلَـٰفِ قُرَيْشٍ",
+          "textTransliteration": "Li-eelaafi Quraish"
         },
         {
           "number": 2,
-          "textArabic": "إِۦلَـٰفِهِمْ رِحْلَةَ ٱلشِّتَآءِ وَٱلصَّيْفِ"
+          "textArabic": "إِۦلَـٰفِهِمْ رِحْلَةَ ٱلشِّتَآءِ وَٱلصَّيْفِ",
+          "textTransliteration": "Eelaafihim rihlatash-shitaaa'i wassayf"
         },
         {
           "number": 3,
-          "textArabic": "فَلْيَعْبُدُوا۟ رَبَّ هَـٰذَا ٱلْبَيْتِ"
+          "textArabic": "فَلْيَعْبُدُوا۟ رَبَّ هَـٰذَا ٱلْبَيْتِ",
+          "textTransliteration": "Fal-ya'budoo Rabba haazal-Bayt"
         },
         {
           "number": 4,
-          "textArabic": "ٱلَّذِىٓ أَطْعَمَهُم مِّن جُوعٍ وَءَامَنَهُم مِّنْ خَوْفٍۭ"
+          "textArabic": "ٱلَّذِىٓ أَطْعَمَهُم مِّن جُوعٍ وَءَامَنَهُم مِّنْ خَوْفٍۭ",
+          "textTransliteration": "Allazee at'amahum-min joo'inw-wa aamanahum-min khawf"
         }
       ]
     },
@@ -2400,31 +2925,38 @@
       "ayahs": [
         {
           "number": 1,
-          "textArabic": " أَرَءَيْتَ ٱلَّذِى يُكَذِّبُ بِٱلدِّينِ"
+          "textArabic": " أَرَءَيْتَ ٱلَّذِى يُكَذِّبُ بِٱلدِّينِ",
+          "textTransliteration": "Ara'aytal-lazee yu-kazzibu bid-Deen"
         },
         {
           "number": 2,
-          "textArabic": "فَذَٰلِكَ ٱلَّذِى يَدُعُّ ٱلْيَتِيمَ"
+          "textArabic": "فَذَٰلِكَ ٱلَّذِى يَدُعُّ ٱلْيَتِيمَ",
+          "textTransliteration": "Fa-zaalikal-lazee yadu'-'ul-yateem"
         },
         {
           "number": 3,
-          "textArabic": "وَلَا يَحُضُّ عَلَىٰ طَعَامِ ٱلْمِسْكِينِ"
+          "textArabic": "وَلَا يَحُضُّ عَلَىٰ طَعَامِ ٱلْمِسْكِينِ",
+          "textTransliteration": "Wa laa yahuddu 'alaa ta'aamil-miskeen"
         },
         {
           "number": 4,
-          "textArabic": "فَوَيْلٌ لِّلْمُصَلِّينَ"
+          "textArabic": "فَوَيْلٌ لِّلْمُصَلِّينَ",
+          "textTransliteration": "Fa-waylul-lil-musalleen"
         },
         {
           "number": 5,
-          "textArabic": "ٱلَّذِينَ هُمْ عَن صَلَاتِهِمْ سَاهُونَ"
+          "textArabic": "ٱلَّذِينَ هُمْ عَن صَلَاتِهِمْ سَاهُونَ",
+          "textTransliteration": "Allazeena hum 'an-Salaatihim saahoon"
         },
         {
           "number": 6,
-          "textArabic": "ٱلَّذِينَ هُمْ يُرَآءُونَ"
+          "textArabic": "ٱلَّذِينَ هُمْ يُرَآءُونَ",
+          "textTransliteration": "Allazeena hum yuraaa'oon"
         },
         {
           "number": 7,
-          "textArabic": "وَيَمْنَعُونَ ٱلْمَاعُونَ"
+          "textArabic": "وَيَمْنَعُونَ ٱلْمَاعُونَ",
+          "textTransliteration": "Wa yamna'oonal-maa'oon"
         }
       ]
     },
@@ -2438,15 +2970,18 @@
       "ayahs": [
         {
           "number": 1,
-          "textArabic": " إِنَّآ أَعْطَيْنَـٰكَ ٱلْكَوْثَرَ"
+          "textArabic": " إِنَّآ أَعْطَيْنَـٰكَ ٱلْكَوْثَرَ",
+          "textTransliteration": "Innaaa a'tainaakal-Kawthar"
         },
         {
           "number": 2,
-          "textArabic": "فَصَلِّ لِرَبِّكَ وَٱنْحَرْ"
+          "textArabic": "فَصَلِّ لِرَبِّكَ وَٱنْحَرْ",
+          "textTransliteration": "Fasalli li-Rabbika wanhar"
         },
         {
           "number": 3,
-          "textArabic": "إِنَّ شَانِئَكَ هُوَ ٱلْأَبْتَرُ"
+          "textArabic": "إِنَّ شَانِئَكَ هُوَ ٱلْأَبْتَرُ",
+          "textTransliteration": "Inna shaani'aka huwal-abtar"
         }
       ]
     },
@@ -2460,27 +2995,33 @@
       "ayahs": [
         {
           "number": 1,
-          "textArabic": " قُلْ يَـٰٓأَيُّهَا ٱلْكَـٰفِرُونَ"
+          "textArabic": " قُلْ يَـٰٓأَيُّهَا ٱلْكَـٰفِرُونَ",
+          "textTransliteration": "Qul yaaa-ayyuhal-kaafiroon"
         },
         {
           "number": 2,
-          "textArabic": "لَآ أَعْبُدُ مَا تَعْبُدُونَ"
+          "textArabic": "لَآ أَعْبُدُ مَا تَعْبُدُونَ",
+          "textTransliteration": "Laaa a'budu maa ta'budoon"
         },
         {
           "number": 3,
-          "textArabic": "وَلَآ أَنتُمْ عَـٰبِدُونَ مَآ أَعْبُدُ"
+          "textArabic": "وَلَآ أَنتُمْ عَـٰبِدُونَ مَآ أَعْبُدُ",
+          "textTransliteration": "Wa laaa antum 'aabidoona maaa a'bud"
         },
         {
           "number": 4,
-          "textArabic": "وَلَآ أَنَا۠ عَابِدٌ مَّا عَبَدتُّمْ"
+          "textArabic": "وَلَآ أَنَا۠ عَابِدٌ مَّا عَبَدتُّمْ",
+          "textTransliteration": "Wa laaa ana 'aabidummaa 'abattum"
         },
         {
           "number": 5,
-          "textArabic": "وَلَآ أَنتُمْ عَـٰبِدُونَ مَآ أَعْبُدُ"
+          "textArabic": "وَلَآ أَنتُمْ عَـٰبِدُونَ مَآ أَعْبُدُ",
+          "textTransliteration": "Wa laaa antum 'aabidoona maaa a'bud"
         },
         {
           "number": 6,
-          "textArabic": "لَكُمْ دِينُكُمْ وَلِىَ دِينِ"
+          "textArabic": "لَكُمْ دِينُكُمْ وَلِىَ دِينِ",
+          "textTransliteration": "Lakum deenukum wa liya deen"
         }
       ]
     },
@@ -2494,15 +3035,18 @@
       "ayahs": [
         {
           "number": 1,
-          "textArabic": " إِذَا جَآءَ نَصْرُ ٱللَّهِ وَٱلْفَتْحُ"
+          "textArabic": " إِذَا جَآءَ نَصْرُ ٱللَّهِ وَٱلْفَتْحُ",
+          "textTransliteration": "Izaa jaaa'a nasrul-laahi walfath"
         },
         {
           "number": 2,
-          "textArabic": "وَرَأَيْتَ ٱلنَّاسَ يَدْخُلُونَ فِى دِينِ ٱللَّهِ أَفْوَاجًا"
+          "textArabic": "وَرَأَيْتَ ٱلنَّاسَ يَدْخُلُونَ فِى دِينِ ٱللَّهِ أَفْوَاجًا",
+          "textTransliteration": "Wa ra-aytan-naasa yadkhuloona fee deenil-laahi afwaajaa"
         },
         {
           "number": 3,
-          "textArabic": "فَسَبِّحْ بِحَمْدِ رَبِّكَ وَٱسْتَغْفِرْهُ ۚ إِنَّهُۥ كَانَ تَوَّابًۢا"
+          "textArabic": "فَسَبِّحْ بِحَمْدِ رَبِّكَ وَٱسْتَغْفِرْهُ ۚ إِنَّهُۥ كَانَ تَوَّابًۢا",
+          "textTransliteration": "Fasabbih bihamdi Rabbika wastaghfirh; innahoo kaana Tawwaabaa"
         }
       ]
     },
@@ -2516,23 +3060,28 @@
       "ayahs": [
         {
           "number": 1,
-          "textArabic": " تَبَّتْ يَدَآ أَبِى لَهَبٍ وَتَبَّ"
+          "textArabic": " تَبَّتْ يَدَآ أَبِى لَهَبٍ وَتَبَّ",
+          "textTransliteration": "Tabbat yadaaa Abee Lahabinw-wa tabb"
         },
         {
           "number": 2,
-          "textArabic": "مَآ أَغْنَىٰ عَنْهُ مَالُهُۥ وَمَا كَسَبَ"
+          "textArabic": "مَآ أَغْنَىٰ عَنْهُ مَالُهُۥ وَمَا كَسَبَ",
+          "textTransliteration": "Maaa aghnaa 'anhu maaluhoo wa maa kasab"
         },
         {
           "number": 3,
-          "textArabic": "سَيَصْلَىٰ نَارًا ذَاتَ لَهَبٍ"
+          "textArabic": "سَيَصْلَىٰ نَارًا ذَاتَ لَهَبٍ",
+          "textTransliteration": "Sa-yaslaa naaran-zaata lahab"
         },
         {
           "number": 4,
-          "textArabic": "وَٱمْرَأَتُهُۥ حَمَّالَةَ ٱلْحَطَبِ"
+          "textArabic": "وَٱمْرَأَتُهُۥ حَمَّالَةَ ٱلْحَطَبِ",
+          "textTransliteration": "Wamra-atuhoo hammaa-latal-hatab"
         },
         {
           "number": 5,
-          "textArabic": "فِى جِيدِهَا حَبْلٌ مِّن مَّسَدٍۭ"
+          "textArabic": "فِى جِيدِهَا حَبْلٌ مِّن مَّسَدٍۭ",
+          "textTransliteration": "Fee jeedihaa hablum-mim-masad"
         }
       ]
     },
@@ -2546,19 +3095,23 @@
       "ayahs": [
         {
           "number": 1,
-          "textArabic": " قُلْ هُوَ ٱللَّهُ أَحَدٌ"
+          "textArabic": " قُلْ هُوَ ٱللَّهُ أَحَدٌ",
+          "textTransliteration": "Qul huwal-laahu Ahad"
         },
         {
           "number": 2,
-          "textArabic": "ٱللَّهُ ٱلصَّمَدُ"
+          "textArabic": "ٱللَّهُ ٱلصَّمَدُ",
+          "textTransliteration": "Allaahus-Samad"
         },
         {
           "number": 3,
-          "textArabic": "لَمْ يَلِدْ وَلَمْ يُولَدْ"
+          "textArabic": "لَمْ يَلِدْ وَلَمْ يُولَدْ",
+          "textTransliteration": "Lam yalid wa lam yoolad"
         },
         {
           "number": 4,
-          "textArabic": "وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌۢ"
+          "textArabic": "وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌۢ",
+          "textTransliteration": "Wa lam yakul-lahoo kufuwan ahad"
         }
       ]
     },
@@ -2572,23 +3125,28 @@
       "ayahs": [
         {
           "number": 1,
-          "textArabic": " قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ"
+          "textArabic": " قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ",
+          "textTransliteration": "Qul a'oozu bi-Rabbil-falaq"
         },
         {
           "number": 2,
-          "textArabic": "مِن شَرِّ مَا خَلَقَ"
+          "textArabic": "مِن شَرِّ مَا خَلَقَ",
+          "textTransliteration": "Min sharri maa khalaq"
         },
         {
           "number": 3,
-          "textArabic": "وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ"
+          "textArabic": "وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ",
+          "textTransliteration": "Wa min sharri ghaasiqin izaa waqab"
         },
         {
           "number": 4,
-          "textArabic": "وَمِن شَرِّ ٱلنَّفَّـٰثَـٰتِ فِى ٱلْعُقَدِ"
+          "textArabic": "وَمِن شَرِّ ٱلنَّفَّـٰثَـٰتِ فِى ٱلْعُقَدِ",
+          "textTransliteration": "Wa min sharrin-naffaa-thaati fil-'uqad"
         },
         {
           "number": 5,
-          "textArabic": "وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ"
+          "textArabic": "وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ",
+          "textTransliteration": "Wa min sharri haasidin izaa hasad"
         }
       ]
     },
@@ -2602,27 +3160,33 @@
       "ayahs": [
         {
           "number": 1,
-          "textArabic": " قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ"
+          "textArabic": " قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ",
+          "textTransliteration": "Qul a'oozu bi-Rabbin-naas"
         },
         {
           "number": 2,
-          "textArabic": "مَلِكِ ٱلنَّاسِ"
+          "textArabic": "مَلِكِ ٱلنَّاسِ",
+          "textTransliteration": "Malikin-naas"
         },
         {
           "number": 3,
-          "textArabic": "إِلَـٰهِ ٱلنَّاسِ"
+          "textArabic": "إِلَـٰهِ ٱلنَّاسِ",
+          "textTransliteration": "Ilaahin-naas"
         },
         {
           "number": 4,
-          "textArabic": "مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ"
+          "textArabic": "مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ",
+          "textTransliteration": "Min sharril-waswaasil-khannaas"
         },
         {
           "number": 5,
-          "textArabic": "ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ"
+          "textArabic": "ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ",
+          "textTransliteration": "Allazee yuwas-wisu fee sudoorin-naas"
         },
         {
           "number": 6,
-          "textArabic": "مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ"
+          "textArabic": "مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ",
+          "textTransliteration": "Minal-jinnati wannaas"
         }
       ]
     }

@@ -445,6 +445,16 @@ struct AyahView: View {
                 .lineSpacing(14)
                 .padding(.vertical, 8)
             
+            // Latin Transliteration
+            if !ayah.textTransliteration.isEmpty {
+                Text(ayah.textTransliteration)
+                    .font(.system(size: fontSize - 2, weight: .medium, design: .serif))
+                    .italic()
+                    .foregroundStyle(.secondary)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.bottom, 4)
+            }
+            
             // Dynamic Translations
             if let settings = settings {
                 // Primary Translation
