@@ -81,7 +81,7 @@ struct AudioPlayerView: View {
                             audioService.togglePlayPause()
                         } else {
                             Task {
-                                await audioService.playSurahFull(surahNumber)
+                                await audioService.playSurahFull(surahNumber, surahName: surahName)
                             }
                         }
                     } label: {

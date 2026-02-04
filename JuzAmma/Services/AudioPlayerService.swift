@@ -8,6 +8,8 @@
 import Foundation
 import AVFoundation
 import Combine
+import MediaPlayer
+import UIKit
 
 // MARK: - Audio Player State
 
@@ -71,6 +73,7 @@ final class AudioPlayerService: NSObject, ObservableObject {
     private var cancellables = Set<AnyCancellable>()
     
     private var currentSurahNumber: Int?
+    private var currentSurahName: String?
     private var currentChapterAudioUrl: URL?
     private var verseAudioFiles: [VerseAudioFile] = []
     private var verseTimings: [(verse: Int, startTime: TimeInterval, endTime: TimeInterval)] = []
@@ -80,6 +83,7 @@ final class AudioPlayerService: NSObject, ObservableObject {
     override init() {
         super.init()
         setupAudioSession()
+        setupRemoteCommandCenter()
     }
     
     // MARK: - Audio Session Setup
@@ -98,6 +102,118 @@ final class AudioPlayerService: NSObject, ObservableObject {
         }
     }
     
+    // MARK: - Remote Command Center (Lock Screen Controls)
+    
+    private func setupRemoteCommandCenter() {
+        let commandCenter = MPRemoteCommandCenter.shared()
+        
+        // Play command
+        commandCenter.playCommand.isEnabled = true
+        commandCenter.playCommand.addTarget { [weak self] _ in
+            Task { @MainActor in
+                self?.resume()
+            }
+            return .success
+        }
+        
+        // Pause command
+        commandCenter.pauseCommand.isEnabled = true
+        commandCenter.pauseCommand.addTarget { [weak self] _ in
+            Task { @MainActor in
+                self?.pause()
+            }
+            return .success
+        }
+        
+        // Toggle play/pause
+        commandCenter.togglePlayPauseCommand.isEnabled = true
+        commandCenter.togglePlayPauseCommand.addTarget { [weak self] _ in
+            Task { @MainActor in
+                self?.togglePlayPause()
+            }
+            return .success
+        }
+        
+        // Skip forward (10 seconds)
+        commandCenter.skipForwardCommand.isEnabled = true
+        commandCenter.skipForwardCommand.preferredIntervals = [10]
+        commandCenter.skipForwardCommand.addTarget { [weak self] _ in
+            Task { @MainActor in
+                self?.skipForward(10)
+            }
+            return .success
+        }
+        
+        // Skip backward (10 seconds)
+        commandCenter.skipBackwardCommand.isEnabled = true
+        commandCenter.skipBackwardCommand.preferredIntervals = [10]
+        commandCenter.skipBackwardCommand.addTarget { [weak self] _ in
+            Task { @MainActor in
+                self?.skipBackward(10)
+            }
+            return .success
+        }
+        
+        // Seek (scrubbing on lock screen)
+        commandCenter.changePlaybackPositionCommand.isEnabled = true
+        commandCenter.changePlaybackPositionCommand.addTarget { [weak self] event in
+            guard let positionEvent = event as? MPChangePlaybackPositionCommandEvent else {
+                return .commandFailed
+            }
+            Task { @MainActor in
+                self?.seek(to: positionEvent.positionTime)
+            }
+            return .success
+        }
+    }
+    
+    // MARK: - Now Playing Info
+    
+    private func updateNowPlayingInfo() {
+        var nowPlayingInfo = [String: Any]()
+        
+        // Title - Surah name
+        if let surahName = currentSurahName {
+            nowPlayingInfo[MPMediaItemPropertyTitle] = surahName
+        } else if let surahNumber = currentSurahNumber {
+            nowPlayingInfo[MPMediaItemPropertyTitle] = "Surah \(surahNumber)"
+        }
+        
+        // Artist - Qari name
+        nowPlayingInfo[MPMediaItemPropertyArtist] = selectedQari.name
+        
+        // Album
+        nowPlayingInfo[MPMediaItemPropertyAlbumTitle] = "Juz Amma"
+        
+        // Duration
+        if duration > 0 {
+            nowPlayingInfo[MPMediaItemPropertyPlaybackDuration] = duration
+        }
+        
+        // Current time
+        nowPlayingInfo[MPNowPlayingInfoPropertyElapsedPlaybackTime] = currentTime
+        
+        // Playback rate
+        nowPlayingInfo[MPNowPlayingInfoPropertyPlaybackRate] = state == .playing ? playbackSpeed : 0.0
+        
+        // Current verse info (in subtitle)
+        if currentPlayingVerse > 0 {
+            nowPlayingInfo[MPMediaItemPropertyComposer] = "Ayah \(currentPlayingVerse)"
+        }
+        
+        // Set artwork (app icon as placeholder)
+        if let image = UIImage(named: "AppIcon") ?? UIImage(systemName: "book.fill") {
+            let artwork = MPMediaItemArtwork(boundsSize: image.size) { _ in image }
+            nowPlayingInfo[MPMediaItemPropertyArtwork] = artwork
+        }
+        
+        MPNowPlayingInfoCenter.default().nowPlayingInfo = nowPlayingInfo
+    }
+    
+    private func clearNowPlayingInfo() {
+        MPNowPlayingInfoCenter.default().nowPlayingInfo = nil
+    }
+    
     // MARK: - Public Methods
     
     /// Check if currently playing a specific surah
@@ -107,19 +223,26 @@ final class AudioPlayerService: NSObject, ObservableObject {
     
     /// Play full surah from the beginning (resets mode to .surah)
     /// Use this when user explicitly wants to play the whole surah
-    func playSurahFull(_ surahNumber: Int) async {
+    /// - Parameters:
+    ///   - surahNumber: The surah number
+    ///   - surahName: Optional surah name for Now Playing display
+    func playSurahFull(_ surahNumber: Int, surahName: String? = nil) async {
         playbackMode = .surah
         currentPlayingVerse = 1
-        await playSurah(surahNumber)
+        currentSurahName = surahName
+        await playSurah(surahNumber, surahName: surahName)
     }
     
     /// Load and play audio for a surah
     /// - Parameters:
     ///   - surahNumber: The surah number (78-114 for Juz Amma)
+    ///   - surahName: Optional surah name for Now Playing display
     ///   - startFromVerse: Optional verse number to start from
-    func playSurah(_ surahNumber: Int, startFromVerse: Int? = nil) async {
+    func playSurah(_ surahNumber: Int, surahName: String? = nil, startFromVerse: Int? = nil) async {
         currentSurahNumber = surahNumber
+        currentSurahName = surahName
         state = .loading
+        updateNowPlayingInfo()
         
         switch playbackMode {
         case .surah:
@@ -136,11 +259,13 @@ final class AudioPlayerService: NSObject, ObservableObject {
     
     /// Play specific verse using chapter audio (consistent voice)
     /// Uses same audio source as full surah but seeks to verse timestamp
-    func playVerse(_ surahNumber: Int, verseNumber: Int) async {
+    func playVerse(_ surahNumber: Int, verseNumber: Int, surahName: String? = nil) async {
         playbackMode = .singleVerse(verseNumber)
         currentPlayingVerse = verseNumber
         currentSurahNumber = surahNumber
+        currentSurahName = surahName
         state = .loading
+        updateNowPlayingInfo()
         
         // Use chapter audio and seek to verse timestamp for consistent voice
         await playChapterAudioFromVerse(surahNumber: surahNumber, verseNumber: verseNumber)
@@ -156,7 +281,7 @@ final class AudioPlayerService: NSObject, ObservableObject {
         case .idle, .stopped:
             if let surahNumber = currentSurahNumber {
                 Task {
-                    await playSurah(surahNumber)
+                    await playSurah(surahNumber, surahName: currentSurahName)
                 }
             }
         default:
@@ -168,6 +293,7 @@ final class AudioPlayerService: NSObject, ObservableObject {
     func pause() {
         player?.pause()
         state = .paused
+        updateNowPlayingInfo()
     }
     
     /// Resume playback
@@ -175,6 +301,7 @@ final class AudioPlayerService: NSObject, ObservableObject {
         player?.play()
         player?.rate = playbackSpeed
         state = .playing
+        updateNowPlayingInfo()
     }
     
     /// Stop playback
@@ -184,6 +311,7 @@ final class AudioPlayerService: NSObject, ObservableObject {
         currentTime = 0
         progress = 0
         state = .stopped
+        clearNowPlayingInfo()
     }
     
     /// Seek to specific time
@@ -192,6 +320,7 @@ final class AudioPlayerService: NSObject, ObservableObject {
         player?.seek(to: cmTime)
         currentTime = time
         updateProgress()
+        updateNowPlayingInfo()
     }
     
     /// Seek to percentage
@@ -406,6 +535,7 @@ final class AudioPlayerService: NSObject, ObservableObject {
         player?.play()
         player?.rate = playbackSpeed
         state = .playing
+        updateNowPlayingInfo()
         
         // Load duration asynchronously (don't block playback)
         Task {
@@ -416,6 +546,7 @@ final class AudioPlayerService: NSObject, ObservableObject {
                     if durationSeconds.isFinite && durationSeconds > 0 {
                         await MainActor.run {
                             self.duration = durationSeconds
+                            self.updateNowPlayingInfo()
                             print("[Audio] Duration loaded: \(durationSeconds)s")
                         }
                     }
@@ -429,7 +560,7 @@ final class AudioPlayerService: NSObject, ObservableObject {
     
     /// Setup time observer for progress updates
     private func setupTimeObserver() {
-        let interval = CMTime(seconds: 0.1, preferredTimescale: 600)  
+        let interval = CMTime(seconds: 0.5, preferredTimescale: 600)  // Update every 0.5s for Now Playing  
         timeObserver = player?.addPeriodicTimeObserver(forInterval: interval, queue: .main) { [weak self] time in
             Task { @MainActor in
                 guard let self = self else { return }

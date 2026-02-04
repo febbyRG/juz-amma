@@ -169,7 +169,7 @@ struct SurahDetailView: View {
                     } else {
                         showAudioPlayer = true
                         Task {
-                            await audioService.playSurahFull(surah.number)
+                            await audioService.playSurahFull(surah.number, surahName: surah.nameTransliteration)
                         }
                     }
                 } label: {
@@ -341,7 +341,7 @@ struct SurahHeader: View {
                     audioService.resume()
                 } else {
                     Task {
-                        await audioService.playSurahFull(surah.number)
+                        await audioService.playSurahFull(surah.number, surahName: surah.nameTransliteration)
                     }
                 }
             } label: {
