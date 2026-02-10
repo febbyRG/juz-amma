@@ -34,7 +34,12 @@ struct JuzAmmaApp: App {
             
             // Delete old store and create fresh one as last resort
             let url = modelConfiguration.url
-            try? FileManager.default.removeItem(at: url)
+            do {
+                try FileManager.default.removeItem(at: url)
+                print("[Migration] Removed corrupted store at \(url)")
+            } catch {
+                print("[Migration] Failed to remove old store: \(error)")
+            }
             
             do {
                 return try ModelContainer(for: schema, configurations: [modelConfiguration])

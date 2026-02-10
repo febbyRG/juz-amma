@@ -49,9 +49,9 @@ struct SurahDetailView: View {
                     }
                     
                     // Ayah List
-                    if let ayahs = surah.ayahs, !ayahs.isEmpty {
+                    if !surah.ayahs.isEmpty {
                         VStack(spacing: 20) {
-                            ForEach(ayahs.sorted(by: { $0.number < $1.number })) { ayah in
+                            ForEach(surah.ayahs.sorted(by: { $0.number < $1.number })) { ayah in
                                 AyahView(
                                     ayah: ayah,
                                     fontSize: fontSize,

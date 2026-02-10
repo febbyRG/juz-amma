@@ -28,7 +28,11 @@ actor AudioCacheService {
         cacheDirectory = cachesDirectory.appendingPathComponent("AudioCache", isDirectory: true)
         
         // Create directory if it doesn't exist
-        try? fileManager.createDirectory(at: cacheDirectory, withIntermediateDirectories: true)
+        do {
+            try fileManager.createDirectory(at: cacheDirectory, withIntermediateDirectories: true)
+        } catch {
+            print("[AudioCache] Failed to create cache directory: \(error.localizedDescription)")
+        }
     }
     
     // MARK: - Public Methods
@@ -47,7 +51,11 @@ actor AudioCacheService {
               let fileSize = attrs[.size] as? Int64,
               fileSize > 0 else {
             // Remove corrupted/empty file
-            try? fileManager.removeItem(at: fileURL)
+            do {
+                try fileManager.removeItem(at: fileURL)
+            } catch {
+                print("[AudioCache] Failed to remove corrupted file: \(error.localizedDescription)")
+            }
             return nil
         }
         return fileURL

@@ -152,7 +152,7 @@ struct TranslationPickerView: View {
         do {
             try modelContext.save()
         } catch {
-            // Handle save error silently - UI will still reflect the change
+            print("[TranslationPicker] Failed to save primary translation: \(error.localizedDescription)")
         }
     }
     

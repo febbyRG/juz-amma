@@ -171,6 +171,7 @@ struct CompactAudioPlayerView: View {
             .clipShape(Circle())
         }
         .buttonStyle(.plain)
+        .accessibilityLabel(audioService.state == .playing ? "Pause recitation" : "Play recitation")
     }
 }
 

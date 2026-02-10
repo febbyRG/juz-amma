@@ -45,7 +45,7 @@ final class Surah {
     var isNextToMemorize: Bool
     
     /// Array of ayahs in this surah
-    @Relationship(deleteRule: .cascade) var ayahs: [Ayah]?
+    @Relationship(deleteRule: .cascade) var ayahs: [Ayah] = []
     
     init(
         number: Int,
@@ -87,7 +87,7 @@ final class Ayah {
     var textTransliteration: String
     
     /// Array of translations in multiple languages
-    @Relationship(deleteRule: .cascade) var translations: [Translation]?
+    @Relationship(deleteRule: .cascade) var translations: [Translation] = []
     
     /// Whether this specific ayah is bookmarked
     var isBookmarked: Bool
@@ -109,17 +109,17 @@ final class Ayah {
     
     /// Get translation by translation ID (precise lookup)
     func getTranslation(byId translationId: Int) -> String? {
-        translations?.first(where: { $0.id == translationId })?.text
+        translations.first(where: { $0.id == translationId })?.text
     }
     
     /// Get translation by language code (fallback)
     func getTranslation(languageCode: String) -> String? {
-        translations?.first(where: { $0.languageCode == languageCode })?.text
+        translations.first(where: { $0.languageCode == languageCode })?.text
     }
     
     /// Get all available language codes for this ayah
     var availableLanguages: [String] {
-        translations?.map { $0.languageCode } ?? []
+        translations.map { $0.languageCode }
     }
 }
 

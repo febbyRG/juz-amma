@@ -12,12 +12,12 @@ import SwiftData
 @MainActor
 final class TranslationService {
     
-    // MARK: - Pre-compiled Regex Patterns
+    // MARK: - Pre-compiled Regex Patterns (patterns are compile-time safe)
     
-    private static let footnoteSupRegex = try? NSRegularExpression(pattern: "<sup[^>]*foot_note[^>]*>.*?</sup>", options: [])
-    private static let supRegex = try? NSRegularExpression(pattern: "<sup[^>]*>.*?</sup>", options: [])
-    private static let htmlTagRegex = try? NSRegularExpression(pattern: "<[^>]*>", options: [])
-    private static let multiSpaceRegex = try? NSRegularExpression(pattern: "\\s{2,}", options: [])
+    private static let footnoteSupRegex = try! NSRegularExpression(pattern: "<sup[^>]*foot_note[^>]*>.*?</sup>", options: [])
+    private static let supRegex = try! NSRegularExpression(pattern: "<sup[^>]*>.*?</sup>", options: [])
+    private static let htmlTagRegex = try! NSRegularExpression(pattern: "<[^>]*>", options: [])
+    private static let multiSpaceRegex = try! NSRegularExpression(pattern: "\\s{2,}", options: [])
     
     private static let htmlEntities: [String: String] = [
         "&nbsp;": " ",
@@ -47,19 +47,13 @@ final class TranslationService {
         let range = { NSRange(cleanText.startIndex..., in: cleanText) }
         
         // Remove sup tags with foot_note attribute AND their content
-        if let regex = Self.footnoteSupRegex {
-            cleanText = regex.stringByReplacingMatches(in: cleanText, range: range(), withTemplate: "")
-        }
+        cleanText = Self.footnoteSupRegex.stringByReplacingMatches(in: cleanText, range: range(), withTemplate: "")
         
         // Remove remaining sup tags with their content
-        if let regex = Self.supRegex {
-            cleanText = regex.stringByReplacingMatches(in: cleanText, range: range(), withTemplate: "")
-        }
+        cleanText = Self.supRegex.stringByReplacingMatches(in: cleanText, range: range(), withTemplate: "")
         
         // Remove all other HTML tags (but keep their content)
-        if let regex = Self.htmlTagRegex {
-            cleanText = regex.stringByReplacingMatches(in: cleanText, range: range(), withTemplate: "")
-        }
+        cleanText = Self.htmlTagRegex.stringByReplacingMatches(in: cleanText, range: range(), withTemplate: "")
         
         // Remove HTML entities
         for (entity, replacement) in Self.htmlEntities {
@@ -70,9 +64,7 @@ final class TranslationService {
         cleanText = cleanText.trimmingCharacters(in: .whitespacesAndNewlines)
         
         // Replace multiple spaces with single space
-        if let regex = Self.multiSpaceRegex {
-            cleanText = regex.stringByReplacingMatches(in: cleanText, range: range(), withTemplate: " ")
-        }
+        cleanText = Self.multiSpaceRegex.stringByReplacingMatches(in: cleanText, range: range(), withTemplate: " ")
         
         return cleanText
     }
@@ -175,10 +167,10 @@ final class TranslationService {
         let surahDescriptor = FetchDescriptor<Surah>(
             predicate: #Predicate { $0.number == surahNumber }
         )
-        guard let surah = try modelContext.fetch(surahDescriptor).first,
-              let ayahs = surah.ayahs else {
+        guard let surah = try modelContext.fetch(surahDescriptor).first else {
             return
         }
+        let ayahs = surah.ayahs
         
         // Sort ayahs by number to match API response order
         let sortedAyahs = ayahs.sorted { $0.number < $1.number }
@@ -191,7 +183,7 @@ final class TranslationService {
             let cleanText = cleanTranslationText(translationData.text)
             
             // Check if translation already exists
-            if let existingTranslation = ayah.translations?.first(where: { $0.id == translationId }) {
+            if let existingTranslation = ayah.translations.first(where: { $0.id == translationId }) {
                 // Update existing translation text (in case of re-download)
                 existingTranslation.text = cleanText
                 existingTranslation.languageCode = languageCode
@@ -205,11 +197,7 @@ final class TranslationService {
                     text: cleanText
                 )
                 translation.ayah = ayah
-                
-                if ayah.translations == nil {
-                    ayah.translations = []
-                }
-                ayah.translations?.append(translation)
+                ayah.translations.append(translation)
                 
                 modelContext.insert(translation)
             }
