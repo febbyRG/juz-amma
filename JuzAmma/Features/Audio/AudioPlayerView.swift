@@ -324,6 +324,8 @@ struct VerseAudioButton: View {
                 .foregroundStyle(isThisVersePlaying ? AppColors.primaryGreen : .secondary)
         }
         .buttonStyle(.plain)
+        .accessibilityLabel(isThisVersePlaying ? "Pause verse \(verseNumber)" : "Play verse \(verseNumber)")
+        .accessibilityHint("Plays audio for this verse")
     }
 }
 

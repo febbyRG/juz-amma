@@ -12,6 +12,23 @@ import SwiftData
 @MainActor
 final class TranslationService {
     
+    // MARK: - Pre-compiled Regex Patterns
+    
+    private static let footnoteSupRegex = try? NSRegularExpression(pattern: "<sup[^>]*foot_note[^>]*>.*?</sup>", options: [])
+    private static let supRegex = try? NSRegularExpression(pattern: "<sup[^>]*>.*?</sup>", options: [])
+    private static let htmlTagRegex = try? NSRegularExpression(pattern: "<[^>]*>", options: [])
+    private static let multiSpaceRegex = try? NSRegularExpression(pattern: "\\s{2,}", options: [])
+    
+    private static let htmlEntities: [String: String] = [
+        "&nbsp;": " ",
+        "&amp;": "&",
+        "&lt;": "<",
+        "&gt;": ">",
+        "&quot;": "\"",
+        "&#39;": "'",
+        "&apos;": "'"
+    ]
+    
     // MARK: - Properties
     
     private let modelContext: ModelContext
@@ -27,61 +44,25 @@ final class TranslationService {
     /// Clean HTML tags and special characters from translation text
     private func cleanTranslationText(_ text: String) -> String {
         var cleanText = text
+        let range = { NSRange(cleanText.startIndex..., in: cleanText) }
         
-        // Remove sup tags with foot_note attribute AND their content (e.g., <sup foot_note="...">1</sup>)
-        do {
-            let footnoteSupRegex = try NSRegularExpression(pattern: "<sup[^>]*foot_note[^>]*>.*?</sup>", options: [])
-            let range = NSRange(cleanText.startIndex..., in: cleanText)
-            cleanText = footnoteSupRegex.stringByReplacingMatches(
-                in: cleanText,
-                options: [],
-                range: range,
-                withTemplate: ""
-            )
-        } catch {
-            print("Footnote sup regex error: \(error)")
+        // Remove sup tags with foot_note attribute AND their content
+        if let regex = Self.footnoteSupRegex {
+            cleanText = regex.stringByReplacingMatches(in: cleanText, range: range(), withTemplate: "")
         }
         
-        // Remove remaining sup tags with their content (e.g., <sup>1</sup>)
-        do {
-            let supRegex = try NSRegularExpression(pattern: "<sup[^>]*>.*?</sup>", options: [])
-            let range = NSRange(cleanText.startIndex..., in: cleanText)
-            cleanText = supRegex.stringByReplacingMatches(
-                in: cleanText,
-                options: [],
-                range: range,
-                withTemplate: ""
-            )
-        } catch {
-            print("Sup regex error: \(error)")
+        // Remove remaining sup tags with their content
+        if let regex = Self.supRegex {
+            cleanText = regex.stringByReplacingMatches(in: cleanText, range: range(), withTemplate: "")
         }
         
         // Remove all other HTML tags (but keep their content)
-        do {
-            let regex = try NSRegularExpression(pattern: "<[^>]*>", options: [])
-            let range = NSRange(cleanText.startIndex..., in: cleanText)
-            cleanText = regex.stringByReplacingMatches(
-                in: cleanText,
-                options: [],
-                range: range,
-                withTemplate: ""
-            )
-        } catch {
-            print("Regex error: \(error)")
+        if let regex = Self.htmlTagRegex {
+            cleanText = regex.stringByReplacingMatches(in: cleanText, range: range(), withTemplate: "")
         }
         
         // Remove HTML entities
-        let entities: [String: String] = [
-            "&nbsp;": " ",
-            "&amp;": "&",
-            "&lt;": "<",
-            "&gt;": ">",
-            "&quot;": "\"",
-            "&#39;": "'",
-            "&apos;": "'"
-        ]
-        
-        for (entity, replacement) in entities {
+        for (entity, replacement) in Self.htmlEntities {
             cleanText = cleanText.replacingOccurrences(of: entity, with: replacement)
         }
         
@@ -89,17 +70,8 @@ final class TranslationService {
         cleanText = cleanText.trimmingCharacters(in: .whitespacesAndNewlines)
         
         // Replace multiple spaces with single space
-        do {
-            let spaceRegex = try NSRegularExpression(pattern: "\\s{2,}", options: [])
-            let range = NSRange(cleanText.startIndex..., in: cleanText)
-            cleanText = spaceRegex.stringByReplacingMatches(
-                in: cleanText,
-                options: [],
-                range: range,
-                withTemplate: " "
-            )
-        } catch {
-            print("Space regex error: \(error)")
+        if let regex = Self.multiSpaceRegex {
+            cleanText = regex.stringByReplacingMatches(in: cleanText, range: range(), withTemplate: " ")
         }
         
         return cleanText

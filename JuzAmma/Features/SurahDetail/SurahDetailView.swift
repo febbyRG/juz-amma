@@ -287,6 +287,7 @@ struct SurahHeader: View {
             Text(surah.nameArabic)
                 .font(.custom(AppConstants.Fonts.arabicDisplayBold, size: 40))
                 .environment(\.layoutDirection, .rightToLeft)
+                .accessibilityLabel("Surah \(surah.nameTransliteration) in Arabic")
             
             // Transliteration & Translation
             Text(surah.nameTransliteration)
@@ -416,6 +417,8 @@ struct AyahView: View {
                 .environment(\.layoutDirection, .rightToLeft)
                 .lineSpacing(14)
                 .padding(.vertical, 8)
+                .accessibilityLabel("Verse \(ayah.number), Arabic text")
+                .accessibilityHint("Quran verse in Arabic")
             
             // Latin Transliteration
             if !ayah.textTransliteration.isEmpty {
@@ -445,6 +448,8 @@ struct AyahView: View {
                             .font(.caption)
                             .foregroundStyle(.tertiary)
                     }
+                    .accessibilityElement(children: .combine)
+                    .accessibilityLabel("Translation: \(primaryTranslation)")
                 }
                 
                 // Secondary Translation (if enabled)
@@ -464,6 +469,8 @@ struct AyahView: View {
                                 .font(.caption)
                                 .foregroundStyle(.tertiary)
                         }
+                        .accessibilityElement(children: .combine)
+                        .accessibilityLabel("Secondary translation: \(secondaryTranslation)")
                     }
                 }
             }

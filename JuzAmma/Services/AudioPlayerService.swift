@@ -77,6 +77,7 @@ final class AudioPlayerService: NSObject, ObservableObject {
     private var currentChapterAudioUrl: URL?
     private var verseAudioFiles: [VerseAudioFile] = []
     private var verseTimings: [(verse: Int, startTime: TimeInterval, endTime: TimeInterval)] = []
+    private var currentPlaybackTask: Task<Void, Never>?
     
     // MARK: - Initialization
     
@@ -90,7 +91,9 @@ final class AudioPlayerService: NSObject, ObservableObject {
         if let observer = timeObserver {
             player?.removeTimeObserver(observer)
         }
+        currentPlaybackTask?.cancel()
         player?.pause()
+        playerItem = nil
         player = nil
         cancellables.removeAll()
         MPNowPlayingInfoCenter.default().nowPlayingInfo = nil
@@ -249,27 +252,37 @@ final class AudioPlayerService: NSObject, ObservableObject {
     ///   - surahName: Optional surah name for Now Playing display
     ///   - startFromVerse: Optional verse number to start from
     func playSurah(_ surahNumber: Int, surahName: String? = nil, startFromVerse: Int? = nil) async {
+        // Cancel any in-flight playback to prevent race conditions
+        currentPlaybackTask?.cancel()
+        
         currentSurahNumber = surahNumber
         currentSurahName = surahName
         state = .loading
         updateNowPlayingInfo()
         
-        switch playbackMode {
-        case .surah:
-            currentPlayingVerse = 1
-            await playChapterAudio(surahNumber: surahNumber)
-        case .verse:
-            currentPlayingVerse = startFromVerse ?? 1
-            await playVerseAudio(surahNumber: surahNumber, verseNumber: startFromVerse ?? 1)
-        case .singleVerse(let verseNum):
-            currentPlayingVerse = verseNum
-            await playVerseAudio(surahNumber: surahNumber, verseNumber: verseNum)
+        let task = Task {
+            switch playbackMode {
+            case .surah:
+                currentPlayingVerse = 1
+                await playChapterAudio(surahNumber: surahNumber)
+            case .verse:
+                currentPlayingVerse = startFromVerse ?? 1
+                await playVerseAudio(surahNumber: surahNumber, verseNumber: startFromVerse ?? 1)
+            case .singleVerse(let verseNum):
+                currentPlayingVerse = verseNum
+                await playVerseAudio(surahNumber: surahNumber, verseNumber: verseNum)
+            }
         }
+        currentPlaybackTask = task
+        await task.value
     }
     
     /// Play specific verse using chapter audio (consistent voice)
     /// Uses same audio source as full surah but seeks to verse timestamp
     func playVerse(_ surahNumber: Int, verseNumber: Int, surahName: String? = nil) async {
+        // Cancel any in-flight playback to prevent race conditions
+        currentPlaybackTask?.cancel()
+        
         playbackMode = .singleVerse(verseNumber)
         currentPlayingVerse = verseNumber
         currentSurahNumber = surahNumber
@@ -277,8 +290,11 @@ final class AudioPlayerService: NSObject, ObservableObject {
         state = .loading
         updateNowPlayingInfo()
         
-        // Use chapter audio and seek to verse timestamp for consistent voice
-        await playChapterAudioFromVerse(surahNumber: surahNumber, verseNumber: verseNumber)
+        let task = Task {
+            await playChapterAudioFromVerse(surahNumber: surahNumber, verseNumber: verseNumber)
+        }
+        currentPlaybackTask = task
+        await task.value
     }
     
     /// Toggle play/pause
@@ -548,15 +564,15 @@ final class AudioPlayerService: NSObject, ObservableObject {
         updateNowPlayingInfo()
         
         // Load duration asynchronously (don't block playback)
-        Task {
+        Task { [weak self] in
             do {
-                if let asset = playerItem?.asset {
+                if let asset = self?.playerItem?.asset {
                     let durationValue = try await asset.load(.duration)
                     let durationSeconds = CMTimeGetSeconds(durationValue)
                     if durationSeconds.isFinite && durationSeconds > 0 {
                         await MainActor.run {
-                            self.duration = durationSeconds
-                            self.updateNowPlayingInfo()
+                            self?.duration = durationSeconds
+                            self?.updateNowPlayingInfo()
                             print("[Audio] Duration loaded: \(durationSeconds)s")
                         }
                     }

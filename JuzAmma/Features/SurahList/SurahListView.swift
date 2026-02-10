@@ -13,6 +13,7 @@ struct SurahListView: View {
     @Query(sort: \Surah.number) private var surahs: [Surah]
     
     @State private var searchText = ""
+    @State private var debouncedSearchText = ""
     @State private var showBookmarksOnly = false
     @State private var showMemorizedOnly = false
     
@@ -29,13 +30,13 @@ struct SurahListView: View {
             filtered = filtered.filter { $0.isMemorized }
         }
         
-        // Filter by search text
-        if !searchText.isEmpty {
+        // Filter by debounced search text
+        if !debouncedSearchText.isEmpty {
             filtered = filtered.filter { surah in
-                surah.nameArabic.contains(searchText) ||
-                surah.nameTransliteration.localizedCaseInsensitiveContains(searchText) ||
-                surah.nameTranslation.localizedCaseInsensitiveContains(searchText) ||
-                String(surah.number).contains(searchText)
+                surah.nameArabic.contains(debouncedSearchText) ||
+                surah.nameTransliteration.localizedCaseInsensitiveContains(debouncedSearchText) ||
+                surah.nameTranslation.localizedCaseInsensitiveContains(debouncedSearchText) ||
+                String(surah.number).contains(debouncedSearchText)
             }
         }
         
@@ -117,6 +118,15 @@ struct SurahListView: View {
                 SurahDetailView(surah: surah)
             }
             .searchable(text: $searchText, prompt: "Search surahs...")
+            .onChange(of: searchText) { _, newValue in
+                // Debounce search to avoid filtering on every keystroke
+                Task {
+                    try? await Task.sleep(for: .milliseconds(300))
+                    if searchText == newValue {
+                        debouncedSearchText = newValue
+                    }
+                }
+            }
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     NavigationLink(destination: SettingsView()) {
