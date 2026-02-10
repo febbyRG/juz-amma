@@ -258,21 +258,15 @@ struct SurahDetailView: View {
     }
     
     private func toggleBookmark() {
-        var vm = viewModel
-        vm.toggleBookmark(for: surah)
-        errorMessage = vm.errorMessage
+        errorMessage = viewModel.toggleBookmark(for: surah)
     }
     
     private func toggleMemorization() {
-        var vm = viewModel
-        vm.toggleMemorization(for: surah)
-        errorMessage = vm.errorMessage
+        errorMessage = viewModel.toggleMemorization(for: surah)
     }
     
     private func toggleNextToMemorize() {
-        var vm = viewModel
-        vm.toggleNextToMemorize(for: surah)
-        errorMessage = vm.errorMessage
+        errorMessage = viewModel.toggleNextToMemorize(for: surah)
     }
     
     private func updateLastAccessed() {
@@ -280,10 +274,9 @@ struct SurahDetailView: View {
     }
     
     private func loadAvailableTranslations() {
-        var vm = viewModel
-        vm.loadAvailableTranslations(settings: settings)
-        availableTranslations = vm.availableTranslations
-        errorMessage = vm.errorMessage
+        let result = viewModel.loadAvailableTranslations(settings: settings)
+        availableTranslations = result.translations
+        errorMessage = result.error
     }
 }
 

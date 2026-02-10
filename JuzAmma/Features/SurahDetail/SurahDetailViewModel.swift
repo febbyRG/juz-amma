@@ -12,11 +12,6 @@ import SwiftData
 @MainActor
 struct SurahDetailViewModel {
     
-    // MARK: - Output
-    
-    var availableTranslations: [DownloadedTranslation] = []
-    var errorMessage: String?
-    
     // MARK: - Dependencies
     
     private let modelContext: ModelContext
@@ -29,27 +24,28 @@ struct SurahDetailViewModel {
     
     // MARK: - Actions
     
-    mutating func toggleBookmark(for surah: Surah) {
+    /// Returns error message if operation fails, nil on success
+    func toggleBookmark(for surah: Surah) -> String? {
         do {
             let service = QuranDataService(modelContext: modelContext)
             try service.toggleBookmark(for: surah)
-            errorMessage = nil
+            return nil
         } catch {
-            errorMessage = "Failed to toggle bookmark: \(error.localizedDescription)"
+            return "Failed to toggle bookmark: \(error.localizedDescription)"
         }
     }
     
-    mutating func toggleMemorization(for surah: Surah) {
+    func toggleMemorization(for surah: Surah) -> String? {
         do {
             let service = QuranDataService(modelContext: modelContext)
             try service.toggleMemorization(for: surah)
-            errorMessage = nil
+            return nil
         } catch {
-            errorMessage = "Failed to toggle memorization: \(error.localizedDescription)"
+            return "Failed to toggle memorization: \(error.localizedDescription)"
         }
     }
     
-    mutating func toggleNextToMemorize(for surah: Surah) {
+    func toggleNextToMemorize(for surah: Surah) -> String? {
         do {
             if surah.isNextToMemorize {
                 surah.isNextToMemorize = false
@@ -58,9 +54,9 @@ struct SurahDetailViewModel {
                 let service = QuranDataService(modelContext: modelContext)
                 try service.setNextToMemorize(surah)
             }
-            errorMessage = nil
+            return nil
         } catch {
-            errorMessage = "Failed to update memorization target: \(error.localizedDescription)"
+            return "Failed to update memorization target: \(error.localizedDescription)"
         }
     }
     
@@ -76,13 +72,13 @@ struct SurahDetailViewModel {
         }
     }
     
-    mutating func loadAvailableTranslations(settings: AppSettings? = nil) {
+    func loadAvailableTranslations(settings: AppSettings? = nil) -> (translations: [DownloadedTranslation], error: String?) {
         do {
             let descriptor = FetchDescriptor<Translation>()
             let allTranslations = try modelContext.fetch(descriptor)
             
             let grouped = Dictionary(grouping: allTranslations, by: { $0.id })
-            availableTranslations = grouped.compactMap { id, translations in
+            let available = grouped.compactMap { id, translations -> DownloadedTranslation? in
                 guard let first = translations.first else { return nil }
                 return DownloadedTranslation(
                     id: id,
@@ -92,20 +88,19 @@ struct SurahDetailViewModel {
             }.sorted { $0.name < $1.name }
             
             // Auto-select translation if current settings don't match any downloaded translation
-            if let settings = settings, !availableTranslations.isEmpty {
-                let primaryExists = availableTranslations.contains { $0.id == settings.primaryTranslationId }
+            if let settings = settings, !available.isEmpty {
+                let primaryExists = available.contains { $0.id == settings.primaryTranslationId }
                 if !primaryExists {
-                    // Current primary translation not downloaded — auto-select first available
-                    let first = availableTranslations[0]
+                    let first = available[0]
                     settings.primaryTranslationId = first.id
                     settings.primaryTranslationLanguage = first.languageCode
                     try? modelContext.save()
                 }
             }
             
-            errorMessage = nil
+            return (available, nil)
         } catch {
-            errorMessage = "Failed to load translations: \(error.localizedDescription)"
+            return ([], "Failed to load translations: \(error.localizedDescription)")
         }
     }
 }

@@ -56,8 +56,11 @@ final class AudioDownloadManager: ObservableObject {
     
     // MARK: - Public Methods
     
-    /// Refresh cached surahs list for a given qari
+    /// Refresh cached surahs list for a given qari, cancels in-flight downloads if qari changed
     func refreshCachedSurahs(qariId: Int) async {
+        if currentQariId != qariId && isBatchDownloading {
+            cancelBatchDownload()
+        }
         currentQariId = qariId
         let cached = await AudioCacheService.shared.getCachedSurahs(for: qariId)
         cachedSurahs = Set(cached)
@@ -73,35 +76,47 @@ final class AudioDownloadManager: ObservableObject {
         downloadProgress[surahNumber] != nil
     }
     
-    /// Download a single surah for offline playback
+    private static let maxRetries = 3
+    
+    /// Download a single surah for offline playback with retry
     func downloadSurah(_ surahNumber: Int, qariId: Int) async {
         guard downloadProgress[surahNumber] == nil else { return }
         
         downloadProgress[surahNumber] = 0
         currentQariId = qariId
         
-        do {
-            let audioUrl = try await fetchAudioURL(surahNumber: surahNumber, qariId: qariId)
-            
-            _ = try await AudioCacheService.shared.cacheAudio(
-                from: audioUrl,
-                surahNumber: surahNumber,
-                qariId: qariId
-            ) { [weak self] progress in
-                Task { @MainActor in
-                    self?.downloadProgress[surahNumber] = progress
+        var lastError: Error?
+        for attempt in 1...Self.maxRetries {
+            do {
+                let audioUrl = try await fetchAudioURL(surahNumber: surahNumber, qariId: qariId)
+                
+                _ = try await AudioCacheService.shared.cacheAudio(
+                    from: audioUrl,
+                    surahNumber: surahNumber,
+                    qariId: qariId
+                ) { [weak self] progress in
+                    Task { @MainActor in
+                        self?.downloadProgress[surahNumber] = progress
+                    }
+                }
+                
+                downloadProgress.removeValue(forKey: surahNumber)
+                cachedSurahs.insert(surahNumber)
+                return // Success
+            } catch {
+                lastError = error
+                if attempt < Self.maxRetries {
+                    // Exponential backoff: 1s, 2s
+                    try? await Task.sleep(nanoseconds: UInt64(attempt) * 1_000_000_000)
                 }
             }
-            
-            downloadProgress.removeValue(forKey: surahNumber)
-            cachedSurahs.insert(surahNumber)
-        } catch {
-            downloadProgress.removeValue(forKey: surahNumber)
-            errorMessage = "Failed to download Surah \(surahNumber): \(error.localizedDescription)"
         }
+        
+        downloadProgress.removeValue(forKey: surahNumber)
+        errorMessage = "Failed to download Surah \(surahNumber): \(lastError?.localizedDescription ?? "Unknown error")"
     }
     
-    /// Download all surahs in Juz Amma for a qari
+    /// Download all surahs in Juz Amma for a qari with per-surah retry
     func downloadAll(qariId: Int, wifiOnly: Bool = false) async {
         if wifiOnly && !isOnWiFi {
             errorMessage = "WiFi-only mode is enabled. Connect to WiFi to download."
@@ -124,12 +139,29 @@ final class AudioDownloadManager: ObservableObject {
         
         let task = Task {
             var completed = 0
+            var failed: [Int] = []
+            
             for surahNumber in uncached {
                 guard !Task.isCancelled else { break }
                 
+                // Check WiFi mid-batch
+                if wifiOnly && !isOnWiFi {
+                    errorMessage = "Download paused — WiFi disconnected. \(completed)/\(uncached.count) surahs downloaded."
+                    break
+                }
+                
+                let beforeCount = cachedSurahs.count
                 await downloadSurah(surahNumber, qariId: qariId)
+                if cachedSurahs.count == beforeCount {
+                    failed.append(surahNumber)
+                }
+                
                 completed += 1
                 batchProgress = Double(completed) / Double(uncached.count)
+            }
+            
+            if !failed.isEmpty && !Task.isCancelled {
+                errorMessage = "\(failed.count) surah(s) failed to download. Please try again."
             }
             
             isBatchDownloading = false

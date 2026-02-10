@@ -23,7 +23,9 @@ actor AudioCacheService {
     
     private init() {
         // Create cache directory in app's Caches folder
-        let cachesDirectory = fileManager.urls(for: .cachesDirectory, in: .userDomainMask).first!
+        guard let cachesDirectory = fileManager.urls(for: .cachesDirectory, in: .userDomainMask).first else {
+            fatalError("[AudioCache] Unable to access caches directory")
+        }
         cacheDirectory = cachesDirectory.appendingPathComponent("AudioCache", isDirectory: true)
         
         // Create directory if it doesn't exist
@@ -41,10 +43,15 @@ actor AudioCacheService {
         let fileName = generateFileName(surahNumber: surahNumber, qariId: qariId)
         let fileURL = cacheDirectory.appendingPathComponent(fileName)
         
-        if fileManager.fileExists(atPath: fileURL.path) {
-            return fileURL
+        guard fileManager.fileExists(atPath: fileURL.path),
+              let attrs = try? fileManager.attributesOfItem(atPath: fileURL.path),
+              let fileSize = attrs[.size] as? Int64,
+              fileSize > 0 else {
+            // Remove corrupted/empty file
+            try? fileManager.removeItem(at: fileURL)
+            return nil
         }
-        return nil
+        return fileURL
     }
     
     /// Download and cache audio file
@@ -63,8 +70,11 @@ actor AudioCacheService {
         let fileName = generateFileName(surahNumber: surahNumber, qariId: qariId)
         let destinationURL = cacheDirectory.appendingPathComponent(fileName)
         
-        // If already cached, return existing file
-        if fileManager.fileExists(atPath: destinationURL.path) {
+        // If already cached and valid, return existing file
+        if fileManager.fileExists(atPath: destinationURL.path),
+           let attrs = try? fileManager.attributesOfItem(atPath: destinationURL.path),
+           let fileSize = attrs[.size] as? Int64,
+           fileSize > 0 {
             return destinationURL
         }
         
@@ -150,11 +160,9 @@ actor AudioCacheService {
         }
     }
     
-    /// Check if a surah is cached for a specific qari
+    /// Check if a surah is cached for a specific qari (validates file integrity)
     func isCached(surahNumber: Int, qariId: Int) -> Bool {
-        let fileName = generateFileName(surahNumber: surahNumber, qariId: qariId)
-        let fileURL = cacheDirectory.appendingPathComponent(fileName)
-        return fileManager.fileExists(atPath: fileURL.path)
+        return getCachedAudioURL(surahNumber: surahNumber, qariId: qariId) != nil
     }
     
     /// Get list of cached surahs for a qari
