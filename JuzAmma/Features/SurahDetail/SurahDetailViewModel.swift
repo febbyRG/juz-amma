@@ -90,8 +90,7 @@ struct SurahDetailViewModel {
             // Auto-select translation if current settings don't match any downloaded translation
             if let settings = settings, !available.isEmpty {
                 let primaryExists = available.contains { $0.id == settings.primaryTranslationId }
-                if !primaryExists {
-                    let first = available[0]
+                if !primaryExists, let first = available.first {
                     settings.primaryTranslationId = first.id
                     settings.primaryTranslationLanguage = first.languageCode
                     try? modelContext.save()

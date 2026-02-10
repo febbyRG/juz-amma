@@ -794,7 +794,9 @@ final class AudioPlayerService: NSObject, ObservableObject {
         var hasMorePages = true
         
         while hasMorePages {
-            var components = URLComponents(url: url, resolvingAgainstBaseURL: false)!
+            guard var components = URLComponents(url: url, resolvingAgainstBaseURL: false) else {
+                throw AudioError.invalidURL
+            }
             components.queryItems = [URLQueryItem(name: "page", value: String(currentPage))]
             
             guard let pageURL = components.url else {

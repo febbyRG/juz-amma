@@ -22,10 +22,9 @@ actor AudioCacheService {
     // MARK: - Initialization
     
     private init() {
-        // Create cache directory in app's Caches folder
-        guard let cachesDirectory = fileManager.urls(for: .cachesDirectory, in: .userDomainMask).first else {
-            fatalError("[AudioCache] Unable to access caches directory")
-        }
+        // Use temp directory as fallback if caches directory unavailable
+        let cachesDirectory = fileManager.urls(for: .cachesDirectory, in: .userDomainMask).first
+            ?? fileManager.temporaryDirectory
         cacheDirectory = cachesDirectory.appendingPathComponent("AudioCache", isDirectory: true)
         
         // Create directory if it doesn't exist
