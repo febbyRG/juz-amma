@@ -292,6 +292,7 @@ struct SurahHeader: View {
     let surah: Surah
     @ObservedObject var audioService: AudioPlayerService
     @ObservedObject var downloadManager: AudioDownloadManager
+    @State private var showDeleteAudioAlert = false
     
     private var isCached: Bool {
         downloadManager.isCached(surahNumber: surah.number)
@@ -360,12 +361,7 @@ struct SurahHeader: View {
             // Download for Offline Button
             Button {
                 if isCached {
-                    Task {
-                        await downloadManager.deleteCached(
-                            surahNumber: surah.number,
-                            qariId: audioService.selectedQari.id
-                        )
-                    }
+                    showDeleteAudioAlert = true
                 } else if !isDownloading {
                     Task {
                         await downloadManager.downloadSurah(
@@ -394,6 +390,19 @@ struct SurahHeader: View {
                 .clipShape(Capsule())
             }
             .disabled(isDownloading)
+            .alert("Delete Download?", isPresented: $showDeleteAudioAlert) {
+                Button("Cancel", role: .cancel) { }
+                Button("Delete", role: .destructive) {
+                    Task {
+                        await downloadManager.deleteCached(
+                            surahNumber: surah.number,
+                            qariId: audioService.selectedQari.id
+                        )
+                    }
+                }
+            } message: {
+                Text("Remove downloaded audio for \(surah.nameTransliteration)?")
+            }
             
             // Status Badges
             HStack(spacing: 12) {

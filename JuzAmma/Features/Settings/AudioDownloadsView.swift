@@ -1,4 +1,4 @@
-//
+
 //  AudioDownloadsView.swift
 //  JuzAmma
 //
@@ -17,6 +17,7 @@ struct AudioDownloadsView: View {
     @EnvironmentObject private var audioService: AudioPlayerService
     
     @State private var showDeleteAllAlert = false
+    @State private var surahToDelete: Surah?
     
     private var settings: AppSettings? {
         settingsQuery.first
@@ -140,9 +141,7 @@ struct AudioDownloadsView: View {
                             }
                         },
                         onDelete: {
-                            Task {
-                                await downloadManager.deleteCached(surahNumber: surah.number, qariId: qariId)
-                            }
+                            surahToDelete = surah
                         }
                     )
                 }
@@ -174,6 +173,26 @@ struct AudioDownloadsView: View {
             Button("OK", role: .cancel) { }
         } message: {
             Text(downloadManager.errorMessage ?? "")
+        }
+        .alert("Delete Download?", isPresented: Binding(
+            get: { surahToDelete != nil },
+            set: { if !$0 { surahToDelete = nil } }
+        )) {
+            Button("Cancel", role: .cancel) {
+                surahToDelete = nil
+            }
+            Button("Delete", role: .destructive) {
+                if let surah = surahToDelete {
+                    Task {
+                        await downloadManager.deleteCached(surahNumber: surah.number, qariId: qariId)
+                    }
+                    surahToDelete = nil
+                }
+            }
+        } message: {
+            if let surah = surahToDelete {
+                Text("Remove downloaded audio for \(surah.nameTransliteration)?")
+            }
         }
     }
 }
