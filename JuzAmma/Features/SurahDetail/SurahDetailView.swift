@@ -20,16 +20,16 @@ struct SurahDetailView: View {
     @State private var showAudioPlayer = false
     @State private var showQariPicker = false
     @State private var showAudioOptions = false
-    @StateObject private var audioService = AudioPlayerService()
+    @State private var errorMessage: String?
+    @EnvironmentObject private var audioService: AudioPlayerService
     
     private var settings: AppSettings? {
         appSettings.first
     }
     
-    /// Creates a QuranDataService instance for data operations
-    /// Note: Service is intentionally created fresh as it's a lightweight wrapper around ModelContext
-    private func makeQuranService() -> QuranDataService {
-        QuranDataService(modelContext: modelContext)
+    /// Lazily-created ViewModel backed by the Environment's ModelContext
+    private var viewModel: SurahDetailViewModel {
+        SurahDetailViewModel(modelContext: modelContext)
     }
     
     var body: some View {
@@ -135,10 +135,7 @@ struct SurahDetailView: View {
                         Toggle("Show Both Translations", isOn: Binding(
                             get: { settings?.showBothTranslations ?? false },
                             set: { newValue in
-                                if let settings = settings {
-                                    settings.showBothTranslations = newValue
-                                    try? modelContext.save()
-                                }
+                                viewModel.updateShowBothTranslations(newValue, settings: settings)
                             }
                         ))
                     } label: {
@@ -239,68 +236,43 @@ struct SurahDetailView: View {
             updateLastAccessed()
             loadAvailableTranslations()
         }
+        .alert("Error", isPresented: Binding(
+            get: { errorMessage != nil },
+            set: { if !$0 { errorMessage = nil } }
+        )) {
+            Button("OK", role: .cancel) { }
+        } message: {
+            Text(errorMessage ?? "")
+        }
     }
     
     private func toggleBookmark() {
-        do {
-            try makeQuranService().toggleBookmark(for: surah)
-        } catch {
-            print("Failed to toggle bookmark: \(error.localizedDescription)")
-        }
+        var vm = viewModel
+        vm.toggleBookmark(for: surah)
+        errorMessage = vm.errorMessage
     }
     
     private func toggleMemorization() {
-        do {
-            try makeQuranService().toggleMemorization(for: surah)
-        } catch {
-            print("Failed to toggle memorization: \(error.localizedDescription)")
-        }
+        var vm = viewModel
+        vm.toggleMemorization(for: surah)
+        errorMessage = vm.errorMessage
     }
     
     private func toggleNextToMemorize() {
-        do {
-            if surah.isNextToMemorize {
-                // Remove from next to memorize
-                surah.isNextToMemorize = false
-                try modelContext.save()
-            } else {
-                // Set as next to memorize
-                try makeQuranService().setNextToMemorize(surah)
-            }
-        } catch {
-            print("Failed to toggle next to memorize: \(error.localizedDescription)")
-        }
+        var vm = viewModel
+        vm.toggleNextToMemorize(for: surah)
+        errorMessage = vm.errorMessage
     }
     
     private func updateLastAccessed() {
-        surah.lastAccessedDate = Date()
-        do {
-            try modelContext.save()
-        } catch {
-            print("Failed to update last accessed date: \(error.localizedDescription)")
-        }
+        viewModel.updateLastAccessed(for: surah)
     }
     
     private func loadAvailableTranslations() {
-        do {
-            // Get ALL downloaded translations from the database
-            let descriptor = FetchDescriptor<Translation>()
-            let allTranslations = try modelContext.fetch(descriptor)
-            
-            // Group by translation ID and get unique translations
-            let grouped = Dictionary(grouping: allTranslations, by: { $0.id })
-            availableTranslations = grouped.compactMap { id, translations in
-                guard let first = translations.first else { return nil }
-                return DownloadedTranslation(
-                    id: id,
-                    name: first.name,
-                    languageCode: first.languageCode
-                )
-            }.sorted { $0.name < $1.name }
-            
-        } catch {
-            print("Failed to load translations: \(error.localizedDescription)")
-        }
+        var vm = viewModel
+        vm.loadAvailableTranslations()
+        availableTranslations = vm.availableTranslations
+        errorMessage = vm.errorMessage
     }
 }
 
@@ -535,5 +507,6 @@ struct Badge: View {
             revelation: "Makkah"
         ))
     }
+    .environmentObject(AudioPlayerService())
     .modelContainer(for: [Surah.self, Ayah.self, AppSettings.self, Translation.self], inMemory: true)
 }

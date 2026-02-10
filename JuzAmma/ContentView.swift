@@ -15,6 +15,7 @@ struct ContentView: View {
     
     @State private var isLoading = true
     @State private var loadError: Error?
+    @StateObject private var audioService = AudioPlayerService()
     
     private var settings: AppSettings? {
         settingsQuery.first
@@ -118,6 +119,7 @@ struct ContentView: View {
             } else {
                 // Main App
                 SurahListView()
+                    .environmentObject(audioService)
             }
         }
         .preferredColorScheme(preferredColorScheme)

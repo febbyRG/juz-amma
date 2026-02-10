@@ -24,12 +24,15 @@ struct JuzAmmaApp: App {
         )
 
         do {
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
+            return try ModelContainer(
+                for: schema,
+                migrationPlan: JuzAmmaMigrationPlan.self,
+                configurations: [modelConfiguration]
+            )
         } catch {
-            // If migration fails, try to recreate container
             print("Migration error: \(error)")
             
-            // Delete old store and create fresh one
+            // Delete old store and create fresh one as last resort
             let url = modelConfiguration.url
             try? FileManager.default.removeItem(at: url)
             

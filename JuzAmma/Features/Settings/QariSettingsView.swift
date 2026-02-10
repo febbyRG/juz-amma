@@ -100,8 +100,7 @@ struct QariSettingsView: View {
         errorMessage = nil
         
         do {
-            let service = AudioPlayerService()
-            allQaris = try await service.fetchAvailableReciters()
+            allQaris = try await QariService.fetchAvailableReciters()
         } catch {
             errorMessage = "Failed to load reciters. Using popular reciters only."
             allQaris = []

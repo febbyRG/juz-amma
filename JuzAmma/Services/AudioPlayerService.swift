@@ -86,6 +86,16 @@ final class AudioPlayerService: NSObject, ObservableObject {
         setupRemoteCommandCenter()
     }
     
+    deinit {
+        if let observer = timeObserver {
+            player?.removeTimeObserver(observer)
+        }
+        player?.pause()
+        player = nil
+        cancellables.removeAll()
+        MPNowPlayingInfoCenter.default().nowPlayingInfo = nil
+    }
+    
     // MARK: - Audio Session Setup
     
     private func setupAudioSession() {

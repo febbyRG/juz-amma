@@ -325,5 +325,6 @@ struct EmptyStateView: View {
 
 #Preview {
     SurahListView()
+        .environmentObject(AudioPlayerService())
         .modelContainer(for: [Surah.self, Ayah.self, AppSettings.self, Translation.self], inMemory: true)
 }

@@ -245,8 +245,7 @@ struct QariPickerView: View {
     private func loadAllQaris() async {
         isLoading = true
         do {
-            let service = AudioPlayerService()
-            allQaris = try await service.fetchAvailableReciters()
+            allQaris = try await QariService.fetchAvailableReciters()
         } catch {
             // Fall back to popular qaris only
             allQaris = popularQaris

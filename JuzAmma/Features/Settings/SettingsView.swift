@@ -22,6 +22,7 @@ struct SettingsView: View {
     @State private var audioCacheSize: String = "Calculating..."
     @State private var audioCacheCount: Int = 0
     @State private var showClearCacheAlert = false
+    @State private var errorMessage: String?
     
     var body: some View {
         Form {
@@ -218,6 +219,14 @@ struct SettingsView: View {
         } message: {
             Text("This will delete all cached audio files (\(audioCacheSize)). You can re-download them when playing.")
         }
+        .alert("Error", isPresented: Binding(
+            get: { errorMessage != nil },
+            set: { if !$0 { errorMessage = nil } }
+        )) {
+            Button("OK", role: .cancel) { }
+        } message: {
+            Text(errorMessage ?? "")
+        }
     }
     
     // MARK: - Computed Properties
@@ -297,7 +306,9 @@ struct SettingsView: View {
                     audioCacheCount = 0
                 }
             } catch {
-                print("Failed to clear cache: \(error.localizedDescription)")
+                await MainActor.run {
+                    errorMessage = "Failed to clear cache: \(error.localizedDescription)"
+                }
             }
         }
     }
