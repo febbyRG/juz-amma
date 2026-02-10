@@ -35,7 +35,7 @@ struct SurahListView: View {
         // Filter by debounced search text
         if !debouncedSearchText.isEmpty {
             filtered = filtered.filter { surah in
-                surah.nameArabic.contains(debouncedSearchText) ||
+                surah.nameArabic.localizedStandardContains(debouncedSearchText) ||
                 surah.nameTransliteration.localizedCaseInsensitiveContains(debouncedSearchText) ||
                 surah.nameTranslation.localizedCaseInsensitiveContains(debouncedSearchText) ||
                 String(surah.number).contains(debouncedSearchText)

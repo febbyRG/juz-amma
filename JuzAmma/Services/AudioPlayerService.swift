@@ -407,6 +407,19 @@ final class AudioPlayerService: NSObject, ObservableObject {
         }
     }
     
+    /// Save current playback state for restoration
+    func savePlaybackState(to settings: AppSettings) {
+        settings.lastPlayingSurahNumber = currentSurahNumber
+        settings.lastPlaybackPosition = currentTime > 0 ? currentTime : nil
+    }
+    
+    /// Restore playback state (position only — does not auto-play)
+    func restorePlaybackState(from settings: AppSettings) -> (surahNumber: Int, position: TimeInterval)? {
+        guard let surahNumber = settings.lastPlayingSurahNumber else { return nil }
+        let position = settings.lastPlaybackPosition ?? 0
+        return (surahNumber, position)
+    }
+    
     // MARK: - Private Methods
     
     /// Play chapter-level audio (single MP3 for entire surah) with caching support

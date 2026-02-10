@@ -59,6 +59,12 @@ final class AppSettings {
     /// Whether to only download audio on WiFi
     var wifiOnlyDownload: Bool
     
+    /// Last playing surah number (for playback state persistence)
+    var lastPlayingSurahNumber: Int?
+    
+    /// Last playback position in seconds
+    var lastPlaybackPosition: TimeInterval?
+    
     init(
         id: String = "singleton",
         themeMode: ThemeMode = .auto,
@@ -75,7 +81,9 @@ final class AppSettings {
         lastAppVersion: String = "1.0",
         firstLaunchDate: Date = Date(),
         totalTimeSpent: TimeInterval = 0,
-        wifiOnlyDownload: Bool = false
+        wifiOnlyDownload: Bool = false,
+        lastPlayingSurahNumber: Int? = nil,
+        lastPlaybackPosition: TimeInterval? = nil
     ) {
         self.id = id
         self.themeMode = themeMode
@@ -93,6 +101,8 @@ final class AppSettings {
         self.firstLaunchDate = firstLaunchDate
         self.totalTimeSpent = totalTimeSpent
         self.wifiOnlyDownload = wifiOnlyDownload
+        self.lastPlayingSurahNumber = lastPlayingSurahNumber
+        self.lastPlaybackPosition = lastPlaybackPosition
     }
 }
 

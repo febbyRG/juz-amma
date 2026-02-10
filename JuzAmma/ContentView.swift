@@ -11,6 +11,7 @@ import SwiftData
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
     @Environment(\.colorScheme) private var systemColorScheme
+    @Environment(\.scenePhase) private var scenePhase
     @Query private var settingsQuery: [AppSettings]
     
     @State private var isLoading = true
@@ -127,6 +128,14 @@ struct ContentView: View {
         .preferredColorScheme(preferredColorScheme)
         .task {
             await loadData()
+        }
+        .onChange(of: scenePhase) { _, newPhase in
+            if newPhase == .background || newPhase == .inactive {
+                if let settings = settings {
+                    audioService.savePlaybackState(to: settings)
+                    try? modelContext.save()
+                }
+            }
         }
     }
     

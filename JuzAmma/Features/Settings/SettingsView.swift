@@ -7,6 +7,7 @@
 
 import SwiftUI
 import SwiftData
+import UserNotifications
 
 struct SettingsView: View {
     @Environment(\.modelContext) private var modelContext
@@ -137,7 +138,7 @@ struct SettingsView: View {
                 StatRow(
                     icon: "book.closed.fill",
                     label: "Total Surahs",
-                    value: "37"
+                    value: "\(AppConstants.juzAmmaSurahRange.count)"
                 )
                 
                 StatRow(
@@ -266,16 +267,19 @@ struct SettingsView: View {
         try? modelContext.save()
     }
     
-    private func updateDisplayPreference(_ keyPath: WritableKeyPath<AppSettings, Bool>, value: Bool) {
-        guard var settings = settings else { return }
-        settings[keyPath: keyPath] = value
-        try? modelContext.save()
-    }
-    
     private func updateNotificationsSetting(_ enabled: Bool) {
         settings?.notificationsEnabled = enabled
-        if enabled && settings?.reminderTime == nil {
-            settings?.reminderTime = Calendar.current.date(bySettingHour: 9, minute: 0, second: 0, of: Date())
+        if enabled {
+            requestNotificationPermission()
+            if settings?.reminderTime == nil {
+                let defaultTime = Calendar.current.date(bySettingHour: 9, minute: 0, second: 0, of: Date()) ?? Date()
+                settings?.reminderTime = defaultTime
+                scheduleReminder(at: defaultTime)
+            } else if let time = settings?.reminderTime {
+                scheduleReminder(at: time)
+            }
+        } else {
+            UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: ["daily_memorization_reminder"])
         }
         try? modelContext.save()
     }
@@ -283,10 +287,63 @@ struct SettingsView: View {
     private func updateReminderTime(_ time: Date) {
         settings?.reminderTime = time
         try? modelContext.save()
+        scheduleReminder(at: time)
+    }
+    
+    private func requestNotificationPermission() {
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
+            if !granted {
+                Task { @MainActor in
+                    settings?.notificationsEnabled = false
+                    notificationsEnabled = false
+                    try? modelContext.save()
+                    errorMessage = "Notification permission denied. Enable in Settings > Notifications."
+                }
+            }
+        }
+    }
+    
+    private func scheduleReminder(at time: Date) {
+        let center = UNUserNotificationCenter.current()
+        center.removePendingNotificationRequests(withIdentifiers: ["daily_memorization_reminder"])
+        
+        let content = UNMutableNotificationContent()
+        content.title = "Juz Amma"
+        content.body = "Time to practice your Quran memorization! 📖"
+        content.sound = .default
+        
+        let calendar = Calendar.current
+        var dateComponents = DateComponents()
+        dateComponents.hour = calendar.component(.hour, from: time)
+        dateComponents.minute = calendar.component(.minute, from: time)
+        
+        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
+        let request = UNNotificationRequest(identifier: "daily_memorization_reminder", content: content, trigger: trigger)
+        
+        center.add(request) { error in
+            if let error {
+                Task { @MainActor in
+                    self.errorMessage = "Failed to schedule reminder: \(error.localizedDescription)"
+                }
+            }
+        }
     }
     
     private func shareApp() {
-        // TODO: Implement share functionality
+        let text = "\(AppConstants.appName) - Quran Juz 30 Memorization App"
+        let url = AppConstants.githubURL
+        let activityVC = UIActivityViewController(activityItems: [text, url], applicationActivities: nil)
+        
+        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+           let rootVC = windowScene.windows.first?.rootViewController {
+            // Find topmost presented controller
+            var topVC = rootVC
+            while let presented = topVC.presentedViewController {
+                topVC = presented
+            }
+            activityVC.popoverPresentationController?.sourceView = topVC.view
+            topVC.present(activityVC, animated: true)
+        }
     }
     
     private func loadCacheInfo() {
