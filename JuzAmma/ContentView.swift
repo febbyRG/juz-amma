@@ -136,6 +136,9 @@ struct ContentView: View {
             let quranService = QuranDataService(modelContext: modelContext)
             try await quranService.loadJuzAmmaData()
             
+            // Ensure AppSettings singleton exists
+            _ = try quranService.getSettings()
+            
             // Clean existing translations that have HTML tags
             let translationService = TranslationService(modelContext: modelContext)
             try translationService.cleanExistingTranslations()

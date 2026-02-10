@@ -76,7 +76,7 @@ struct SurahDetailViewModel {
         }
     }
     
-    mutating func loadAvailableTranslations() {
+    mutating func loadAvailableTranslations(settings: AppSettings? = nil) {
         do {
             let descriptor = FetchDescriptor<Translation>()
             let allTranslations = try modelContext.fetch(descriptor)
@@ -90,6 +90,19 @@ struct SurahDetailViewModel {
                     languageCode: first.languageCode
                 )
             }.sorted { $0.name < $1.name }
+            
+            // Auto-select translation if current settings don't match any downloaded translation
+            if let settings = settings, !availableTranslations.isEmpty {
+                let primaryExists = availableTranslations.contains { $0.id == settings.primaryTranslationId }
+                if !primaryExists {
+                    // Current primary translation not downloaded — auto-select first available
+                    let first = availableTranslations[0]
+                    settings.primaryTranslationId = first.id
+                    settings.primaryTranslationLanguage = first.languageCode
+                    try? modelContext.save()
+                }
+            }
+            
             errorMessage = nil
         } catch {
             errorMessage = "Failed to load translations: \(error.localizedDescription)"

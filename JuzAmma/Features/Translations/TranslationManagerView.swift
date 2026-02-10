@@ -39,7 +39,7 @@ struct TranslationManagerView: View {
     }
     
     private var groupedTranslations: [(String, [TranslationInfo])] {
-        let grouped = Dictionary(grouping: filteredTranslations) { $0.languageName }
+        let grouped = Dictionary(grouping: filteredTranslations) { $0.languageName.capitalized }
         return grouped.sorted { $0.key < $1.key }
     }
     
@@ -120,7 +120,7 @@ struct TranslationManagerView: View {
                         ForEach(translationsInLanguage) { translation in
                             TranslationRow(
                                 name: translation.name,
-                                language: translation.languageName,
+                                language: translation.languageName.capitalized,
                                 languageCode: translation.languageCode,
                                 author: translation.authorName,
                                 isDownloaded: downloadedIds.contains(translation.id),

@@ -107,7 +107,12 @@ final class Ayah {
         self.isBookmarked = isBookmarked
     }
     
-    /// Get translation by language code
+    /// Get translation by translation ID (precise lookup)
+    func getTranslation(byId translationId: Int) -> String? {
+        translations?.first(where: { $0.id == translationId })?.text
+    }
+    
+    /// Get translation by language code (fallback)
     func getTranslation(languageCode: String) -> String? {
         translations?.first(where: { $0.languageCode == languageCode })?.text
     }

@@ -44,19 +44,101 @@ struct TranslationInfo: Codable, Identifiable, Hashable {
     let id: Int
     let name: String
     let authorName: String
-    let languageCode: String
+    /// The language name from API (e.g., "english", "indonesian")
     let languageName: String
+    /// Translated display name from API
+    let translatedName: TranslatedName?
     
     enum CodingKeys: String, CodingKey {
         case id
         case name
         case authorName = "author_name"
-        case languageCode = "language_name"
-        case languageName = "translated_name"
+        case languageName = "language_name"
+        case translatedName = "translated_name"
+    }
+    
+    /// ISO language code derived from the language name
+    var languageCode: String {
+        Self.languageNameToCode[languageName.lowercased()] ?? languageName.lowercased()
     }
     
     var displayName: String {
         "\(name) - \(authorName)"
+    }
+    
+    /// Mapping from API language names to ISO codes
+    private static let languageNameToCode: [String: String] = [
+        "english": "en",
+        "indonesian": "id",
+        "arabic": "ar",
+        "french": "fr",
+        "spanish": "es",
+        "german": "de",
+        "turkish": "tr",
+        "urdu": "ur",
+        "malay": "ms",
+        "russian": "ru",
+        "bengali": "bn",
+        "persian": "fa",
+        "chinese": "zh",
+        "japanese": "ja",
+        "korean": "ko",
+        "hindi": "hi",
+        "tamil": "ta",
+        "portuguese": "pt",
+        "italian": "it",
+        "dutch": "nl",
+        "thai": "th",
+        "swedish": "sv",
+        "bosnian": "bs",
+        "albanian": "sq",
+        "azerbaijani": "az",
+        "azeri": "az",
+        "kurdish": "ku",
+        "somali": "so",
+        "swahili": "sw",
+        "amharic": "am",
+        "hausa": "ha",
+        "yoruba": "yo",
+        "uzbek": "uz",
+        "tajik": "tg",
+        "malaysian": "ms",
+        "malayalam": "ml",
+        "telugu": "te",
+        "tagalog": "tl",
+        "cebuano": "ceb",
+        "vietnamese": "vi",
+        "sinhalese": "si",
+        "kazakh": "kk",
+        "pashto": "ps",
+        "sindhi": "sd",
+        "assamese": "as",
+        "gujarati": "gu",
+        "oromo": "om",
+        "amazigh": "ber",
+        "divehi, dhivehi, maldivian": "dv",
+        "uighur, uyghur": "ug",
+        "norwegian": "no",
+    ]
+    
+    /// Manual initializer for building TranslationInfo from PopularTranslation
+    init(id: Int, name: String, authorName: String, languageCode: String, languageName: String) {
+        self.id = id
+        self.name = name
+        self.authorName = authorName
+        self.languageName = languageName
+        self.translatedName = nil
+    }
+}
+
+/// Represents the "translated_name" nested object from the API
+struct TranslatedName: Codable, Hashable {
+    let name: String
+    let languageName: String
+    
+    enum CodingKeys: String, CodingKey {
+        case name
+        case languageName = "language_name"
     }
 }
 

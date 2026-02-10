@@ -21,6 +21,7 @@ struct SurahDetailView: View {
     @State private var showQariPicker = false
     @State private var showAudioOptions = false
     @State private var errorMessage: String?
+    @State private var translationRefreshId = UUID()
     @EnvironmentObject private var audioService: AudioPlayerService
     
     private var settings: AppSettings? {
@@ -57,6 +58,7 @@ struct SurahDetailView: View {
                                     audioService: audioService,
                                     surahNumber: surah.number
                                 )
+                                .id("\(ayah.number)-\(translationRefreshId)")
                             }
                         }
                         .padding(.horizontal)
@@ -136,6 +138,7 @@ struct SurahDetailView: View {
                             get: { settings?.showBothTranslations ?? false },
                             set: { newValue in
                                 viewModel.updateShowBothTranslations(newValue, settings: settings)
+                                translationRefreshId = UUID()
                             }
                         ))
                     } label: {
@@ -230,6 +233,13 @@ struct SurahDetailView: View {
             // Reload translations when coming back from TranslationManagerView
             if !isShowing {
                 loadAvailableTranslations()
+                translationRefreshId = UUID()
+            }
+        }
+        .onChange(of: showTranslationPicker) { _, isShowing in
+            // Refresh when translation picker closes (user may have changed selection)
+            if !isShowing {
+                translationRefreshId = UUID()
             }
         }
         .onAppear {
@@ -270,7 +280,7 @@ struct SurahDetailView: View {
     
     private func loadAvailableTranslations() {
         var vm = viewModel
-        vm.loadAvailableTranslations()
+        vm.loadAvailableTranslations(settings: settings)
         availableTranslations = vm.availableTranslations
         errorMessage = vm.errorMessage
     }
@@ -432,8 +442,9 @@ struct AyahView: View {
             
             // Dynamic Translations
             if let settings = settings {
-                // Primary Translation
-                let primaryTranslation = ayah.getTranslation(languageCode: settings.primaryTranslationLanguage)
+                // Primary Translation - lookup by ID first, fallback to language code
+                let primaryTranslation = ayah.getTranslation(byId: settings.primaryTranslationId)
+                    ?? ayah.getTranslation(languageCode: settings.primaryTranslationLanguage)
                 if let primaryTranslation = primaryTranslation {
                     HStack(alignment: .top, spacing: 8) {
                         Image(systemName: "quote.opening")
@@ -454,8 +465,17 @@ struct AyahView: View {
                 
                 // Secondary Translation (if enabled)
                 if settings.showBothTranslations {
-                    if let secondaryLang = settings.secondaryTranslationLanguage,
-                       let secondaryTranslation = ayah.getTranslation(languageCode: secondaryLang) {
+                    let secondaryTranslation: String? = {
+                        if let secondaryId = settings.secondaryTranslationId {
+                            return ayah.getTranslation(byId: secondaryId)
+                        }
+                        if let secondaryLang = settings.secondaryTranslationLanguage {
+                            return ayah.getTranslation(languageCode: secondaryLang)
+                        }
+                        return nil
+                    }()
+                    
+                    if let secondaryTranslation = secondaryTranslation {
                         HStack(alignment: .top, spacing: 8) {
                             Image(systemName: "quote.opening")
                                 .font(.caption)

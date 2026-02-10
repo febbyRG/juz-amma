@@ -104,7 +104,7 @@ final class TranslationService {
                 name: info.name,
                 authorName: "",
                 languageCode: info.code,
-                languageName: info.language
+                languageName: info.language.lowercased()
             )
         }
     }
@@ -118,6 +118,18 @@ final class TranslationService {
         name: String,
         progress: @escaping @Sendable (Double) -> Void
     ) async throws {
+        // Delete any existing translations with this ID first (clean re-download)
+        let existingDescriptor = FetchDescriptor<Translation>(
+            predicate: #Predicate { $0.id == translationId }
+        )
+        let existing = try modelContext.fetch(existingDescriptor)
+        for t in existing {
+            modelContext.delete(t)
+        }
+        if !existing.isEmpty {
+            try modelContext.save()
+        }
+        
         let juzAmmaSurahs = AppConstants.juzAmmaSurahRange
         let totalSurahs = juzAmmaSurahs.count
         var completed = 0
@@ -168,17 +180,24 @@ final class TranslationService {
             return
         }
         
+        // Sort ayahs by number to match API response order
+        let sortedAyahs = ayahs.sorted { $0.number < $1.number }
+        
         // Add translations to ayahs
         for (index, translationData) in response.translations.enumerated() {
-            guard index < ayahs.count else { break }
-            let ayah = ayahs[index]
+            guard index < sortedAyahs.count else { break }
+            let ayah = sortedAyahs[index]
+            
+            let cleanText = cleanTranslationText(translationData.text)
             
             // Check if translation already exists
-            let existingTranslation = ayah.translations?.first { $0.id == translationId }
-            
-            if existingTranslation == nil {
-                // Create new translation with cleaned text
-                let cleanText = cleanTranslationText(translationData.text)
+            if let existingTranslation = ayah.translations?.first(where: { $0.id == translationId }) {
+                // Update existing translation text (in case of re-download)
+                existingTranslation.text = cleanText
+                existingTranslation.languageCode = languageCode
+                existingTranslation.name = name
+            } else {
+                // Create new translation
                 let translation = Translation(
                     id: translationId,
                     languageCode: languageCode,
