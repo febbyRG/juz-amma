@@ -74,17 +74,20 @@ struct SettingsView: View {
                     }
                 }
                 
-                // Audio Cache Management
-                HStack {
-                    Label("Audio Cache", systemImage: "internaldrive")
-                    Spacer()
-                    VStack(alignment: .trailing) {
-                        Text(audioCacheSize)
-                            .foregroundStyle(.secondary)
-                        if audioCacheCount > 0 {
-                            Text("\(audioCacheCount) surahs cached")
-                                .font(.caption)
-                                .foregroundStyle(.tertiary)
+                NavigationLink {
+                    AudioDownloadsView(downloadManager: AudioDownloadManager.shared)
+                } label: {
+                    HStack {
+                        Label("Offline Downloads", systemImage: "icloud.and.arrow.down")
+                        Spacer()
+                        VStack(alignment: .trailing) {
+                            Text(audioCacheSize)
+                                .foregroundStyle(.secondary)
+                            if audioCacheCount > 0 {
+                                Text("\(audioCacheCount) surahs cached")
+                                    .font(.caption)
+                                    .foregroundStyle(.tertiary)
+                            }
                         }
                     }
                 }

@@ -11,6 +11,8 @@ import SwiftData
 struct SurahListView: View {
     @Environment(\.modelContext) private var modelContext
     @Query(sort: \Surah.number) private var surahs: [Surah]
+    @EnvironmentObject private var downloadManager: AudioDownloadManager
+    @EnvironmentObject private var audioService: AudioPlayerService
     
     @State private var searchText = ""
     @State private var debouncedSearchText = ""
@@ -106,7 +108,10 @@ struct SurahListView: View {
                     List {
                         ForEach(filteredSurahs) { surah in
                             NavigationLink(value: surah) {
-                                SurahRow(surah: surah)
+                                SurahRow(
+                                    surah: surah,
+                                    isCached: downloadManager.isCached(surahNumber: surah.number)
+                                )
                             }
                         }
                     }
@@ -134,6 +139,9 @@ struct SurahListView: View {
                     }
                 }
             }
+            .task {
+                await downloadManager.refreshCachedSurahs(qariId: audioService.selectedQari.id)
+            }
         }
     }
 }
@@ -141,6 +149,7 @@ struct SurahListView: View {
 // MARK: - Surah Row
 struct SurahRow: View {
     let surah: Surah
+    var isCached: Bool = false
     
     private var accessibilityDescription: String {
         var description = "Surah \(surah.number), \(surah.nameTransliteration), \(surah.nameTranslation), \(surah.ayahCount) verses"
@@ -149,6 +158,9 @@ struct SurahRow: View {
         }
         if surah.isMemorized {
             description += ", memorized"
+        }
+        if isCached {
+            description += ", available offline"
         }
         return description
     }
@@ -204,6 +216,12 @@ struct SurahRow: View {
                     Image(systemName: "checkmark.circle.fill")
                         .font(.caption)
                         .foregroundStyle(AppColors.memorized)
+                }
+                
+                if isCached {
+                    Image(systemName: "arrow.down.circle.fill")
+                        .font(.caption)
+                        .foregroundStyle(AppColors.primaryGreen)
                 }
             }
         }
@@ -336,5 +354,6 @@ struct EmptyStateView: View {
 #Preview {
     SurahListView()
         .environmentObject(AudioPlayerService())
+        .environmentObject(AudioDownloadManager.shared)
         .modelContainer(for: [Surah.self, Ayah.self, AppSettings.self, Translation.self], inMemory: true)
 }

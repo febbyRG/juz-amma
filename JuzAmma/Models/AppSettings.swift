@@ -56,6 +56,9 @@ final class AppSettings {
     /// Total time spent in app (seconds)
     var totalTimeSpent: TimeInterval
     
+    /// Whether to only download audio on WiFi
+    var wifiOnlyDownload: Bool
+    
     init(
         id: String = "singleton",
         themeMode: ThemeMode = .auto,
@@ -71,7 +74,8 @@ final class AppSettings {
         selectedQari: String = "Mishary Alafasy",
         lastAppVersion: String = "1.0",
         firstLaunchDate: Date = Date(),
-        totalTimeSpent: TimeInterval = 0
+        totalTimeSpent: TimeInterval = 0,
+        wifiOnlyDownload: Bool = false
     ) {
         self.id = id
         self.themeMode = themeMode
@@ -88,6 +92,7 @@ final class AppSettings {
         self.lastAppVersion = lastAppVersion
         self.firstLaunchDate = firstLaunchDate
         self.totalTimeSpent = totalTimeSpent
+        self.wifiOnlyDownload = wifiOnlyDownload
     }
 }
 

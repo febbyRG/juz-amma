@@ -23,6 +23,7 @@ struct SurahDetailView: View {
     @State private var errorMessage: String?
     @State private var translationRefreshId = UUID()
     @EnvironmentObject private var audioService: AudioPlayerService
+    @EnvironmentObject private var downloadManager: AudioDownloadManager
     
     private var settings: AppSettings? {
         appSettings.first
@@ -38,7 +39,7 @@ struct SurahDetailView: View {
             ScrollView {
                 VStack(spacing: 24) {
                     // Surah Header with Play Button
-                    SurahHeader(surah: surah, audioService: audioService)
+                    SurahHeader(surah: surah, audioService: audioService, downloadManager: downloadManager)
                         .padding(.horizontal)
                     
                     // Bismillah (except for Surah 9)
@@ -290,6 +291,15 @@ struct SurahDetailView: View {
 struct SurahHeader: View {
     let surah: Surah
     @ObservedObject var audioService: AudioPlayerService
+    @ObservedObject var downloadManager: AudioDownloadManager
+    
+    private var isCached: Bool {
+        downloadManager.isCached(surahNumber: surah.number)
+    }
+    
+    private var isDownloading: Bool {
+        downloadManager.isDownloading(surahNumber: surah.number)
+    }
     
     var body: some View {
         VStack(spacing: 12) {
@@ -346,6 +356,44 @@ struct SurahHeader: View {
                 .clipShape(Capsule())
             }
             .padding(.top, 8)
+            
+            // Download for Offline Button
+            Button {
+                if isCached {
+                    Task {
+                        await downloadManager.deleteCached(
+                            surahNumber: surah.number,
+                            qariId: audioService.selectedQari.id
+                        )
+                    }
+                } else if !isDownloading {
+                    Task {
+                        await downloadManager.downloadSurah(
+                            surah.number,
+                            qariId: audioService.selectedQari.id
+                        )
+                    }
+                }
+            } label: {
+                HStack(spacing: 8) {
+                    if isDownloading {
+                        ProgressView()
+                            .scaleEffect(0.7)
+                        Text("\(Int((downloadManager.downloadProgress[surah.number] ?? 0) * 100))%")
+                            .font(.caption)
+                    } else {
+                        Image(systemName: isCached ? "checkmark.icloud.fill" : "icloud.and.arrow.down")
+                        Text(isCached ? "Downloaded" : "Download")
+                            .font(.subheadline)
+                    }
+                }
+                .foregroundStyle(isCached ? AppColors.primaryGreen : .secondary)
+                .padding(.horizontal, 16)
+                .padding(.vertical, 6)
+                .background(isCached ? AppColors.primaryGreen.opacity(0.1) : Color.gray.opacity(0.1))
+                .clipShape(Capsule())
+            }
+            .disabled(isDownloading)
             
             // Status Badges
             HStack(spacing: 12) {

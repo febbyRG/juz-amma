@@ -16,6 +16,7 @@ struct ContentView: View {
     @State private var isLoading = true
     @State private var loadError: Error?
     @StateObject private var audioService = AudioPlayerService()
+    private let downloadManager = AudioDownloadManager.shared
     
     private var settings: AppSettings? {
         settingsQuery.first
@@ -120,6 +121,7 @@ struct ContentView: View {
                 // Main App
                 SurahListView()
                     .environmentObject(audioService)
+                    .environmentObject(downloadManager)
             }
         }
         .preferredColorScheme(preferredColorScheme)
