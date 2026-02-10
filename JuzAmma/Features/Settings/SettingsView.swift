@@ -69,7 +69,7 @@ struct SettingsView: View {
                     HStack {
                         Label("Reciter (Qari)", systemImage: "speaker.wave.2")
                         Spacer()
-                        Text(settings?.selectedQari ?? "Mishary Alafasy")
+                        Text(settings?.selectedQariName ?? "Mishary Rashid al-`Afasy")
                             .foregroundStyle(.secondary)
                             .lineLimit(1)
                     }

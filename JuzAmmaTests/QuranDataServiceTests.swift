@@ -180,38 +180,38 @@ struct SurahDetailViewModelTests {
     
     @Test func toggleBookmarkSetsError() throws {
         let context = try makeTestContext()
-        var vm = SurahDetailViewModel(modelContext: context)
+        let vm = SurahDetailViewModel(modelContext: context)
         
         let surah = Surah(number: 114, nameArabic: "الناس", nameTransliteration: "An-Nas", nameTranslation: "Mankind", ayahCount: 6)
         context.insert(surah)
         try context.save()
         
-        vm.toggleBookmark(for: surah)
-        #expect(vm.errorMessage == nil)
+        let error = vm.toggleBookmark(for: surah)
+        #expect(error == nil)
         #expect(surah.isBookmarked == true)
     }
     
     @Test func toggleMemorizationSetsError() throws {
         let context = try makeTestContext()
-        var vm = SurahDetailViewModel(modelContext: context)
+        let vm = SurahDetailViewModel(modelContext: context)
         
         let surah = Surah(number: 112, nameArabic: "الإخلاص", nameTransliteration: "Al-Ikhlas", nameTranslation: "The Sincerity", ayahCount: 4)
         context.insert(surah)
         try context.save()
         
-        vm.toggleMemorization(for: surah)
-        #expect(vm.errorMessage == nil)
+        let error = vm.toggleMemorization(for: surah)
+        #expect(error == nil)
         #expect(surah.isMemorized == true)
     }
     
     @Test func loadAvailableTranslations() throws {
         let context = try makeTestContext()
-        var vm = SurahDetailViewModel(modelContext: context)
+        let vm = SurahDetailViewModel(modelContext: context)
         
         // No translations yet
-        vm.loadAvailableTranslations()
-        #expect(vm.availableTranslations.isEmpty)
-        #expect(vm.errorMessage == nil)
+        let result = vm.loadAvailableTranslations()
+        #expect(result.translations.isEmpty)
+        #expect(result.error == nil)
     }
     
     @Test func updateLastAccessed() throws {

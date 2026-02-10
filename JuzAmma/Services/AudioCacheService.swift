@@ -222,7 +222,7 @@ actor AudioCacheService {
             
             // Report progress every 64KB
             if downloadedBytes % (64 * 1024) == 0, expectedLength > 0 {
-                let progress = Double(downloadedBytes) / Double(expectedLength)
+                let progress = min(Double(downloadedBytes) / Double(expectedLength), 1.0)
                 progressHandler?(progress)
             }
         }

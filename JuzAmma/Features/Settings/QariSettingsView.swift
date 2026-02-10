@@ -13,6 +13,7 @@ struct QariSettingsView: View {
     @Environment(\.modelContext) private var modelContext
     @Environment(\.dismiss) private var dismiss
     @Query private var appSettings: [AppSettings]
+    @EnvironmentObject private var audioService: AudioPlayerService
     
     @State private var allQaris: [Qari] = []
     @State private var isLoading = false
@@ -24,8 +25,7 @@ struct QariSettingsView: View {
     }
     
     private var selectedQariId: Int {
-        // Parse qari ID from settings, default to Mishary (7)
-        7 // Default to Mishary Alafasy
+        settings?.selectedQariId ?? AppConstants.Audio.defaultQariId
     }
     
     private var popularQaris: [Qari] {
@@ -58,7 +58,7 @@ struct QariSettingsView: View {
                     ForEach(popularQaris) { qari in
                         QariSettingsRow(
                             qari: qari,
-                            isSelected: settings?.selectedQari == qari.displayName,
+                            isSelected: qari.id == selectedQariId,
                             onSelect: { selectQari(qari) }
                         )
                     }
@@ -70,7 +70,7 @@ struct QariSettingsView: View {
                         ForEach(filteredQaris) { qari in
                             QariSettingsRow(
                                 qari: qari,
-                                isSelected: settings?.selectedQari == qari.displayName,
+                                isSelected: qari.id == selectedQariId,
                                 onSelect: { selectQari(qari) }
                             )
                         }
@@ -111,7 +111,9 @@ struct QariSettingsView: View {
     
     private func selectQari(_ qari: Qari) {
         guard let settings = settings else { return }
-        settings.selectedQari = qari.displayName
+        settings.selectedQariId = qari.id
+        settings.selectedQariName = qari.displayName
+        audioService.setQari(qari)
         do {
             try modelContext.save()
         } catch {
@@ -174,5 +176,6 @@ struct QariSettingsRow: View {
     NavigationStack {
         QariSettingsView()
     }
+    .environmentObject(AudioPlayerService())
     .modelContainer(for: [AppSettings.self], inMemory: true)
 }

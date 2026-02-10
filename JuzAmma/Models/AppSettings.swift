@@ -44,8 +44,11 @@ final class AppSettings {
     /// Time for daily reminder notification
     var reminderTime: Date?
     
-    /// Selected Qari for audio recitation (future feature)
-    var selectedQari: String
+    /// Selected Qari ID for audio recitation
+    var selectedQariId: Int
+    
+    /// Selected Qari display name
+    var selectedQariName: String
     
     /// Last app version launched
     var lastAppVersion: String
@@ -77,7 +80,8 @@ final class AppSettings {
         showBothTranslations: Bool = true,
         notificationsEnabled: Bool = false,
         reminderTime: Date? = nil,
-        selectedQari: String = "Mishary Alafasy",
+        selectedQariId: Int = AppConstants.Audio.defaultQariId,
+        selectedQariName: String = "Mishary Rashid al-`Afasy",
         lastAppVersion: String = "1.0",
         firstLaunchDate: Date = Date(),
         totalTimeSpent: TimeInterval = 0,
@@ -96,7 +100,8 @@ final class AppSettings {
         self.showBothTranslations = showBothTranslations
         self.notificationsEnabled = notificationsEnabled
         self.reminderTime = reminderTime
-        self.selectedQari = selectedQari
+        self.selectedQariId = selectedQariId
+        self.selectedQariName = selectedQariName
         self.lastAppVersion = lastAppVersion
         self.firstLaunchDate = firstLaunchDate
         self.totalTimeSpent = totalTimeSpent

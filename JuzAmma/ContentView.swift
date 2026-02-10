@@ -152,7 +152,12 @@ struct ContentView: View {
             try await quranService.loadJuzAmmaData()
             
             // Ensure AppSettings singleton exists
-            _ = try quranService.getSettings()
+            let appSettings = try quranService.getSettings()
+            
+            // Restore selected qari from settings
+            if let savedQari = PopularQari.allCases.first(where: { $0.qari.id == appSettings.selectedQariId })?.qari {
+                audioService.setQari(savedQari)
+            }
             
             // Clean existing translations that have HTML tags
             let translationService = TranslationService(modelContext: modelContext)

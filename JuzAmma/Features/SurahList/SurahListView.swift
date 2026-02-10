@@ -16,6 +16,7 @@ struct SurahListView: View {
     
     @State private var searchText = ""
     @State private var debouncedSearchText = ""
+    @State private var searchTask: Task<Void, Never>?
     @State private var showBookmarksOnly = false
     @State private var showMemorizedOnly = false
     
@@ -124,12 +125,11 @@ struct SurahListView: View {
             }
             .searchable(text: $searchText, prompt: "Search surahs...")
             .onChange(of: searchText) { _, newValue in
-                // Debounce search to avoid filtering on every keystroke
-                Task {
+                searchTask?.cancel()
+                searchTask = Task {
                     try? await Task.sleep(for: .milliseconds(300))
-                    if searchText == newValue {
-                        debouncedSearchText = newValue
-                    }
+                    guard !Task.isCancelled else { return }
+                    debouncedSearchText = newValue
                 }
             }
             .toolbar {
