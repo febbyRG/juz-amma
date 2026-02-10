@@ -365,7 +365,7 @@ struct AudioOptionsSheet: View {
                 
                 // Playback Speed
                 Section("Playback Speed") {
-                    ForEach([0.5, 0.75, 1.0, 1.25, 1.5], id: \.self) { speed in
+                    ForEach(AppConstants.Audio.playbackSpeeds, id: \.self) { speed in
                         Button {
                             audioService.setPlaybackSpeed(Float(speed))
                         } label: {

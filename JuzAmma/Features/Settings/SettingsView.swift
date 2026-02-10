@@ -251,10 +251,13 @@ struct SettingsView: View {
     // MARK: - Methods
     private func loadSettings() {
         guard let settings = settings else {
-            // Create default settings if not exists
             let newSettings = AppSettings()
             modelContext.insert(newSettings)
-            try? modelContext.save()
+            do {
+                try modelContext.save()
+            } catch {
+                errorMessage = "Failed to create settings: \(error.localizedDescription)"
+            }
             return
         }
         
@@ -264,7 +267,11 @@ struct SettingsView: View {
     
     private func updateTheme(_ theme: ThemeMode) {
         settings?.themeMode = theme
-        try? modelContext.save()
+        do {
+            try modelContext.save()
+        } catch {
+            errorMessage = "Failed to save theme: \(error.localizedDescription)"
+        }
     }
     
     private func updateNotificationsSetting(_ enabled: Bool) {
@@ -281,12 +288,20 @@ struct SettingsView: View {
         } else {
             UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: ["daily_memorization_reminder"])
         }
-        try? modelContext.save()
+        do {
+            try modelContext.save()
+        } catch {
+            errorMessage = "Failed to save notification settings: \(error.localizedDescription)"
+        }
     }
     
     private func updateReminderTime(_ time: Date) {
         settings?.reminderTime = time
-        try? modelContext.save()
+        do {
+            try modelContext.save()
+        } catch {
+            errorMessage = "Failed to save reminder time: \(error.localizedDescription)"
+        }
         scheduleReminder(at: time)
     }
     
@@ -296,7 +311,11 @@ struct SettingsView: View {
                 Task { @MainActor in
                     settings?.notificationsEnabled = false
                     notificationsEnabled = false
-                    try? modelContext.save()
+                    do {
+                        try modelContext.save()
+                    } catch {
+                        print("[Settings] Failed to save notification state: \(error.localizedDescription)")
+                    }
                     errorMessage = "Notification permission denied. Enable in Settings > Notifications."
                 }
             }

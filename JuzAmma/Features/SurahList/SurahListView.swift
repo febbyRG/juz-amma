@@ -292,7 +292,7 @@ struct NextToMemorizeCard: View {
                 Spacer()
                 
                 Text(surah.nameArabic)
-                    .font(.custom("GeezaPro", size: 18))
+                    .font(.custom(AppConstants.Fonts.arabicDisplay, size: 18))
                     .environment(\.layoutDirection, .rightToLeft)
                 
                 Image(systemName: "chevron.right")

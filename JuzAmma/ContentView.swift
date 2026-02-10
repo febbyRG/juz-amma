@@ -65,7 +65,7 @@ struct ContentView: View {
                         
                         // Bismillah
                         Text("بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ")
-                            .font(.custom("Amiri Quran", size: 24))
+                            .font(.custom(AppConstants.Fonts.quranArabic, size: 24))
                             .foregroundColor(.white)
                             .multilineTextAlignment(.center)
                             .padding(.horizontal)
@@ -133,7 +133,11 @@ struct ContentView: View {
             if newPhase == .background || newPhase == .inactive {
                 if let settings = settings {
                     audioService.savePlaybackState(to: settings)
-                    try? modelContext.save()
+                    do {
+                        try modelContext.save()
+                    } catch {
+                        print("[ContentView] Failed to save playback state: \(error.localizedDescription)")
+                    }
                 }
             }
         }

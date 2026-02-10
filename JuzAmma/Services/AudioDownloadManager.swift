@@ -34,7 +34,7 @@ final class AudioDownloadManager: ObservableObject {
     
     // MARK: - Private
     
-    private var currentQariId: Int = 7 // Default Mishary Alafasy
+    private var currentQariId: Int = AppConstants.Audio.defaultQariId
     private var batchTask: Task<Void, Never>?
     private let monitor = NWPathMonitor()
     private var isOnWiFi = true
@@ -76,7 +76,7 @@ final class AudioDownloadManager: ObservableObject {
         downloadProgress[surahNumber] != nil
     }
     
-    private static let maxRetries = 3
+    private static let maxRetries = AppConstants.Audio.maxDownloadRetries
     
     /// Download a single surah for offline playback with retry
     func downloadSurah(_ surahNumber: Int, qariId: Int) async {

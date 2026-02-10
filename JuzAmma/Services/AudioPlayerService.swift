@@ -37,9 +37,7 @@ enum AudioPlayerState: Equatable {
 enum AudioPlaybackMode {
     /// Play entire surah as single file
     case surah
-    /// Play verse by verse with individual files
-    case verse
-    /// Play specific verse only
+    /// Play specific verse only (seeks within chapter audio)
     case singleVerse(Int)
 }
 
@@ -75,7 +73,6 @@ final class AudioPlayerService: NSObject, ObservableObject {
     private var currentSurahNumber: Int?
     private var currentSurahName: String?
     private var currentChapterAudioUrl: URL?
-    private var verseAudioFiles: [VerseAudioFile] = []
     private var verseTimings: [(verse: Int, startTime: TimeInterval, endTime: TimeInterval)] = []
     private var currentPlaybackTask: Task<Void, Never>?
     
@@ -265,12 +262,9 @@ final class AudioPlayerService: NSObject, ObservableObject {
             case .surah:
                 currentPlayingVerse = 1
                 await playChapterAudio(surahNumber: surahNumber)
-            case .verse:
-                currentPlayingVerse = startFromVerse ?? 1
-                await playVerseAudio(surahNumber: surahNumber, verseNumber: startFromVerse ?? 1)
             case .singleVerse(let verseNum):
                 currentPlayingVerse = verseNum
-                await playVerseAudio(surahNumber: surahNumber, verseNumber: verseNum)
+                await playChapterAudioFromVerse(surahNumber: surahNumber, verseNumber: verseNum)
             }
         }
         currentPlaybackTask = task
@@ -368,28 +362,6 @@ final class AudioPlayerService: NSObject, ObservableObject {
     }
     
     /// Play next verse (for verse-by-verse mode)
-    func nextVerse() async {
-        guard case .verse = playbackMode,
-              !verseAudioFiles.isEmpty,
-              currentVerseIndex < verseAudioFiles.count - 1 else {
-            return
-        }
-        
-        currentVerseIndex += 1
-        await playCurrentVerse()
-    }
-    
-    /// Play previous verse
-    func previousVerse() async {
-        guard case .verse = playbackMode,
-              currentVerseIndex > 0 else {
-            return
-        }
-        
-        currentVerseIndex -= 1
-        await playCurrentVerse()
-    }
-    
     /// Change playback speed
     func setPlaybackSpeed(_ speed: Float) {
         playbackSpeed = speed
@@ -509,41 +481,6 @@ final class AudioPlayerService: NSObject, ObservableObject {
         await AudioCacheService.shared.cacheAudioInBackground(from: remoteURL, surahNumber: surahNumber, qariId: qariId)
         
         return remoteURL
-    }
-    
-    /// Play verse-by-verse audio (deprecated - keeping for reference)
-    private func playVerseAudio(surahNumber: Int, verseNumber: Int) async {
-        do {
-            verseAudioFiles = try await fetchVerseAudio(surahNumber: surahNumber)
-            print("[Audio] Loaded \(verseAudioFiles.count) verse audio files")
-            currentVerseIndex = max(0, verseNumber - 1)
-            currentPlayingVerse = verseNumber
-            await playCurrentVerse()
-        } catch {
-            print("[Audio] Error loading verse audio: \(error)")
-            state = .error("Failed to load verse audio: \(error.localizedDescription)")
-        }
-    }
-    
-    /// Play current verse in the list
-    private func playCurrentVerse() async {
-        guard currentVerseIndex < verseAudioFiles.count else {
-            state = .stopped
-            return
-        }
-        
-        let verseAudio = verseAudioFiles[currentVerseIndex]
-        currentPlayingVerse = verseAudio.verseNumber ?? (currentVerseIndex + 1)
-        
-        let urlString = verseAudio.fullUrl
-        print("[Audio] Playing verse \(currentPlayingVerse) from: \(urlString)")
-        
-        guard let url = URL(string: urlString) else {
-            state = .error("Invalid verse audio URL")
-            return
-        }
-        
-        await playAudio(from: url)
     }
     
     /// Play audio from URL with optional seek position
@@ -723,16 +660,6 @@ final class AudioPlayerService: NSObject, ObservableObject {
                 state = .stopped
             }
             
-        case .verse:
-            if currentVerseIndex < verseAudioFiles.count - 1 {
-                await nextVerse()
-            } else if isRepeatEnabled {
-                currentVerseIndex = 0
-                await playCurrentVerse()
-            } else {
-                state = .stopped
-            }
-            
         case .singleVerse:
             if isRepeatEnabled {
                 seek(to: 0)
@@ -779,42 +706,6 @@ final class AudioPlayerService: NSObject, ObservableObject {
         let (data, _) = try await URLSession.shared.data(from: url)
         let response = try JSONDecoder().decode(ChapterAudioResponse.self, from: data)
         return response.audioFile
-    }
-    
-    /// Fetch verse audio files
-    private func fetchVerseAudio(surahNumber: Int) async throws -> [VerseAudioFile] {
-        let urlString = "\(AppConstants.API.baseURL)\(AppConstants.API.verseRecitationsEndpoint)/\(selectedQari.id)/by_chapter/\(surahNumber)"
-        
-        guard let url = URL(string: urlString) else {
-            throw AudioError.invalidURL
-        }
-        
-        var allAudioFiles: [VerseAudioFile] = []
-        var currentPage = 1
-        var hasMorePages = true
-        
-        while hasMorePages {
-            guard var components = URLComponents(url: url, resolvingAgainstBaseURL: false) else {
-                throw AudioError.invalidURL
-            }
-            components.queryItems = [URLQueryItem(name: "page", value: String(currentPage))]
-            
-            guard let pageURL = components.url else {
-                throw AudioError.invalidURL
-            }
-            
-            let (data, _) = try await URLSession.shared.data(from: pageURL)
-            let response = try JSONDecoder().decode(VerseAudioResponse.self, from: data)
-            allAudioFiles.append(contentsOf: response.audioFiles)
-            
-            if let pagination = response.pagination, pagination.nextPage != nil {
-                currentPage += 1
-            } else {
-                hasMorePages = false
-            }
-        }
-        
-        return allAudioFiles.sorted { ($0.verseNumber ?? 0) < ($1.verseNumber ?? 0) }
     }
     
     /// Fetch available reciters from API

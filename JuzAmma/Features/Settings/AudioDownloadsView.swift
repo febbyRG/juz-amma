@@ -65,7 +65,11 @@ struct AudioDownloadsView: View {
                     get: { settings?.wifiOnlyDownload ?? false },
                     set: { newValue in
                         settings?.wifiOnlyDownload = newValue
-                        try? modelContext.save()
+                        do {
+                            try modelContext.save()
+                        } catch {
+                            print("[AudioDownloads] Failed to save WiFi setting: \(error.localizedDescription)")
+                        }
                     }
                 )) {
                     Label("WiFi Only", systemImage: "wifi")

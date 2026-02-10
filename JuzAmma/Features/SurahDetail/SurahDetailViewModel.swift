@@ -62,13 +62,21 @@ struct SurahDetailViewModel {
     
     func updateLastAccessed(for surah: Surah) {
         surah.lastAccessedDate = Date()
-        try? modelContext.save()
+        do {
+            try modelContext.save()
+        } catch {
+            print("[ViewModel] Failed to save last accessed date: \(error.localizedDescription)")
+        }
     }
     
     func updateShowBothTranslations(_ newValue: Bool, settings: AppSettings?) {
         if let settings = settings {
             settings.showBothTranslations = newValue
-            try? modelContext.save()
+            do {
+                try modelContext.save()
+            } catch {
+                print("[ViewModel] Failed to save translation display setting: \(error.localizedDescription)")
+            }
         }
     }
     
@@ -93,7 +101,11 @@ struct SurahDetailViewModel {
                 if !primaryExists, let first = available.first {
                     settings.primaryTranslationId = first.id
                     settings.primaryTranslationLanguage = first.languageCode
-                    try? modelContext.save()
+                    do {
+                        try modelContext.save()
+                    } catch {
+                        print("[ViewModel] Failed to auto-select translation: \(error.localizedDescription)")
+                    }
                 }
             }
             

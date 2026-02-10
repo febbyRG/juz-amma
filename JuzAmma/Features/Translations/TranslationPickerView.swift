@@ -162,7 +162,11 @@ struct TranslationPickerView: View {
         settings.secondaryTranslationId = translation.id
         settings.secondaryTranslationLanguage = translation.languageCode
         
-        try? modelContext.save()
+        do {
+            try modelContext.save()
+        } catch {
+            print("[TranslationPicker] Failed to save secondary translation: \(error.localizedDescription)")
+        }
     }
     
     private func clearSecondaryTranslation() {
@@ -171,6 +175,10 @@ struct TranslationPickerView: View {
         settings.secondaryTranslationId = nil
         settings.secondaryTranslationLanguage = nil
         
-        try? modelContext.save()
+        do {
+            try modelContext.save()
+        } catch {
+            print("[TranslationPicker] Failed to clear secondary translation: \(error.localizedDescription)")
+        }
     }
 }

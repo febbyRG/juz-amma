@@ -17,7 +17,8 @@ enum AppConstants {
     static let appName = "Juz Amma"
     static let appVersion = "1.0.0"
     static let developerName = "Febby Rachmat G."
-    static let githubURL = URL(string: "https://github.com/febbyRG/juz-amma")!
+    static let githubURL = URL(string: "https://github.com/febbyRG/juz-amma")
+        ?? URL(string: "https://github.com")!
     
     // MARK: - Juz Amma Range
     
@@ -56,6 +57,36 @@ enum AppConstants {
         static let quranSmallSize: CGFloat = 24
         static let quranLargeSize: CGFloat = 32
         static let quranExtraLargeSize: CGFloat = 36
+        
+        /// Font size options for SurahDetailView (label, size)
+        static let verseFontSizes: [(label: String, size: CGFloat)] = [
+            ("Small", 16),
+            ("Medium", 20),
+            ("Large", 24),
+            ("Extra Large", 28)
+        ]
+        
+        /// Default verse font size
+        static let verseDefaultSize: CGFloat = 20
+    }
+    
+    // MARK: - Audio
+    
+    enum Audio {
+        /// Default Qari ID (Mishary Alafasy)
+        static let defaultQariId: Int = 7
+        
+        /// Playback speed options
+        static let playbackSpeeds: [Double] = [0.5, 0.75, 1.0, 1.25, 1.5]
+        
+        /// Skip interval in seconds
+        static let skipIntervalSeconds: TimeInterval = 10
+        
+        /// Time observer interval in seconds
+        static let timeObserverInterval: TimeInterval = 0.5
+        
+        /// Maximum download retries
+        static let maxDownloadRetries: Int = 3
     }
     
     // MARK: - Animation

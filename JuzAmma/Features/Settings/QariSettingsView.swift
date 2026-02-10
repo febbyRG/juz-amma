@@ -112,7 +112,11 @@ struct QariSettingsView: View {
     private func selectQari(_ qari: Qari) {
         guard let settings = settings else { return }
         settings.selectedQari = qari.displayName
-        try? modelContext.save()
+        do {
+            try modelContext.save()
+        } catch {
+            errorMessage = "Failed to save reciter selection: \(error.localizedDescription)"
+        }
     }
 }
 

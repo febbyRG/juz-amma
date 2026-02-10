@@ -13,7 +13,7 @@ struct SurahDetailView: View {
     @Query private var appSettings: [AppSettings]
     @State var surah: Surah
     
-    @State private var fontSize: CGFloat = 20
+    @State private var fontSize: CGFloat = AppConstants.Fonts.verseDefaultSize
     @State private var showTranslationPicker = false
     @State private var showTranslationManager = false
     @State private var availableTranslations: [DownloadedTranslation] = []
@@ -148,10 +148,9 @@ struct SurahDetailView: View {
                     
                     // Font Size
                     Menu {
-                        Button("Small") { fontSize = 16 }
-                        Button("Medium") { fontSize = 20 }
-                        Button("Large") { fontSize = 24 }
-                        Button("Extra Large") { fontSize = 28 }
+                        ForEach(AppConstants.Fonts.verseFontSizes, id: \.size) { option in
+                            Button(option.label) { fontSize = option.size }
+                        }
                     } label: {
                         Label("Font Size", systemImage: "textformat.size")
                     }
@@ -425,7 +424,7 @@ struct BismillahView: View {
     var body: some View {
         VStack(spacing: 8) {
             Text("بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ")
-                .font(.custom("GeezaPro", size: 24))
+                .font(.custom(AppConstants.Fonts.arabicDisplay, size: 24))
                 .environment(\.layoutDirection, .rightToLeft)
             
             Text("Bismillahir Rahmanir Rahim")
