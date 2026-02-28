@@ -11,7 +11,7 @@ import Foundation
 /// Avoids creating heavy AudioPlayerService instances just for API calls
 enum QariService {
     
-    /// Fetch available reciters from Quran.com API
+    /// Fetch available reciters from Quran.com API (cached for 5 min)
     static func fetchAvailableReciters() async throws -> [Qari] {
         let urlString = "\(AppConstants.API.baseURL)\(AppConstants.API.recitationsEndpoint)"
         
@@ -19,8 +19,11 @@ enum QariService {
             throw AudioError.invalidURL
         }
         
-        let (data, _) = try await URLSession.shared.data(from: url)
-        let response = try JSONDecoder().decode(RecitationsResponse.self, from: data)
+        let response = try await NetworkService.shared.fetch(
+            RecitationsResponse.self,
+            from: url,
+            cachePolicy: .cacheFirst(maxAge: AppConstants.Network.recitersCacheDuration)
+        )
         return response.recitations.map { $0.toQari() }
     }
 }

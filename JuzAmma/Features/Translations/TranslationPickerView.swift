@@ -7,6 +7,7 @@
 
 import SwiftUI
 import SwiftData
+import os
 
 struct TranslationPickerView: View {
     @Environment(\.modelContext) private var modelContext
@@ -152,7 +153,7 @@ struct TranslationPickerView: View {
         do {
             try modelContext.save()
         } catch {
-            print("[TranslationPicker] Failed to save primary translation: \(error.localizedDescription)")
+            AppLogger.translation.error("Failed to save primary translation: \(error.localizedDescription)")
         }
     }
     
@@ -165,7 +166,7 @@ struct TranslationPickerView: View {
         do {
             try modelContext.save()
         } catch {
-            print("[TranslationPicker] Failed to save secondary translation: \(error.localizedDescription)")
+            AppLogger.translation.error("Failed to save secondary translation: \(error.localizedDescription)")
         }
     }
     
@@ -178,7 +179,7 @@ struct TranslationPickerView: View {
         do {
             try modelContext.save()
         } catch {
-            print("[TranslationPicker] Failed to clear secondary translation: \(error.localizedDescription)")
+            AppLogger.translation.error("Failed to clear secondary translation: \(error.localizedDescription)")
         }
     }
 }

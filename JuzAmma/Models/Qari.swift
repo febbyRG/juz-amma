@@ -10,7 +10,7 @@ import Foundation
 // MARK: - Qari Model
 
 /// Represents a Quran reciter (Qari)
-struct Qari: Identifiable, Codable, Hashable {
+struct Qari: Identifiable, Codable, Hashable, Sendable {
     let id: Int
     let name: String
     let style: String?
@@ -28,12 +28,12 @@ struct Qari: Identifiable, Codable, Hashable {
 // MARK: - API Response Models
 
 /// Response from /resources/recitations endpoint
-struct RecitationsResponse: Codable {
+struct RecitationsResponse: Codable, Sendable {
     let recitations: [RecitationData]
 }
 
 /// Recitation data from API
-struct RecitationData: Codable {
+struct RecitationData: Codable, Sendable {
     let id: Int
     let reciterName: String
     let style: String?
@@ -46,7 +46,7 @@ struct RecitationData: Codable {
         case translatedName = "translated_name"
     }
     
-    struct TranslatedName: Codable {
+    struct TranslatedName: Codable, Sendable {
         let name: String
         let languageName: String
         
@@ -70,7 +70,7 @@ struct RecitationData: Codable {
 // MARK: - Chapter Audio Response
 
 /// Response from /chapter_recitations/:reciter_id/:chapter_number endpoint
-struct ChapterAudioResponse: Codable {
+struct ChapterAudioResponse: Codable, Sendable {
     let audioFile: ChapterAudioFile
     
     enum CodingKeys: String, CodingKey {
@@ -79,7 +79,7 @@ struct ChapterAudioResponse: Codable {
 }
 
 /// Chapter-level audio file metadata
-struct ChapterAudioFile: Codable {
+struct ChapterAudioFile: Codable, Sendable {
     let id: Int
     let chapterId: Int
     let fileSize: Double
@@ -98,7 +98,7 @@ struct ChapterAudioFile: Codable {
 }
 
 /// Timing information for each verse in chapter audio
-struct VerseTiming: Codable {
+struct VerseTiming: Codable, Sendable {
     let verseKey: String
     let timestampFrom: Int
     let timestampTo: Int
@@ -132,7 +132,7 @@ struct VerseTiming: Codable {
 // MARK: - Verse Audio Response
 
 /// Response from /recitations/:reciter_id/by_chapter/:chapter_number endpoint
-struct VerseAudioResponse: Codable {
+struct VerseAudioResponse: Codable, Sendable {
     let audioFiles: [VerseAudioFile]
     let pagination: Pagination?
     
@@ -143,7 +143,7 @@ struct VerseAudioResponse: Codable {
 }
 
 /// Verse-level audio file metadata
-struct VerseAudioFile: Codable {
+struct VerseAudioFile: Codable, Sendable {
     let verseKey: String
     let url: String
     
@@ -176,7 +176,7 @@ struct VerseAudioFile: Codable {
 }
 
 /// Pagination info for API responses
-struct Pagination: Codable {
+struct Pagination: Codable, Sendable {
     let perPage: Int
     let currentPage: Int
     let nextPage: Int?

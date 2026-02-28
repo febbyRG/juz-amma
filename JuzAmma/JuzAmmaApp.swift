@@ -7,6 +7,7 @@
 
 import SwiftUI
 import SwiftData
+import os
 
 @main
 struct JuzAmmaApp: App {
@@ -30,15 +31,15 @@ struct JuzAmmaApp: App {
                 configurations: [modelConfiguration]
             )
         } catch {
-            print("Migration error: \(error)")
+            AppLogger.migration.error("Migration error: \(error)")
             
             // Delete old store and create fresh one as last resort
             let url = modelConfiguration.url
             do {
                 try FileManager.default.removeItem(at: url)
-                print("[Migration] Removed corrupted store at \(url)")
+                AppLogger.migration.warning("Removed corrupted store at \(url)")
             } catch {
-                print("[Migration] Failed to remove old store: \(error)")
+                AppLogger.migration.error("Failed to remove old store: \(error)")
             }
             
             do {

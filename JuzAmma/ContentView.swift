@@ -7,6 +7,7 @@
 
 import SwiftUI
 import SwiftData
+import os
 
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
@@ -39,62 +40,8 @@ struct ContentView: View {
     var body: some View {
         Group {
             if isLoading {
-                // Loading Screen
-                ZStack {
-                    // Background gradient matching launch screen
-                    LinearGradient(
-                        colors: [
-                            Color(red: 0.165, green: 0.620, blue: 0.427),
-                            Color(red: 0.263, green: 0.722, blue: 0.549)
-                        ],
-                        startPoint: .topLeading,
-                        endPoint: .bottomTrailing
-                    )
-                    .ignoresSafeArea()
-                    
-                    VStack(spacing: 24) {
-                        Spacer()
-                        
-                        // App Icon
-                        Image("AppIconImage")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 120, height: 120)
-                            .cornerRadius(26.4)
-                            .shadow(color: .black.opacity(0.2), radius: 10, x: 0, y: 4)
-                        
-                        // Bismillah
-                        Text("بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ")
-                            .font(.custom(AppConstants.Fonts.quranArabic, size: 24))
-                            .foregroundColor(.white)
-                            .multilineTextAlignment(.center)
-                            .padding(.horizontal)
-                        
-                        // App Name
-                        Text("Juz Amma")
-                            .font(.system(size: 36, weight: .bold, design: .rounded))
-                            .foregroundColor(.white)
-                        
-                        // Loading indicator
-                        ProgressView()
-                            .progressViewStyle(CircularProgressViewStyle(tint: .white))
-                            .scaleEffect(1.5)
-                            .padding(.top, 8)
-                        
-                        Text("Loading Quran data...")
-                            .font(.system(size: 14, weight: .medium))
-                            .foregroundColor(.white.opacity(0.9))
-                            .padding(.top, 8)
-                        
-                        Spacer()
-                        
-                        // Version
-                        Text("Version 1.0")
-                            .font(.system(size: 12, weight: .regular))
-                            .foregroundColor(.white.opacity(0.7))
-                            .padding(.bottom, 20)
-                    }
-                }
+                // Reuse shared launch screen with loading indicator
+                LaunchScreenView(isLoading: true)
             } else if let error = loadError {
                 // Error Screen
                 VStack(spacing: 20) {
@@ -136,7 +83,7 @@ struct ContentView: View {
                     do {
                         try modelContext.save()
                     } catch {
-                        print("[ContentView] Failed to save playback state: \(error.localizedDescription)")
+                        AppLogger.ui.error("Failed to save playback state: \(error.localizedDescription)")
                     }
                 }
             }

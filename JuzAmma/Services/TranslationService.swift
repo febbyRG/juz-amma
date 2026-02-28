@@ -7,17 +7,32 @@
 
 import Foundation
 import SwiftData
+import os
 
 /// Service for managing Quran translations
 @MainActor
 final class TranslationService {
     
-    // MARK: - Pre-compiled Regex Patterns (patterns are compile-time safe)
+    // MARK: - Pre-compiled Regex Patterns (static let guarantees single init; patterns are compile-time safe)
     
-    private static let footnoteSupRegex = try! NSRegularExpression(pattern: "<sup[^>]*foot_note[^>]*>.*?</sup>", options: [])
-    private static let supRegex = try! NSRegularExpression(pattern: "<sup[^>]*>.*?</sup>", options: [])
-    private static let htmlTagRegex = try! NSRegularExpression(pattern: "<[^>]*>", options: [])
-    private static let multiSpaceRegex = try! NSRegularExpression(pattern: "\\s{2,}", options: [])
+    private static let footnoteSupRegex: NSRegularExpression = {
+        // These patterns are hardcoded string literals, so they will never fail.
+        // Using an IIFE instead of try! for static-analysis friendliness.
+        do { return try NSRegularExpression(pattern: "<sup[^>]*foot_note[^>]*>.*?</sup>", options: []) }
+        catch { fatalError("Invalid regex pattern – developer error") }
+    }()
+    private static let supRegex: NSRegularExpression = {
+        do { return try NSRegularExpression(pattern: "<sup[^>]*>.*?</sup>", options: []) }
+        catch { fatalError("Invalid regex pattern – developer error") }
+    }()
+    private static let htmlTagRegex: NSRegularExpression = {
+        do { return try NSRegularExpression(pattern: "<[^>]*>", options: []) }
+        catch { fatalError("Invalid regex pattern – developer error") }
+    }()
+    private static let multiSpaceRegex: NSRegularExpression = {
+        do { return try NSRegularExpression(pattern: "\\s{2,}", options: []) }
+        catch { fatalError("Invalid regex pattern – developer error") }
+    }()
     
     private static let htmlEntities: [String: String] = [
         "&nbsp;": " ",
@@ -71,19 +86,21 @@ final class TranslationService {
     
     // MARK: - Available Translations
     
-    /// Fetch list of all available translations from API
+    /// Fetch list of all available translations from API (cached for 5 min)
     func fetchAvailableTranslations() async throws -> [TranslationInfo] {
         guard let url = URL(string: "\(AppConstants.API.baseURL)\(AppConstants.API.translationsEndpoint)") else {
             throw TranslationError.networkError
         }
         
-        let (data, _) = try await URLSession.shared.data(from: url)
-        
-        struct Response: Codable {
+        struct Response: Codable, Sendable {
             let translations: [TranslationInfo]
         }
         
-        let response = try JSONDecoder().decode(Response.self, from: data)
+        let response = try await NetworkService.shared.fetch(
+            Response.self,
+            from: url,
+            cachePolicy: .cacheFirst(maxAge: AppConstants.Network.translationsCacheDuration)
+        )
         return response.translations
     }
     
@@ -150,18 +167,16 @@ final class TranslationService {
             throw TranslationError.networkError
         }
         
-        let (data, _) = try await URLSession.shared.data(from: url)
-        
-        struct Response: Codable {
+        struct Response: Codable, Sendable {
             let translations: [TranslationData]
         }
         
-        struct TranslationData: Codable {
+        struct TranslationData: Codable, Sendable {
             let resource_id: Int
             let text: String
         }
         
-        let response = try JSONDecoder().decode(Response.self, from: data)
+        let response = try await NetworkService.shared.fetch(Response.self, from: url)
         
         // Get ayahs from this surah
         let surahDescriptor = FetchDescriptor<Surah>(
@@ -258,6 +273,7 @@ final class TranslationService {
         
         if cleanedCount > 0 {
             try modelContext.save()
+            AppLogger.translation.info("Cleaned HTML from \(cleanedCount) translations")
         }
     }
     
@@ -279,7 +295,7 @@ final class TranslationService {
 
 // MARK: - Supporting Types
 
-struct TranslationStats {
+struct TranslationStats: Sendable {
     let totalTranslations: Int
     let uniqueLanguages: Int
     let estimatedSize: Int
@@ -289,7 +305,7 @@ struct TranslationStats {
     }
 }
 
-enum TranslationError: LocalizedError {
+enum TranslationError: LocalizedError, Sendable {
     case networkError
     case decodingError
     case notFound

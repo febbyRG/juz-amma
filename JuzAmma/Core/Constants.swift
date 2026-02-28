@@ -110,6 +110,22 @@ enum AppConstants {
         static let appIconCornerRadius: CGFloat = 26.4
     }
     
+    // MARK: - Network
+    
+    enum Network {
+        /// Timeout for initial connection / request (seconds)
+        static let requestTimeout: TimeInterval = 30
+        
+        /// Timeout for entire resource transfer (seconds)
+        static let resourceTimeout: TimeInterval = 120
+        
+        /// Default cache duration for reciters list (5 minutes)
+        static let recitersCacheDuration: TimeInterval = 300
+        
+        /// Default cache duration for translation list (5 minutes)
+        static let translationsCacheDuration: TimeInterval = 300
+    }
+    
     // MARK: - Storage
     
     enum Storage {

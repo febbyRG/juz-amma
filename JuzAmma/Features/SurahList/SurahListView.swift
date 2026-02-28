@@ -262,10 +262,13 @@ struct ProgressCard: View {
             
             ProgressView(value: progress)
                 .tint(Color.accentColor)
+                .accessibilityValue("\(Int(progress * 100)) percent")
         }
         .padding()
         .background(Color.accentColor.opacity(0.1))
         .clipShape(RoundedRectangle(cornerRadius: 16))
+        .accessibilityElement(children: .combine)
+        .accessibilityIdentifier(AccessibilityIdentifiers.progressCard)
     }
 }
 
@@ -304,6 +307,9 @@ struct NextToMemorizeCard: View {
             .clipShape(RoundedRectangle(cornerRadius: 12))
         }
         .buttonStyle(.plain)
+        .accessibilityElement(children: .combine)
+        .accessibilityLabel("Next to memorize: \(surah.nameTransliteration)")
+        .accessibilityHint("Double tap to open")
     }
 }
 

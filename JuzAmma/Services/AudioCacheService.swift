@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import os
 
 /// Service for caching audio files locally for offline playback
 actor AudioCacheService {
@@ -31,7 +32,7 @@ actor AudioCacheService {
         do {
             try fileManager.createDirectory(at: cacheDirectory, withIntermediateDirectories: true)
         } catch {
-            print("[AudioCache] Failed to create cache directory: \(error.localizedDescription)")
+            AppLogger.cache.error("Failed to create cache directory: \(error.localizedDescription)")
         }
     }
     
@@ -54,7 +55,7 @@ actor AudioCacheService {
             do {
                 try fileManager.removeItem(at: fileURL)
             } catch {
-                print("[AudioCache] Failed to remove corrupted file: \(error.localizedDescription)")
+                AppLogger.cache.warning("Failed to remove corrupted file: \(error.localizedDescription)")
             }
             return nil
         }
@@ -92,7 +93,7 @@ actor AudioCacheService {
         try? fileManager.removeItem(at: destinationURL) // Remove if exists
         try fileManager.moveItem(at: tempURL, to: destinationURL)
         
-        print("[AudioCache] Cached: \(fileName)")
+        AppLogger.cache.info("Cached: \(fileName)")
         return destinationURL
     }
     
@@ -106,7 +107,7 @@ actor AudioCacheService {
             do {
                 _ = try await cacheAudio(from: remoteURL, surahNumber: surahNumber, qariId: qariId)
             } catch {
-                print("[AudioCache] Background cache failed: \(error.localizedDescription)")
+                AppLogger.cache.error("Background cache failed: \(error.localizedDescription)")
             }
         }
     }
@@ -153,7 +154,7 @@ actor AudioCacheService {
         for fileURL in contents {
             try fileManager.removeItem(at: fileURL)
         }
-        print("[AudioCache] Cache cleared")
+        AppLogger.cache.info("Cache cleared")
     }
     
     /// Delete specific cached audio
@@ -163,7 +164,7 @@ actor AudioCacheService {
         
         if fileManager.fileExists(atPath: fileURL.path) {
             try fileManager.removeItem(at: fileURL)
-            print("[AudioCache] Deleted: \(fileName)")
+            AppLogger.cache.debug("Deleted: \(fileName)")
         }
     }
     
@@ -207,8 +208,8 @@ actor AudioCacheService {
         progressHandler: ((Double) -> Void)?
     ) async throws -> (URL, URLResponse) {
         
-        // Use URLSession with delegate for progress tracking
-        let (asyncBytes, response) = try await URLSession.shared.bytes(from: url)
+        // Use NetworkService for consistent timeout / error handling
+        let (asyncBytes, response) = try await NetworkService.shared.fetchBytes(from: url)
         
         let expectedLength = response.expectedContentLength
         var data = Data()
@@ -239,7 +240,7 @@ actor AudioCacheService {
 
 // MARK: - Cache Info Model
 
-struct AudioCacheInfo {
+struct AudioCacheInfo: Sendable {
     let totalSize: String
     let fileCount: Int
     let cachedSurahs: [Int]

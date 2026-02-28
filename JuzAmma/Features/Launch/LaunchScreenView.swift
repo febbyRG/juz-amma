@@ -9,6 +9,9 @@ import SwiftUI
 import SwiftData
 
 struct LaunchScreenView: View {
+    /// When true, shows a loading spinner and status text instead of the tagline.
+    var isLoading: Bool = false
+    
     var body: some View {
         ZStack {
             // Background gradient
@@ -38,10 +41,23 @@ struct LaunchScreenView: View {
                     .font(.system(size: 36, weight: .bold, design: .rounded))
                     .foregroundColor(.white)
                 
-                // Tagline
-                Text("Memorize Quran")
-                    .font(.system(size: 16, weight: .medium))
-                    .foregroundColor(.white.opacity(0.9))
+                if isLoading {
+                    // Loading indicator
+                    ProgressView()
+                        .progressViewStyle(CircularProgressViewStyle(tint: .white))
+                        .scaleEffect(1.5)
+                        .padding(.top, 8)
+                    
+                    Text("Loading Quran data...")
+                        .font(.system(size: 14, weight: .medium))
+                        .foregroundColor(.white.opacity(0.9))
+                        .padding(.top, 8)
+                } else {
+                    // Tagline
+                    Text("Memorize Quran")
+                        .font(.system(size: 16, weight: .medium))
+                        .foregroundColor(.white.opacity(0.9))
+                }
                 
                 Spacer()
                 
@@ -55,7 +71,10 @@ struct LaunchScreenView: View {
     }
 }
 
-#Preview {
+#Preview("Static") {
     LaunchScreenView()
-        .modelContainer(for: [Surah.self, Ayah.self, AppSettings.self, Translation.self], inMemory: true)
+}
+
+#Preview("Loading") {
+    LaunchScreenView(isLoading: true)
 }

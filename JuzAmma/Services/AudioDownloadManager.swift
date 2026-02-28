@@ -198,8 +198,7 @@ final class AudioDownloadManager: ObservableObject {
             throw AudioError.invalidURL
         }
         
-        let (data, _) = try await URLSession.shared.data(from: url)
-        let response = try JSONDecoder().decode(ChapterAudioResponse.self, from: data)
+        let response = try await NetworkService.shared.fetch(ChapterAudioResponse.self, from: url)
         
         guard let audioUrl = URL(string: response.audioFile.audioUrl) else {
             throw AudioError.invalidURL

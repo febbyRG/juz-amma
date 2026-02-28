@@ -178,7 +178,7 @@ private struct AyahJSON: Codable {
 }
 
 // MARK: - Errors
-enum QuranDataError: LocalizedError {
+enum QuranDataError: LocalizedError, Sendable {
     case fileNotFound
     case decodingFailed
     case saveFailed

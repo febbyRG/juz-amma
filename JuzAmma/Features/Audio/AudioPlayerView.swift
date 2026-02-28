@@ -45,6 +45,9 @@ struct AudioPlayerView: View {
                     let progress = location.x / geometry.size.width
                     audioService.seekToProgress(max(0, min(1, progress)))
                 }
+                .accessibilityElement(children: .ignore)
+                .accessibilityLabel("Playback progress")
+                .accessibilityValue("\(Int(audioService.progress * 100)) percent")
             }
             .frame(height: 3)
             
@@ -74,6 +77,7 @@ struct AudioPlayerView: View {
                             .foregroundStyle(.primary)
                     }
                     .disabled(isLoading)
+                    .accessibilityLabel("Skip back 10 seconds")
                     
                     // Play/Pause
                     Button {
@@ -109,6 +113,7 @@ struct AudioPlayerView: View {
                             .foregroundStyle(.primary)
                     }
                     .disabled(isLoading)
+                    .accessibilityLabel("Skip forward 10 seconds")
                 }
                 
                 // Time Display

@@ -8,6 +8,7 @@
 import SwiftUI
 import SwiftData
 import UserNotifications
+import os
 
 struct SettingsView: View {
     @Environment(\.modelContext) private var modelContext
@@ -314,7 +315,7 @@ struct SettingsView: View {
                     do {
                         try modelContext.save()
                     } catch {
-                        print("[Settings] Failed to save notification state: \(error.localizedDescription)")
+                        AppLogger.settings.error("Failed to save notification state: \(error.localizedDescription)")
                     }
                     errorMessage = "Notification permission denied. Enable in Settings > Notifications."
                 }

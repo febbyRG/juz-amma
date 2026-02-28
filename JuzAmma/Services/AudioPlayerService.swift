@@ -10,11 +10,12 @@ import AVFoundation
 import Combine
 import MediaPlayer
 import UIKit
+import os
 
 // MARK: - Audio Player State
 
 /// Represents the current state of audio playback
-enum AudioPlayerState: Equatable {
+enum AudioPlayerState: Equatable, Sendable {
     case idle
     case loading
     case playing
@@ -34,7 +35,7 @@ enum AudioPlayerState: Equatable {
 // MARK: - Audio Playback Mode
 
 /// Defines how audio should be played
-enum AudioPlaybackMode {
+enum AudioPlaybackMode: Sendable {
     /// Play entire surah as single file
     case surah
     /// Play specific verse only (seeks within chapter audio)
@@ -43,7 +44,8 @@ enum AudioPlaybackMode {
 
 // MARK: - Audio Player Service
 
-/// Service for playing Quran recitations
+/// Service for playing Quran recitations.
+/// Delegates Now Playing and Remote Command handling to dedicated managers.
 @MainActor
 final class AudioPlayerService: NSObject, ObservableObject {
     
@@ -63,6 +65,11 @@ final class AudioPlayerService: NSObject, ObservableObject {
     @Published var isRepeatEnabled: Bool = false
     @Published var playbackSpeed: Float = 1.0
     
+    // MARK: - Extracted Managers
+    
+    private let nowPlayingManager = NowPlayingManager()
+    private let remoteCommandHandler = RemoteCommandHandler()
+    
     // MARK: - Private Properties
     
     private var player: AVPlayer?
@@ -81,7 +88,7 @@ final class AudioPlayerService: NSObject, ObservableObject {
     override init() {
         super.init()
         setupAudioSession()
-        setupRemoteCommandCenter()
+        setupRemoteCommands()
     }
     
     deinit {
@@ -93,6 +100,8 @@ final class AudioPlayerService: NSObject, ObservableObject {
         playerItem = nil
         player = nil
         cancellables.removeAll()
+        // NowPlayingManager and RemoteCommandHandler cleanup is handled
+        // by their own deinit since they share MainActor isolation.
         MPNowPlayingInfoCenter.default().nowPlayingInfo = nil
     }
     
@@ -108,120 +117,40 @@ final class AudioPlayerService: NSObject, ObservableObject {
             )
             try audioSession.setActive(true)
         } catch {
-            print("Failed to setup audio session: \(error.localizedDescription)")
+            AppLogger.audio.error("Failed to setup audio session: \(error.localizedDescription)")
         }
     }
     
-    // MARK: - Remote Command Center (Lock Screen Controls)
+    // MARK: - Remote Commands (delegated to RemoteCommandHandler)
     
-    private func setupRemoteCommandCenter() {
-        let commandCenter = MPRemoteCommandCenter.shared()
-        
-        // Play command
-        commandCenter.playCommand.isEnabled = true
-        commandCenter.playCommand.addTarget { [weak self] _ in
-            Task { @MainActor in
-                self?.resume()
-            }
-            return .success
-        }
-        
-        // Pause command
-        commandCenter.pauseCommand.isEnabled = true
-        commandCenter.pauseCommand.addTarget { [weak self] _ in
-            Task { @MainActor in
-                self?.pause()
-            }
-            return .success
-        }
-        
-        // Toggle play/pause
-        commandCenter.togglePlayPauseCommand.isEnabled = true
-        commandCenter.togglePlayPauseCommand.addTarget { [weak self] _ in
-            Task { @MainActor in
-                self?.togglePlayPause()
-            }
-            return .success
-        }
-        
-        // Skip forward (10 seconds)
-        commandCenter.skipForwardCommand.isEnabled = true
-        commandCenter.skipForwardCommand.preferredIntervals = [10]
-        commandCenter.skipForwardCommand.addTarget { [weak self] _ in
-            Task { @MainActor in
-                self?.skipForward(10)
-            }
-            return .success
-        }
-        
-        // Skip backward (10 seconds)
-        commandCenter.skipBackwardCommand.isEnabled = true
-        commandCenter.skipBackwardCommand.preferredIntervals = [10]
-        commandCenter.skipBackwardCommand.addTarget { [weak self] _ in
-            Task { @MainActor in
-                self?.skipBackward(10)
-            }
-            return .success
-        }
-        
-        // Seek (scrubbing on lock screen)
-        commandCenter.changePlaybackPositionCommand.isEnabled = true
-        commandCenter.changePlaybackPositionCommand.addTarget { [weak self] event in
-            guard let positionEvent = event as? MPChangePlaybackPositionCommandEvent else {
-                return .commandFailed
-            }
-            Task { @MainActor in
-                self?.seek(to: positionEvent.positionTime)
-            }
-            return .success
-        }
+    private func setupRemoteCommands() {
+        remoteCommandHandler.setup(callbacks: .init(
+            onPlay: { [weak self] in self?.resume() },
+            onPause: { [weak self] in self?.pause() },
+            onTogglePlayPause: { [weak self] in self?.togglePlayPause() },
+            onSkipForward: { [weak self] seconds in self?.skipForward(seconds) },
+            onSkipBackward: { [weak self] seconds in self?.skipBackward(seconds) },
+            onSeek: { [weak self] time in self?.seek(to: time) }
+        ))
     }
     
-    // MARK: - Now Playing Info
+    // MARK: - Now Playing (delegated to NowPlayingManager)
     
     private func updateNowPlayingInfo() {
-        var nowPlayingInfo = [String: Any]()
-        
-        // Title - Surah name
-        if let surahName = currentSurahName {
-            nowPlayingInfo[MPMediaItemPropertyTitle] = surahName
-        } else if let surahNumber = currentSurahNumber {
-            nowPlayingInfo[MPMediaItemPropertyTitle] = "Surah \(surahNumber)"
-        }
-        
-        // Artist - Qari name
-        nowPlayingInfo[MPMediaItemPropertyArtist] = selectedQari.name
-        
-        // Album
-        nowPlayingInfo[MPMediaItemPropertyAlbumTitle] = "Juz Amma"
-        
-        // Duration
-        if duration > 0 {
-            nowPlayingInfo[MPMediaItemPropertyPlaybackDuration] = duration
-        }
-        
-        // Current time
-        nowPlayingInfo[MPNowPlayingInfoPropertyElapsedPlaybackTime] = currentTime
-        
-        // Playback rate
-        nowPlayingInfo[MPNowPlayingInfoPropertyPlaybackRate] = state == .playing ? playbackSpeed : 0.0
-        
-        // Current verse info (in subtitle)
-        if currentPlayingVerse > 0 {
-            nowPlayingInfo[MPMediaItemPropertyComposer] = "Ayah \(currentPlayingVerse)"
-        }
-        
-        // Set artwork (app icon as placeholder)
-        if let image = UIImage(named: "AppIcon") ?? UIImage(systemName: "book.fill") {
-            let artwork = MPMediaItemArtwork(boundsSize: image.size) { _ in image }
-            nowPlayingInfo[MPMediaItemPropertyArtwork] = artwork
-        }
-        
-        MPNowPlayingInfoCenter.default().nowPlayingInfo = nowPlayingInfo
+        nowPlayingManager.update(
+            surahName: currentSurahName,
+            surahNumber: currentSurahNumber,
+            qariName: selectedQari.name,
+            duration: duration,
+            currentTime: currentTime,
+            playbackSpeed: playbackSpeed,
+            isPlaying: state == .playing,
+            currentVerse: currentPlayingVerse
+        )
     }
     
     private func clearNowPlayingInfo() {
-        MPNowPlayingInfoCenter.default().nowPlayingInfo = nil
+        nowPlayingManager.clear()
     }
     
     // MARK: - Public Methods
@@ -405,10 +334,10 @@ final class AudioPlayerService: NSObject, ObservableObject {
                     guard let verseNum = timing.verseNumber else { return nil }
                     return (verse: verseNum, startTime: timing.startTimeSeconds, endTime: timing.endTimeSeconds)
                 }.sorted { $0.verse < $1.verse }
-                print("[Audio] Loaded \(verseTimings.count) verse timings")
+                AppLogger.audio.debug("Loaded \(self.verseTimings.count) verse timings")
             } else {
                 verseTimings = []
-                print("[Audio] No verse timings available")
+                AppLogger.audio.debug("No verse timings available")
             }
             
             guard let remoteURL = URL(string: audioFile.audioUrl) else {
@@ -422,7 +351,7 @@ final class AudioPlayerService: NSObject, ObservableObject {
             // Store the audio URL for verse playback
             currentChapterAudioUrl = playbackURL
             
-            print("[Audio] Playing chapter audio: \(playbackURL)")
+            AppLogger.audio.info("Playing chapter audio: \(playbackURL)")
             await playAudio(from: playbackURL)
         } catch {
             state = .error("Failed to load audio: \(error.localizedDescription)")
@@ -455,10 +384,10 @@ final class AudioPlayerService: NSObject, ObservableObject {
             
             // Find the timestamp for the requested verse
             if let verseTiming = verseTimings.first(where: { $0.verse == verseNumber }) {
-                print("[Audio] Playing verse \(verseNumber) from chapter audio, seeking to \(verseTiming.startTime)s")
+                AppLogger.audio.info("Playing verse \(verseNumber) from chapter audio, seeking to \(verseTiming.startTime)s")
                 await playAudio(from: playbackURL, seekTo: verseTiming.startTime)
             } else {
-                print("[Audio] Verse timing not found for verse \(verseNumber), playing from start")
+                AppLogger.audio.warning("Verse timing not found for verse \(verseNumber), playing from start")
                 await playAudio(from: playbackURL)
             }
         } catch {
@@ -472,12 +401,12 @@ final class AudioPlayerService: NSObject, ObservableObject {
         
         // Check if cached
         if let cachedURL = await AudioCacheService.shared.getCachedAudioURL(surahNumber: surahNumber, qariId: qariId) {
-            print("[Audio] Playing from cache: \(cachedURL.lastPathComponent)")
+            AppLogger.audio.debug("Playing from cache: \(cachedURL.lastPathComponent)")
             return cachedURL
         }
         
         // Not cached - start background download and return remote URL for streaming
-        print("[Audio] Streaming from remote, caching in background...")
+        AppLogger.audio.info("Streaming from remote, caching in background...")
         await AudioCacheService.shared.cacheAudioInBackground(from: remoteURL, surahNumber: surahNumber, qariId: qariId)
         
         return remoteURL
@@ -490,7 +419,7 @@ final class AudioPlayerService: NSObject, ObservableObject {
     private func playAudio(from url: URL, seekTo: TimeInterval? = nil) async {
         cleanup()
         
-        print("[Audio] Starting playback from: \(url)")
+        AppLogger.audio.info("Starting playback from: \(url)")
         
         playerItem = AVPlayerItem(url: url)
         player = AVPlayer(playerItem: playerItem)
@@ -504,7 +433,7 @@ final class AudioPlayerService: NSObject, ObservableObject {
             let cmTime = CMTime(seconds: seekTime, preferredTimescale: 600)
             await player?.seek(to: cmTime)
             currentTime = seekTime
-            print("[Audio] Seeked to: \(seekTime)s")
+            AppLogger.audio.debug("Seeked to: \(seekTime)s")
         }
         
         // Start playback - AVPlayer handles buffering internally
@@ -523,12 +452,12 @@ final class AudioPlayerService: NSObject, ObservableObject {
                         await MainActor.run {
                             self?.duration = durationSeconds
                             self?.updateNowPlayingInfo()
-                            print("[Audio] Duration loaded: \(durationSeconds)s")
+                            AppLogger.audio.debug("Duration loaded: \(durationSeconds)s")
                         }
                     }
                 }
             } catch {
-                print("[Audio] Failed to load duration: \(error.localizedDescription)")
+                AppLogger.audio.error("Failed to load duration: \(error.localizedDescription)")
                 // Still allow playback even if duration fails
             }
         }
@@ -564,7 +493,7 @@ final class AudioPlayerService: NSObject, ObservableObject {
                 } else {
                     pause()
                     state = .stopped
-                    print("[Audio] Single verse \(verseNum) ended")
+                    AppLogger.audio.info("Single verse \(verseNum) ended")
                 }
             }
         }
@@ -608,10 +537,10 @@ final class AudioPlayerService: NSObject, ObservableObject {
                 switch status {
                 case .failed:
                     let errorMessage = self.playerItem?.error?.localizedDescription ?? "Unknown error"
-                    print("[Audio] Playback failed: \(errorMessage)")
+                    AppLogger.audio.error("Playback failed: \(errorMessage)")
                     self.state = .error("Playback failed: \(errorMessage)")
                 case .readyToPlay:
-                    print("[Audio] Ready to play")
+                    AppLogger.audio.debug("Ready to play")
                     // Ensure we're playing if we should be
                     if self.state == .loading {
                         self.player?.play()
@@ -641,7 +570,7 @@ final class AudioPlayerService: NSObject, ObservableObject {
                     break
                 case .waitingToPlayAtSpecifiedRate:
                     // Buffering - could show loading indicator
-                    print("[Audio] Buffering...")
+                    AppLogger.audio.debug("Buffering...")
                 @unknown default:
                     break
                 }
@@ -703,8 +632,7 @@ final class AudioPlayerService: NSObject, ObservableObject {
             throw AudioError.invalidURL
         }
         
-        let (data, _) = try await URLSession.shared.data(from: url)
-        let response = try JSONDecoder().decode(ChapterAudioResponse.self, from: data)
+        let response = try await NetworkService.shared.fetch(ChapterAudioResponse.self, from: url)
         return response.audioFile
     }
     
@@ -716,15 +644,18 @@ final class AudioPlayerService: NSObject, ObservableObject {
             throw AudioError.invalidURL
         }
         
-        let (data, _) = try await URLSession.shared.data(from: url)
-        let response = try JSONDecoder().decode(RecitationsResponse.self, from: data)
+        let response = try await NetworkService.shared.fetch(
+            RecitationsResponse.self,
+            from: url,
+            cachePolicy: .cacheFirst(maxAge: AppConstants.Network.recitersCacheDuration)
+        )
         return response.recitations.map { $0.toQari() }
     }
 }
 
 // MARK: - Audio Errors
 
-enum AudioError: LocalizedError {
+enum AudioError: LocalizedError, Sendable {
     case invalidURL
     case networkError
     case playbackFailed

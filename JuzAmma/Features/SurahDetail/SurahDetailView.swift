@@ -22,6 +22,7 @@ struct SurahDetailView: View {
     @State private var showAudioOptions = false
     @State private var errorMessage: String?
     @State private var translationRefreshId = UUID()
+    @State private var sortedAyahs: [Ayah] = []
     @EnvironmentObject private var audioService: AudioPlayerService
     @EnvironmentObject private var downloadManager: AudioDownloadManager
     
@@ -29,8 +30,9 @@ struct SurahDetailView: View {
         appSettings.first
     }
     
-    /// Lazily-created ViewModel backed by the Environment's ModelContext
-    private var viewModel: SurahDetailViewModel {
+    /// Creates a ViewModel for the current ModelContext.
+    /// Lightweight struct — no stored state, only wraps ModelContext.
+    private func makeViewModel() -> SurahDetailViewModel {
         SurahDetailViewModel(modelContext: modelContext)
     }
     
@@ -48,10 +50,10 @@ struct SurahDetailView: View {
                             .padding(.horizontal)
                     }
                     
-                    // Ayah List
-                    if !surah.ayahs.isEmpty {
+                    // Ayah List (pre-sorted, avoids re-sort on every render)
+                    if !sortedAyahs.isEmpty {
                         VStack(spacing: 20) {
-                            ForEach(surah.ayahs.sorted(by: { $0.number < $1.number })) { ayah in
+                            ForEach(sortedAyahs) { ayah in
                                 AyahView(
                                     ayah: ayah,
                                     fontSize: fontSize,
@@ -138,7 +140,7 @@ struct SurahDetailView: View {
                         Toggle("Show Both Translations", isOn: Binding(
                             get: { settings?.showBothTranslations ?? false },
                             set: { newValue in
-                                viewModel.updateShowBothTranslations(newValue, settings: settings)
+                                makeViewModel().updateShowBothTranslations(newValue, settings: settings)
                                 translationRefreshId = UUID()
                             }
                         ))
@@ -243,6 +245,7 @@ struct SurahDetailView: View {
             }
         }
         .onAppear {
+            prepareSortedAyahs()
             updateLastAccessed()
             loadAvailableTranslations()
         }
@@ -257,25 +260,29 @@ struct SurahDetailView: View {
     }
     
     private func toggleBookmark() {
-        errorMessage = viewModel.toggleBookmark(for: surah)
+        errorMessage = makeViewModel().toggleBookmark(for: surah)
     }
     
     private func toggleMemorization() {
-        errorMessage = viewModel.toggleMemorization(for: surah)
+        errorMessage = makeViewModel().toggleMemorization(for: surah)
     }
     
     private func toggleNextToMemorize() {
-        errorMessage = viewModel.toggleNextToMemorize(for: surah)
+        errorMessage = makeViewModel().toggleNextToMemorize(for: surah)
     }
     
     private func updateLastAccessed() {
-        viewModel.updateLastAccessed(for: surah)
+        makeViewModel().updateLastAccessed(for: surah)
     }
     
     private func loadAvailableTranslations() {
-        let result = viewModel.loadAvailableTranslations(settings: settings)
+        let result = makeViewModel().loadAvailableTranslations(settings: settings)
         availableTranslations = result.translations
         errorMessage = result.error
+    }
+    
+    private func prepareSortedAyahs() {
+        sortedAyahs = surah.ayahs.sorted { $0.number < $1.number }
     }
 }
 

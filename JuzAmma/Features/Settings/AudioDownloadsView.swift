@@ -7,6 +7,7 @@
 
 import SwiftUI
 import SwiftData
+import os
 
 /// View for managing offline audio downloads per surah
 struct AudioDownloadsView: View {
@@ -68,7 +69,7 @@ struct AudioDownloadsView: View {
                         do {
                             try modelContext.save()
                         } catch {
-                            print("[AudioDownloads] Failed to save WiFi setting: \(error.localizedDescription)")
+                            AppLogger.download.error("Failed to save WiFi setting: \(error.localizedDescription)")
                         }
                     }
                 )) {

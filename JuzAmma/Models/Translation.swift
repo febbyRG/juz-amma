@@ -40,7 +40,7 @@ final class Translation {
 }
 
 /// Metadata about available translations
-struct TranslationInfo: Codable, Identifiable, Hashable {
+struct TranslationInfo: Codable, Identifiable, Hashable, Sendable {
     let id: Int
     let name: String
     let authorName: String
@@ -132,7 +132,7 @@ struct TranslationInfo: Codable, Identifiable, Hashable {
 }
 
 /// Represents the "translated_name" nested object from the API
-struct TranslatedName: Codable, Hashable {
+struct TranslatedName: Codable, Hashable, Sendable {
     let name: String
     let languageName: String
     
@@ -144,7 +144,7 @@ struct TranslatedName: Codable, Hashable {
 
 /// Represents a downloaded translation with its metadata
 /// Used instead of tuples for type safety and clarity
-struct DownloadedTranslation: Identifiable, Hashable {
+struct DownloadedTranslation: Identifiable, Hashable, Sendable {
     let id: Int
     let name: String
     let languageCode: String

@@ -7,8 +7,10 @@
 
 import SwiftUI
 import SwiftData
+import os
 
-/// Handles business logic for SurahDetailView
+/// Handles business logic for SurahDetailView.
+/// Lightweight struct — no stored mutable state, only wraps ModelContext.
 @MainActor
 struct SurahDetailViewModel {
     
@@ -65,7 +67,7 @@ struct SurahDetailViewModel {
         do {
             try modelContext.save()
         } catch {
-            print("[ViewModel] Failed to save last accessed date: \(error.localizedDescription)")
+            AppLogger.data.error("Failed to save last accessed date: \(error.localizedDescription)")
         }
     }
     
@@ -75,7 +77,7 @@ struct SurahDetailViewModel {
             do {
                 try modelContext.save()
             } catch {
-                print("[ViewModel] Failed to save translation display setting: \(error.localizedDescription)")
+                AppLogger.settings.error("Failed to save translation display setting: \(error.localizedDescription)")
             }
         }
     }
@@ -104,7 +106,7 @@ struct SurahDetailViewModel {
                     do {
                         try modelContext.save()
                     } catch {
-                        print("[ViewModel] Failed to auto-select translation: \(error.localizedDescription)")
+                        AppLogger.data.error("Failed to auto-select translation: \(error.localizedDescription)")
                     }
                 }
             }
