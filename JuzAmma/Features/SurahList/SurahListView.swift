@@ -74,7 +74,7 @@ struct SurahListView: View {
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 12) {
                         FilterChip(
-                            title: "Bookmarks",
+                            title: L10n.bookmarks,
                             icon: "bookmark.fill",
                             isActive: showBookmarksOnly
                         ) {
@@ -85,7 +85,7 @@ struct SurahListView: View {
                         }
                         
                         FilterChip(
-                            title: "Memorized",
+                            title: L10n.memorized,
                             icon: "checkmark.circle.fill",
                             isActive: showMemorizedOnly
                         ) {
@@ -103,7 +103,7 @@ struct SurahListView: View {
                 if filteredSurahs.isEmpty {
                     EmptyStateView(
                         icon: searchText.isEmpty ? "book.closed" : "magnifyingglass",
-                        message: searchText.isEmpty ? "No surahs found" : "No results for '\(searchText)'"
+                        message: searchText.isEmpty ? L10n.noSurahsFound : L10n.noResultsFor(searchText)
                     )
                 } else {
                     List {
@@ -119,11 +119,11 @@ struct SurahListView: View {
                     .listStyle(.plain)
                 }
             }
-            .navigationTitle("Juz Amma")
+            .navigationTitle(L10n.juzAmma)
             .navigationDestination(for: Surah.self) { surah in
                 SurahDetailView(surah: surah)
             }
-            .searchable(text: $searchText, prompt: "Search surahs...")
+            .searchable(text: $searchText, prompt: L10n.searchSurahs)
             .onChange(of: searchText) { _, newValue in
                 searchTask?.cancel()
                 searchTask = Task {
@@ -245,7 +245,7 @@ struct ProgressCard: View {
         VStack(alignment: .leading, spacing: 12) {
             HStack {
                 VStack(alignment: .leading, spacing: 4) {
-                    Text("Memorization Progress")
+                    Text(L10n.memorizationProgress)
                         .font(.subheadline)
                         .foregroundStyle(.secondary)
                     
@@ -284,7 +284,7 @@ struct NextToMemorizeCard: View {
                     .foregroundStyle(.yellow)
                 
                 VStack(alignment: .leading, spacing: 4) {
-                    Text("Next to Memorize")
+                    Text(L10n.nextToMemorize)
                         .font(.caption)
                         .foregroundStyle(.secondary)
                     

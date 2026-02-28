@@ -1,0 +1,97 @@
+/* Umum */
+"app_name" = "Juz Amma";
+"memorize_quran" = "Hafal Al-Quran";
+"version" = "Versi";
+
+/* Memuat */
+"loading_quran_data" = "Memuat data Al-Quran...";
+
+/* Daftar Surah */
+"juz_amma" = "Juz Amma";
+"search_surahs" = "Cari surah...";
+"no_surahs_found" = "Surah tidak ditemukan";
+"no_results_for" = "Tidak ada hasil untuk '%@'";
+"bookmarks" = "Penanda";
+"memorized" = "Dihafal";
+
+/* Progres */
+"memorization_progress" = "Progres Hafalan";
+"next_to_memorize" = "Selanjutnya Dihafal";
+
+/* Detail Surah */
+"bookmark" = "Tandai";
+"remove_bookmark" = "Hapus Penanda";
+"mark_as_memorized" = "Tandai Sudah Dihafal";
+"mark_as_not_memorized" = "Tandai Belum Dihafal";
+"set_as_next_to_memorize" = "Jadikan Hafalan Selanjutnya";
+"remove_from_next_to_memorize" = "Hapus dari Hafalan Selanjutnya";
+"display_options" = "Opsi Tampilan";
+"select_translation" = "Pilih Terjemahan";
+"font_size" = "Ukuran Font";
+"show_both_translations" = "Tampilkan Kedua Terjemahan";
+"ayahs_not_available" = "Ayat belum tersedia";
+"full_content_coming_soon" = "Konten lengkap akan segera ditambahkan";
+"play_surah" = "Putar Surah";
+"pause" = "Jeda";
+"downloaded" = "Terunduh";
+"download" = "Unduh";
+
+/* Audio */
+"playback_progress" = "Progres pemutaran";
+"skip_back_10_seconds" = "Mundur 10 detik";
+"skip_forward_10_seconds" = "Maju 10 detik";
+"audio_options" = "Opsi Audio";
+"change_reciter" = "Ganti Qari";
+"playback_speed" = "Kecepatan Putar";
+"repeat_on" = "Ulangi: Aktif";
+"repeat_off" = "Ulangi: Nonaktif";
+"stop_playback" = "Hentikan Pemutaran";
+"select_reciter" = "Pilih Qari";
+"search_reciters" = "Cari qari";
+"popular_reciters" = "Qari Populer";
+"all_reciters" = "Semua Qari";
+
+/* Pengaturan */
+"settings" = "Pengaturan";
+"appearance" = "Tampilan";
+"theme" = "Tema";
+"display_preferences" = "Preferensi Tampilan";
+"manage_translations" = "Kelola Terjemahan";
+"audio" = "Audio";
+"reciter_qari" = "Qari (Pembaca)";
+"offline_downloads" = "Unduhan Offline";
+"clear_audio_cache" = "Hapus Cache Audio";
+"notifications" = "Notifikasi";
+"daily_reminders" = "Pengingat Harian";
+"reminder_time" = "Waktu Pengingat";
+"statistics" = "Statistik";
+"total_surahs" = "Total Surah";
+"about" = "Tentang";
+"developer" = "Pengembang";
+"github_repository" = "Repositori GitHub";
+"share_app" = "Bagikan Aplikasi";
+
+/* Unduhan */
+"downloads" = "Unduhan";
+"offline_audio" = "Audio Offline";
+"wifi_only" = "Hanya WiFi";
+"download_all_surahs" = "Unduh Semua Surah";
+"all_downloaded" = "Semua Terunduh";
+"delete_all_downloads" = "Hapus Semua Unduhan";
+"batch_actions" = "Aksi Massal";
+
+/* Terjemahan */
+"translations" = "Terjemahan";
+"popular_translations" = "Terjemahan Populer";
+"download_translations" = "Unduh Terjemahan";
+"no_translations" = "Belum Ada Terjemahan";
+"primary_translation" = "Terjemahan Utama";
+"secondary_translation" = "Terjemahan Kedua";
+
+/* Umum */
+"cancel" = "Batal";
+"delete" = "Hapus";
+"done" = "Selesai";
+"retry" = "Coba Lagi";
+"error" = "Kesalahan";
+"ok" = "OK";

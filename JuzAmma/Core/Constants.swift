@@ -183,16 +183,6 @@ enum AccessibilityIdentifiers {
     static let pauseButton = "pause_button"
 }
 
-// MARK: - Localization Keys (for future i18n support)
-
-enum LocalizationKeys {
-    static let appName = "app_name"
-    static let loadingQuranData = "loading_quran_data"
-    static let memorizedProgress = "memorization_progress"
-    static let nextToMemorize = "next_to_memorize"
-    static let bookmarks = "bookmarks"
-    static let memorized = "memorized"
-    static let searchSurahs = "search_surahs"
-    static let noResults = "no_results"
-    static let bismillah = "bismillah"
-}
+// MARK: - Localization
+// Type-safe localization is provided by Core/L10n.swift
+// Use L10n.propertyName instead of hardcoded strings.

@@ -9,7 +9,7 @@ import Foundation
 import os
 
 /// Service for caching audio files locally for offline playback
-actor AudioCacheService {
+actor AudioCacheService: AudioCacheServiceProtocol {
     
     // MARK: - Singleton
     

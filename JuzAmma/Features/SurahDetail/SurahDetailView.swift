@@ -102,7 +102,7 @@ struct SurahDetailView: View {
                         toggleBookmark()
                     } label: {
                         Label(
-                            surah.isBookmarked ? "Remove Bookmark" : "Bookmark",
+                            surah.isBookmarked ? L10n.removeBookmark : L10n.bookmark,
                             systemImage: surah.isBookmarked ? "bookmark.fill" : "bookmark"
                         )
                     }
@@ -112,7 +112,7 @@ struct SurahDetailView: View {
                         toggleMemorization()
                     } label: {
                         Label(
-                            surah.isMemorized ? "Mark as Not Memorized" : "Mark as Memorized",
+                            surah.isMemorized ? L10n.markAsNotMemorized : L10n.markAsMemorized,
                             systemImage: surah.isMemorized ? "checkmark.circle.fill" : "checkmark.circle"
                         )
                     }
@@ -122,7 +122,7 @@ struct SurahDetailView: View {
                         toggleNextToMemorize()
                     } label: {
                         Label(
-                            surah.isNextToMemorize ? "Remove from Next to Memorize" : "Set as Next to Memorize",
+                            surah.isNextToMemorize ? L10n.removeFromNextToMemorize : L10n.setAsNextToMemorize,
                             systemImage: surah.isNextToMemorize ? "star.circle.fill" : "star.circle"
                         )
                     }
@@ -134,10 +134,10 @@ struct SurahDetailView: View {
                         Button {
                             showTranslationPicker = true
                         } label: {
-                            Label("Select Translation", systemImage: "globe")
+                            Label(L10n.selectTranslation, systemImage: "globe")
                         }
                         
-                        Toggle("Show Both Translations", isOn: Binding(
+                        Toggle(L10n.showBothTranslations, isOn: Binding(
                             get: { settings?.showBothTranslations ?? false },
                             set: { newValue in
                                 makeViewModel().updateShowBothTranslations(newValue, settings: settings)
@@ -145,7 +145,7 @@ struct SurahDetailView: View {
                             }
                         ))
                     } label: {
-                        Label("Display Options", systemImage: "eye")
+                        Label(L10n.displayOptions, systemImage: "eye")
                     }
                     
                     // Font Size
@@ -154,7 +154,7 @@ struct SurahDetailView: View {
                             Button(option.label) { fontSize = option.size }
                         }
                     } label: {
-                        Label("Font Size", systemImage: "textformat.size")
+                        Label(L10n.fontSize, systemImage: "textformat.size")
                     }
                 } label: {
                     Image(systemName: "ellipsis.circle")

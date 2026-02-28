@@ -47,17 +47,20 @@ final class TranslationService {
     // MARK: - Properties
     
     private let modelContext: ModelContext
+    private let networkService: any NetworkServiceProtocol
     
     // MARK: - Initialization
     
-    init(modelContext: ModelContext) {
+    init(modelContext: ModelContext, networkService: any NetworkServiceProtocol = NetworkService.shared) {
         self.modelContext = modelContext
+        self.networkService = networkService
     }
     
     // MARK: - Text Cleaning
     
-    /// Clean HTML tags and special characters from translation text
-    private func cleanTranslationText(_ text: String) -> String {
+    /// Clean HTML tags and special characters from translation text.
+    /// Visibility is `internal` (rather than `private`) so unit tests can verify cleaning logic.
+    func cleanTranslationText(_ text: String) -> String {
         var cleanText = text
         let range = { NSRange(cleanText.startIndex..., in: cleanText) }
         
@@ -96,7 +99,7 @@ final class TranslationService {
             let translations: [TranslationInfo]
         }
         
-        let response = try await NetworkService.shared.fetch(
+        let response = try await networkService.fetch(
             Response.self,
             from: url,
             cachePolicy: .cacheFirst(maxAge: AppConstants.Network.translationsCacheDuration)
@@ -176,7 +179,7 @@ final class TranslationService {
             let text: String
         }
         
-        let response = try await NetworkService.shared.fetch(Response.self, from: url)
+        let response = try await networkService.fetch(Response.self, from: url)
         
         // Get ayahs from this surah
         let surahDescriptor = FetchDescriptor<Surah>(

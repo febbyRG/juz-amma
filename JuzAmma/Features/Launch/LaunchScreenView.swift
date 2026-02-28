@@ -48,13 +48,13 @@ struct LaunchScreenView: View {
                         .scaleEffect(1.5)
                         .padding(.top, 8)
                     
-                    Text("Loading Quran data...")
+                    Text(L10n.loadingQuranData)
                         .font(.system(size: 14, weight: .medium))
                         .foregroundColor(.white.opacity(0.9))
                         .padding(.top, 8)
                 } else {
                     // Tagline
-                    Text("Memorize Quran")
+                    Text(L10n.memorizeQuran)
                         .font(.system(size: 16, weight: .medium))
                         .foregroundColor(.white.opacity(0.9))
                 }

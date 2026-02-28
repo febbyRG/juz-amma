@@ -12,14 +12,16 @@ import Foundation
 enum QariService {
     
     /// Fetch available reciters from Quran.com API (cached for 5 min)
-    static func fetchAvailableReciters() async throws -> [Qari] {
+    static func fetchAvailableReciters(
+        networkService: any NetworkServiceProtocol = NetworkService.shared
+    ) async throws -> [Qari] {
         let urlString = "\(AppConstants.API.baseURL)\(AppConstants.API.recitationsEndpoint)"
         
         guard let url = URL(string: urlString) else {
             throw AudioError.invalidURL
         }
         
-        let response = try await NetworkService.shared.fetch(
+        let response = try await networkService.fetch(
             RecitationsResponse.self,
             from: url,
             cachePolicy: .cacheFirst(maxAge: AppConstants.Network.recitersCacheDuration)

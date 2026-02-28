@@ -18,28 +18,24 @@ struct SettingsView: View {
         settingsQuery.first
     }
     
-    @State private var selectedTheme: ThemeMode = .auto
-    @State private var notificationsEnabled = false
+    @State private var viewModel: SettingsViewModel?
     @State private var showTranslationManager = false
-    @State private var audioCacheSize: String = "Calculating..."
-    @State private var audioCacheCount: Int = 0
     @State private var showClearCacheAlert = false
-    @State private var errorMessage: String?
     
     var body: some View {
         Form {
             // Appearance Section
             Section {
-                Picker("Theme", selection: $selectedTheme) {
+                Picker(L10n.theme, selection: Binding(
+                    get: { viewModel?.selectedTheme ?? .auto },
+                    set: { viewModel?.updateTheme($0, settings: settings) }
+                )) {
                     ForEach(ThemeMode.allCases, id: \.self) { theme in
                         Text(theme.displayName).tag(theme)
                     }
                 }
-                .onChange(of: selectedTheme) { _, newValue in
-                    updateTheme(newValue)
-                }
             } header: {
-                Label("Appearance", systemImage: "paintbrush")
+                Label(L10n.appearance, systemImage: "paintbrush")
             }
             
             // Display Preferences
@@ -48,7 +44,7 @@ struct SettingsView: View {
                     showTranslationManager = true
                 } label: {
                     HStack {
-                        Label("Manage Translations", systemImage: "globe")
+                        Label(L10n.manageTranslations, systemImage: "globe")
                         Spacer()
                         Image(systemName: "chevron.right")
                             .font(.caption)
@@ -57,7 +53,7 @@ struct SettingsView: View {
                 }
                 .foregroundStyle(.primary)
             } header: {
-                Label("Display Preferences", systemImage: "eye")
+                Label(L10n.displayPreferences, systemImage: "eye")
             } footer: {
                 Text("Download and manage translations in multiple languages")
             }
@@ -68,7 +64,7 @@ struct SettingsView: View {
                     QariSettingsView()
                 } label: {
                     HStack {
-                        Label("Reciter (Qari)", systemImage: "speaker.wave.2")
+                        Label(L10n.reciterQari, systemImage: "speaker.wave.2")
                         Spacer()
                         Text(settings?.selectedQariName ?? "Mishary Rashid al-`Afasy")
                             .foregroundStyle(.secondary)
@@ -80,13 +76,13 @@ struct SettingsView: View {
                     AudioDownloadsView(downloadManager: AudioDownloadManager.shared)
                 } label: {
                     HStack {
-                        Label("Offline Downloads", systemImage: "icloud.and.arrow.down")
+                        Label(L10n.offlineDownloads, systemImage: "icloud.and.arrow.down")
                         Spacer()
                         VStack(alignment: .trailing) {
-                            Text(audioCacheSize)
+                            Text(viewModel?.audioCacheSize ?? "Calculating...")
                                 .foregroundStyle(.secondary)
-                            if audioCacheCount > 0 {
-                                Text("\(audioCacheCount) surahs cached")
+                            if let count = viewModel?.audioCacheCount, count > 0 {
+                                Text("\(count) surahs cached")
                                     .font(.caption)
                                     .foregroundStyle(.tertiary)
                             }
@@ -98,38 +94,38 @@ struct SettingsView: View {
                     showClearCacheAlert = true
                 } label: {
                     HStack {
-                        Label("Clear Audio Cache", systemImage: "trash")
+                        Label(L10n.clearAudioCache, systemImage: "trash")
                         Spacer()
                     }
                 }
-                .disabled(audioCacheCount == 0)
+                .disabled(viewModel?.audioCacheCount == 0)
             } header: {
-                Label("Audio", systemImage: "speaker.wave.3")
+                Label(L10n.audio, systemImage: "speaker.wave.3")
             } footer: {
                 Text("Cached audio plays offline. Clear cache to free up storage.")
             }
             
             // Notifications
             Section {
-                Toggle(isOn: $notificationsEnabled) {
-                    Label("Daily Reminders", systemImage: "bell")
-                }
-                .onChange(of: notificationsEnabled) { _, newValue in
-                    updateNotificationsSetting(newValue)
+                Toggle(isOn: Binding(
+                    get: { viewModel?.notificationsEnabled ?? false },
+                    set: { viewModel?.updateNotificationsSetting($0, settings: settings) }
+                )) {
+                    Label(L10n.dailyReminders, systemImage: "bell")
                 }
                 
-                if notificationsEnabled {
+                if viewModel?.notificationsEnabled == true {
                     DatePicker(
-                        "Reminder Time",
+                        L10n.reminderTime,
                         selection: Binding(
                             get: { settings?.reminderTime ?? Date() },
-                            set: { updateReminderTime($0) }
+                            set: { viewModel?.updateReminderTime($0, settings: settings) }
                         ),
                         displayedComponents: .hourAndMinute
                     )
                 }
             } header: {
-                Label("Notifications", systemImage: "bell.badge")
+                Label(L10n.notifications, systemImage: "bell.badge")
             } footer: {
                 Text("Get daily reminders to practice memorization")
             }
@@ -138,38 +134,38 @@ struct SettingsView: View {
             Section {
                 StatRow(
                     icon: "book.closed.fill",
-                    label: "Total Surahs",
+                    label: L10n.totalSurahs,
                     value: "\(AppConstants.juzAmmaSurahRange.count)"
                 )
                 
                 StatRow(
                     icon: "checkmark.circle.fill",
-                    label: "Memorized",
-                    value: "\(memorizedCount)",
+                    label: L10n.memorized,
+                    value: "\(viewModel?.memorizedCount ?? 0)",
                     color: .green
                 )
                 
                 StatRow(
                     icon: "bookmark.fill",
-                    label: "Bookmarked",
-                    value: "\(bookmarkedCount)",
+                    label: L10n.bookmarks,
+                    value: "\(viewModel?.bookmarkedCount ?? 0)",
                     color: .blue
                 )
             } header: {
-                Label("Statistics", systemImage: "chart.bar")
+                Label(L10n.statistics, systemImage: "chart.bar")
             }
             
             // About Section
             Section {
                 HStack {
-                    Text("Version")
+                    Text(L10n.version)
                     Spacer()
                     Text(AppConstants.appVersion)
                         .foregroundStyle(.secondary)
                 }
                 
                 HStack {
-                    Text("Developer")
+                    Text(L10n.developer)
                     Spacer()
                     Text(AppConstants.developerName)
                         .foregroundStyle(.secondary)
@@ -177,7 +173,7 @@ struct SettingsView: View {
                 
                 Link(destination: AppConstants.githubURL) {
                     HStack {
-                        Label("GitHub Repository", systemImage: "link")
+                        Label(L10n.githubRepository, systemImage: "link")
                         Spacer()
                         Image(systemName: "arrow.up.right")
                             .font(.caption)
@@ -185,16 +181,15 @@ struct SettingsView: View {
                 }
                 
                 Button {
-                    // Share app
-                    shareApp()
+                    viewModel?.shareApp()
                 } label: {
                     HStack {
-                        Label("Share App", systemImage: "square.and.arrow.up")
+                        Label(L10n.shareApp, systemImage: "square.and.arrow.up")
                         Spacer()
                     }
                 }
             } header:{
-                Label("About", systemImage: "info.circle")
+                Label(L10n.about, systemImage: "info.circle")
             } footer: {
                 VStack(alignment: .leading, spacing: 8) {
                     Text("\(AppConstants.appName) - Islamic Learning App")
@@ -205,191 +200,35 @@ struct SettingsView: View {
                 .foregroundStyle(.secondary)
             }
         }
-        .navigationTitle("Settings")
+        .navigationTitle(L10n.settings)
         .navigationBarTitleDisplayMode(.inline)
         .sheet(isPresented: $showTranslationManager) {
             NavigationStack {
                 TranslationManagerView()
             }
         }
-        .onAppear {
-            loadSettings()
-            loadCacheInfo()
+        .task {
+            if viewModel == nil {
+                viewModel = SettingsViewModel(modelContext: modelContext)
+            }
+            viewModel?.loadSettings(from: settings)
+            await viewModel?.loadCacheInfo()
         }
         .alert("Clear Audio Cache?", isPresented: $showClearCacheAlert) {
-            Button("Cancel", role: .cancel) { }
+            Button(L10n.cancel, role: .cancel) { }
             Button("Clear", role: .destructive) {
-                clearAudioCache()
+                Task { await viewModel?.clearAudioCache() }
             }
         } message: {
-            Text("This will delete all cached audio files (\(audioCacheSize)). You can re-download them when playing.")
+            Text("This will delete all cached audio files (\(viewModel?.audioCacheSize ?? "")). You can re-download them when playing.")
         }
-        .alert("Error", isPresented: Binding(
-            get: { errorMessage != nil },
-            set: { if !$0 { errorMessage = nil } }
+        .alert(L10n.error, isPresented: Binding(
+            get: { viewModel?.errorMessage != nil },
+            set: { if !$0 { viewModel?.errorMessage = nil } }
         )) {
-            Button("OK", role: .cancel) { }
+            Button(L10n.ok, role: .cancel) { }
         } message: {
-            Text(errorMessage ?? "")
-        }
-    }
-    
-    // MARK: - Computed Properties
-    private var memorizedCount: Int {
-        let descriptor = FetchDescriptor<Surah>(
-            predicate: #Predicate { $0.isMemorized == true }
-        )
-        return (try? modelContext.fetchCount(descriptor)) ?? 0
-    }
-    
-    private var bookmarkedCount: Int {
-        let descriptor = FetchDescriptor<Surah>(
-            predicate: #Predicate { $0.isBookmarked == true }
-        )
-        return (try? modelContext.fetchCount(descriptor)) ?? 0
-    }
-    
-    // MARK: - Methods
-    private func loadSettings() {
-        guard let settings = settings else {
-            let newSettings = AppSettings()
-            modelContext.insert(newSettings)
-            do {
-                try modelContext.save()
-            } catch {
-                errorMessage = "Failed to create settings: \(error.localizedDescription)"
-            }
-            return
-        }
-        
-        selectedTheme = settings.themeMode
-        notificationsEnabled = settings.notificationsEnabled
-    }
-    
-    private func updateTheme(_ theme: ThemeMode) {
-        settings?.themeMode = theme
-        do {
-            try modelContext.save()
-        } catch {
-            errorMessage = "Failed to save theme: \(error.localizedDescription)"
-        }
-    }
-    
-    private func updateNotificationsSetting(_ enabled: Bool) {
-        settings?.notificationsEnabled = enabled
-        if enabled {
-            requestNotificationPermission()
-            if settings?.reminderTime == nil {
-                let defaultTime = Calendar.current.date(bySettingHour: 9, minute: 0, second: 0, of: Date()) ?? Date()
-                settings?.reminderTime = defaultTime
-                scheduleReminder(at: defaultTime)
-            } else if let time = settings?.reminderTime {
-                scheduleReminder(at: time)
-            }
-        } else {
-            UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: ["daily_memorization_reminder"])
-        }
-        do {
-            try modelContext.save()
-        } catch {
-            errorMessage = "Failed to save notification settings: \(error.localizedDescription)"
-        }
-    }
-    
-    private func updateReminderTime(_ time: Date) {
-        settings?.reminderTime = time
-        do {
-            try modelContext.save()
-        } catch {
-            errorMessage = "Failed to save reminder time: \(error.localizedDescription)"
-        }
-        scheduleReminder(at: time)
-    }
-    
-    private func requestNotificationPermission() {
-        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
-            if !granted {
-                Task { @MainActor in
-                    settings?.notificationsEnabled = false
-                    notificationsEnabled = false
-                    do {
-                        try modelContext.save()
-                    } catch {
-                        AppLogger.settings.error("Failed to save notification state: \(error.localizedDescription)")
-                    }
-                    errorMessage = "Notification permission denied. Enable in Settings > Notifications."
-                }
-            }
-        }
-    }
-    
-    private func scheduleReminder(at time: Date) {
-        let center = UNUserNotificationCenter.current()
-        center.removePendingNotificationRequests(withIdentifiers: ["daily_memorization_reminder"])
-        
-        let content = UNMutableNotificationContent()
-        content.title = "Juz Amma"
-        content.body = "Time to practice your Quran memorization! 📖"
-        content.sound = .default
-        
-        let calendar = Calendar.current
-        var dateComponents = DateComponents()
-        dateComponents.hour = calendar.component(.hour, from: time)
-        dateComponents.minute = calendar.component(.minute, from: time)
-        
-        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
-        let request = UNNotificationRequest(identifier: "daily_memorization_reminder", content: content, trigger: trigger)
-        
-        center.add(request) { error in
-            if let error {
-                Task { @MainActor in
-                    self.errorMessage = "Failed to schedule reminder: \(error.localizedDescription)"
-                }
-            }
-        }
-    }
-    
-    private func shareApp() {
-        let text = "\(AppConstants.appName) - Quran Juz 30 Memorization App"
-        let url = AppConstants.githubURL
-        let activityVC = UIActivityViewController(activityItems: [text, url], applicationActivities: nil)
-        
-        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
-           let rootVC = windowScene.windows.first?.rootViewController {
-            // Find topmost presented controller
-            var topVC = rootVC
-            while let presented = topVC.presentedViewController {
-                topVC = presented
-            }
-            activityVC.popoverPresentationController?.sourceView = topVC.view
-            topVC.present(activityVC, animated: true)
-        }
-    }
-    
-    private func loadCacheInfo() {
-        Task {
-            let size = await AudioCacheService.shared.getFormattedCacheSize()
-            let count = await AudioCacheService.shared.getCachedFileCount()
-            await MainActor.run {
-                audioCacheSize = size
-                audioCacheCount = count
-            }
-        }
-    }
-    
-    private func clearAudioCache() {
-        Task {
-            do {
-                try await AudioCacheService.shared.clearCache()
-                await MainActor.run {
-                    audioCacheSize = "0 MB"
-                    audioCacheCount = 0
-                }
-            } catch {
-                await MainActor.run {
-                    errorMessage = "Failed to clear cache: \(error.localizedDescription)"
-                }
-            }
+            Text(viewModel?.errorMessage ?? "")
         }
     }
 }

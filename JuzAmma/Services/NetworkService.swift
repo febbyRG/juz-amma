@@ -12,7 +12,7 @@ import os
 
 /// Centralized networking layer with caching, error handling, and structured logging.
 /// Uses actor isolation for thread-safe cache access.
-actor NetworkService {
+actor NetworkService: NetworkServiceProtocol {
     
     // MARK: - Singleton
     
@@ -146,16 +146,7 @@ actor NetworkService {
 }
 
 // MARK: - Cache Policy
-
-extension NetworkService {
-    /// Defines caching behavior for network requests.
-    enum CachePolicy: Sendable {
-        /// Always fetch from network, never cache.
-        case networkOnly
-        /// Return cached response if available and within maxAge (seconds), otherwise fetch.
-        case cacheFirst(maxAge: TimeInterval)
-    }
-}
+// CachePolicy enum is defined in Core/NetworkServiceProtocol.swift
 
 // MARK: - Network Errors
 

@@ -46,7 +46,7 @@ struct AudioPlayerView: View {
                     audioService.seekToProgress(max(0, min(1, progress)))
                 }
                 .accessibilityElement(children: .ignore)
-                .accessibilityLabel("Playback progress")
+                .accessibilityLabel(L10n.playbackProgress)
                 .accessibilityValue("\(Int(audioService.progress * 100)) percent")
             }
             .frame(height: 3)
@@ -77,7 +77,7 @@ struct AudioPlayerView: View {
                             .foregroundStyle(.primary)
                     }
                     .disabled(isLoading)
-                    .accessibilityLabel("Skip back 10 seconds")
+                    .accessibilityLabel(L10n.skipBack10Seconds)
                     
                     // Play/Pause
                     Button {
@@ -113,7 +113,7 @@ struct AudioPlayerView: View {
                             .foregroundStyle(.primary)
                     }
                     .disabled(isLoading)
-                    .accessibilityLabel("Skip forward 10 seconds")
+                    .accessibilityLabel(L10n.skipForward10Seconds)
                 }
                 
                 // Time Display
@@ -209,7 +209,7 @@ struct QariPickerView: View {
         NavigationStack {
             List {
                 // Popular Qaris
-                Section("Popular Reciters") {
+                Section(L10n.popularReciters) {
                     ForEach(popularQaris) { qari in
                         QariRow(
                             qari: qari,
@@ -221,7 +221,7 @@ struct QariPickerView: View {
                 
                 // All Qaris
                 if !allQaris.isEmpty {
-                    Section("All Reciters") {
+                    Section(L10n.allReciters) {
                         ForEach(filteredQaris) { qari in
                             QariRow(
                                 qari: qari,
@@ -232,9 +232,9 @@ struct QariPickerView: View {
                     }
                 }
             }
-            .navigationTitle("Select Reciter")
+            .navigationTitle(L10n.selectReciter)
             .navigationBarTitleDisplayMode(.inline)
-            .searchable(text: $searchText, prompt: "Search reciters")
+            .searchable(text: $searchText, prompt: L10n.searchReciters)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
                     Button("Cancel") {
@@ -356,7 +356,7 @@ struct AudioOptionsSheet: View {
                     } label: {
                         Label {
                             VStack(alignment: .leading) {
-                                Text("Change Reciter")
+                                Text(L10n.changeReciter)
                                 Text(audioService.selectedQari.displayName)
                                     .font(.caption)
                                     .foregroundStyle(.secondary)
@@ -370,7 +370,7 @@ struct AudioOptionsSheet: View {
                 }
                 
                 // Playback Speed
-                Section("Playback Speed") {
+                Section(L10n.playbackSpeed) {
                     ForEach(AppConstants.Audio.playbackSpeeds, id: \.self) { speed in
                         Button {
                             audioService.setPlaybackSpeed(Float(speed))
@@ -409,11 +409,11 @@ struct AudioOptionsSheet: View {
                         audioService.stop()
                         dismiss()
                     } label: {
-                        Label("Stop Playback", systemImage: "stop.circle")
+                        Label(L10n.stopPlayback, systemImage: "stop.circle")
                     }
                 }
             }
-            .navigationTitle("Audio Options")
+            .navigationTitle(L10n.audioOptions)
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {

@@ -1,0 +1,97 @@
+/* General */
+"app_name" = "Juz Amma";
+"memorize_quran" = "Memorize Quran";
+"version" = "Version";
+
+/* Loading */
+"loading_quran_data" = "Loading Quran data...";
+
+/* Surah List */
+"juz_amma" = "Juz Amma";
+"search_surahs" = "Search surahs...";
+"no_surahs_found" = "No surahs found";
+"no_results_for" = "No results for '%@'";
+"bookmarks" = "Bookmarks";
+"memorized" = "Memorized";
+
+/* Progress */
+"memorization_progress" = "Memorization Progress";
+"next_to_memorize" = "Next to Memorize";
+
+/* Surah Detail */
+"bookmark" = "Bookmark";
+"remove_bookmark" = "Remove Bookmark";
+"mark_as_memorized" = "Mark as Memorized";
+"mark_as_not_memorized" = "Mark as Not Memorized";
+"set_as_next_to_memorize" = "Set as Next to Memorize";
+"remove_from_next_to_memorize" = "Remove from Next to Memorize";
+"display_options" = "Display Options";
+"select_translation" = "Select Translation";
+"font_size" = "Font Size";
+"show_both_translations" = "Show Both Translations";
+"ayahs_not_available" = "Ayahs not available yet";
+"full_content_coming_soon" = "Full content will be added soon";
+"play_surah" = "Play Surah";
+"pause" = "Pause";
+"downloaded" = "Downloaded";
+"download" = "Download";
+
+/* Audio */
+"playback_progress" = "Playback progress";
+"skip_back_10_seconds" = "Skip back 10 seconds";
+"skip_forward_10_seconds" = "Skip forward 10 seconds";
+"audio_options" = "Audio Options";
+"change_reciter" = "Change Reciter";
+"playback_speed" = "Playback Speed";
+"repeat_on" = "Repeat: On";
+"repeat_off" = "Repeat: Off";
+"stop_playback" = "Stop Playback";
+"select_reciter" = "Select Reciter";
+"search_reciters" = "Search reciters";
+"popular_reciters" = "Popular Reciters";
+"all_reciters" = "All Reciters";
+
+/* Settings */
+"settings" = "Settings";
+"appearance" = "Appearance";
+"theme" = "Theme";
+"display_preferences" = "Display Preferences";
+"manage_translations" = "Manage Translations";
+"audio" = "Audio";
+"reciter_qari" = "Reciter (Qari)";
+"offline_downloads" = "Offline Downloads";
+"clear_audio_cache" = "Clear Audio Cache";
+"notifications" = "Notifications";
+"daily_reminders" = "Daily Reminders";
+"reminder_time" = "Reminder Time";
+"statistics" = "Statistics";
+"total_surahs" = "Total Surahs";
+"about" = "About";
+"developer" = "Developer";
+"github_repository" = "GitHub Repository";
+"share_app" = "Share App";
+
+/* Downloads */
+"downloads" = "Downloads";
+"offline_audio" = "Offline Audio";
+"wifi_only" = "WiFi Only";
+"download_all_surahs" = "Download All Surahs";
+"all_downloaded" = "All Downloaded";
+"delete_all_downloads" = "Delete All Downloads";
+"batch_actions" = "Batch Actions";
+
+/* Translations */
+"translations" = "Translations";
+"popular_translations" = "Popular Translations";
+"download_translations" = "Download Translations";
+"no_translations" = "No Translations";
+"primary_translation" = "Primary Translation";
+"secondary_translation" = "Secondary Translation";
+
+/* Common */
+"cancel" = "Cancel";
+"delete" = "Delete";
+"done" = "Done";
+"retry" = "Retry";
+"error" = "Error";
+"ok" = "OK";
